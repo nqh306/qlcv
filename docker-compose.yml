@@ -104,7 +104,7 @@ services:
     image: plane-backend:genco1
     build:
       context: ./backend
-      dockerfile: Dockerfile.custom
+      dockerfile: Dockerfile.api
     command: ./bin/docker-entrypoint-api.sh
     restart: unless-stopped
     volumes:

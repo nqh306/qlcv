@@ -55,7 +55,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='profile',
             name='language',
-            field=models.CharField(default='en', max_length=255),
+            field=models.CharField(default='vi-VN', max_length=255),
         ),
         migrations.AlterField(
             model_name='issueversion',

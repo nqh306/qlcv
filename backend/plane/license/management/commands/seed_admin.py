@@ -36,7 +36,7 @@ class Command(BaseCommand):
 
         # --- 1. Create Super Admin user ---
         email = "admin@evngenco1.vn"
-        password = "Admin@111"
+        password = "Admin@2026"
         display_name = "Super Admin"
 
         user, created = User.objects.get_or_create(
@@ -44,7 +44,7 @@ class Command(BaseCommand):
             defaults={
                 "first_name": "Super",
                 "last_name": "Admin",
-                "username": uuid.uuid4().hex,
+                "username": "admin",
                 "password": make_password(password),
                 "display_name": display_name,
                 "is_active": True,
@@ -66,7 +66,9 @@ class Command(BaseCommand):
             user=user,
             defaults={
                 "company_name": "EVNGENCO1",
+                "language": "vi-VN",
                 "is_onboarded": True,
+                "is_tour_completed": True,
                 "onboarding_step": {
                     "profile_complete": True,
                     "workspace_create": True,

@@ -97,14 +97,14 @@ class EmailCheckEndpoint(APIView):
             )
         # Else return response
         if not is_email_login:
-            # Username not found — force CREDENTIAL mode (no sign-up with username)
+            # Username not found — still force sign-in mode (signup is disabled)
             return Response(
-                {"existing": False, "status": "CREDENTIAL"},
+                {"existing": True, "status": "CREDENTIAL"},
                 status=status.HTTP_200_OK,
             )
         return Response(
             {
-                "existing": False,
+                "existing": True,
                 "status": ("MAGIC_CODE" if smtp_configured and is_magic_login_enabled else "CREDENTIAL"),
             },
             status=status.HTTP_200_OK,

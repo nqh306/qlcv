@@ -28,10 +28,10 @@ export default {
   auth: {
     common: {
       email: {
-        label: "Email",
-        placeholder: "name@company.com",
+        label: "Tên đăng nhập hoặc Email",
+        placeholder: "admin hoặc admin@evngenco1.vn",
         errors: {
-          required: "Email là bắt buộc",
+          required: "Tên đăng nhập hoặc Email là bắt buộc",
           invalid: "Email không hợp lệ",
         },
       },
@@ -124,15 +124,15 @@ export default {
         label: "Đăng nhập để bắt đầu quản lý công việc cùng nhóm của bạn.",
         step: {
           email: {
-            header: "Đăng nhập hoặc đăng ký",
+            header: "Đăng nhập",
             sub_header: "",
           },
           password: {
-            header: "Đăng nhập hoặc đăng ký",
-            sub_header: "Đăng nhập bằng cách kết hợp email-mật khẩu của bạn.",
+            header: "Đăng nhập",
+            sub_header: "Đăng nhập bằng tên đăng nhập/email và mật khẩu.",
           },
           unique_code: {
-            header: "Đăng nhập hoặc đăng ký",
+            header: "Đăng nhập",
             sub_header: "Đăng nhập bằng mã duy nhất được gửi đến email trên.",
           },
         },

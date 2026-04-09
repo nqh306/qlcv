@@ -28,7 +28,6 @@ export interface IUserProfileStore {
   fetchUserProfile: () => Promise<TUserProfile | undefined>;
   updateUserProfile: (data: Partial<TUserProfile>) => Promise<TUserProfile | undefined>;
   finishUserOnboarding: () => Promise<void>;
-  updateTourCompleted: () => Promise<TUserProfile | undefined>;
   updateUserTheme: (data: Partial<IUserTheme>) => Promise<TUserProfile | undefined>;
 }
 
@@ -53,7 +52,6 @@ export class ProfileStore implements IUserProfileStore {
       workspace_invite: false,
     },
     is_onboarded: false,
-    is_tour_completed: false,
     use_case: undefined,
     billing_address_country: undefined,
     billing_address: undefined,
@@ -77,7 +75,6 @@ export class ProfileStore implements IUserProfileStore {
       // actions
       fetchUserProfile: action,
       updateUserProfile: action,
-      updateTourCompleted: action,
       updateUserTheme: action,
     });
     // services
@@ -185,28 +182,6 @@ export class ProfileStore implements IUserProfileStore {
         this.error = {
           status: "user-profile-onboard-finish-error",
           message: "Failed to finish user onboarding",
-        };
-      });
-      throw error;
-    }
-  };
-
-  /**
-   * @description updates the user tour completed status
-   * @returns @returns {Promise<TUserProfile | undefined>}
-   */
-  updateTourCompleted = async () => {
-    const isUserProfileTourCompleted = this.data.is_tour_completed || false;
-    try {
-      this.mutateUserProfile({ is_tour_completed: true });
-      const userProfile = await this.userService.updateUserTourCompleted();
-      return userProfile;
-    } catch (error) {
-      runInAction(() => {
-        this.mutateUserProfile({ is_tour_completed: isUserProfileTourCompleted });
-        this.error = {
-          status: "user-profile-tour-complete-error",
-          message: "Failed to update user profile is_tour_completed",
         };
       });
       throw error;

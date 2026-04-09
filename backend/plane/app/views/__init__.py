@@ -27,7 +27,6 @@ from .project.member import (
 from .user.base import (
     UserEndpoint,
     UpdateUserOnBoardedEndpoint,
-    UpdateUserTourCompletedEndpoint,
     UserActivityEndpoint,
 )
 

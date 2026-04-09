@@ -22,7 +22,6 @@ export type TUserProfile = {
     workspace_invite: boolean;
   };
   is_onboarded: boolean;
-  is_tour_completed: boolean;
 
   use_case: string | undefined;
 

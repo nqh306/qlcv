@@ -29,10 +29,10 @@ export default {
   auth: {
     common: {
       email: {
-        label: "Email",
-        placeholder: "name@company.com",
+        label: "Username or Email",
+        placeholder: "admin or admin@evngenco1.vn",
         errors: {
-          required: "Email is required",
+          required: "Username or Email is required",
           invalid: "Email is invalid",
         },
       },
@@ -125,15 +125,15 @@ export default {
         label: "Log in to start managing work with your team.",
         step: {
           email: {
-            header: "Log in or sign up",
+            header: "Log in",
             sub_header: "",
           },
           password: {
-            header: "Log in or sign up",
-            sub_header: "Use your email-password combination to log in.",
+            header: "Log in",
+            sub_header: "Use your username/email and password to log in.",
           },
           unique_code: {
-            header: "Log in or sign up",
+            header: "Log in",
             sub_header: "Log in using a unique code sent to the email address above.",
           },
         },

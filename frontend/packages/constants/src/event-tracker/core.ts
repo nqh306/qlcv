@@ -332,21 +332,6 @@ export const PROJECT_VIEW_TRACKER_ELEMENTS = {
 
 /**
  * ===========================================================================
- * Product Tour Events and Elements
- * ===========================================================================
- */
-export const PRODUCT_TOUR_TRACKER_EVENTS = {
-  complete: "product_tour_completed",
-};
-
-export const PRODUCT_TOUR_TRACKER_ELEMENTS = {
-  START_BUTTON: "product_tour_start_button",
-  SKIP_BUTTON: "product_tour_skip_button",
-  CREATE_PROJECT_BUTTON: "product_tour_create_project_button",
-};
-
-/**
- * ===========================================================================
  * Notification Events and Elements
  * ===========================================================================
  */

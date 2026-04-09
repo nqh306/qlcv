@@ -8,7 +8,6 @@ import { observer } from "mobx-react";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { InstanceFailureView } from "@/components/instance/failure";
-import { InstanceSetupForm } from "@/components/instance/setup-form";
 // hooks
 import { useInstance } from "@/hooks/store";
 // components
@@ -33,12 +32,7 @@ function HomePage() {
     return <InstanceFailureView />;
   }
 
-  // if instance is fetched and setup is not done, show setup form
-  if (instance && !instance?.is_setup_done) {
-    return <InstanceSetupForm />;
-  }
-
-  // if instance is fetched and setup is done, show sign in form
+  // always show sign in form
   return <InstanceSignInForm />;
 }
 

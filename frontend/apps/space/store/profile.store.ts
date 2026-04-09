@@ -49,7 +49,6 @@ export class ProfileStore implements IProfileStore {
       workspace_invite: false,
     },
     is_onboarded: false,
-    is_tour_completed: false,
     use_case: undefined,
     billing_address_country: undefined,
     billing_address: undefined,

@@ -371,7 +371,6 @@ class UserEndpoint(BaseViewSet):
 
         # Reset onboarding
         profile.last_workspace_id = None
-        profile.is_tour_completed = False
         profile.is_onboarded = False
         profile.onboarding_step = {
             "workspace_join": False,
@@ -417,14 +416,6 @@ class UpdateUserOnBoardedEndpoint(BaseAPIView):
     def patch(self, request):
         profile = Profile.objects.get(user_id=request.user.id)
         profile.is_onboarded = request.data.get("is_onboarded", False)
-        profile.save()
-        return Response({"message": "Updated successfully"}, status=status.HTTP_200_OK)
-
-
-class UpdateUserTourCompletedEndpoint(BaseAPIView):
-    def patch(self, request):
-        profile = Profile.objects.get(user_id=request.user.id)
-        profile.is_tour_completed = request.data.get("is_tour_completed", False)
         profile.save()
         return Response({"message": "Updated successfully"}, status=status.HTTP_200_OK)
 

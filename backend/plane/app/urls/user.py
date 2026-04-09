@@ -8,7 +8,6 @@ from plane.app.views import (
     AccountEndpoint,
     ProfileEndpoint,
     UpdateUserOnBoardedEndpoint,
-    UpdateUserTourCompletedEndpoint,
     UserActivityEndpoint,
     UserActivityGraphEndpoint,
     ## User
@@ -62,11 +61,6 @@ urlpatterns = [
         name="admin-session-bridge",
     ),
     path("users/me/onboard/", UpdateUserOnBoardedEndpoint.as_view(), name="user-onboard"),
-    path(
-        "users/me/tour-completed/",
-        UpdateUserTourCompletedEndpoint.as_view(),
-        name="user-tour",
-    ),
     path("users/me/activities/", UserActivityEndpoint.as_view(), name="user-activities"),
     # user workspaces
     path("users/me/workspaces/", UserWorkSpacesEndpoint.as_view(), name="user-workspace"),

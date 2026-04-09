@@ -92,15 +92,15 @@ class EmailCheckSpaceEndpoint(APIView):
                 {"existing": True, "status": auth_status},
                 status=status.HTTP_200_OK,
             )
-        # Else return response
+        # Else return response — always force sign-in mode (signup is disabled)
         if not is_email_login:
             return Response(
-                {"existing": False, "status": "CREDENTIAL"},
+                {"existing": True, "status": "CREDENTIAL"},
                 status=status.HTTP_200_OK,
             )
         return Response(
             {
-                "existing": False,
+                "existing": True,
                 "status": ("MAGIC_CODE" if smtp_configured and is_magic_login_enabled else "CREDENTIAL"),
             },
             status=status.HTTP_200_OK,

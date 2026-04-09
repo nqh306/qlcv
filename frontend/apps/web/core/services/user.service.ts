@@ -135,16 +135,6 @@ export class UserService extends APIService {
       });
   }
 
-  async updateUserTourCompleted(): Promise<any> {
-    return this.patch("/api/users/me/tour-completed/", {
-      is_tour_completed: true,
-    })
-      .then((response) => response?.data)
-      .catch((error) => {
-        throw error?.response?.data;
-      });
-  }
-
   async updateCurrentUserEmailNotificationSettings(data: Partial<IUserEmailNotificationSettings>): Promise<any> {
     return this.patch("/api/users/me/notification-preferences/", data)
       .then((response) => response?.data)

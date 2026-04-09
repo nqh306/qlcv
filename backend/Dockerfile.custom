@@ -6,6 +6,7 @@ COPY plane/license/api/ /code/plane/license/api/
 COPY plane/license/urls.py /code/plane/license/urls.py
 COPY plane/license/utils/ /code/plane/license/utils/
 COPY plane/license/migrations/ /code/plane/license/migrations/
+COPY plane/license/management/ /code/plane/license/management/
 
 COPY plane/authentication/views/app/email.py /code/plane/authentication/views/app/email.py
 COPY plane/authentication/views/app/check.py /code/plane/authentication/views/app/check.py
@@ -13,6 +14,14 @@ COPY plane/authentication/views/space/email.py /code/plane/authentication/views/
 COPY plane/authentication/views/space/check.py /code/plane/authentication/views/space/check.py
 
 COPY plane/db/models/project.py /code/plane/db/models/project.py
+COPY plane/db/models/user.py /code/plane/db/models/user.py
 COPY plane/db/migrations/ /code/plane/db/migrations/
 
 COPY plane/app/views/workspace/base.py /code/plane/app/views/workspace/base.py
+COPY plane/app/views/user/base.py /code/plane/app/views/user/base.py
+COPY plane/app/views/__init__.py /code/plane/app/views/__init__.py
+COPY plane/app/urls/user.py /code/plane/app/urls/user.py
+
+COPY plane/utils/instance_config_variables/core.py /code/plane/utils/instance_config_variables/core.py
+COPY bin/docker-entrypoint-api.sh /code/bin/docker-entrypoint-api.sh
+COPY bin/docker-entrypoint-api-local.sh /code/bin/docker-entrypoint-api-local.sh
