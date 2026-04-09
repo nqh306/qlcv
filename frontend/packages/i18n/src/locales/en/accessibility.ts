@@ -1,0 +1,40 @@
+/**
+ * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
+
+export default {
+  aria_labels: {
+    projects_sidebar: {
+      workspace_logo: "Organization logo",
+      open_workspace_switcher: "Open organization switcher",
+      open_user_menu: "Open user menu",
+      open_command_palette: "Open command palette",
+      open_extended_sidebar: "Open extended sidebar",
+      close_extended_sidebar: "Close extended sidebar",
+      create_favorites_folder: "Create favorites folder",
+      open_folder: "Open folder",
+      close_folder: "Close folder",
+      open_favorites_menu: "Open favorites menu",
+      close_favorites_menu: "Close favorites menu",
+      enter_folder_name: "Enter folder name",
+      create_new_project: "Create new department",
+      open_projects_menu: "Open departments menu",
+      close_projects_menu: "Close departments menu",
+      toggle_quick_actions_menu: "Toggle quick actions menu",
+      open_project_menu: "Open department menu",
+      close_project_menu: "Close department menu",
+      collapse_sidebar: "Collapse sidebar",
+      expand_sidebar: "Expand sidebar",
+      edition_badge: "Open paid plans' modal",
+    },
+    auth_forms: {
+      clear_email: "Clear email",
+      show_password: "Show password",
+      hide_password: "Hide password",
+      close_alert: "Close alert",
+      close_popover: "Close popover",
+    },
+  },
+} as const;

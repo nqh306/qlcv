@@ -1,0 +1,18 @@
+FROM makeplane/plane-backend:stable
+
+# Copy custom code over the base image
+COPY plane/license/models/ /code/plane/license/models/
+COPY plane/license/api/ /code/plane/license/api/
+COPY plane/license/urls.py /code/plane/license/urls.py
+COPY plane/license/utils/ /code/plane/license/utils/
+COPY plane/license/migrations/ /code/plane/license/migrations/
+
+COPY plane/authentication/views/app/email.py /code/plane/authentication/views/app/email.py
+COPY plane/authentication/views/app/check.py /code/plane/authentication/views/app/check.py
+COPY plane/authentication/views/space/email.py /code/plane/authentication/views/space/email.py
+COPY plane/authentication/views/space/check.py /code/plane/authentication/views/space/check.py
+
+COPY plane/db/models/project.py /code/plane/db/models/project.py
+COPY plane/db/migrations/ /code/plane/db/migrations/
+
+COPY plane/app/views/workspace/base.py /code/plane/app/views/workspace/base.py

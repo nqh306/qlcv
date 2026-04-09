@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+out/
+build/
+.next/
+.react-router/
+
+# Turborepo
+.turbo
+
+# Python
+venv/
+.venv/
+*.pyc
+__pycache__/
+staticfiles/
+mediafiles/
+htmlcov/
+.coverage
+logs/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Misc
+*.pem
+*.key
+.secrets
+tmp/
+temp/
+.temp/
+tsconfig.tsbuildinfo
+package-lock.json
+
+# Redis
+*.rdb
+*.rdb.gz
+
+# Storybook
+*storybook.log
+storybook-static/
+
+# Sentry
+.sentryclirc
+
+CLAUDE.md
