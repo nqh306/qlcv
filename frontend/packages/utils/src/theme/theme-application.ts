@@ -6,7 +6,7 @@
 
 /**
  * Theme Application Utilities
- * Applies generated palettes to CSS variables cho QLCV's theme system
+ * Applies generated palettes to CSS variables for QLCV's theme system
  */
 
 import { hexToOKLCH, oklchToCSS, getRelativeLuminance, getPerceptualBrightness } from "./color-conversion";

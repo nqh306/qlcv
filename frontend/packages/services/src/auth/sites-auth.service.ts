@@ -11,7 +11,7 @@ import type { IEmailCheckData, IEmailCheckResponse } from "@qlcv/types";
 import { APIService } from "../api.service";
 
 /**
- * Service class for handling authentication-related operations cho QLCV space application
+ * Service class for handling authentication-related operations for QLCV space application
  * Provides methods for user authentication, password management, and session handling
  * @extends {APIService}
  * @remarks This service is only available for QLCV sites

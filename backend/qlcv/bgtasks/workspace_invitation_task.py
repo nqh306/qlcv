@@ -45,7 +45,7 @@ def workspace_invitation(email, workspace_id, token, current_site, inviter):
         ) = get_email_configuration()
 
         # Subject of the email
-        subject = f"{user.first_name or user.display_name or user.email} has invited you to join them in {workspace.name} trên QLCV"  # noqa: E501
+        subject = f"{user.first_name or user.display_name or user.email} has invited you to join them in {workspace.name} on QLCV"  # noqa: E501
 
         context = {
             "email": email,

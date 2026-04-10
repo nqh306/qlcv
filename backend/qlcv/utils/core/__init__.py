@@ -2,7 +2,7 @@
 # See the LICENSE file for details.
 
 """
-Core utilities cho QLCV database routing and request scoping.
+Core utilities for QLCV database routing and request scoping.
 This package contains essential components for managing read replica routing
 and request-scoped context in the QLCV application.
 """

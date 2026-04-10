@@ -32,7 +32,7 @@ def magic_link(email, key, token):
         ) = get_email_configuration()
 
         # Send the mail
-        subject = f"Mã đăng nhập QLCV của bạn is {token}"
+        subject = f"Your QLCV login code is {token}"
         context = {"code": token, "email": email}
 
         html_content = render_to_string("emails/auth/magic_signin.html", context)

@@ -20,7 +20,7 @@ import { useIssueFilter } from "@/hooks/store/use-issue-filter";
 import type { Route } from "./+types/layout";
 
 const DEFAULT_TITLE = "QLCV";
-const DEFAULT_DESCRIPTION = "Made với QLCV, an AI-powered work management platform with publishing capabilities.";
+const DEFAULT_DESCRIPTION = "Made with QLCV, an AI-powered work management platform with publishing capabilities.";
 
 interface IssueMetadata {
   name?: string;
