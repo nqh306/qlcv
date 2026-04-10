@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@qlcv/editor";
 // ui
-import { TextArea } from "@plane/ui";
-import { cn, getPageName } from "@plane/utils";
+import { TextArea } from "@qlcv/ui";
+import { cn, getPageName } from "@qlcv/utils";
 // helpers
 // hooks
 import { usePageFilters } from "@/hooks/use-page-filters";
@@ -30,8 +30,8 @@ export const PageEditorTitle = observer(function PageEditorTitle(props: Props) {
   const { fontSize } = usePageFilters();
   // ui
   const titleFontClassName = cn("font-bold tracking-[-2%]", {
-    "text-[1.6rem] leading-[1.9rem]": fontSize === "small-font",
-    "text-[2rem] leading-[2.375rem]": fontSize === "large-font",
+    "text-[1.375rem] leading-[1.625rem]": fontSize === "small-font",
+    "text-[1.625rem] leading-[1.9375rem]": fontSize === "large-font",
   });
 
   return (

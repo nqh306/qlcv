@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,20 +8,20 @@ import React, { useRef, useState } from "react";
 import { omit } from "lodash-es";
 import { observer } from "mobx-react";
 import { SquareStackIcon } from "lucide-react";
-import { CopyIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
+import { CopyIcon, EditIcon, TrashIcon } from "@qlcv/propel/icons";
 // plane utils
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TWorkspaceDraftIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { TWorkspaceDraftIssue } from "@qlcv/types";
+import { EIssuesStoreType } from "@qlcv/types";
+import type { TContextMenuItem } from "@qlcv/ui";
+import { Row } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useProject } from "@/hooks/store/use-project";
 import { useWorkspaceDraftIssues } from "@/hooks/store/workspace-draft";
 // plane-web imports
-import { IssueTypeIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+import { IssueTypeIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { IdentifierText } from "../issue-detail/identifier-text";
 import { CreateUpdateIssueModal } from "../issue-modal/modal";

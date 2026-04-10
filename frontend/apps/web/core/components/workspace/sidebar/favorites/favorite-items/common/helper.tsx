@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { PageIcon } from "@qlcv/propel/icons";
 // plane imports
-import type { IFavorite, TLogoProps } from "@plane/types";
+import type { IFavorite, TLogoProps } from "@qlcv/types";
 // components
 // plane web constants
 import { FAVORITE_ITEM_ICONS, FAVORITE_ITEM_LINKS } from "@/constants/sidebar-favorites";

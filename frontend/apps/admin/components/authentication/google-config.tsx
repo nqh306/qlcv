@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,10 +9,11 @@ import Link from "next/link";
 // icons
 import { Settings2 } from "lucide-react";
 // plane internal packages
-import { getButtonStyling } from "@plane/propel/button";
-import type { TInstanceAuthenticationMethodKeys } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { getButtonStyling } from "@qlcv/propel/button";
+import type { TInstanceAuthenticationMethodKeys } from "@qlcv/types";
+import { ToggleSwitch } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 // hooks
 import { useInstance } from "@/hooks/store";
 
@@ -25,6 +26,7 @@ export const GoogleConfiguration = observer(function GoogleConfiguration(props: 
   const { disabled, updateConfig } = props;
   // store
   const { formattedConfig } = useInstance();
+  const { t } = useTranslation();
   // derived values
   const enableGoogleConfig = formattedConfig?.IS_GOOGLE_ENABLED ?? "";
   const isGoogleConfigured = !!formattedConfig?.GOOGLE_CLIENT_ID && !!formattedConfig?.GOOGLE_CLIENT_SECRET;
@@ -34,7 +36,7 @@ export const GoogleConfiguration = observer(function GoogleConfiguration(props: 
       {isGoogleConfigured ? (
         <div className="flex items-center gap-4">
           <Link href="/authentication/google" className={cn(getButtonStyling("link", "base"), "font-medium")}>
-            Edit
+            {t("admin.common.edit")}
           </Link>
           <ToggleSwitch
             value={Boolean(parseInt(enableGoogleConfig))}
@@ -49,7 +51,7 @@ export const GoogleConfiguration = observer(function GoogleConfiguration(props: 
       ) : (
         <Link href="/authentication/google" className={cn(getButtonStyling("secondary", "base"), "text-tertiary")}>
           <Settings2 className="h-4 w-4 p-0.5 text-tertiary" />
-          Configure
+          {t("admin.page.authentication.configure")}
         </Link>
       )}
     </>

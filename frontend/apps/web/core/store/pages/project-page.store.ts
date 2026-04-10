@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,14 +8,14 @@ import { unset, set } from "lodash-es";
 import { makeObservable, observable, runInAction, action, reaction, computed } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { EUserPermissions } from "@plane/constants";
-import type { TPage, TPageFilters, TPageNavigationTabs } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+import { EUserPermissions } from "@qlcv/constants";
+import type { TPage, TPageFilters, TPageNavigationTabs } from "@qlcv/types";
+import { EUserProjectRoles } from "@qlcv/types";
 // helpers
-import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@plane/utils";
+import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@qlcv/utils";
 // plane web constants
 // plane web store
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { RootStore } from "@/qlcv-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";
 // store

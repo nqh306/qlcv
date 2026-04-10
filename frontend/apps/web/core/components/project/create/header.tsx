@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,19 +7,19 @@
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { CloseIcon } from "@plane/propel/icons";
+import { ETabIndices } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@qlcv/propel/emoji-icon-picker";
+import { CloseIcon } from "@qlcv/propel/icons";
 // plane types
-import type { IProject } from "@plane/types";
+import type { IProject } from "@qlcv/types";
 // plane ui
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@qlcv/utils";
 // components
 import { CoverImage } from "@/components/common/cover-image";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
 // plane web imports
-import { ProjectTemplateSelect } from "@/plane-web/components/projects/create/template-select";
+import { ProjectTemplateSelect } from "@/qlcv-web/components/projects/create/template-select";
 
 type Props = {
   handleClose: () => void;

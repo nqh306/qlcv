@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,13 +8,14 @@ import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { Menu, Settings } from "lucide-react";
 // icons
-import { Breadcrumbs } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import { Breadcrumbs } from "@qlcv/ui";
 // components
 import { BreadcrumbLink } from "../breadcrumb-link";
 // hooks
 import { useTheme } from "@/hooks/store";
 // local imports
-import { CORE_HEADER_SEGMENT_LABELS } from "./core";
+import { getCoreHeaderSegmentLabels } from "./core";
 import { EXTENDED_HEADER_SEGMENT_LABELS } from "./extended";
 
 export const HamburgerToggle = observer(function HamburgerToggle() {
@@ -29,13 +30,14 @@ export const HamburgerToggle = observer(function HamburgerToggle() {
   );
 });
 
-const HEADER_SEGMENT_LABELS = {
-  ...CORE_HEADER_SEGMENT_LABELS,
-  ...EXTENDED_HEADER_SEGMENT_LABELS,
-};
-
 export const AdminHeader = observer(function AdminHeader() {
   const pathName = usePathname();
+  const { t } = useTranslation();
+
+  const HEADER_SEGMENT_LABELS = {
+    ...getCoreHeaderSegmentLabels(t),
+    ...EXTENDED_HEADER_SEGMENT_LABELS,
+  };
 
   // Function to dynamically generate breadcrumb items based on pathname
   const generateBreadcrumbItems = (pathname: string) => {
@@ -66,7 +68,7 @@ export const AdminHeader = observer(function AdminHeader() {
                 component={
                   <BreadcrumbLink
                     href="/general/"
-                    label="Settings"
+                    label={t("admin.sidebar.general")}
                     icon={<Settings className="h-4 w-4 text-tertiary" />}
                   />
                 }

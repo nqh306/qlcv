@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { MoreHorizontal } from "lucide-react";
 // plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { Popover } from "@plane/propel/popover";
-import type { TIssue } from "@plane/types";
-import { ControlLink } from "@plane/ui";
-import { cn, generateWorkItemLink } from "@plane/utils";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import { Popover } from "@qlcv/propel/popover";
+import type { TIssue } from "@qlcv/types";
+import { ControlLink } from "@qlcv/ui";
+import { cn, generateWorkItemLink } from "@qlcv/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
@@ -23,7 +23,7 @@ import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local components
 import { WorkItemPreviewCard } from "../../preview-card";
 import type { TRenderQuickActions } from "../list/list-view-types";

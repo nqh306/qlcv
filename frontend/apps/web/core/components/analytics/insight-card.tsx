@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane package imports
 import React from "react";
-import type { IAnalyticsResponseFields } from "@plane/types";
-import { Loader } from "@plane/ui";
+import type { IAnalyticsResponseFields } from "@qlcv/types";
+import { Loader } from "@qlcv/ui";
 
 export type InsightCardProps = {
   data?: IAnalyticsResponseFields;

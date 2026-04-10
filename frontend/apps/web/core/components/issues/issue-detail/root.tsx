@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,11 +7,11 @@
 import { useMemo } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@qlcv/propel/toast";
+import type { TIssue } from "@qlcv/types";
+import { EIssuesStoreType } from "@qlcv/types";
 // assets
 import emptyIssue from "@/app/assets/empty-state/issue.svg?url";
 // components

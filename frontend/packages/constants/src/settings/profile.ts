@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import type { TProfileSettingsTabs } from "@plane/types";
+import type { TProfileSettingsTabs } from "@qlcv/types";
 
 export enum PROFILE_SETTINGS_CATEGORY {
   YOUR_PROFILE = "your profile",

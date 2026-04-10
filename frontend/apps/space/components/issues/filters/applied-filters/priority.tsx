@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { CloseIcon, PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/propel/icons";
+import { CloseIcon, PriorityIcon } from "@qlcv/propel/icons";
+import type { TIssuePriorities } from "@qlcv/propel/icons";
 
 type Props = {
   handleRemove: (val: string) => void;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,11 +7,11 @@
 import { useState } from "react";
 import { mutate } from "swr";
 // plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { APITokenService } from "@plane/services";
-import type { IApiToken } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { renderFormattedDate, csvDownload } from "@plane/utils";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import { APITokenService } from "@qlcv/services";
+import type { IApiToken } from "@qlcv/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
+import { renderFormattedDate, csvDownload } from "@qlcv/utils";
 // constants
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 // local imports

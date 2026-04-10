@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,11 +8,11 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-import type { IInsightField } from "@plane/constants";
-import { ANALYTICS_INSIGHTS_FIELDS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { IInsightField } from "@qlcv/constants";
+import { ANALYTICS_INSIGHTS_FIELDS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services

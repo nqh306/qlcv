@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import type { LucideIcon } from "lucide-react";
 import { Users, Zap } from "lucide-react";
 // plane imports
-import type { ISvgIcons } from "@plane/propel/icons";
+import type { ISvgIcons } from "@qlcv/propel/icons";
 import {
   CycleIcon,
   EstimatePropertyIcon,
@@ -17,8 +17,8 @@ import {
   PageIcon,
   StatePropertyIcon,
   ViewsIcon,
-} from "@plane/propel/icons";
-import type { TProjectSettingsTabs } from "@plane/types";
+} from "@qlcv/propel/icons";
+import type { TProjectSettingsTabs } from "@qlcv/types";
 // components
 import { SettingIcon } from "@/components/icons/attachment";
 

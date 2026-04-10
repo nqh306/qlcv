@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@qlcv/propel/button";
 
 function ErrorPage() {
   const handleRetry = () => {
@@ -20,11 +20,11 @@ function ErrorPage() {
           <p className="mx-auto text-13 text-secondary md:w-1/2">
             That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
-            <a href="mailto:support@plane.so" className="text-accent-primary">
-              support@plane.so
+            <a href="mailto:qlcv@evngenco1.vn" className="text-accent-primary">
+              qlcv@evngenco1.vn
             </a>{" "}
             or on our{" "}
-            <a href="https://forum.plane.so" target="_blank" className="text-accent-primary" rel="noopener noreferrer">
+            <a href="https://ems.evngenco1.vn/qlcv" target="_blank" className="text-accent-primary" rel="noopener noreferrer">
               Forum
             </a>
             .

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,11 +10,11 @@ import type { Control, UseFormSetValue } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { SlidersHorizontal } from "lucide-react";
 // plane package imports
-import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES } from "@plane/constants";
-import { CalendarLayoutIcon } from "@plane/propel/icons";
-import type { IAnalyticsParams } from "@plane/types";
-import { ChartYAxisMetric } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES } from "@qlcv/constants";
+import { CalendarLayoutIcon } from "@qlcv/propel/icons";
+import type { IAnalyticsParams } from "@qlcv/types";
+import { ChartYAxisMetric } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // plane web components
 import { SelectXAxis } from "./select-x-axis";
 import { SelectYAxis } from "./select-y-axis";

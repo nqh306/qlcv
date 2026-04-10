@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { Link } from "react-router";
 import { PinOff } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { ContextMenu } from "@plane/propel/context-menu";
-import { SetAsDefaultIcon } from "@plane/propel/icons";
-import { TabNavigationItem } from "@plane/propel/tab-navigation";
+import { useTranslation } from "@qlcv/i18n";
+import { ContextMenu } from "@qlcv/propel/context-menu";
+import { SetAsDefaultIcon } from "@qlcv/propel/icons";
+import { TabNavigationItem } from "@qlcv/propel/tab-navigation";
 // local imports
 import type { TNavigationItem } from "./tab-navigation-root";
 import type { TTabPreferences } from "./tab-navigation-utils";

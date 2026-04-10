@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -18,55 +18,55 @@ import {
 export const pdfStyles = StyleSheet.create({
   page: {
     padding: 40,
-    fontFamily: "Inter",
+    fontFamily: "Roboto",
     fontSize: 11,
     lineHeight: 1.6,
     color: TEXT_COLORS.primary,
   },
   title: {
     fontSize: 24,
-    fontWeight: 600,
+    fontWeight: 700,
     marginBottom: 20,
     color: TEXT_COLORS.primary,
   },
   heading1: {
     fontSize: 20,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 16,
     marginBottom: 8,
     color: TEXT_COLORS.primary,
   },
   heading2: {
     fontSize: 16,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 14,
     marginBottom: 6,
     color: TEXT_COLORS.primary,
   },
   heading3: {
     fontSize: 14,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 12,
     marginBottom: 4,
     color: TEXT_COLORS.primary,
   },
   heading4: {
     fontSize: 12,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 10,
     marginBottom: 4,
     color: TEXT_COLORS.secondary,
   },
   heading5: {
     fontSize: 11,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 8,
     marginBottom: 4,
     color: TEXT_COLORS.secondary,
   },
   heading6: {
     fontSize: 10,
-    fontWeight: 600,
+    fontWeight: 700,
     marginTop: 6,
     marginBottom: 4,
     color: TEXT_COLORS.tertiary,

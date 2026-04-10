@@ -1,5 +1,5 @@
 {
-  "extends": "@plane/typescript-config/node-library.json",
+  "extends": "@qlcv/typescript-config/node-library.json",
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]

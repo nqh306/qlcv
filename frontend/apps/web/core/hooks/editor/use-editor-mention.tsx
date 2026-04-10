@@ -1,20 +1,20 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useCallback } from "react";
 // plane editor
-import type { TMentionSection, TMentionSuggestion } from "@plane/editor";
+import type { TMentionSection, TMentionSuggestion } from "@qlcv/editor";
 // plane types
-import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@plane/types";
+import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@qlcv/types";
 // plane ui
-import { Avatar } from "@plane/ui";
+import { Avatar } from "@qlcv/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@qlcv/utils";
 // plane web hooks
-import { useAdditionalEditorMention } from "@/plane-web/hooks/use-additional-editor-mention";
+import { useAdditionalEditorMention } from "@/qlcv-web/hooks/use-additional-editor-mention";
 
 type TArgs = {
   enableAdvancedMentions?: boolean;

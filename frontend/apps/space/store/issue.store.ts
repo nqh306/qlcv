@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { action, makeObservable, runInAction } from "mobx";
 // plane imports
-import { SitesIssueService } from "@plane/services";
-import type { IssuePaginationOptions, TLoader } from "@plane/types";
+import { SitesIssueService } from "@qlcv/services";
+import type { IssuePaginationOptions, TLoader } from "@qlcv/types";
 // store
 import type { RootStore } from "@/store/root.store";
 // types

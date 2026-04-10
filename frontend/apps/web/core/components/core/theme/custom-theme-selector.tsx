@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,11 +8,11 @@ import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUserTheme } from "@plane/types";
-import { applyCustomTheme } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { Button } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IUserTheme } from "@qlcv/types";
+import { applyCustomTheme } from "@qlcv/utils";
 // components
 import { ProfileSettingsHeading } from "@/components/settings/profile/heading";
 // hooks

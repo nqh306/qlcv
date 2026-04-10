@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useMemo } from "react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { copyUrlToClipboard } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TIssueServiceType, TSubIssueOperations } from "@qlcv/types";
+import { EIssueServiceType } from "@qlcv/types";
+import { copyUrlToClipboard } from "@qlcv/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 

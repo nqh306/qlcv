@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -17,14 +17,14 @@ import {
   EUserPermissions,
   EUserPermissionsLevel,
   IS_FAVORITE_MENU_OPEN,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { Card, FavoriteStar, LinearProgressIndicator } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@plane/utils";
+} from "@qlcv/constants";
+import { useLocalStorage } from "@qlcv/hooks";
+import { WorkItemsIcon } from "@qlcv/propel/icons";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@qlcv/propel/toast";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { IModule } from "@qlcv/types";
+import { Card, FavoriteStar, LinearProgressIndicator } from "@qlcv/ui";
+import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@qlcv/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

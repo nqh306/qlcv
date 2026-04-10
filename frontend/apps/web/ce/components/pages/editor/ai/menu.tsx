@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,12 +8,12 @@ import React, { useEffect, useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { CornerDownRight, RefreshCcw, Sparkles, TriangleAlert } from "lucide-react";
 // plane editor
-import type { EditorRefApi } from "@plane/editor";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import type { EditorRefApi } from "@qlcv/editor";
+import { ChevronRightIcon } from "@qlcv/propel/icons";
 // plane ui
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@qlcv/propel/tooltip";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 import { RichTextEditor } from "@/components/editor/rich-text";
 // plane web constants
 import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/constants/ai";

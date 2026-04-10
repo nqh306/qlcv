@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,14 +8,14 @@ import type { FormEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { ETabIndices } from "@qlcv/constants";
+import type { EditorRefApi } from "@qlcv/editor";
+import { useTranslation } from "@qlcv/i18n";
+import { Button } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TIssue } from "@qlcv/types";
+import { ToggleSwitch } from "@qlcv/ui";
+import { renderFormattedPayloadDate, getTabIndex } from "@qlcv/utils";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
@@ -24,9 +24,9 @@ import { useAppRouter } from "@/hooks/use-app-router";
 import useKeypress from "@/hooks/use-keypress";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web imports
-import { DeDupeButtonRoot } from "@/plane-web/components/de-dupe/de-dupe-button";
-import { DuplicateModalRoot } from "@/plane-web/components/de-dupe/duplicate-modal";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+import { DeDupeButtonRoot } from "@/qlcv-web/components/de-dupe/de-dupe-button";
+import { DuplicateModalRoot } from "@/qlcv-web/components/de-dupe/duplicate-modal";
+import { useDebouncedDuplicateIssues } from "@/qlcv-web/hooks/use-debounced-duplicate-issues";
 // services
 import { FileService } from "@/services/file.service";
 // local imports

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,12 +7,12 @@
 import { useParams } from "next/navigation";
 import { useForm, Controller } from "react-hook-form";
 // plane imports
-import { allTimeIn30MinutesInterval12HoursFormat } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { CloseIcon } from "@plane/propel/icons";
-import { CustomSelect, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { allTimeIn30MinutesInterval12HoursFormat } from "@qlcv/constants";
+import { Button } from "@qlcv/propel/button";
+import { CloseIcon } from "@qlcv/propel/icons";
+import { CustomSelect, EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 // components
-import { getDate, cn } from "@plane/utils";
+import { getDate, cn } from "@qlcv/utils";
 import { DateDropdown } from "@/components/dropdowns/date";
 
 type TNotificationSnoozeModal = {

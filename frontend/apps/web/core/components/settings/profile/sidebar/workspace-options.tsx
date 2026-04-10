@@ -1,24 +1,38 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
+import { useEffect, useState } from "react";
 import { CirclePlus, Mails } from "lucide-react";
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@qlcv/i18n";
 // components
 import { SettingsSidebarItem } from "@/components/settings/sidebar/item";
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
+// services
+import { UserService } from "@/services/user.service";
+
+const userService = new UserService();
 
 export const ProfileSettingsSidebarWorkspaceOptions = observer(function ProfileSettingsSidebarWorkspaceOptions() {
   // store hooks
   const { workspaces } = useWorkspace();
   // translation
   const { t } = useTranslation();
+  // state
+  const [isSuperAdmin, setIsSuperAdmin] = useState(false);
+
+  useEffect(() => {
+    userService
+      .currentUserInstanceAdminStatus()
+      .then((res) => setIsSuperAdmin(res.is_super_admin ?? false))
+      .catch(() => setIsSuperAdmin(false));
+  }, []);
 
   return (
     <div className="shrink-0">
@@ -35,13 +49,15 @@ export const ProfileSettingsSidebarWorkspaceOptions = observer(function ProfileS
           />
         ))}
         <div className="mt-1.5">
-          <SettingsSidebarItem
-            as="link"
-            href="/create-workspace/"
-            icon={CirclePlus}
-            label={t("create_workspace")}
-            isActive={false}
-          />
+          {isSuperAdmin && (
+            <SettingsSidebarItem
+              as="link"
+              href="/create-workspace/"
+              icon={CirclePlus}
+              label={t("create_workspace")}
+              isActive={false}
+            />
+          )}
           <SettingsSidebarItem
             as="link"
             href="/invitations/"

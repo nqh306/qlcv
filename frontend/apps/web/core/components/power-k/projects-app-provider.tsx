@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -13,9 +13,9 @@ import { usePowerK } from "@/hooks/store/use-power-k";
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // plane web imports
-import { ProjectLevelModals } from "@/plane-web/components/command-palette/modals/project-level";
-import { WorkItemLevelModals } from "@/plane-web/components/command-palette/modals/work-item-level";
-import { WorkspaceLevelModals } from "@/plane-web/components/command-palette/modals/workspace-level";
+import { ProjectLevelModals } from "@/qlcv-web/components/command-palette/modals/project-level";
+import { WorkItemLevelModals } from "@/qlcv-web/components/command-palette/modals/work-item-level";
+import { WorkspaceLevelModals } from "@/qlcv-web/components/command-palette/modals/workspace-level";
 // local imports
 import { useProjectsAppPowerKCommands } from "./config/commands";
 import type { TPowerKCommandConfig, TPowerKContext } from "./core/types";

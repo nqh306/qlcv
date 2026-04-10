@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
+import { MAX_FILE_SIZE } from "@qlcv/constants";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";
 

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,14 +7,16 @@
 // components
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-import { cn } from "@plane/utils";
+import { SIDEBAR_WIDTH } from "@qlcv/constants";
+import { useLocalStorage } from "@qlcv/hooks";
+import { cn } from "@qlcv/utils";
 import { TopNavPowerK } from "@/components/navigation";
 import { UserMenuRoot } from "@/components/workspace/sidebar/user-menu-root";
 import { WorkspaceMenuRoot } from "@/components/workspace/sidebar/workspace-menu-root";
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@qlcv/propel/tooltip";
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
-import { InboxIcon } from "@plane/propel/icons";
+import { InboxIcon } from "@qlcv/propel/icons";
 import useSWR from "swr";
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 
@@ -26,8 +28,10 @@ export const TopNavigationRoot = observer(function TopNavigationRoot() {
   // store hooks
   const { unreadNotificationsCount, getUnreadNotificationsCount } = useWorkspaceNotifications();
   const { preferences } = useAppRailPreferences();
+  const { storedValue: storedSidebarWidth } = useLocalStorage<number>("sidebarWidth", SIDEBAR_WIDTH);
 
   const showLabel = preferences.displayMode === "icon_with_label";
+  const workspaceSwitcherWidth = storedSidebarWidth ?? SIDEBAR_WIDTH;
 
   // Fetch notification count
   useSWR(
@@ -48,7 +52,7 @@ export const TopNavigationRoot = observer(function TopNavigationRoot() {
       })}
     >
       {/* Workspace Menu */}
-      <div className="flex-1 shrink-0">
+      <div className="flex flex-1 shrink-0" style={{ maxWidth: workspaceSwitcherWidth }}>
         <WorkspaceMenuRoot variant="top-navigation" />
       </div>
       {/* Power K Search */}

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,7 +10,7 @@ import type { EditorState, Transaction } from "@tiptap/pm/state";
 // constants
 import { CORE_EDITOR_META } from "@/constants/meta";
 // plane editor imports
-import { NODE_FILE_MAP } from "@/plane-editor/constants/utility";
+import { NODE_FILE_MAP } from "@/qlcv-editor/constants/utility";
 // types
 import type { TFileHandler } from "@/types";
 // local imports

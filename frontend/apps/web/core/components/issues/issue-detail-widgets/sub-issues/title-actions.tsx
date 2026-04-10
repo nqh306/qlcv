@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -11,14 +11,14 @@ import {
   EIssueFilterType,
   ISSUE_DISPLAY_FILTERS_BY_PAGE,
   SUB_WORK_ITEM_AVAILABLE_FILTERS_FOR_WORK_ITEM_PAGE,
-} from "@plane/constants";
+} from "@qlcv/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
   IIssueFilterOptions,
   TIssueServiceType,
-} from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+} from "@qlcv/types";
+import { EIssueServiceType } from "@qlcv/types";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectState } from "@/hooks/store/use-project-state";

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,17 +10,17 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArchiveRestoreIcon, Settings, UserPlus } from "lucide-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { Button } from "@plane/propel/button";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { LinkIcon, LockIcon, NewTabIcon, TrashIcon, CheckIcon } from "@plane/propel/icons";
-import { setPromiseToast, setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProject } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { Avatar, AvatarGroup, ContextMenu, FavoriteStar } from "@plane/ui";
-import { copyUrlToClipboard, cn, getFileURL, renderFormattedDate } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
+import { useLocalStorage } from "@qlcv/hooks";
+import { Button } from "@qlcv/propel/button";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { LinkIcon, LockIcon, NewTabIcon, TrashIcon, CheckIcon } from "@qlcv/propel/icons";
+import { setPromiseToast, setToast, TOAST_TYPE } from "@qlcv/propel/toast";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { IProject } from "@qlcv/types";
+import type { TContextMenuItem } from "@qlcv/ui";
+import { Avatar, AvatarGroup, ContextMenu, FavoriteStar } from "@qlcv/ui";
+import { copyUrlToClipboard, cn, getFileURL, renderFormattedDate } from "@qlcv/utils";
 // components
 // hooks
 import { useMember } from "@/hooks/store/use-member";

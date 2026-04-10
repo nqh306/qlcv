@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,9 +7,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import type { TViewFilterProps, TViewFilters } from "@plane/types";
-import { EViewAccess } from "@plane/types";
+import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
+import type { TViewFilterProps, TViewFilters } from "@qlcv/types";
+import { EViewAccess } from "@qlcv/types";
 // components
 import { FilterCreatedDate } from "@/components/common/filters/created-at";
 import { FilterCreatedBy } from "@/components/common/filters/created-by";
@@ -18,7 +18,7 @@ import { FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web components
-import { FilterByAccess } from "@/plane-web/components/views/filters/access-filter";
+import { FilterByAccess } from "@/qlcv-web/components/views/filters/access-filter";
 
 type Props = {
   filters: TViewFilters;

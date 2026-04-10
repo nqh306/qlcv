@@ -1,58 +1,62 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { Image, BrainCog, Cog, Mail, Users } from "lucide-react";
 // plane imports
-import { LockIcon, WorkspaceIcon } from "@plane/propel/icons";
+import { LockIcon, WorkspaceIcon } from "@qlcv/propel/icons";
 // types
 import type { TSidebarMenuItem } from "./types";
 
-export type TCoreSidebarMenuKey = "general" | "email" | "workspace" | "authentication" | "ai" | "image" | "users";
+export type TCoreSidebarMenuKey = "general" | "email" | "organizations" | "authentication" | "ai" | "image" | "users";
 
-export const coreSidebarMenuLinks: Record<TCoreSidebarMenuKey, TSidebarMenuItem> = {
-  general: {
-    Icon: Cog,
-    name: "General",
-    description: "Identify your instances and get key details.",
-    href: `/general/`,
-  },
-  email: {
-    Icon: Mail,
-    name: "Email",
-    description: "Configure your SMTP controls.",
-    href: `/email/`,
-  },
-  workspace: {
-    Icon: WorkspaceIcon,
-    name: "Organizations",
-    description: "Manage all workspaces on this instance.",
-    href: `/workspace/`,
-  },
-  authentication: {
-    Icon: LockIcon,
-    name: "Authentication",
-    description: "Configure authentication modes.",
-    href: `/authentication/`,
-  },
-  ai: {
-    Icon: BrainCog,
-    name: "Artificial intelligence",
-    description: "Configure your OpenAI creds.",
-    href: `/ai/`,
-  },
-  image: {
-    Icon: Image,
-    name: "Images in Plane",
-    description: "Allow third-party image libraries.",
-    href: `/image/`,
-  },
-  users: {
-    Icon: Users,
-    name: "Users",
-    description: "Manage all users on this instance.",
-    href: `/users/`,
-  },
-};
+type TFn = (key: string) => string;
+
+export function getCoreSidebarMenuLinks(t: TFn): Record<TCoreSidebarMenuKey, TSidebarMenuItem> {
+  return {
+    general: {
+      Icon: Cog,
+      name: t("admin.sidebar.general"),
+      description: t("admin.sidebar.descriptions.general"),
+      href: `/general/`,
+    },
+    email: {
+      Icon: Mail,
+      name: t("admin.sidebar.email"),
+      description: t("admin.sidebar.descriptions.email"),
+      href: `/email/`,
+    },
+    organizations: {
+      Icon: WorkspaceIcon,
+      name: t("admin.sidebar.organizations"),
+      description: t("admin.sidebar.descriptions.organizations"),
+      href: `/organizations/`,
+    },
+    authentication: {
+      Icon: LockIcon,
+      name: t("admin.sidebar.authentication"),
+      description: t("admin.sidebar.descriptions.authentication"),
+      href: `/authentication/`,
+    },
+    ai: {
+      Icon: BrainCog,
+      name: t("admin.sidebar.ai"),
+      description: t("admin.sidebar.descriptions.ai"),
+      href: `/ai/`,
+    },
+    image: {
+      Icon: Image,
+      name: t("admin.sidebar.images"),
+      description: t("admin.sidebar.descriptions.images"),
+      href: `/image/`,
+    },
+    users: {
+      Icon: Users,
+      name: t("admin.sidebar.users"),
+      description: t("admin.sidebar.descriptions.users"),
+      href: `/users/`,
+    },
+  };
+}

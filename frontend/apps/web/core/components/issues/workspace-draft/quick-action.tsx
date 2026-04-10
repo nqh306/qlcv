@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@qlcv/i18n";
 // ui
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
+import type { TContextMenuItem } from "@qlcv/ui";
+import { ContextMenu, CustomMenu } from "@qlcv/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 
 export interface Props {
   parentRef: React.RefObject<HTMLElement>;

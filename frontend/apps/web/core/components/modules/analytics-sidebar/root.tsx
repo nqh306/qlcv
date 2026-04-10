@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,9 +10,9 @@ import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { Info, SquareUser } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, EEstimateSystem } from "@plane/constants";
+import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, EEstimateSystem } from "@qlcv/constants";
 // plane types
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@qlcv/i18n";
 import {
   PlusIcon,
   MembersPropertyIcon,
@@ -21,14 +21,14 @@ import {
   StartDatePropertyIcon,
   ChevronDownIcon,
   ChevronRightIcon,
-} from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ILinkDetails, IModule, ModuleLink } from "@plane/types";
+} from "@qlcv/propel/icons";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { ILinkDetails, IModule, ModuleLink } from "@qlcv/types";
 // plane ui
-import { Loader, CustomSelect, TextArea } from "@plane/ui";
+import { Loader, CustomSelect, TextArea } from "@qlcv/ui";
 // components
 // helpers
-import { getDate, renderFormattedPayloadDate } from "@plane/utils";
+import { getDate, renderFormattedPayloadDate } from "@qlcv/utils";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { CreateUpdateModuleLinkModal, ModuleAnalyticsProgress, ModuleLinksList } from "@/components/modules";

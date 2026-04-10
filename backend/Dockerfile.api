@@ -1,58 +1,72 @@
-FROM python:3.12.10-alpine
+# *****************************************************************************
+# STAGE 1: Build Python deps with build tools
+# *****************************************************************************
+FROM python:3.12.10-alpine AS builder
 
-# set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-ENV PIP_DISABLE_PIP_VERSION_CHECK=1 
-ENV INSTANCE_CHANGELOG_URL=https://sites.plane.so/pages/691ef037bcfe416a902e48cb55f59891/
-
-# Update system packages for security
-RUN apk update && apk upgrade
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
 
 WORKDIR /code
 
-RUN apk add --no-cache --upgrade \
-    "libpq" \
-    "libxslt" \
-    "xmlsec" \
-    "ca-certificates" \
-    "openssl"
+# Install build dependencies
+RUN apk add --no-cache \
+        gcc \
+        g++ \
+        cargo \
+        git \
+        make \
+        libffi-dev \
+        postgresql-dev \
+        libc-dev \
+        linux-headers \
+        libxslt-dev \
+        xmlsec-dev
 
+# Install pip wheels into a virtualenv (cached + isolated for COPY to runtime)
 COPY requirements.txt ./
 COPY requirements ./requirements
-RUN apk add --no-cache libffi-dev
-RUN apk add --no-cache --virtual .build-deps \
-    "bash~=5.2" \
-    "g++" \
-    "gcc" \
-    "cargo" \
-    "git" \
-    "make" \
-    "postgresql-dev" \
-    "libc-dev" \
-    "linux-headers" \
-    && \
-    pip install -r requirements.txt --compile --no-cache-dir \
-    && \
-    apk del .build-deps \
-    && \
-    rm -rf /var/cache/apk/*
 
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
-# Add in Django deps and generate Django's static files
-COPY manage.py manage.py
-COPY plane plane/
-COPY templates templates/
-COPY package.json package.json
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r requirements.txt --compile
 
-RUN apk --no-cache add "bash~=5.2"
-COPY ./bin ./bin/
+# *****************************************************************************
+# STAGE 2: Slim runtime image — only runtime libs + venv + app code
+# *****************************************************************************
+FROM python:3.12.10-alpine AS runtime
 
-RUN mkdir -p /code/plane/logs
-RUN chmod +x ./bin/*
-RUN chmod -R 777 /code
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    INSTANCE_CHANGELOG_URL=https://ems.evngenco1.vn/qlcv \
+    PATH="/opt/venv/bin:$PATH"
 
-# Expose container port and run entry point script
+WORKDIR /code
+
+# Runtime-only system libs (no build tools)
+RUN apk add --no-cache \
+        bash \
+        libpq \
+        libxslt \
+        xmlsec \
+        ca-certificates \
+        openssl
+
+# Copy pre-built virtualenv from builder
+COPY --from=builder /opt/venv /opt/venv
+
+# Copy application source
+COPY manage.py ./
+COPY package.json ./
+COPY templates ./templates
+COPY qlcv ./qlcv
+COPY bin ./bin
+
+RUN mkdir -p /code/qlcv/logs && chmod +x ./bin/*
+
 EXPOSE 8000
 
 CMD ["./bin/docker-entrypoint-api.sh"]

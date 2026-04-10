@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,8 +7,8 @@
 import { cloneDeep } from "lodash-es";
 import { action, makeObservable, observable, toJS } from "mobx";
 // plane imports
-import type { TAutoVisibilityOptions, TExpressionOptions } from "@plane/constants";
-import { DEFAULT_FILTER_EXPRESSION_OPTIONS } from "@plane/constants";
+import type { TAutoVisibilityOptions, TExpressionOptions } from "@qlcv/constants";
+import { DEFAULT_FILTER_EXPRESSION_OPTIONS } from "@qlcv/constants";
 import type {
   IFilterAdapter,
   TSupportedOperators,
@@ -19,9 +19,9 @@ import type {
   TExternalFilter,
   TLogicalOperator,
   TFilterConditionPayload,
-} from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import { addAndCondition, createConditionNode, updateNodeInExpression } from "@plane/utils";
+} from "@qlcv/types";
+import { LOGICAL_OPERATOR } from "@qlcv/types";
+import { addAndCondition, createConditionNode, updateNodeInExpression } from "@qlcv/utils";
 // local imports
 import type { IFilterInstance } from "./filter";
 

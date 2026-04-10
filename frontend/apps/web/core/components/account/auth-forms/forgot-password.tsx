@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -11,11 +11,11 @@ import { Controller, useForm } from "react-hook-form";
 // icons
 import { CircleCheck } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input } from "@plane/ui";
-import { cn, checkEmailValidity } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { Button, getButtonStyling } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import { Input } from "@qlcv/ui";
+import { cn, checkEmailValidity } from "@qlcv/utils";
 // hooks
 import useTimer from "@/hooks/use-timer";
 // services

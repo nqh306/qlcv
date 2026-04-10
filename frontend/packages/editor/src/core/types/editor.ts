@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,7 +10,7 @@ import type { Selection } from "@tiptap/pm/state";
 import type { EditorProps, EditorView } from "@tiptap/pm/view";
 import type { NodeViewProps as TNodeViewProps } from "@tiptap/react";
 // plane imports
-import type { TCustomComponentsMetaData } from "@plane/utils";
+import type { TCustomComponentsMetaData } from "@qlcv/utils";
 // extension types
 import type { TTextAlign } from "@/extensions";
 // plane editor imports
@@ -18,7 +18,7 @@ import type {
   IEditorPropsExtended,
   TExtendedEditorCommands,
   ICollaborativeDocumentEditorPropsExtended,
-} from "@/plane-editor/types/editor-extended";
+} from "@/qlcv-editor/types/editor-extended";
 // types
 import type {
   IMarking,

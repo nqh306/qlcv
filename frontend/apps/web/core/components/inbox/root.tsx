@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { PanelLeft } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { IntakeIcon } from "@plane/propel/icons";
-import { EInboxIssueCurrentTab } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { EmptyStateCompact } from "@qlcv/propel/empty-state";
+import { IntakeIcon } from "@qlcv/propel/icons";
+import { EInboxIssueCurrentTab } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // components
 import { InboxContentRoot } from "@/components/inbox/content";
 import { InboxSidebar } from "@/components/inbox/sidebar";

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,16 +8,16 @@ import { concat, orderBy, set, uniq, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // plane package imports
-import type { E_SORT_ORDER } from "@plane/constants";
-import { EActivityFilterType } from "@plane/constants";
+import type { E_SORT_ORDER } from "@qlcv/constants";
+import { EActivityFilterType } from "@qlcv/constants";
 import type {
   TIssueActivityComment,
   TIssueActivity,
   TIssueActivityMap,
   TIssueActivityIdMap,
   TIssueServiceType,
-} from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+} from "@qlcv/types";
+import { EIssueServiceType } from "@qlcv/types";
 // plane web constants
 // services
 import { IssueActivityService } from "@/services/issue";

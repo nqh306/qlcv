@@ -1,6 +1,6 @@
 import { set } from "lodash-es";
 import { action, observable, runInAction, makeObservable, computed } from "mobx";
-import { InstanceUserService } from "@plane/services";
+import { InstanceUserService } from "@qlcv/services";
 import type {
   IInstanceManagedUser,
   ICreateUserPayload,
@@ -9,7 +9,7 @@ import type {
   IBulkImportResult,
   TLoader,
   TPaginationInfo,
-} from "@plane/types";
+} from "@qlcv/types";
 import type { RootStore } from "@/store/root.store";
 
 export interface IUserManagementStore {

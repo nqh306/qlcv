@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import { observer } from "mobx-react";
 import { Upload, FileSpreadsheet, Download } from "lucide-react";
-import { Button } from "@plane/propel/button";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IBulkImportResult } from "@plane/types";
+import { Button } from "@qlcv/propel/button";
+import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
+import type { IBulkImportResult } from "@qlcv/types";
 import { PageWrapper } from "@/components/common/page-wrapper";
 import { useUserManagement } from "@/hooks/store";
 import type { Route } from "./+types/page";
@@ -74,8 +74,8 @@ const ImportUsersPage = observer(function ImportUsersPage(_props: Route.Componen
         <div className="rounded-lg border border-subtle bg-surface-2 p-4">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-primary">Download template</p>
-              <p className="text-xs text-secondary">
+              <p className="text-14 font-medium text-primary">Download template</p>
+              <p className="text-12 text-secondary">
                 CSV with columns: username, email, first_name, last_name, role (5/15/20), workspace_slug
               </p>
             </div>
@@ -102,16 +102,16 @@ const ImportUsersPage = observer(function ImportUsersPage(_props: Route.Componen
             <>
               <FileSpreadsheet className="h-10 w-10 text-primary" />
               <div className="text-center">
-                <p className="text-sm font-medium text-primary">{file.name}</p>
-                <p className="text-xs text-secondary">{(file.size / 1024).toFixed(1)} KB</p>
+                <p className="text-14 font-medium text-primary">{file.name}</p>
+                <p className="text-12 text-secondary">{(file.size / 1024).toFixed(1)} KB</p>
               </div>
             </>
           ) : (
             <>
               <Upload className="h-10 w-10 text-tertiary" />
               <div className="text-center">
-                <p className="text-sm font-medium text-primary">Click to upload CSV or XLSX</p>
-                <p className="text-xs text-secondary">or drag and drop</p>
+                <p className="text-14 font-medium text-primary">Click to upload CSV or XLSX</p>
+                <p className="text-12 text-secondary">or drag and drop</p>
               </div>
             </>
           )}
@@ -127,16 +127,16 @@ const ImportUsersPage = observer(function ImportUsersPage(_props: Route.Componen
         {result && (
           <div className="space-y-3">
             <div className="rounded-lg border border-subtle p-4">
-              <p className="text-sm font-medium text-primary">
+              <p className="text-14 font-medium text-primary">
                 Import Result: {result.created} created, {result.errors.length} errors
               </p>
             </div>
 
             {result.errors.length > 0 && (
               <div className="overflow-hidden rounded-lg border border-red-200">
-                <table className="w-full text-sm">
+                <table className="w-full text-14">
                   <thead className="bg-red-50 dark:bg-red-900/20">
-                    <tr className="text-left text-xs font-medium text-red-700 dark:text-red-400">
+                    <tr className="text-left text-12 font-medium text-red-700 dark:text-red-400">
                       <th className="px-4 py-2">Row</th>
                       <th className="px-4 py-2">Email</th>
                       <th className="px-4 py-2">Error</th>

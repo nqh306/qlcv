@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -124,12 +124,12 @@ export const AllIcons: Story = {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-lg text-custom-text-100 font-semibold">Misc Icons</h3>
+        <h3 className="text-18 text-custom-text-100 font-semibold">Misc Icons</h3>
         <div className="grid w-full grid-cols-12 gap-6">
           {MiscIconsMap.map((item) => (
             <div key={item.title} className="col-span-2 flex flex-col items-center justify-center gap-3 p-4">
               <div className="text-custom-text-200">{item.icon}</div>
-              <p className="text-xs text-custom-text-300 text-center">{item.title}</p>
+              <p className="text-12 text-custom-text-300 text-center">{item.title}</p>
             </div>
           ))}
         </div>

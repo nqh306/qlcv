@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { autorun } from "mobx";
 // Store
-import type { RootStore } from "@/plane-web/store/root.store";
-import { BaseTimeLineStore } from "@/plane-web/store/timeline/base-timeline.store";
-import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";
+import type { RootStore } from "@/qlcv-web/store/root.store";
+import { BaseTimeLineStore } from "@/qlcv-web/store/timeline/base-timeline.store";
+import type { IBaseTimelineStore } from "@/qlcv-web/store/timeline/base-timeline.store";
 
 export interface IModulesTimeLineStore extends IBaseTimelineStore {
   isDependencyEnabled: boolean;

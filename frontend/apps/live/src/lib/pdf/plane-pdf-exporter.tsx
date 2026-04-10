@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -14,36 +14,36 @@ import type { PDFExportOptions, TipTapDocument } from "./types";
 // Use createRequire for ESM compatibility to resolve font file paths
 const require = createRequire(import.meta.url);
 
-// Resolve local font file paths from @fontsource/inter package
-const interFontDir = path.dirname(require.resolve("@fontsource/inter/package.json"));
+// Resolve local font file paths from @fontsource/roboto package (Vietnamese subset)
+const robotoFontDir = path.dirname(require.resolve("@fontsource/roboto/package.json"));
 
 Font.register({
-  family: "Inter",
+  family: "Roboto",
   fonts: [
     {
-      src: path.join(interFontDir, "files/inter-latin-400-normal.woff"),
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-400-normal.woff"),
       fontWeight: 400,
     },
     {
-      src: path.join(interFontDir, "files/inter-latin-400-italic.woff"),
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-400-italic.woff"),
       fontWeight: 400,
       fontStyle: "italic",
     },
     {
-      src: path.join(interFontDir, "files/inter-latin-600-normal.woff"),
-      fontWeight: 600,
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-500-normal.woff"),
+      fontWeight: 500,
     },
     {
-      src: path.join(interFontDir, "files/inter-latin-600-italic.woff"),
-      fontWeight: 600,
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-500-italic.woff"),
+      fontWeight: 500,
       fontStyle: "italic",
     },
     {
-      src: path.join(interFontDir, "files/inter-latin-700-normal.woff"),
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-700-normal.woff"),
       fontWeight: 700,
     },
     {
-      src: path.join(interFontDir, "files/inter-latin-700-italic.woff"),
+      src: path.join(robotoFontDir, "files/roboto-vietnamese-700-italic.woff"),
       fontWeight: 700,
       fontStyle: "italic",
     },

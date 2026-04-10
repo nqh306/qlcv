@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,17 +8,17 @@ import React from "react";
 import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { ETabIndices } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
+import { ETabIndices } from "@qlcv/constants";
+import { CloseIcon } from "@qlcv/propel/icons";
 // plane imports
 // types
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
+import type { ISearchIssueResponse, TIssue } from "@qlcv/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@qlcv/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentTagProps = {
   control: Control<TIssue>;

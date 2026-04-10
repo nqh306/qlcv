@@ -1,27 +1,29 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleCheck } from "lucide-react";
 // plane imports
-import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn, validateWorkspaceName, validateSlug } from "@plane/utils";
+import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { Button } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IUser, IWorkspace } from "@qlcv/types";
+import { Spinner } from "@qlcv/ui";
+import { cn, validateWorkspaceName, validateSlug } from "@qlcv/utils";
 // hooks
-import { useInstance } from "@/hooks/store/use-instance";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserProfile, useUserSettings } from "@/hooks/store/user";
 // services
+import { UserService } from "@/services/user.service";
 import { WorkspaceService } from "@/services/workspace.service";
+
+const userService = new UserService();
 // local components
 import { CommonOnboardingHeader } from "../common";
 
@@ -43,15 +45,20 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
   // states
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
+  const [isSuperAdmin, setIsSuperAdmin] = useState<boolean | null>(null);
   // plane hooks
   const { t } = useTranslation();
   // store hooks
-  const { config } = useInstance();
   const { updateUserProfile } = useUserProfile();
   const { fetchCurrentUserSettings } = useUserSettings();
   const { createWorkspace, fetchWorkspaces } = useWorkspace();
 
-  const isWorkspaceCreationDisabled = config?.is_workspace_creation_disabled ?? false;
+  useEffect(() => {
+    userService
+      .currentUserInstanceAdminStatus()
+      .then((res) => setIsSuperAdmin(res.is_super_admin ?? false))
+      .catch(() => setIsSuperAdmin(false));
+  }, []);
 
   // form info
   const {
@@ -114,7 +121,7 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
 
   const isButtonDisabled = !isValid || invalidSlug || isSubmitting;
 
-  if (isWorkspaceCreationDisabled) {
+  if (!isSuperAdmin) {
     return (
       <div className="flex flex-col gap-10">
         <span className="text-center text-14 text-tertiary">

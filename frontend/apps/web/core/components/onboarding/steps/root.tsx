@@ -1,18 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useEffect, useRef } from "react";
 // plane imports
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+import type { IWorkspaceMemberInvitation } from "@qlcv/types";
+import { EOnboardingSteps } from "@qlcv/types";
 // local components
 import { ProfileSetupStep } from "./profile";
-import { RoleSetupStep } from "./role";
 import { InviteTeamStep } from "./team";
-import { UseCaseSetupStep } from "./usecase";
 import { WorkspaceSetupStep } from "./workspace";
 
 type Props = {
@@ -25,10 +23,6 @@ function OnboardingStepContent({ currentStep, invitations, handleStepChange }: P
   switch (currentStep) {
     case EOnboardingSteps.PROFILE_SETUP:
       return <ProfileSetupStep handleStepChange={handleStepChange} />;
-    case EOnboardingSteps.ROLE_SETUP:
-      return <RoleSetupStep handleStepChange={handleStepChange} />;
-    case EOnboardingSteps.USE_CASE_SETUP:
-      return <UseCaseSetupStep handleStepChange={handleStepChange} />;
     case EOnboardingSteps.WORKSPACE_CREATE_OR_JOIN:
       return <WorkspaceSetupStep invitations={invitations ?? []} handleStepChange={handleStepChange} />;
     case EOnboardingSteps.INVITE_MEMBERS:

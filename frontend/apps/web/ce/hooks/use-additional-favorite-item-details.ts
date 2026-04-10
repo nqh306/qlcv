@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import type { IFavorite } from "@plane/types";
+import type { IFavorite } from "@qlcv/types";
 // components
 import { getFavoriteItemIcon } from "@/components/workspace/sidebar/favorites/favorite-items/common";
 

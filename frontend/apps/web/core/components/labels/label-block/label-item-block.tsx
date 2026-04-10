@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,16 +8,16 @@ import type { MutableRefObject } from "react";
 import { useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 // plane helpers
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { CloseIcon } from "@plane/propel/icons";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@qlcv/constants";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import type { ISvgIcons } from "@qlcv/propel/icons";
+import { CloseIcon } from "@qlcv/propel/icons";
 // types
-import type { IIssueLabel } from "@plane/types";
+import type { IIssueLabel } from "@qlcv/types";
 // ui
-import { CustomMenu, DragHandle } from "@plane/ui";
+import { CustomMenu, DragHandle } from "@qlcv/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 // components
 import { LabelName } from "./label-name";
 

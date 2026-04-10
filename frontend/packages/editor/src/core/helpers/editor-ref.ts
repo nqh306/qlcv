@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,7 +9,7 @@ import type { Editor } from "@tiptap/core";
 import { DOMSerializer } from "@tiptap/pm/model";
 import * as Y from "yjs";
 // plane imports
-import { convertHTMLToMarkdown } from "@plane/utils";
+import { convertHTMLToMarkdown } from "@qlcv/utils";
 // components
 import { getEditorMenuItems } from "@/components/menus";
 // constants

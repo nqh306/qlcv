@@ -15,7 +15,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 ARG TURBO_VERSION=2.9.4
-RUN corepack enable pnpm && pnpm add -g turbo@${TURBO_VERSION}
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store corepack enable pnpm && pnpm add -g turbo@${TURBO_VERSION}
 COPY . .
 
 RUN turbo prune --scope=web --docker
@@ -83,6 +83,6 @@ COPY --from=installer /app/apps/web/build/client /usr/share/nginx/html
 EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:3000/ >/dev/null || exit 1
+  CMD wget -qO- http://127.0.0.1:3000/ >/dev/null || exit 1
 
 CMD ["nginx", "-g", "daemon off;"]

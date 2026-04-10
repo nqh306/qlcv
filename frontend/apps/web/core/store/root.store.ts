@@ -1,25 +1,25 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { enableStaticRendering } from "mobx-react";
 // plane imports
-import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@plane/i18n";
-import type { IWorkItemFilterStore } from "@plane/shared-state";
-import { WorkItemFilterStore } from "@plane/shared-state";
+import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@qlcv/i18n";
+import type { IWorkItemFilterStore } from "@qlcv/shared-state";
+import { WorkItemFilterStore } from "@qlcv/shared-state";
 // plane web store
-import type { IAnalyticsStore } from "@/plane-web/store/analytics.store";
-import { AnalyticsStore } from "@/plane-web/store/analytics.store";
-import type { ICommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { CommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { PowerKStore } from "@/plane-web/store/power-k.store";
-import type { IPowerKStore } from "@/plane-web/store/power-k.store";
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { IStateStore } from "@/plane-web/store/state.store";
-import { StateStore } from "@/plane-web/store/state.store";
-import { WorkspaceRootStore } from "@/plane-web/store/workspace";
+import type { IAnalyticsStore } from "@/qlcv-web/store/analytics.store";
+import { AnalyticsStore } from "@/qlcv-web/store/analytics.store";
+import type { ICommandPaletteStore } from "@/qlcv-web/store/command-palette.store";
+import { CommandPaletteStore } from "@/qlcv-web/store/command-palette.store";
+import { PowerKStore } from "@/qlcv-web/store/power-k.store";
+import type { IPowerKStore } from "@/qlcv-web/store/power-k.store";
+import type { RootStore } from "@/qlcv-web/store/root.store";
+import type { IStateStore } from "@/qlcv-web/store/state.store";
+import { StateStore } from "@/qlcv-web/store/state.store";
+import { WorkspaceRootStore } from "@/qlcv-web/store/workspace";
 // stores
 import type { ICycleStore } from "./cycle.store";
 import { CycleStore } from "./cycle.store";

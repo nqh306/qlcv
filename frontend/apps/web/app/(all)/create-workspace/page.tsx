@@ -1,34 +1,37 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
+import { useTranslation } from "@qlcv/i18n";
+import { Button, getButtonStyling } from "@qlcv/propel/button";
+import { QlcvLogo } from "@qlcv/propel/icons";
+import type { IWorkspace } from "@qlcv/types";
 // assets
 import WorkspaceCreationDisabled from "@/app/assets/workspace/workspace-creation-disabled.png?url";
 // components
+import { LogoSpinner } from "@/components/common/logo-spinner";
 import { CreateWorkspaceForm } from "@/components/workspace/create-workspace-form";
 // hooks
 import { useUser, useUserProfile } from "@/hooks/store/user";
-import { useInstance } from "@/hooks/store/use-instance";
 import { useAppRouter } from "@/hooks/use-app-router";
+// services
+import { UserService } from "@/services/user.service";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
+
+const userService = new UserService();
 
 const CreateWorkspacePage = observer(function CreateWorkspacePage() {
   const { t } = useTranslation();
   // router
   const router = useAppRouter();
   // store hooks
-  const { config } = useInstance();
   const { data: currentUser } = useUser();
   const { updateUserProfile } = useUserProfile();
   // states
@@ -37,8 +40,14 @@ const CreateWorkspacePage = observer(function CreateWorkspacePage() {
     slug: "",
     organization_size: "",
   });
-  // derived values
-  const isWorkspaceCreationDisabled = config?.is_workspace_creation_disabled ?? false;
+  const [isSuperAdmin, setIsSuperAdmin] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    userService
+      .currentUserInstanceAdminStatus()
+      .then((res) => setIsSuperAdmin(res.is_super_admin ?? false))
+      .catch(() => setIsSuperAdmin(false));
+  }, []);
 
   // methods
   const getMailtoHref = () => {
@@ -65,14 +74,18 @@ const CreateWorkspacePage = observer(function CreateWorkspacePage() {
             className="absolute top-1/2 left-5 grid -translate-y-1/2 place-items-center px-3 sm:top-12 sm:left-1/2 sm:-translate-x-[15px] sm:translate-y-0 sm:px-0 sm:py-5 md:left-1/3"
             href="/"
           >
-            <PlaneLogo className="h-9 w-auto text-primary" />
+            <QlcvLogo className="h-9 w-auto text-primary" />
           </Link>
           <div className="absolute top-1/4 right-4 -translate-y-1/2 text-13 text-primary sm:fixed sm:top-12 sm:right-16 sm:translate-y-0 sm:py-5">
             {currentUser?.email}
           </div>
         </div>
         <div className="relative flex h-full justify-center px-8 pb-8 sm:w-10/12 sm:items-center sm:justify-start sm:p-0 sm:pr-[8.33%] md:w-9/12 lg:w-4/5">
-          {isWorkspaceCreationDisabled ? (
+          {isSuperAdmin === null ? (
+            <div className="grid h-full w-full place-items-center">
+              <LogoSpinner />
+            </div>
+          ) : !isSuperAdmin ? (
             <div className="flex h-full w-4/5 flex-col items-center justify-center gap-1 text-16 font-medium">
               <img
                 src={WorkspaceCreationDisabled}

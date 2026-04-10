@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EFileAssetType, EIssueServiceType } from "@plane/types";
-import { getTextContent } from "@plane/utils";
+import type { EditorRefApi } from "@qlcv/editor";
+import type { TNameDescriptionLoader } from "@qlcv/types";
+import { EFileAssetType, EIssueServiceType } from "@qlcv/types";
+import { getTextContent } from "@qlcv/utils";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -22,9 +22,9 @@ import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 import useSize from "@/hooks/use-window-size";
 // plane web components
-import { DeDupeIssuePopoverRoot } from "@/plane-web/components/de-dupe/duplicate-popover";
-import { IssueTypeSwitcher } from "@/plane-web/components/issues/issue-details/issue-type-switcher";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+import { DeDupeIssuePopoverRoot } from "@/qlcv-web/components/de-dupe/duplicate-popover";
+import { IssueTypeSwitcher } from "@/qlcv-web/components/issues/issue-details/issue-type-switcher";
+import { useDebouncedDuplicateIssues } from "@/qlcv-web/hooks/use-debounced-duplicate-issues";
 // services
 import { WorkItemVersionService } from "@/services/issue";
 // local imports

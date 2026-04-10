@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,11 +8,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, PenTool, Rocket, Monitor, RefreshCw } from "lucide-react";
 // plane imports
-import { Button } from "@plane/propel/button";
-import { CheckIcon, ViewsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+import { Button } from "@qlcv/propel/button";
+import { CheckIcon, ViewsIcon } from "@qlcv/propel/icons";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TUserProfile } from "@qlcv/types";
+import { EOnboardingSteps } from "@qlcv/types";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local components

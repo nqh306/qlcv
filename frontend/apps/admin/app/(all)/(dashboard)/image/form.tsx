@@ -1,13 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useForm } from "react-hook-form";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceImageConfigurationKeys } from "@plane/types";
+import { useTranslation } from "@qlcv/i18n";
+import { Button } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceImageConfigurationKeys } from "@qlcv/types";
 // components
 import { ControllerInput } from "@/components/common/controller-input";
 // hooks
@@ -23,6 +24,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
   const { config } = props;
   // store hooks
   const { updateInstanceConfigurations } = useInstance();
+  const { t } = useTranslation();
   // form data
   const {
     handleSubmit,
@@ -41,8 +43,8 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
       .then(() =>
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success",
-          message: "Image Configuration Settings updated successfully",
+          title: t("admin.common.success"),
+          message: t("admin.page.users.toast.updated_success"),
         })
       )
       .catch((err) => console.error(err));
@@ -55,17 +57,17 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
           control={control}
           type="password"
           name="UNSPLASH_ACCESS_KEY"
-          label="Access key from your Unsplash account"
+          label={t("admin.page.images.unsplash_access_key")}
           description={
             <>
-              You will find your access key in your Unsplash developer console.&nbsp;
+              {t("admin.page.images.unsplash_help")}&nbsp;
               <a
                 href="https://unsplash.com/documentation#creating-a-developer-account"
                 target="_blank"
                 className="text-accent-primary hover:underline"
                 rel="noreferrer"
               >
-                Learn more.
+                {t("admin.page.images.learn_more")}
               </a>
             </>
           }
@@ -77,7 +79,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
 
       <div>
         <Button variant="primary" size="lg" onClick={handleSubmit(onSubmit)} loading={isSubmitting}>
-          {isSubmitting ? "Saving" : "Save changes"}
+          {isSubmitting ? t("admin.common.saving") : t("admin.common.save_changes")}
         </Button>
       </div>
     </div>

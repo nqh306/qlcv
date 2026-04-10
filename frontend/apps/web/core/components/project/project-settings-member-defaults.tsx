@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,11 +10,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import useSWR from "swr";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProject, IUserLite, IWorkspace } from "@plane/types";
-import { Loader, ToggleSwitch } from "@plane/ui";
+import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IProject, IUserLite, IWorkspace } from "@qlcv/types";
+import { Loader, ToggleSwitch } from "@qlcv/ui";
 // constants
 import { PROJECT_DETAILS } from "@/constants/fetch-keys";
 // hooks

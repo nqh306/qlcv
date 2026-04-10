@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.7
 FROM node:22-alpine AS base
 
 WORKDIR /app
@@ -10,24 +11,24 @@ ENV CI=1
 RUN corepack enable pnpm
 
 # =========================================================================== #
-
+# STAGE 1: Prune workspace
+# =========================================================================== #
 FROM base AS builder
 
-RUN pnpm add -g turbo@2.9.4
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store pnpm add -g turbo@2.9.4
 
 COPY . .
 
-# Create a pruned workspace for just the space app
 RUN turbo prune --scope=space --docker
 
 # =========================================================================== #
-
+# STAGE 2: Install (with dev deps) and build
+# =========================================================================== #
 FROM base AS installer
 
-# Build in production mode; we still install dev deps explicitly below
 ENV NODE_ENV=production
 
-# Public envs required at build time (pick up via process.env)
+# Public envs at build time
 ARG VITE_API_BASE_URL=""
 ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 ARG VITE_API_BASE_PATH="/api"
@@ -53,41 +54,75 @@ ENV VITE_WEB_BASE_URL=$VITE_WEB_BASE_URL
 ARG VITE_WEB_BASE_PATH=""
 ENV VITE_WEB_BASE_PATH=$VITE_WEB_BASE_PATH
 
-ARG VITE_WEBSITE_URL="https://plane.so"
+ARG VITE_WEBSITE_URL="https://ems.evngenco1.vn/qlcv"
 ENV VITE_WEBSITE_URL=$VITE_WEBSITE_URL
 
-ARG VITE_SUPPORT_EMAIL="support@plane.so"
+ARG VITE_SUPPORT_EMAIL="qlcv@evngenco1.vn"
 ENV VITE_SUPPORT_EMAIL=$VITE_SUPPORT_EMAIL
 
 COPY .gitignore .gitignore
 COPY --from=builder /app/out/json/ .
 COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
-
-# Copy full directory structure before fetch to ensure all package.json files are available
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 
-# Fetch dependencies to cache store, then install offline with dev deps
+# Fetch + install with dev deps to allow build
 RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store pnpm fetch --store-dir=/pnpm/store
 RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store CI=true pnpm install --offline --frozen-lockfile --store-dir=/pnpm/store --prod=false
 
-# Build only the space package
 RUN pnpm turbo run build --filter=space
 
 # =========================================================================== #
+# STAGE 3: Pruner — fresh prod-only install (no dev deps)
+# =========================================================================== #
+FROM base AS pruner
 
+COPY --from=builder /app/out/json/ .
+COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
+COPY --from=builder /app/out/full/ .
+
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store pnpm fetch --prod --store-dir=/pnpm/store
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store CI=true pnpm install --offline --frozen-lockfile --store-dir=/pnpm/store --prod --ignore-scripts
+
+# Manual node_modules cleanup — strip docs, tests, examples, source maps, type defs
+RUN find node_modules \( \
+        -name "*.md" -o -name "*.markdown" -o -name "*.mkd" \
+        -o -name "*.ts" -o -name "*.flow" \
+        -o -name "*.map" \
+        -o -name "LICENSE*" -o -name "License*" -o -name "license*" \
+        -o -name "AUTHORS*" -o -name "CHANGELOG*" -o -name "CHANGES*" \
+        -o -name "*.test.js" -o -name "*.spec.js" \
+        -o -name ".eslintrc*" -o -name ".stylelintrc*" -o -name ".prettierrc*" \
+        -o -name ".gitattributes" -o -name ".editorconfig" -o -name ".npmignore" \
+        -o -name ".travis.yml" -o -name ".gitlab-ci.yml" -o -name "appveyor.yml" \
+    \) -type f -delete 2>/dev/null \
+ && find node_modules -type d \( \
+        -name "test" -o -name "tests" -o -name "__tests__" -o -name "spec" \
+        -o -name "doc" -o -name "docs" -o -name "documentation" \
+        -o -name "example" -o -name "examples" -o -name "demo" -o -name "demos" \
+        -o -name "coverage" -o -name ".nyc_output" \
+        -o -name ".github" -o -name ".circleci" \
+        -o -name "powered-test" -o -name "website" \
+    \) -prune -exec rm -rf {} + 2>/dev/null || true
+
+# =========================================================================== #
+# STAGE 4: Slim runtime
+# =========================================================================== #
 FROM base AS runner
 
+# Copy prod-only node_modules from pruner
+COPY --from=pruner /app/node_modules ./node_modules
+COPY --from=pruner /app/apps/space/node_modules ./apps/space/node_modules
+
+# Copy build artifacts from installer
 COPY --from=installer /app/apps/space/build ./apps/space/build
-COPY --from=installer /app/apps/space/node_modules ./apps/space/node_modules
-COPY --from=installer /app/node_modules ./node_modules
+COPY --from=installer /app/apps/space/package.json ./apps/space/package.json
 
 WORKDIR /app/apps/space
 
 EXPOSE 3000
 
-RUN apk add --no-cache curl
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:3000/spaces/ >/dev/null || exit 1
+  CMD wget -qO- http://127.0.0.1:3000/spaces/ >/dev/null || exit 1
 
 CMD ["npx", "react-router-serve", "./build/server/index.js"]

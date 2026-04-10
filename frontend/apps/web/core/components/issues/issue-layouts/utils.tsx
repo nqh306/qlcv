@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,10 +9,10 @@ import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tre
 import { clone, isNil, pull, uniq, concat } from "lodash-es";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
 // plane types
-import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@plane/constants";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@plane/propel/icons";
+import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@qlcv/constants";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import type { ISvgIcons } from "@qlcv/propel/icons";
+import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@qlcv/propel/icons";
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -26,11 +26,11 @@ import type {
   TGroupedIssues,
   IIssueDisplayFilterOptions,
   TGetColumns,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+} from "@qlcv/types";
+import { EIssuesStoreType } from "@qlcv/types";
 // plane ui
-import { Avatar } from "@plane/ui";
-import { renderFormattedDate, getFileURL } from "@plane/utils";
+import { Avatar } from "@qlcv/ui";
+import { renderFormattedDate, getFileURL } from "@qlcv/utils";
 // helpers
 // store
 import { store } from "@/lib/store-context";
@@ -39,7 +39,7 @@ import {
   getScopeMemberIds,
   getTeamProjectColumns,
   SpreadSheetPropertyIconMap,
-} from "@/plane-web/components/issues/issue-layouts/utils";
+} from "@/qlcv-web/components/issues/issue-layouts/utils";
 // store
 import { ISSUE_FILTER_DEFAULT_DATA } from "@/store/issue/helpers/base-issues.store";
 import { DEFAULT_DISPLAY_PROPERTIES } from "@/store/issue/issue-details/sub_issues_filter.store";

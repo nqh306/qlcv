@@ -1,21 +1,26 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-export const CORE_HEADER_SEGMENT_LABELS: Record<string, string> = {
-  general: "General",
-  ai: "Artificial Intelligence",
-  email: "Email",
-  authentication: "Authentication",
-  image: "Image",
-  google: "Google",
-  github: "GitHub",
-  gitlab: "GitLab",
-  gitea: "Gitea",
-  workspace: "Organization",
-  users: "Users",
-  create: "Create",
-  import: "Import",
-};
+type TFn = (key: string) => string;
+
+export function getCoreHeaderSegmentLabels(t: TFn): Record<string, string> {
+  return {
+    general: t("admin.sidebar.general"),
+    ai: t("admin.sidebar.ai"),
+    email: t("admin.sidebar.email"),
+    authentication: t("admin.sidebar.authentication"),
+    image: t("admin.sidebar.images"),
+    google: "Google",
+    github: "GitHub",
+    gitlab: "GitLab",
+    gitea: "Gitea",
+    workspace: t("admin.sidebar.organizations"),
+    organizations: t("admin.sidebar.organizations"),
+    users: t("admin.sidebar.users"),
+    create: t("admin.common.create"),
+    import: t("admin.page.users.actions.import"),
+  };
+}

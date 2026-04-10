@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,16 +9,16 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { AlertCircle } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { EEstimateSystem } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronUpIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { TModulePlotType } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomSelect, Spinner } from "@plane/ui";
+import { EEstimateSystem } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { ChevronUpIcon, ChevronDownIcon } from "@qlcv/propel/icons";
+import type { TModulePlotType } from "@qlcv/types";
+import { EIssuesStoreType } from "@qlcv/types";
+import { CustomSelect, Spinner } from "@qlcv/ui";
 // components
 // constants
 // helpers
-import { getDate } from "@plane/utils";
+import { getDate } from "@qlcv/utils";
 import ProgressChart from "@/components/core/sidebar/progress-chart";
 import { ModuleProgressStats } from "@/components/modules";
 // hooks

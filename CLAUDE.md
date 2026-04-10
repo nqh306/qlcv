@@ -10,7 +10,7 @@ QLCV EVNGENCO1 — a customized deployment of [Plane](https://github.com/makepla
 
 **Monorepo** with two main parts:
 
-- **`/backend`** — Django 4.2 + DRF REST API (Python). Runs as Gunicorn/Uvicorn ASGI. Celery workers for async tasks. PostgreSQL, Redis (Valkey), RabbitMQ, MinIO (S3).
+- **`/backend` — Django 4.2 + DRF REST API (Python). Runs as Gunicorn/Uvicorn ASGI. Celery workers for async tasks. PostgreSQL, Redis (Valkey), RabbitMQ, MinIO (S3).
 - **`/frontend`** — pnpm workspace + Turborepo. React 18 + React Router 7 + Vite. MobX for state management.
 
 ### Frontend Structure
@@ -26,17 +26,17 @@ QLCV EVNGENCO1 — a customized deployment of [Plane](https://github.com/makepla
 ### GENCO1 Customization Layer
 
 `backend/Dockerfile.custom` builds on `makeplane/plane-backend:stable` and overlays:
-- `plane/license/` — Custom licensing (models, API, urls, utils, migrations)
-- `plane/authentication/views/` — Patched email/check views for app and space
-- `plane/db/models/project.py` — Modified project model
-- `plane/db/migrations/` — Custom migrations
-- `plane/app/views/workspace/base.py` — Patched workspace view
+- `qlcv/license/` — Custom licensing (models, API, urls, utils, migrations)
+- `qlcv/authentication/views/` — Patched email/check views for app and space
+- `qlcv/db/models/project.py` — Modified project model
+- `qlcv/db/migrations/` — Custom migrations
+- `qlcv/app/views/workspace/base.py` — Patched workspace view
 
 When modifying backend code, check whether the file is one of these overlaid files. Changes to non-overlaid files won't take effect in the Docker build.
 
 ### Docker Services
 
-Full stack via `docker-compose.yml`: web, admin, space, live, api, worker, beat-worker, migrator, plane-db (PostgreSQL 15), plane-redis (Valkey 7), plane-mq (RabbitMQ 3.13), plane-minio, proxy. Access at port 8080 (HTTP) / 8443 (HTTPS).
+Full stack via `docker-compose.yml`: web, admin, space, live, api, worker, beat-worker, migrator, qlcv-db (PostgreSQL 15), qlcv-redis (Valkey 7), qlcv-mq (RabbitMQ 3.13), qlcv-minio, proxy. Access at port 8080 (HTTP) / 8443 (HTTPS).
 
 ## Common Commands
 
@@ -87,8 +87,8 @@ python manage.py test
 - Tránh tích lũy migration chain phức tạp
 
 Khi thay đổi model:
-1. Sửa model code (ví dụ `plane/db/models/project.py`)
-2. Tìm migration gốc chứa model đó (ví dụ `plane/db/migrations/0001_initial.py`)
+1. Sửa model code (ví dụ `qlcv/db/models/project.py`)
+2. Tìm migration gốc chứa model đó (ví dụ `qlcv/db/migrations/0001_initial.py`)
 3. Sửa trực tiếp trong migration gốc (thay đổi field definition, thêm CreateModel, v.v.)
 4. **KHÔNG** chạy `makemigrations` để tạo migration mới
 

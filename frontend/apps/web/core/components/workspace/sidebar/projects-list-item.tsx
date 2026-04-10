@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -17,15 +17,15 @@ import scrollIntoView from "smooth-scroll-into-view-if-needed";
 import { Settings, Share2, LogOut, MoreHorizontal } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { LinkIcon, ArchiveIcon, ChevronRightIcon } from "@plane/propel/icons";
-import { IconButton } from "@plane/propel/icon-button";
-import { Tooltip } from "@plane/propel/tooltip";
-import { CustomMenu, DropIndicator, DragHandle, ControlLink } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@qlcv/constants";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import { useTranslation } from "@qlcv/i18n";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { LinkIcon, ArchiveIcon, ChevronRightIcon } from "@qlcv/propel/icons";
+import { IconButton } from "@qlcv/propel/icon-button";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import { CustomMenu, DropIndicator, DragHandle, ControlLink } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 // components
 import { DEFAULT_TAB_KEY, getTabUrl } from "@/components/navigation/tab-navigation-utils";
 import { useTabPreferences } from "@/components/navigation/use-tab-preferences";
@@ -39,8 +39,8 @@ import { useUserPermissions } from "@/hooks/store/user";
 import { useProjectNavigationPreferences } from "@/hooks/use-navigation-preferences";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web imports
-import { useNavigationItems } from "@/plane-web/components/navigations";
-import { ProjectNavigationRoot } from "@/plane-web/components/sidebar";
+import { useNavigationItems } from "@/qlcv-web/components/navigations";
+import { ProjectNavigationRoot } from "@/qlcv-web/components/sidebar";
 // local imports
 import { HIGHLIGHT_CLASS, highlightIssueOnDrop } from "../../issues/issue-layouts/utils";
 

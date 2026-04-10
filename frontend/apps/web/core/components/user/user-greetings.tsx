@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane types
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@qlcv/i18n";
 // hooks
-import type { IUser } from "@plane/types";
+import type { IUser } from "@qlcv/types";
 import { useCurrentTime } from "@/hooks/use-current-time";
 // types
 
@@ -43,15 +43,16 @@ export function UserGreetingsView(props: IUserGreetingsView) {
     minute: "2-digit",
   }).format(currentTime);
 
-  const greeting = parseInt(hour, 10) < 12 ? "morning" : parseInt(hour, 10) < 18 ? "afternoon" : "evening";
+  const hourNum = parseInt(hour, 10);
+  const greeting = hourNum < 12 ? "good_morning" : hourNum < 18 ? "good_afternoon" : "good_evening";
 
   return (
     <div className="my-6 flex flex-col items-center">
       <h2 className="text-center text-20 font-semibold">
-        {t("good")} {t(greeting)}, {user?.first_name} {user?.last_name}
+        {t(greeting)}, {user?.first_name} {user?.last_name}
       </h2>
       <h5 className="flex items-center gap-2 font-medium text-placeholder">
-        <div>{greeting === "morning" ? "🌤️" : greeting === "afternoon" ? "🌥️" : "🌙️"}</div>
+        <div>{greeting === "good_morning" ? "🌤️" : greeting === "good_afternoon" ? "🌥️" : "🌙️"}</div>
         <div>
           {weekDay}, {date} {timeString}
         </div>

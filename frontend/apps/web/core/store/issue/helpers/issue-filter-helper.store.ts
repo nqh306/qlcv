@@ -1,17 +1,17 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { isEmpty } from "lodash-es";
 // plane constants
-import type { EIssueFilterType } from "@plane/constants";
+import type { EIssueFilterType } from "@qlcv/constants";
 import {
   EIssueGroupByToServerOptions,
   EServerGroupByToFilterOptions,
   ENABLE_ISSUE_DEPENDENCIES,
-} from "@plane/constants";
+} from "@qlcv/constants";
 import type {
   EIssuesStoreType,
   IIssueDisplayFilterOptions,
@@ -24,13 +24,13 @@ import type {
   TIssueParams,
   TStaticViewTypes,
   TWorkItemFilterExpression,
-} from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
+} from "@qlcv/types";
+import { EIssueLayoutTypes } from "@qlcv/types";
 // helpers
-import { getComputedDisplayFilters, getComputedDisplayProperties } from "@plane/utils";
+import { getComputedDisplayFilters, getComputedDisplayProperties } from "@qlcv/utils";
 // lib
 import { storage } from "@/lib/local-storage";
-import { getEnabledDisplayFilters } from "@/plane-web/store/issue/helpers/filter-utils";
+import { getEnabledDisplayFilters } from "@/qlcv-web/store/issue/helpers/filter-utils";
 
 interface ILocalStoreIssueFilters {
   key: EIssuesStoreType;

@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import type { FC } from "react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TLogoProps } from "@plane/types";
-import { getFileURL, truncateText } from "@plane/utils";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import type { ISvgIcons } from "@qlcv/propel/icons";
+import type { TLogoProps } from "@qlcv/types";
+import { getFileURL, truncateText } from "@qlcv/utils";
 
 type TSwitcherIconProps = {
   logo_props?: TLogoProps;

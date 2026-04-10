@@ -1,19 +1,19 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { getWeekOfMonth, isValid } from "date-fns";
-import { CHART_X_AXIS_DATE_PROPERTIES, ChartXAxisDateGrouping, TO_CAPITALIZE_PROPERTIES } from "@plane/constants";
-import type { ChartXAxisProperty, TChart, TChartDatum } from "@plane/types";
+import { CHART_X_AXIS_DATE_PROPERTIES, ChartXAxisDateGrouping, TO_CAPITALIZE_PROPERTIES } from "@qlcv/constants";
+import type { ChartXAxisProperty, TChart, TChartDatum } from "@qlcv/types";
 import {
   capitalizeFirstLetter,
   hexToHsl,
   hslToHex,
   renderFormattedDate,
   renderFormattedDateWithoutYear,
-} from "@plane/utils";
+} from "@qlcv/utils";
 //
 
 const getDateGroupingName = (date: string, dateGrouping: ChartXAxisDateGrouping): string => {

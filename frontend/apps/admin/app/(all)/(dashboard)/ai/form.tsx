@@ -1,14 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useForm } from "react-hook-form";
 import { Lightbulb } from "lucide-react";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@plane/types";
+import { useTranslation } from "@qlcv/i18n";
+import { Button } from "@qlcv/propel/button";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@qlcv/types";
 // components
 import type { TControllerInputFormField } from "@/components/common/controller-input";
 import { ControllerInput } from "@/components/common/controller-input";
@@ -25,6 +26,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
   const { config } = props;
   // store
   const { updateInstanceConfigurations } = useInstance();
+  const { t } = useTranslation();
   // form data
   const {
     handleSubmit,
@@ -41,17 +43,17 @@ export function InstanceAIForm(props: IInstanceAIForm) {
     {
       key: "LLM_MODEL",
       type: "text",
-      label: "LLM Model",
+      label: t("admin.page.ai.llm_model"),
       description: (
         <>
-          Choose an OpenAI engine.{" "}
+          {t("admin.page.ai.llm_model_help")}{" "}
           <a
             href="https://platform.openai.com/docs/models/overview"
             target="_blank"
             className="text-accent-primary hover:underline"
             rel="noreferrer"
           >
-            Learn more
+            {t("admin.page.ai.learn_more")}
           </a>
         </>
       ),
@@ -62,17 +64,17 @@ export function InstanceAIForm(props: IInstanceAIForm) {
     {
       key: "LLM_API_KEY",
       type: "password",
-      label: "API key",
+      label: t("admin.page.ai.api_key"),
       description: (
         <>
-          You will find your API key{" "}
+          {t("admin.page.ai.api_key_help")}{" "}
           <a
             href="https://platform.openai.com/api-keys"
             target="_blank"
             className="text-accent-primary hover:underline"
             rel="noreferrer"
           >
-            here.
+            {t("admin.page.ai.api_key_link_text")}
           </a>
         </>
       ),
@@ -89,8 +91,8 @@ export function InstanceAIForm(props: IInstanceAIForm) {
       .then(() =>
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success",
-          message: "AI Settings updated successfully",
+          title: t("admin.common.success"),
+          message: t("admin.page.users.toast.updated_success"),
         })
       )
       .catch((err) => console.error(err));
@@ -100,8 +102,8 @@ export function InstanceAIForm(props: IInstanceAIForm) {
     <div className="space-y-8">
       <div className="space-y-3">
         <div>
-          <div className="pb-1 text-18 font-medium text-primary">OpenAI</div>
-          <div className="text-13 font-regular text-tertiary">If you use ChatGPT, this is for you.</div>
+          <div className="pb-1 text-18 font-medium text-primary">{t("admin.page.ai.openai")}</div>
+          <div className="text-13 font-regular text-tertiary">{t("admin.page.ai.openai_desc")}</div>
         </div>
         <div className="grid-col grid w-full grid-cols-1 items-center justify-between gap-x-12 gap-y-8 lg:grid-cols-3">
           {aiFormFields.map((field) => (
@@ -122,15 +124,15 @@ export function InstanceAIForm(props: IInstanceAIForm) {
 
       <div className="flex flex-col items-start gap-4">
         <Button variant="primary" size="lg" onClick={handleSubmit(onSubmit)} loading={isSubmitting}>
-          {isSubmitting ? "Saving" : "Save changes"}
+          {isSubmitting ? t("admin.common.saving") : t("admin.common.save_changes")}
         </Button>
 
         <div className="relative inline-flex items-center gap-1.5 rounded-sm border border-accent-subtle bg-accent-subtle px-4 py-2 text-caption-sm-regular text-accent-secondary">
           <Lightbulb className="size-4" />
           <div>
-            If you have a preferred AI models vendor, please get in{" "}
-            <a className="font-medium underline" href="https://plane.so/contact">
-              touch with us.
+            {t("admin.page.ai.preferred_vendor")}{" "}
+            <a className="font-medium underline" href="https://ems.evngenco1.vn/qlcv/contact">
+              {t("admin.page.ai.contact_us")}
             </a>
           </div>
         </div>

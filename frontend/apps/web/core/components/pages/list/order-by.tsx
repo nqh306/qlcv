@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow } from "lucide-react";
 // plane imports
-import { getButtonStyling } from "@plane/propel/button";
+import { getButtonStyling } from "@qlcv/propel/button";
 // types
-import { CheckIcon } from "@plane/propel/icons";
-import type { TPageFiltersSortBy, TPageFiltersSortKey } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { CheckIcon } from "@qlcv/propel/icons";
+import type { TPageFiltersSortBy, TPageFiltersSortKey } from "@qlcv/types";
+import { CustomMenu } from "@qlcv/ui";
 
 type Props = {
   onChange: (value: { key?: TPageFiltersSortKey; order?: TPageFiltersSortBy }) => void;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -243,7 +243,7 @@ export default {
   full_changelog: "Full changelog",
   support: "Support",
   forum: "Forum",
-  powered_by_plane_pages: "Powered by Plane Pages",
+  powered_by_plane_pages: "Powered by QLCV Pages",
   please_select_at_least_one_invitation: "Please select at least one invitation.",
   please_select_at_least_one_invitation_description: "Please select at least one invitation to join the organization.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "We see that someone has invited you to join a organization",
@@ -319,10 +319,9 @@ export default {
   deleting: "Deleting",
   make_a_copy: "Make a copy",
   move_to_project: "Move to department",
-  good: "Good",
-  morning: "morning",
-  afternoon: "afternoon",
-  evening: "evening",
+  good_morning: "Good morning",
+  good_afternoon: "Good afternoon",
+  good_evening: "Good evening",
   show_all: "Show all",
   show_less: "Show less",
   no_data_yet: "No Data yet",
@@ -408,7 +407,7 @@ export default {
       not_right_now: "Not right now",
       create_project: {
         title: "Create a department",
-        description: "Most things start with a department in Plane.",
+        description: "Most things start with a department trong QLCV.",
         cta: "Get started",
       },
       invite_team: {
@@ -422,7 +421,7 @@ export default {
         cta: "Configure this organization",
       },
       personalize_account: {
-        title: "Make Plane yours.",
+        title: "Cá nhân hóa QLCV.",
         description: "Choose your picture, colors, and more.",
         cta: "Personalize now",
       },
@@ -456,7 +455,7 @@ export default {
       },
     },
     new_at_plane: {
-      title: "New at Plane",
+      title: "Lần đầu sử dụng QLCV",
     },
     quick_tutorial: {
       title: "Quick tutorial",
@@ -1112,7 +1111,7 @@ export default {
   },
   workspace_creation: {
     heading: "Create your organization",
-    subheading: "To start using Plane, you need to create or join a organization.",
+    subheading: "To start sử dụng QLCV, you need to create or join a organization.",
     form: {
       name: {
         label: "Name your organization",
@@ -1167,11 +1166,11 @@ export default {
       general: {
         title: "Overview of your departments, activity, and metrics",
         description:
-          "Welcome to Plane, we are excited to have you here. Create your first department and track your tasks, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
+          "Chào mừng đến QLCV, we are excited to have you here. Create your first department and track your tasks, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
         primary_button: {
           text: "Build your first department",
           comic: {
-            title: "Everything starts with a department in Plane",
+            title: "Everything starts with a department trong QLCV",
             description: "A department could be a product's roadmap, a marketing campaign, or launching a new car.",
           },
         },
@@ -1298,7 +1297,7 @@ export default {
         primary_button: {
           text: "Start your first department",
           comic: {
-            title: "Everything starts with a department in Plane",
+            title: "Everything starts with a department trong QLCV",
             description: "A department could be a product's roadmap, a marketing campaign, or launching a new car.",
           },
         },
@@ -1309,7 +1308,7 @@ export default {
         primary_button: {
           text: "Start your first department",
           comic: {
-            title: "Everything starts with a department in Plane",
+            title: "Everything starts with a department trong QLCV",
             description: "A department could be a product's roadmap, a marketing campaign, or launching a new car.",
           },
         },
@@ -1427,7 +1426,7 @@ export default {
     page_label: "{organization} - General settings",
     key_created: "Key created",
     copy_key:
-      "Copy and save this secret key in Plane Pages. You can't see this key after you hit Close. A CSV file containing the key has been downloaded.",
+      "Copy and save this secret key in QLCV Pages. You can't see this key after you hit Close. A CSV file containing the key has been downloaded.",
     token_copied: "Token copied to clipboard.",
     settings: {
       general: {
@@ -1586,7 +1585,7 @@ export default {
         delete: {
           title: "Delete personal access token",
           description:
-            "Any application using this token will no longer have the access to Plane data. This action cannot be undone.",
+            "Any application using this token will no longer have the access đến QLCV data. This action cannot be undone.",
           success: {
             title: "Success!",
             message: "The token has been successfully deleted",
@@ -1602,7 +1601,7 @@ export default {
       api_tokens: {
         title: "No personal access tokens created",
         description:
-          "Plane APIs can be used to integrate your data in Plane with any external system. Create a token to get started.",
+          "QLCV APIs can be used to integrate your data trong QLCV with any external system. Create a token to get started.",
       },
       webhooks: {
         title: "No webhooks added",
@@ -1666,7 +1665,7 @@ export default {
       activity: {
         title: "No activities yet",
         description:
-          "Get started by creating a new task! Add details and properties to it. Explore more in Plane to see your activity.",
+          "Get started by creating a new task! Add details and properties to it. Explore more trong QLCV to see your activity.",
       },
       assigned: {
         title: "No tasks are assigned to you",
@@ -1828,12 +1827,12 @@ export default {
         "Configure automated actions to streamline your department management workflow and reduce manual tasks.",
       "auto-archive": {
         title: "Auto-archive closed tasks",
-        description: "Plane will auto archive tasks that have been completed or canceled.",
+        description: "QLCV will auto archive tasks that have been completed or canceled.",
         duration: "Auto-archive tasks that are closed for",
       },
       "auto-close": {
         title: "Auto-close tasks",
-        description: "Plane will automatically close tasks that haven't been completed or canceled.",
+        description: "QLCV will automatically close tasks that haven't been completed or canceled.",
         duration: "Auto-close tasks that are inactive for",
         auto_close_status: "Auto-close status",
       },
@@ -2026,9 +2025,9 @@ export default {
         primary_button: {
           text: "Create your first task",
           comic: {
-            title: "Tasks are building blocks in Plane.",
+            title: "Tasks are building blocks trong QLCV.",
             description:
-              "Redesign the Plane UI, Rebrand the company, or Launch the new fuel injection system are examples of tasks that likely have sub-tasks.",
+              "Redesign the QLCV UI, Rebrand the company, or Launch the new fuel injection system are examples of tasks that likely have sub-tasks.",
           },
         },
       },
@@ -2132,9 +2131,9 @@ export default {
     empty_state: {
       general: {
         title:
-          "Write a note, a doc, or a full knowledge base. Get Galileo, Plane's AI assistant, to help you get started",
+          "Write a note, a doc, or a full knowledge base. Get Galileo, QLCV AI assistant, to help you get started",
         description:
-          "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your department's context. To make short work of any doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
+          "Pages are thoughts potting space trong QLCV. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your department's context. To make short work of any doc, invoke Galileo, QLCV AI, with a shortcut or the click of a button.",
         primary_button: {
           text: "Create your first page",
         },

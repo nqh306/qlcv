@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,8 +7,8 @@
 import { set } from "lodash-es";
 import { makeObservable, observable, runInAction, action } from "mobx";
 // plane imports
-import { SitesProjectPublishService } from "@plane/services";
-import type { TProjectPublishSettings } from "@plane/types";
+import { SitesProjectPublishService } from "@qlcv/services";
+import type { TProjectPublishSettings } from "@qlcv/types";
 // store
 import { PublishStore } from "@/store/publish/publish.store";
 import type { RootStore } from "@/store/root.store";

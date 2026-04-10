@@ -1,12 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { Loader } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import { Loader } from "@qlcv/ui";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
 // hooks
@@ -19,14 +20,15 @@ import { InstanceImageConfigForm } from "./form";
 const InstanceImagePage = observer(function InstanceImagePage(_props: Route.ComponentProps) {
   // store
   const { formattedConfig, fetchInstanceConfigurations } = useInstance();
+  const { t } = useTranslation();
 
   useSWR("INSTANCE_CONFIGURATIONS", () => fetchInstanceConfigurations());
 
   return (
     <PageWrapper
       header={{
-        title: "Third-party image libraries",
-        description: "Let your users search and choose images from third-party libraries",
+        title: t("admin.page.images.title"),
+        description: t("admin.page.images.description"),
       }}
     >
       {formattedConfig ? (

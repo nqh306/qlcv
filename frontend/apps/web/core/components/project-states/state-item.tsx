@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,10 +10,10 @@ import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-d
 import { attachClosestEdge, extractClosestEdge } from "@atlaskit/pragmatic-drag-and-drop-hitbox/closest-edge";
 import { observer } from "mobx-react";
 // Plane
-import type { TDraggableData } from "@plane/constants";
-import type { IState, TStateGroups, TStateOperationsCallbacks } from "@plane/types";
-import { DropIndicator } from "@plane/ui";
-import { cn, getCurrentStateSequence } from "@plane/utils";
+import type { TDraggableData } from "@qlcv/constants";
+import type { IState, TStateGroups, TStateOperationsCallbacks } from "@qlcv/types";
+import { DropIndicator } from "@qlcv/ui";
+import { cn, getCurrentStateSequence } from "@qlcv/utils";
 // components
 import { StateItemTitle, StateUpdate } from "@/components/project-states";
 // helpers

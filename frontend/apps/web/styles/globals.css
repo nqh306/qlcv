@@ -1,6 +1,15 @@
-@import "@plane/tailwind-config/index.css";
-@import "@plane/editor/styles";
-@import "@plane/propel/styles/react-day-picker.css";
+@import "@qlcv/tailwind-config/index.css";
+
+/* EVN GENCO1 Logo Font */
+@font-face {
+  font-family: "Helvetica Black";
+  src: url("/fonts/HelveticaBlackVU.TTF") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@import "@qlcv/editor/styles";
+@import "@qlcv/propel/styles/react-day-picker.css";
 @import "./power-k.css";
 @import "./emoji.css";
 @plugin "@tailwindcss/typography";

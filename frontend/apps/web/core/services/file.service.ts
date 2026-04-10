@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import type { AxiosRequestConfig } from "axios";
 // plane types
-import { API_BASE_URL } from "@plane/constants";
-import { getFileMetaDataForUpload, generateFileUploadPayload } from "@plane/services";
-import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@plane/types";
-import { getAssetIdFromUrl } from "@plane/utils";
+import { API_BASE_URL } from "@qlcv/constants";
+import { getFileMetaDataForUpload, generateFileUploadPayload } from "@qlcv/services";
+import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@qlcv/types";
+import { getAssetIdFromUrl } from "@qlcv/utils";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import React, { useEffect, useState, useCallback } from "react";
 // plane imports
-import { TOOLBAR_ITEMS } from "@plane/editor";
-import type { ToolbarMenuItem, EditorRefApi } from "@plane/editor";
-import { Button } from "@plane/propel/button";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+import { TOOLBAR_ITEMS } from "@qlcv/editor";
+import type { ToolbarMenuItem, EditorRefApi } from "@qlcv/editor";
+import { Button } from "@qlcv/propel/button";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import { cn } from "@qlcv/utils";
 
 type Props = {
   executeCommand: (item: ToolbarMenuItem) => void;

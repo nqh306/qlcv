@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,14 +9,14 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { SquareUser } from "lucide-react";
 // Plane imports
-import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { FavoriteStar } from "@plane/ui";
-import { renderFormattedPayloadDate, getDate } from "@plane/utils";
+import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
+import { useLocalStorage } from "@qlcv/hooks";
+import { useTranslation } from "@qlcv/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@qlcv/propel/toast";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { IModule } from "@qlcv/types";
+import { FavoriteStar } from "@qlcv/ui";
+import { renderFormattedPayloadDate, getDate } from "@qlcv/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ModuleQuickActions } from "@/components/modules";

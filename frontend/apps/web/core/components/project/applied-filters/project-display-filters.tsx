@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 // icons
 // types
-import { PROJECT_DISPLAY_FILTER_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TProjectAppliedDisplayFilterKeys } from "@plane/types";
+import { PROJECT_DISPLAY_FILTER_OPTIONS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { CloseIcon } from "@qlcv/propel/icons";
+import type { TProjectAppliedDisplayFilterKeys } from "@qlcv/types";
 // constants
 
 type Props = {

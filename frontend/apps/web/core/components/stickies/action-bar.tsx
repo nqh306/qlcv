@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,12 +10,12 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { StickyNote as StickyIcon } from "lucide-react";
 // plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
+import { useOutsideClickDetector } from "@qlcv/hooks";
 // plane ui
-import { RecentStickyIcon, StickyNoteIcon, PlusIcon, CloseIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { RecentStickyIcon, StickyNoteIcon, PlusIcon, CloseIcon } from "@qlcv/propel/icons";
+import { Tooltip } from "@qlcv/propel/tooltip";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useSticky } from "@/hooks/use-stickies";

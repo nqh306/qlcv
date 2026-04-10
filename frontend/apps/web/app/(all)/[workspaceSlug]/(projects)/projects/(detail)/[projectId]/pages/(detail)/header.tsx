@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { PageIcon } from "@plane/propel/icons";
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
-import { getPageName } from "@plane/utils";
+import { PageIcon } from "@qlcv/propel/icons";
+import type { ICustomSearchSelectOption } from "@qlcv/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@qlcv/ui";
+import { getPageName } from "@qlcv/utils";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { PageAccessIcon } from "@/components/common/page-access-icon";
@@ -21,9 +21,9 @@ import { PageSyncingBadge } from "@/components/pages/header/syncing-badge";
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
 // plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { PageDetailsHeaderExtraActions } from "@/plane-web/components/pages";
-import { EPageStoreType, usePage, usePageStore } from "@/plane-web/hooks/store";
+import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
+import { PageDetailsHeaderExtraActions } from "@/qlcv-web/components/pages";
+import { EPageStoreType, usePage, usePageStore } from "@/qlcv-web/hooks/store";
 
 export interface IPagesHeaderProps {
   showButton?: boolean;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,12 +7,12 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@qlcv/i18n";
 // plane types
-import { Button } from "@plane/propel/button";
-import type { TIssueLinkEditableFields, TIssueServiceType } from "@plane/types";
+import { Button } from "@qlcv/propel/button";
+import type { TIssueLinkEditableFields, TIssueServiceType } from "@qlcv/types";
 // plane ui
-import { Input, ModalCore } from "@plane/ui";
+import { Input, ModalCore } from "@qlcv/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // types

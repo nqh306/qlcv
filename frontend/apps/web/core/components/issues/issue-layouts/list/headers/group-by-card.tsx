@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,14 +8,14 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { CircleDashed } from "lucide-react";
-import { PlusIcon } from "@plane/propel/icons";
+import { PlusIcon } from "@qlcv/propel/icons";
 // types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@qlcv/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@qlcv/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 import { MultipleSelectGroupAction } from "@/components/core/multiple-select";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
@@ -23,9 +23,9 @@ import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
 // plane-web
-import { CreateUpdateEpicModal } from "@/plane-web/components/epics/epic-modal";
+import { CreateUpdateEpicModal } from "@/qlcv-web/components/epics/epic-modal";
 // Plane-web
-import { WorkFlowGroupTree } from "@/plane-web/components/workflow";
+import { WorkFlowGroupTree } from "@/qlcv-web/components/workflow";
 
 interface IHeaderGroupByCard {
   groupID: string;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,9 +9,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // plane package imports
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { TChartData } from "@plane/types";
+import { useTranslation } from "@qlcv/i18n";
+import { EmptyStateCompact } from "@qlcv/propel/empty-state";
+import type { TChartData } from "@qlcv/types";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services
@@ -21,7 +21,7 @@ import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { ProjectInsightsLoader } from "../loaders";
 
 const RadarChart = lazy(function RadarChart() {
-  return import("@plane/propel/charts/radar-chart").then((mod) => ({
+  return import("@qlcv/propel/charts/radar-chart").then((mod) => ({
     default: mod.RadarChart,
   }));
 });

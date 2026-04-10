@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,13 +10,13 @@ import { useParams } from "next/navigation";
 import { Settings, UserPlus } from "lucide-react";
 import { Menu } from "@headlessui/react";
 // plane imports
-import { EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
-import { cn, getFileURL, getUserRole } from "@plane/utils";
+import { EUserPermissions } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { CheckIcon } from "@qlcv/propel/icons";
+import type { IWorkspace } from "@qlcv/types";
+import { cn, getFileURL, getUserRole } from "@qlcv/utils";
 // plane web imports
-import { SubscriptionPill } from "@/plane-web/components/common/subscription/subscription-pill";
+import { SubscriptionPill } from "@/qlcv-web/components/common/subscription/subscription-pill";
 
 type TProps = {
   workspace: IWorkspace;

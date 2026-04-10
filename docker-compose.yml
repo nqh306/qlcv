@@ -1,16 +1,16 @@
 x-db-env: &db-env
-  PGHOST: ${PGHOST:-plane-db}
-  PGDATABASE: ${PGDATABASE:-plane}
-  POSTGRES_USER: ${POSTGRES_USER:-plane}
-  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plane}
-  POSTGRES_DB: ${POSTGRES_DB:-plane}
+  PGHOST: ${PGHOST:-qlcv-db}
+  PGDATABASE: ${PGDATABASE:-qlcv}
+  POSTGRES_USER: ${POSTGRES_USER:-qlcv}
+  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-qlcv}
+  POSTGRES_DB: ${POSTGRES_DB:-qlcv}
   POSTGRES_PORT: ${POSTGRES_PORT:-5432}
   PGDATA: ${PGDATA:-/var/lib/postgresql/data}
 
 x-redis-env: &redis-env
-  REDIS_HOST: ${REDIS_HOST:-plane-redis}
+  REDIS_HOST: ${REDIS_HOST:-qlcv-redis}
   REDIS_PORT: ${REDIS_PORT:-6379}
-  REDIS_URL: ${REDIS_URL:-redis://plane-redis:6379/}
+  REDIS_URL: ${REDIS_URL:-redis://qlcv-redis:6379/}
 
 x-minio-env: &minio-env
   MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID:-access-key}
@@ -20,7 +20,7 @@ x-aws-s3-env: &aws-s3-env
   AWS_REGION: ${AWS_REGION:-}
   AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-access-key}
   AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-secret-key}
-  AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL:-http://plane-minio:9000}
+  AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL:-http://qlcv-minio:9000}
   AWS_S3_BUCKET_NAME: ${AWS_S3_BUCKET_NAME:-uploads}
 
 x-proxy-env: &proxy-env
@@ -35,12 +35,12 @@ x-proxy-env: &proxy-env
   SITE_ADDRESS: ${SITE_ADDRESS:-:80}
 
 x-mq-env: &mq-env
-  RABBITMQ_HOST: ${RABBITMQ_HOST:-plane-mq}
+  RABBITMQ_HOST: ${RABBITMQ_HOST:-qlcv-mq}
   RABBITMQ_PORT: ${RABBITMQ_PORT:-5672}
-  RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-plane}
-  RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-plane}
-  RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST:-plane}
-  RABBITMQ_VHOST: ${RABBITMQ_VHOST:-plane}
+  RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-qlcv}
+  RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-qlcv}
+  RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST:-qlcv}
+  RABBITMQ_VHOST: ${RABBITMQ_VHOST:-qlcv}
 
 x-live-env: &live-env
   API_BASE_URL: ${API_BASE_URL:-http://api:8000}
@@ -52,16 +52,16 @@ x-app-env: &app-env
   CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:8080}
   GUNICORN_WORKERS: 1
   USE_MINIO: ${USE_MINIO:-1}
-  DATABASE_URL: ${DATABASE_URL:-postgresql://plane:plane@plane-db/plane}
+  DATABASE_URL: ${DATABASE_URL:-postgresql://qlcv:qlcv@qlcv-db/qlcv}
   SECRET_KEY: ${SECRET_KEY:-60gp0byfz2dvffa45cxl20p1scy9xbpf6d8c5y0geejgkyp1b5}
-  AMQP_URL: ${AMQP_URL:-amqp://plane:plane@plane-mq:5672/plane}
+  AMQP_URL: ${AMQP_URL:-amqp://qlcv:qlcv@qlcv-mq:5672/qlcv}
   API_KEY_RATE_LIMIT: ${API_KEY_RATE_LIMIT:-60/minute}
   MINIO_ENDPOINT_SSL: ${MINIO_ENDPOINT_SSL:-0}
   LIVE_SERVER_SECRET_KEY: ${LIVE_SERVER_SECRET_KEY:-2FiJk1U2aiVPEQtzLehYGlTSnTnrs7LW}
 
 services:
   web:
-    image: plane-frontend:genco1
+    image: qlcv-frontend:genco1
     build:
       context: ./frontend
       dockerfile: apps/web/Dockerfile.web
@@ -71,7 +71,7 @@ services:
       - worker
 
   space:
-    image: plane-space:genco1
+    image: qlcv-space:genco1
     build:
       context: ./frontend
       dockerfile: apps/space/Dockerfile.space
@@ -82,7 +82,7 @@ services:
       - web
 
   admin:
-    image: plane-admin:genco1
+    image: qlcv-admin:genco1
     build:
       context: ./frontend
       dockerfile: apps/admin/Dockerfile.admin
@@ -92,7 +92,10 @@ services:
       - web
 
   live:
-    image: makeplane/plane-live:${APP_RELEASE:-stable}
+    image: qlcv-live:genco1
+    build:
+      context: ./frontend
+      dockerfile: apps/live/Dockerfile.live
     environment:
       <<: [*live-env, *redis-env]
     restart: unless-stopped
@@ -101,62 +104,62 @@ services:
       - web
 
   api:
-    image: plane-backend:genco1
+    image: qlcv-backend:genco1
     build:
       context: ./backend
       dockerfile: Dockerfile.api
     command: ./bin/docker-entrypoint-api.sh
     restart: unless-stopped
     volumes:
-      - logs_api:/code/plane/logs
+      - logs_api:/code/qlcv/logs
     environment:
       <<: [*app-env, *db-env, *redis-env, *minio-env, *aws-s3-env, *proxy-env]
     depends_on:
-      - plane-db
-      - plane-redis
-      - plane-mq
+      - qlcv-db
+      - qlcv-redis
+      - qlcv-mq
 
   worker:
-    image: plane-backend:genco1
+    image: qlcv-backend:genco1
     command: ./bin/docker-entrypoint-worker.sh
     restart: unless-stopped
     volumes:
-      - logs_worker:/code/plane/logs
+      - logs_worker:/code/qlcv/logs
     environment:
       <<: [*app-env, *db-env, *redis-env, *minio-env, *aws-s3-env, *proxy-env]
     depends_on:
       - api
-      - plane-db
-      - plane-redis
-      - plane-mq
+      - qlcv-db
+      - qlcv-redis
+      - qlcv-mq
 
   beat-worker:
-    image: plane-backend:genco1
+    image: qlcv-backend:genco1
     command: ./bin/docker-entrypoint-beat.sh
     restart: unless-stopped
     volumes:
-      - logs_beat-worker:/code/plane/logs
+      - logs_beat-worker:/code/qlcv/logs
     environment:
       <<: [*app-env, *db-env, *redis-env, *minio-env, *aws-s3-env, *proxy-env]
     depends_on:
       - api
-      - plane-db
-      - plane-redis
-      - plane-mq
+      - qlcv-db
+      - qlcv-redis
+      - qlcv-mq
 
   migrator:
-    image: plane-backend:genco1
+    image: qlcv-backend:genco1
     command: ./bin/docker-entrypoint-migrator.sh
     restart: on-failure
     volumes:
-      - logs_migrator:/code/plane/logs
+      - logs_migrator:/code/qlcv/logs
     environment:
       <<: [*app-env, *db-env, *redis-env, *minio-env, *aws-s3-env, *proxy-env]
     depends_on:
-      - plane-db
-      - plane-redis
+      - qlcv-db
+      - qlcv-redis
 
-  plane-db:
+  qlcv-db:
     image: postgres:15.7-alpine
     command: postgres -c 'max_connections=1000'
     restart: unless-stopped
@@ -165,13 +168,13 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  plane-redis:
+  qlcv-redis:
     image: valkey/valkey:7.2.11-alpine
     restart: unless-stopped
     volumes:
       - redisdata:/data
 
-  plane-mq:
+  qlcv-mq:
     image: rabbitmq:3.13.6-management-alpine
     restart: unless-stopped
     environment:
@@ -179,7 +182,7 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
 
-  plane-minio:
+  qlcv-minio:
     image: minio/minio:latest
     command: server /export --console-address ":9090"
     restart: unless-stopped
@@ -189,7 +192,10 @@ services:
       - uploads:/export
 
   proxy:
-    image: makeplane/plane-proxy:${APP_RELEASE:-stable}
+    image: qlcv-proxy:genco1
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile.ce
     restart: unless-stopped
     environment:
       <<: *proxy-env

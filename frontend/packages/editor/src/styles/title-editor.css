@@ -16,13 +16,13 @@
 
 /* Handle font sizes */
 .page-title-editor.small-font .ProseMirror h1 {
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
 }
 
 .page-title-editor.large-font .ProseMirror h1 {
-  font-size: 2rem;
-  line-height: 2.375rem;
+  font-size: 1.625rem;
+  line-height: 1.9375rem;
 }
 
 /* Focus state */

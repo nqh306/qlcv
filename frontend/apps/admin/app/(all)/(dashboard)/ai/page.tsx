@@ -1,12 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { Loader } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import { Loader } from "@qlcv/ui";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
 // hooks
@@ -19,14 +20,15 @@ import { InstanceAIForm } from "./form";
 const InstanceAIPage = observer(function InstanceAIPage(_props: Route.ComponentProps) {
   // store
   const { fetchInstanceConfigurations, formattedConfig } = useInstance();
+  const { t } = useTranslation();
 
   useSWR("INSTANCE_CONFIGURATIONS", () => fetchInstanceConfigurations());
 
   return (
     <PageWrapper
       header={{
-        title: "AI features for all your workspaces",
-        description: "Configure your AI API credentials so Plane AI features are turned on for all your workspaces.",
+        title: t("admin.page.ai.title"),
+        description: t("admin.page.ai.description"),
       }}
     >
       {formattedConfig ? (

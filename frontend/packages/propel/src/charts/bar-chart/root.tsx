@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -17,8 +17,8 @@ import {
   CartesianGrid,
 } from "recharts";
 // plane imports
-import { AXIS_LABEL_CLASSNAME } from "@plane/constants";
-import type { TBarChartProps } from "@plane/types";
+import { AXIS_LABEL_CLASSNAME } from "@qlcv/constants";
+import type { TBarChartProps } from "@qlcv/types";
 // local components
 import { getLegendProps } from "../components/legend";
 import { CustomXAxisTick, CustomYAxisTick } from "../components/tick";

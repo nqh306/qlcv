@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,9 +7,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@qlcv/types";
+import { EOnboardingSteps } from "@qlcv/types";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser, useUserProfile } from "@/hooks/store/user";
@@ -68,12 +68,6 @@ export const OnboardingRoot = observer(function OnboardingRoot({ invitations = [
     (step: EOnboardingSteps, skipInvites?: boolean) => {
       switch (step) {
         case EOnboardingSteps.PROFILE_SETUP:
-          setCurrentStep(EOnboardingSteps.ROLE_SETUP);
-          break;
-        case EOnboardingSteps.ROLE_SETUP:
-          setCurrentStep(EOnboardingSteps.USE_CASE_SETUP);
-          break;
-        case EOnboardingSteps.USE_CASE_SETUP:
           stepChange({ profile_complete: true });
           if (workspacesList.length > 0) finishOnboarding();
           else setCurrentStep(EOnboardingSteps.WORKSPACE_CREATE_OR_JOIN);

@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
 import { Clock, FileStack, MoreHorizontal, PanelLeft, MoveRight } from "lucide-react";
-import { IconButton, getIconButtonStyling } from "@plane/propel/icon-button";
+import { IconButton, getIconButtonStyling } from "@qlcv/propel/icon-button";
 import {
   LinkIcon,
   NewTabIcon,
@@ -15,11 +15,11 @@ import {
   ChevronUpIcon,
   CheckCircleFilledIcon,
   CloseCircleFilledIcon,
-} from "@plane/propel/icons";
-import type { TNameDescriptionLoader } from "@plane/types";
+} from "@qlcv/propel/icons";
+import type { TNameDescriptionLoader } from "@qlcv/types";
 
-import { Header, CustomMenu, EHeaderVariant } from "@plane/ui";
-import { cn, findHowManyDaysLeft, generateWorkItemLink } from "@plane/utils";
+import { Header, CustomMenu, EHeaderVariant } from "@qlcv/ui";
+import { cn, findHowManyDaysLeft, generateWorkItemLink } from "@qlcv/utils";
 // components
 import { NameDescriptionUpdateStatus } from "@/components/issues/issue-update-status";
 // hooks

@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import type { ChartDataType, IGanttBlock } from "@plane/types";
-import { addDaysToDate, findTotalDaysInRange, getDate } from "@plane/utils";
+import type { ChartDataType, IGanttBlock } from "@qlcv/types";
+import { addDaysToDate, findTotalDaysInRange, getDate } from "@qlcv/utils";
 import { DEFAULT_BLOCK_WIDTH } from "../constants";
 
 /**

@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import type { LucideIcon } from "lucide-react";
 // plane ui
-import { useTranslation } from "@plane/i18n";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { useTranslation } from "@qlcv/i18n";
+import type { ISvgIcons } from "@qlcv/propel/icons";
+import { Tooltip } from "@qlcv/propel/tooltip";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 
 type Props = {
   onChange: (value: number) => void;

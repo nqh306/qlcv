@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import { ISSUE_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ISSUE_LAYOUTS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { EIssueLayoutTypes } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // components
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";
 // hooks

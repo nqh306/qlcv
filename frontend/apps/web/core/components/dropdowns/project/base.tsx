@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,16 +10,16 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { CheckIcon, SearchIcon, ProjectIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { ComboDropDown } from "@plane/ui";
-import { cn, sortBySelectedFirst } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { CheckIcon, SearchIcon, ProjectIcon, ChevronDownIcon } from "@qlcv/propel/icons";
+import { ComboDropDown } from "@qlcv/ui";
+import { cn, sortBySelectedFirst } from "@qlcv/utils";
 // components
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
 // plane web imports
-import type { TProject } from "@/plane-web/types";
+import type { TProject } from "@/qlcv-web/types";
 // local imports
 import { DropdownButton } from "../buttons";
 import { BUTTON_VARIANTS_WITH_TEXT } from "../constants";

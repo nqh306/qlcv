@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,8 +10,8 @@ import { CheckCircle } from "lucide-react";
 import { Tab } from "@headlessui/react";
 // plane imports
 // helpers
-import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@plane/types";
-import { cn, getBaseSubscriptionName, getSubscriptionName } from "@plane/utils";
+import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@qlcv/types";
+import { cn, getBaseSubscriptionName, getSubscriptionName } from "@qlcv/utils";
 
 export type TBasePaidPlanCardProps = {
   planVariant: EProductSubscriptionEnum;

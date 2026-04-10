@@ -1,17 +1,17 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TContextMenuItem } from "@qlcv/ui";
+import { CustomMenu } from "@qlcv/ui";
+import { copyUrlToClipboard, cn } from "@qlcv/utils";
 import { useLayoutMenuItems } from "@/components/common/quick-actions-helper";
 import { Ellipsis } from "lucide-react";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@qlcv/propel/icon-button";
 
 type Props = {
   workspaceSlug: string;

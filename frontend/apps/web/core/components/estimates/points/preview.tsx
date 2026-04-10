@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,13 +8,13 @@ import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
 // plane imports
-import { EEstimateSystem, estimateCount } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EditIcon, TrashIcon } from "@plane/propel/icons";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
+import { EEstimateSystem, estimateCount } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { EditIcon, TrashIcon } from "@qlcv/propel/icons";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@qlcv/types";
+import { convertMinutesToHoursMinutesString } from "@qlcv/utils";
 // plane web imports
-import { EstimatePointDelete } from "@/plane-web/components/estimates";
+import { EstimatePointDelete } from "@/qlcv-web/components/estimates";
 // local imports
 import { EstimatePointUpdate } from "./update";
 

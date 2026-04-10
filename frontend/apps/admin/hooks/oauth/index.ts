@@ -1,16 +1,18 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import type { TInstanceAuthenticationModes } from "@plane/types";
+import { useTranslation } from "@qlcv/i18n";
+import type { TInstanceAuthenticationModes } from "@qlcv/types";
 import { getCoreAuthenticationModesMap } from "./core";
 import type { TGetAuthenticationModeProps } from "./types";
 
 export const useAuthenticationModes = (props: TGetAuthenticationModeProps): TInstanceAuthenticationModes[] => {
+  const { t } = useTranslation();
   // derived values
-  const authenticationModes = getCoreAuthenticationModesMap(props);
+  const authenticationModes = getCoreAuthenticationModesMap(props, t);
 
   const availableAuthenticationModes: TInstanceAuthenticationModes[] = [
     authenticationModes["unique-codes"],

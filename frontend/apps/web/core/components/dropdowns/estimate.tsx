@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -11,11 +11,11 @@ import { useParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, SearchIcon, EstimatePropertyIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { EEstimateSystem } from "@plane/types";
-import { ComboDropDown } from "@plane/ui";
-import { convertMinutesToHoursMinutesString, cn } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { CheckIcon, SearchIcon, EstimatePropertyIcon, ChevronDownIcon } from "@qlcv/propel/icons";
+import { EEstimateSystem } from "@qlcv/types";
+import { ComboDropDown } from "@qlcv/ui";
+import { convertMinutesToHoursMinutesString, cn } from "@qlcv/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";

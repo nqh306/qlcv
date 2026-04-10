@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -13,7 +13,7 @@ import { CreateUpdateProjectViewModal } from "@/components/views/modal";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 // plane web hooks
-import { EPageStoreType } from "@/plane-web/hooks/store";
+import { EPageStoreType } from "@/qlcv-web/hooks/store";
 
 export type TProjectLevelModalsProps = {
   workspaceSlug: string;

@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { EstimatePropertyIcon } from "@plane/propel/icons";
-import { EEstimateSystem } from "@plane/types";
-import { cn, convertMinutesToHoursMinutesString } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { EstimatePropertyIcon } from "@qlcv/propel/icons";
+import { EEstimateSystem } from "@qlcv/types";
+import { cn, convertMinutesToHoursMinutesString } from "@qlcv/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";

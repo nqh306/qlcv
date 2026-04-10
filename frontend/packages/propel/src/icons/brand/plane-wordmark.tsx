@@ -8,7 +8,7 @@ import * as React from "react";
 
 import type { ISvgIcons } from "../type";
 
-export function PlaneWordmark({ width = "146", height = "44", className, color = "currentColor" }: ISvgIcons) {
+export function QlcvWordmark({ width = "146", height = "44", className, color = "currentColor" }: ISvgIcons) {
   return (
     <svg
       width={width}

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,8 +8,8 @@ import { concat, get, set, uniq, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // plane imports
-import { ALL_ISSUES } from "@plane/constants";
-import { SitesIssueService } from "@plane/services";
+import { ALL_ISSUES } from "@qlcv/constants";
+import { SitesIssueService } from "@qlcv/services";
 import type {
   TIssueGroupByOptions,
   TGroupedIssues,
@@ -20,7 +20,7 @@ import type {
   TIssuePaginationData,
   TGroupedIssueCount,
   TPaginationData,
-} from "@plane/types";
+} from "@qlcv/types";
 // types
 import type { IIssue, TIssuesResponse } from "@/types/issue";
 import type { RootStore } from "../root.store";

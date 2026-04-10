@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,8 +8,8 @@ import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 // plane imports
-import type { TDescriptionVersionDetails, TDescriptionVersionsListResponse } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { TDescriptionVersionDetails, TDescriptionVersionsListResponse } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // local imports
 import { DescriptionVersionsDropdown } from "./dropdown";
 import { DescriptionVersionsModal } from "./modal";

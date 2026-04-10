@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,9 +9,9 @@ import { Database as HocuspocusDatabase } from "@hocuspocus/extension-database";
 import {
   getAllDocumentFormatsFromDocumentEditorBinaryData,
   getBinaryDataFromDocumentEditorHTMLString,
-} from "@plane/editor";
-import type { TDocumentPayload } from "@plane/types";
-import { logger } from "@plane/logger";
+} from "@qlcv/editor";
+import type { TDocumentPayload } from "@qlcv/types";
+import { logger } from "@qlcv/logger";
 // lib
 import { AppError } from "@/lib/errors";
 // services

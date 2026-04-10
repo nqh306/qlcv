@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { Pencil, ExternalLink, Link, Trash2, ArchiveRestoreIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { ArchiveIcon } from "@plane/propel/icons";
-import type { TContextMenuItem } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import { ArchiveIcon } from "@qlcv/propel/icons";
+import type { TContextMenuItem } from "@qlcv/ui";
 
 /**
  * Unified factory for creating menu items across all entities (cycles, modules, views, epics)

@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { logger } from "@plane/logger";
-import type { TDocumentPayload, TPage } from "@plane/types";
+import { logger } from "@qlcv/logger";
+import type { TDocumentPayload, TPage } from "@qlcv/types";
 // services
 import { AppError } from "@/lib/errors";
 import { APIService } from "../api.service";

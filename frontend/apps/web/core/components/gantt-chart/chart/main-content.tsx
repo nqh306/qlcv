@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -14,8 +14,8 @@ import type {
   IBlockUpdateDependencyData,
   IGanttBlock,
   TGanttViews,
-} from "@plane/types";
-import { cn, getDate } from "@plane/utils";
+} from "@qlcv/types";
+import { cn, getDate } from "@qlcv/utils";
 // components
 import { MultipleSelectGroup } from "@/components/core/multiple-select";
 import { GanttChartSidebar, MonthChartView, QuarterChartView, WeekChartView } from "@/components/gantt-chart";
@@ -27,12 +27,12 @@ import {
   TimelineDependencyPaths,
   TimelineDraggablePath,
   GanttAdditionalLayers,
-} from "@/plane-web/components/gantt-chart";
-import { GanttChartRowList } from "@/plane-web/components/gantt-chart/blocks/block-row-list";
-import { GanttChartBlocksList } from "@/plane-web/components/gantt-chart/blocks/blocks-list";
-import { IssueBulkOperationsRoot } from "@/plane-web/components/issues/bulk-operations";
+} from "@/qlcv-web/components/gantt-chart";
+import { GanttChartRowList } from "@/qlcv-web/components/gantt-chart/blocks/block-row-list";
+import { GanttChartBlocksList } from "@/qlcv-web/components/gantt-chart/blocks/blocks-list";
+import { IssueBulkOperationsRoot } from "@/qlcv-web/components/issues/bulk-operations";
 // plane web hooks
-import { useBulkOperationStatus } from "@/plane-web/hooks/use-bulk-operation-status";
+import { useBulkOperationStatus } from "@/qlcv-web/hooks/use-bulk-operation-status";
 //
 import { DEFAULT_BLOCK_WIDTH, GANTT_SELECT_GROUP, HEADER_HEIGHT } from "../constants";
 import { getItemPositionWidth } from "../views";

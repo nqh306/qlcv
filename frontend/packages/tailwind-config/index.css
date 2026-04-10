@@ -15,6 +15,8 @@
 
 body {
   @apply font-body bg-canvas text-primary;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* emoji icon picker */

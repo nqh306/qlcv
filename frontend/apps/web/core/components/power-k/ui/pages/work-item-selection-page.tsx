@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useState, useEffect } from "react";
 // plane imports
-// import { useTranslation } from "@plane/i18n";
-import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@plane/types";
-// import { generateWorkItemLink } from "@plane/utils";
+// import { useTranslation } from "@qlcv/i18n";
+import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@qlcv/types";
+// import { generateWorkItemLink } from "@qlcv/utils";
 // components
 // import { CommandPaletteEntityList } from "@/components/command-palette";
 // import { SimpleEmptyState } from "@/components/empty-state/simple-empty-state-root";
@@ -17,7 +17,7 @@ import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from
 // import { usePowerK } from "@/hooks/store/use-power-k";
 // import { useAppRouter } from "@/hooks/use-app-router";
 // plane web imports
-// import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 import { WorkspaceService } from "@/services/workspace.service";
 
 const workspaceService = new WorkspaceService();

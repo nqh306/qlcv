@@ -1,0 +1,67 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python bytecode and caches
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs and runtime data
+*.log
+logs/
+qlcv/logs/
+*.pid
+*.seed
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+.secrets
+*.pem
+*.key
+
+# Database / cache dumps
+*.sqlite3
+*.rdb
+*.rdb.gz
+
+# Misc
+README.md
+docs/
+tests/

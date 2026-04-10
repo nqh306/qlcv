@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import useSWR from "swr";
 // plane types
-import { getButtonStyling } from "@plane/propel/button";
-import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
+import { getButtonStyling } from "@qlcv/propel/button";
+import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@qlcv/types";
+import { EFileAssetType } from "@qlcv/types";
 // plane ui
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { PageHead } from "@/components/core/page-title";
@@ -27,7 +27,7 @@ import { useEditorAsset } from "@/hooks/store/use-editor-asset";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useAppRouter } from "@/hooks/use-app-router";
 // plane web hooks
-import { EPageStoreType, usePage, usePageStore } from "@/plane-web/hooks/store";
+import { EPageStoreType, usePage, usePageStore } from "@/qlcv-web/hooks/store";
 // plane web services
 import { WorkspaceService } from "@/services/workspace.service";
 // services

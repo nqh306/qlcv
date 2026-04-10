@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@qlcv/constants";
 import type {
   IInstanceManagedUser,
   ICreateUserPayload,
@@ -7,7 +7,7 @@ import type {
   IBulkImportResult,
   IWorkspaceProject,
   TPaginationInfo,
-} from "@plane/types";
+} from "@qlcv/types";
 import { APIService } from "../api.service";
 
 export class InstanceUserService extends APIService {
@@ -74,7 +74,7 @@ export class InstanceUserService extends APIService {
     return this.delete(`/api/instances/users/${userId}/projects/${projectId}/`).then((response) => response?.data);
   }
 
-  async setAdminRole(userId: string, data: { role: number | null; workspace_ids?: string[] }): Promise<any> {
+  async setAdminRole(userId: string, data: { role: number | null }): Promise<any> {
     return this.post(`/api/instances/users/${userId}/set-admin-role/`, data).then((response) => response?.data);
   }
 

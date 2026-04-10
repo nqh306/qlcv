@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,9 +8,9 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-import { STICKIES_PER_PAGE } from "@plane/constants";
-import { ContentWrapper, Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { STICKIES_PER_PAGE } from "@qlcv/constants";
+import { ContentWrapper, Loader } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useSticky } from "@/hooks/use-stickies";
 import { StickiesLayout } from "./stickies-list";

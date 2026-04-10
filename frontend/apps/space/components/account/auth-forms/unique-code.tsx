@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
 // plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner } from "@plane/ui";
+import { API_BASE_URL } from "@qlcv/constants";
+import { Button } from "@qlcv/propel/button";
+import { AuthService } from "@qlcv/services";
+import { Input, Spinner } from "@qlcv/ui";
 // hooks
 import useTimer from "@/hooks/use-timer";
 // types

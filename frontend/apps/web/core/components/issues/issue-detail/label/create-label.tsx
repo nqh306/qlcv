@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,10 +10,10 @@ import { Controller, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Popover } from "@headlessui/react";
-import { PlusIcon, CloseIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
+import { PlusIcon, CloseIcon } from "@qlcv/propel/icons";
+import type { IIssueLabel } from "@qlcv/types";
 // hooks
-import { Input } from "@plane/ui";
+import { Input } from "@qlcv/ui";
 // ui
 // types
 import type { TLabelOperations } from "./root";

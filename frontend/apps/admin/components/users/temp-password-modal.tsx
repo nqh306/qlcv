@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import { Copy, Check } from "lucide-react";
-import { Button } from "@plane/propel/button";
+import { Button } from "@qlcv/propel/button";
 import { Dialog, Transition } from "@headlessui/react";
 
 type Props = {

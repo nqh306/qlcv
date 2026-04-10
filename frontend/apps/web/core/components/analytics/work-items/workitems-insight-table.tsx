@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,14 +10,14 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { UserRound } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ProjectIcon } from "@plane/propel/icons";
+import { useTranslation } from "@qlcv/i18n";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { ProjectIcon } from "@qlcv/propel/icons";
 // plane package imports
-import type { AnalyticsTableDataMap, WorkItemInsightColumns } from "@plane/types";
+import type { AnalyticsTableDataMap, WorkItemInsightColumns } from "@qlcv/types";
 // plane web components
-import { Avatar } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+import { Avatar } from "@qlcv/ui";
+import { getFileURL } from "@qlcv/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";

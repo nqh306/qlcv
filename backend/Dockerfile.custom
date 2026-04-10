@@ -1,27 +1,27 @@
 FROM makeplane/plane-backend:stable
 
 # Copy custom code over the base image
-COPY plane/license/models/ /code/plane/license/models/
-COPY plane/license/api/ /code/plane/license/api/
-COPY plane/license/urls.py /code/plane/license/urls.py
-COPY plane/license/utils/ /code/plane/license/utils/
-COPY plane/license/migrations/ /code/plane/license/migrations/
-COPY plane/license/management/ /code/plane/license/management/
+COPY qlcv/license/models/ /code/qlcv/license/models/
+COPY qlcv/license/api/ /code/qlcv/license/api/
+COPY qlcv/license/urls.py /code/qlcv/license/urls.py
+COPY qlcv/license/utils/ /code/qlcv/license/utils/
+COPY qlcv/license/migrations/ /code/qlcv/license/migrations/
+COPY qlcv/license/management/ /code/qlcv/license/management/
 
-COPY plane/authentication/views/app/email.py /code/plane/authentication/views/app/email.py
-COPY plane/authentication/views/app/check.py /code/plane/authentication/views/app/check.py
-COPY plane/authentication/views/space/email.py /code/plane/authentication/views/space/email.py
-COPY plane/authentication/views/space/check.py /code/plane/authentication/views/space/check.py
+COPY qlcv/authentication/views/app/email.py /code/qlcv/authentication/views/app/email.py
+COPY qlcv/authentication/views/app/check.py /code/qlcv/authentication/views/app/check.py
+COPY qlcv/authentication/views/space/email.py /code/qlcv/authentication/views/space/email.py
+COPY qlcv/authentication/views/space/check.py /code/qlcv/authentication/views/space/check.py
 
-COPY plane/db/models/project.py /code/plane/db/models/project.py
-COPY plane/db/models/user.py /code/plane/db/models/user.py
-COPY plane/db/migrations/ /code/plane/db/migrations/
+COPY qlcv/db/models/project.py /code/qlcv/db/models/project.py
+COPY qlcv/db/models/user.py /code/qlcv/db/models/user.py
+COPY qlcv/db/migrations/ /code/qlcv/db/migrations/
 
-COPY plane/app/views/workspace/base.py /code/plane/app/views/workspace/base.py
-COPY plane/app/views/user/base.py /code/plane/app/views/user/base.py
-COPY plane/app/views/__init__.py /code/plane/app/views/__init__.py
-COPY plane/app/urls/user.py /code/plane/app/urls/user.py
+COPY qlcv/app/views/workspace/base.py /code/qlcv/app/views/workspace/base.py
+COPY qlcv/app/views/user/base.py /code/qlcv/app/views/user/base.py
+COPY qlcv/app/views/__init__.py /code/qlcv/app/views/__init__.py
+COPY qlcv/app/urls/user.py /code/qlcv/app/urls/user.py
 
-COPY plane/utils/instance_config_variables/core.py /code/plane/utils/instance_config_variables/core.py
+COPY qlcv/utils/instance_config_variables/core.py /code/qlcv/utils/instance_config_variables/core.py
 COPY bin/docker-entrypoint-api.sh /code/bin/docker-entrypoint-api.sh
 COPY bin/docker-entrypoint-api-local.sh /code/bin/docker-entrypoint-api-local.sh

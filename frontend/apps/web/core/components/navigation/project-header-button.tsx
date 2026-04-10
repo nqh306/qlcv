@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import type { TPartialProject } from "@/plane-web/types";
+import type { TPartialProject } from "@/qlcv-web/types";
 // plane propel imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
+import { ChevronDownIcon } from "@qlcv/propel/icons";
+import { Tooltip } from "@qlcv/propel/tooltip";
 
 type TProjectHeaderButtonProps = {
   project: TPartialProject;

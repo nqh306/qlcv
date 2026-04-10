@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,13 +10,13 @@ import { useParams, useRouter } from "next/navigation";
 import { MoreHorizontal, ArchiveIcon, Settings } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
 // plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { EUserPermissionsLevel } from "@qlcv/constants";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import { useTranslation } from "@qlcv/i18n";
+import { ChevronRightIcon } from "@qlcv/propel/icons";
+import { EUserWorkspaceRoles } from "@qlcv/types";
+import { CustomMenu } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 // store hooks
 import { useUserPermissions } from "@/hooks/store/user";
 

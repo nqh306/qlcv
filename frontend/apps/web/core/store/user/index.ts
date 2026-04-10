@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,12 +7,12 @@
 import { cloneDeep, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction, computed } from "mobx";
 // plane imports
-import { EUserPermissions, API_BASE_URL } from "@plane/constants";
-import type { IUser, TUserPermissions } from "@plane/types";
+import { EUserPermissions, API_BASE_URL } from "@qlcv/constants";
+import type { IUser, TUserPermissions } from "@qlcv/types";
 // plane web imports
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { IUserPermissionStore } from "@/plane-web/store/user/permission.store";
-import { UserPermissionStore } from "@/plane-web/store/user/permission.store";
+import type { RootStore } from "@/qlcv-web/store/root.store";
+import type { IUserPermissionStore } from "@/qlcv-web/store/user/permission.store";
+import { UserPermissionStore } from "@/qlcv-web/store/user/permission.store";
 // services
 import { AuthService } from "@/services/auth.service";
 import { UserService } from "@/services/user.service";

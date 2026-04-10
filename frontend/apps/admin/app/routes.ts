@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -11,8 +11,8 @@ export default [
   layout("./(all)/(home)/layout.tsx", [index("./(all)/(home)/page.tsx")]),
   layout("./(all)/(dashboard)/layout.tsx", [
     route("general", "./(all)/(dashboard)/general/page.tsx"),
-    route("workspace", "./(all)/(dashboard)/workspace/page.tsx"),
-    route("workspace/create", "./(all)/(dashboard)/workspace/create/page.tsx"),
+    route("organizations", "./(all)/(dashboard)/organizations/page.tsx"),
+    route("organizations/create", "./(all)/(dashboard)/organizations/create/page.tsx"),
     route("email", "./(all)/(dashboard)/email/page.tsx"),
     route("authentication", "./(all)/(dashboard)/authentication/page.tsx"),
     route("authentication/github", "./(all)/(dashboard)/authentication/github/page.tsx"),

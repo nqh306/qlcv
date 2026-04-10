@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,10 +9,10 @@ import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // plane imports
-import type { EditorRefApi, TExtensions } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { EFileAssetType, TNameDescriptionLoader } from "@plane/types";
-import { getDescriptionPlaceholderI18n } from "@plane/utils";
+import type { EditorRefApi, TExtensions } from "@qlcv/editor";
+import { useTranslation } from "@qlcv/i18n";
+import type { EFileAssetType, TNameDescriptionLoader } from "@qlcv/types";
+import { getDescriptionPlaceholderI18n } from "@qlcv/utils";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text";
 // hooks

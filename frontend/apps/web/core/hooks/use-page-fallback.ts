@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { EditorRefApi, CollaborationState } from "@plane/editor";
+import type { EditorRefApi, CollaborationState } from "@qlcv/editor";
 // plane editor
-import { convertBinaryDataToBase64String, getBinaryDataFromDocumentEditorHTMLString } from "@plane/editor";
+import { convertBinaryDataToBase64String, getBinaryDataFromDocumentEditorHTMLString } from "@qlcv/editor";
 // plane types
-import type { TDocumentPayload } from "@plane/types";
+import type { TDocumentPayload } from "@qlcv/types";
 // hooks
 import useAutoSave from "@/hooks/use-auto-save";
 import type { TPageInstance } from "@/store/pages/base-page";

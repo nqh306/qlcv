@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,13 +10,13 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Component, Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-import { getRandomLabelColor } from "@plane/constants";
+import { getRandomLabelColor } from "@qlcv/constants";
 // plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, SearchIcon, LabelPropertyIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import { useTranslation } from "@qlcv/i18n";
+import { CheckIcon, SearchIcon, LabelPropertyIcon } from "@qlcv/propel/icons";
+import type { IIssueLabel } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // components
 import { IssueLabelsList } from "@/components/ui/labels-list";
 // hooks

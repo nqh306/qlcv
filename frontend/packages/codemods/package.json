@@ -1,5 +1,5 @@
 {
-  "name": "@plane/codemods",
+  "name": "@qlcv/codemods",
   "version": "1.3.0",
   "private": true,
   "scripts": {

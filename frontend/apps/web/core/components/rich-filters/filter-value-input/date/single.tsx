@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,8 +7,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 // plane imports
-import type { TDateFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@plane/types";
-import { cn, renderFormattedPayloadDate } from "@plane/utils";
+import type { TDateFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@qlcv/types";
+import { cn, renderFormattedPayloadDate } from "@qlcv/utils";
 import { DateDropdown } from "@/components/dropdowns/date";
 import { COMMON_FILTER_ITEM_BORDER_CLASSNAME, EMPTY_FILTER_PLACEHOLDER_TEXT } from "../../shared";
 

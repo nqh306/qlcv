@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,10 +9,11 @@ import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
 // plane internal packages
-import { setPromiseToast, setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { TInstanceConfigurationKeys, TInstanceAuthenticationModes } from "@plane/types";
-import { Loader, ToggleSwitch } from "@plane/ui";
-import { cn, resolveGeneralTheme } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { setPromiseToast, setToast, TOAST_TYPE } from "@qlcv/propel/toast";
+import type { TInstanceConfigurationKeys, TInstanceAuthenticationModes } from "@qlcv/types";
+import { Loader, ToggleSwitch } from "@qlcv/ui";
+import { cn, resolveGeneralTheme } from "@qlcv/utils";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
 import { AuthenticationMethodCard } from "@/components/authentication/authentication-method-card";
@@ -28,6 +29,7 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
   // theme
   const { resolvedTheme: resolvedThemeAdmin } = useTheme();
   const resolvedTheme = resolveGeneralTheme(resolvedThemeAdmin);
+  const { t } = useTranslation();
   // Ref to store authentication modes for validation (avoids circular dependency)
   const authenticationModesRef = useRef<TInstanceAuthenticationModes[]>([]);
   // state
@@ -55,9 +57,8 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
           if (!canDisable) {
             setToast({
               type: TOAST_TYPE.ERROR,
-              title: "Cannot disable authentication",
-              message:
-                "At least one authentication method must remain enabled. Please enable another method before disabling this one.",
+              title: t("admin.common.error"),
+              message: t("admin.page.users.toast.updated_error"),
             });
             return;
           }
@@ -74,14 +75,14 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
       const updateConfigPromise = updateInstanceConfigurations(payload);
 
       setPromiseToast(updateConfigPromise, {
-        loading: "Saving configuration",
+        loading: t("admin.common.saving"),
         success: {
-          title: "Success",
-          message: () => "Configuration saved successfully",
+          title: t("admin.common.success"),
+          message: () => t("admin.page.users.toast.updated_success"),
         },
         error: {
-          title: "Error",
-          message: () => "Failed to save configuration",
+          title: t("admin.common.error"),
+          message: () => t("admin.page.users.toast.updated_error"),
         },
       });
 
@@ -111,8 +112,8 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
   return (
     <PageWrapper
       header={{
-        title: "Manage authentication modes for your instance",
-        description: "Configure authentication modes for your team and restrict sign-ups to be invite only.",
+        title: t("admin.page.authentication.title"),
+        description: t("admin.page.authentication.description"),
       }}
     >
       {formattedConfig ? (
@@ -120,9 +121,9 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
           <div className={cn("flex w-full items-center gap-14 rounded-sm")}>
             <div className="flex grow items-center gap-4">
               <div className="grow">
-                <div className="pb-1 text-16 font-medium">Allow anyone to sign up even without an invite</div>
+                <div className="pb-1 text-16 font-medium">{t("admin.page.authentication.allow_signup_label")}</div>
                 <div className={cn("text-11 leading-5 font-regular text-tertiary")}>
-                  Toggling this off will only let users sign up when they are invited.
+                  {t("admin.page.authentication.allow_signup_desc")}
                 </div>
               </div>
             </div>
@@ -143,7 +144,7 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
               </div>
             </div>
           </div>
-          <div className="text-lg pt-6 font-medium">Available authentication modes</div>
+          <div className="text-18 pt-6 font-medium">{t("admin.page.authentication.available_methods")}</div>
           {authenticationModes.map((method) => (
             <AuthenticationMethodCard
               key={method.key}

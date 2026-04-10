@@ -1,24 +1,24 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import React, { useState } from "react";
 // plane constants
-import type { EIssueCommentAccessSpecifier } from "@plane/constants";
+import type { EIssueCommentAccessSpecifier } from "@qlcv/constants";
 // plane editor
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
+import { LiteTextEditorWithRef } from "@qlcv/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@qlcv/editor";
 // components
-import type { TSticky } from "@plane/types";
+import type { TSticky } from "@qlcv/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 // hooks
 import { useEditorConfig } from "@/hooks/editor";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
 // plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+import { useEditorFlagging } from "@/qlcv-web/hooks/use-editor-flagging";
 import { StickyEditorToolbar } from "./toolbar";
 
 interface StickyEditorWrapperProps extends Omit<

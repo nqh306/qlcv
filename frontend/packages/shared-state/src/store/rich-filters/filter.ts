@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -15,8 +15,8 @@ import type {
   TFilterOptions,
   TSaveViewOptions,
   TUpdateViewOptions,
-} from "@plane/constants";
-import { DEFAULT_FILTER_VISIBILITY_OPTIONS } from "@plane/constants";
+} from "@qlcv/constants";
+import { DEFAULT_FILTER_VISIBILITY_OPTIONS } from "@qlcv/constants";
 import type {
   IFilterAdapter,
   SingleOrArray,
@@ -30,8 +30,8 @@ import type {
   TFilterValue,
   TLogicalOperator,
   TSupportedOperators,
-} from "@plane/types";
-import { FILTER_NODE_TYPE } from "@plane/types";
+} from "@qlcv/types";
+import { FILTER_NODE_TYPE } from "@qlcv/types";
 // local imports
 import {
   deepCompareFilterExpressions,
@@ -44,7 +44,7 @@ import {
   sanitizeAndStabilizeExpression,
   shouldNotifyChangeForExpression,
   updateNodeInExpression,
-} from "@plane/utils";
+} from "@qlcv/utils";
 import type { IFilterConfigManager } from "./config-manager";
 import { FilterConfigManager } from "./config-manager";
 import type { IFilterInstanceHelper } from "./filter-helpers";

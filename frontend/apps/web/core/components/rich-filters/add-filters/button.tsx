@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,12 +8,12 @@ import React from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
 // plane imports
-import type { TButtonSize, TButtonVariant } from "@plane/propel/button";
-import { getButtonStyling } from "@plane/propel/button";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { TButtonSize, TButtonVariant } from "@qlcv/propel/button";
+import { getButtonStyling } from "@qlcv/propel/button";
+import type { IFilterInstance } from "@qlcv/shared-state";
+import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@qlcv/types";
+import { LOGICAL_OPERATOR } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 // local imports
 import { AddFilterDropdown } from "./dropdown";
 

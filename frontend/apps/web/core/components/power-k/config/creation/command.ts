@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { FileText, FolderPlus, Layers, SquarePlus } from "lucide-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { ContrastIcon, DiceIcon, LayersIcon } from "@plane/propel/icons";
+import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
+import { ContrastIcon, DiceIcon, LayersIcon } from "@qlcv/propel/icons";
 // components
-import { EUserProjectRoles } from "@plane/types";
+import { EUserProjectRoles } from "@qlcv/types";
 import type { TPowerKCommandConfig, TPowerKContext } from "@/components/power-k/core/types";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
@@ -48,7 +48,7 @@ export const usePowerKCreationCommandsRecord = (): Record<TPowerKCreationCommand
   // derived values
   const canCreateWorkItem = canPerformAnyCreateAction && workspaceProjectIds && workspaceProjectIds.length > 0;
   const canCreateProject = allowPermissions(
-    [EUserPermissions.ADMIN, EUserPermissions.MEMBER],
+    [EUserPermissions.ADMIN],
     EUserPermissionsLevel.WORKSPACE
   );
   const hasProjectMemberLevelPermissions = (ctx: TPowerKContext) =>

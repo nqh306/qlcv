@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // editor
-import type { TEmbedConfig } from "@plane/editor";
+import type { TEmbedConfig } from "@qlcv/editor";
 // plane types
-import type { TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
+import type { TSearchEntityRequestPayload, TSearchResponse } from "@qlcv/types";
 // plane web components
-import { IssueEmbedUpgradeCard } from "@/plane-web/components/pages";
+import { IssueEmbedUpgradeCard } from "@/qlcv-web/components/pages";
 
 export type TIssueEmbedHookProps = {
   fetchEmbedSuggestions?: (payload: TSearchEntityRequestPayload) => Promise<TSearchResponse>;

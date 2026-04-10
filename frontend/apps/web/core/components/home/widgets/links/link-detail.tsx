@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,13 +7,13 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, NewTabIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { LinkItemBlock } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import { LinkIcon, NewTabIcon, EditIcon, TrashIcon } from "@qlcv/propel/icons";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { TContextMenuItem } from "@qlcv/ui";
+import { LinkItemBlock } from "@qlcv/ui";
 // plane utils
-import { copyTextToClipboard } from "@plane/utils";
+import { copyTextToClipboard } from "@qlcv/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 // types

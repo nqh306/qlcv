@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useCallback, useMemo } from "react";
 // plane editor
-import type { TMentionSection } from "@plane/editor";
+import type { TMentionSection } from "@qlcv/editor";
 // plane types
-import type { TSearchEntities, TSearchResponse } from "@plane/types";
+import type { TSearchEntities, TSearchResponse } from "@qlcv/types";
 
 export type TUseAdditionalEditorMentionArgs = {
   enableAdvancedMentions: boolean;

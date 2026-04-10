@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
-import type { TFileHandler } from "@plane/editor";
-import { SitesFileService } from "@plane/services";
-import { getFileURL } from "@plane/utils";
+import { MAX_FILE_SIZE } from "@qlcv/constants";
+import type { TFileHandler } from "@qlcv/editor";
+import { SitesFileService } from "@qlcv/services";
+import { getFileURL } from "@qlcv/utils";
 // services
 const sitesFileService = new SitesFileService();
 

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,16 +7,16 @@
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
-import { PreferencesIcon } from "@plane/propel/icons";
-import { ScrollArea } from "@plane/propel/scrollarea";
+import { useOutsideClickDetector } from "@qlcv/hooks";
+import { PreferencesIcon } from "@qlcv/propel/icons";
+import { ScrollArea } from "@qlcv/propel/scrollarea";
 // components
 import { CustomizeNavigationDialog } from "@/components/navigation/customize-navigation-dialog";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import useSize from "@/hooks/use-window-size";
 import { AppSidebarToggleButton } from "./sidebar-toggle-button";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@qlcv/propel/icon-button";
 
 type TSidebarWrapperProps = {
   title: string;

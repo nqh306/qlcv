@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { ETabIndices } from "@plane/constants";
-import { ParentPropertyIcon } from "@plane/propel/icons";
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { renderFormattedPayloadDate, getDate, getTabIndex } from "@plane/utils";
+import { ETabIndices } from "@qlcv/constants";
+import { ParentPropertyIcon } from "@qlcv/propel/icons";
+import type { ISearchIssueResponse, TIssue } from "@qlcv/types";
+import { CustomMenu } from "@qlcv/ui";
+import { renderFormattedPayloadDate, getDate, getTabIndex } from "@qlcv/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";

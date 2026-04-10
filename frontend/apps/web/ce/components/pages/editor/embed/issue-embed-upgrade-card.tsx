@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+import { getButtonStyling } from "@qlcv/propel/button";
+import { cn } from "@qlcv/utils";
 // components
 import { ProIcon } from "@/components/common/pro-icon";
 
@@ -23,11 +23,11 @@ export function IssueEmbedUpgradeCard(props: any) {
       <div className="flex items-center gap-4">
         <ProIcon className="size-4 flex-shrink-0" />
         <p className="!text-14 text-secondary">
-          Embed and access issues in pages seamlessly, upgrade to Plane Pro now.
+          Embed and access issues in pages seamlessly, upgrade to QLCV Pro now.
         </p>
       </div>
       <a
-        href="https://plane.so/pro"
+        href="https://ems.evngenco1.vn/qlcv/pro"
         target="_blank"
         rel="noopener noreferrer"
         className={cn(getButtonStyling("primary", "base"), "no-underline")}

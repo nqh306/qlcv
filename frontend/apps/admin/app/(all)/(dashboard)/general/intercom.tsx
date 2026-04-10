@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,8 +8,9 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 import { MessageSquare } from "lucide-react";
-import type { IFormattedInstanceConfiguration } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import type { IFormattedInstanceConfiguration } from "@qlcv/types";
+import { ToggleSwitch } from "@qlcv/ui";
 // hooks
 import { useInstance } from "@/hooks/store";
 
@@ -21,6 +22,7 @@ export const IntercomConfig = observer(function IntercomConfig(props: TIntercomC
   const { isTelemetryEnabled } = props;
   // hooks
   const { instanceConfigurations, updateInstanceConfigurations, fetchInstanceConfigurations } = useInstance();
+  const { t } = useTranslation();
   // states
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -64,10 +66,9 @@ export const IntercomConfig = observer(function IntercomConfig(props: TIntercomC
           </div>
 
           <div className="grow">
-            <div className="text-13 leading-5 font-medium text-primary">Chat with us</div>
+            <div className="text-13 leading-5 font-medium text-primary">{t("admin.page.general.chat_with_us")}</div>
             <div className="text-11 leading-5 font-regular text-tertiary">
-              Let your users chat with us via Intercom or another service. Toggling Telemetry off turns this off
-              automatically.
+              {t("admin.page.general.chat_with_us_desc")}
             </div>
           </div>
 

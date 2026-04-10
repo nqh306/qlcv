@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,10 +10,10 @@ import { Activity, Bell, CircleUser, KeyRound, LockIcon, Settings2 } from "lucid
 import { observer } from "mobx-react";
 import { useParams } from "react-router";
 // plane imports
-import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TProfileSettingsTabs } from "@plane/types";
+import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import type { ISvgIcons } from "@qlcv/propel/icons";
+import type { TProfileSettingsTabs } from "@qlcv/types";
 // local imports
 import { SettingsSidebarItem } from "../../sidebar/item";
 import { ProfileSettingsSidebarWorkspaceOptions } from "./workspace-options";

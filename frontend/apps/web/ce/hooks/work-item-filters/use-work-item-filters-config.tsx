@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import { useCallback, useMemo } from "react";
 import { AtSign, Briefcase } from "lucide-react";
 // plane imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
+import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import {
   CalendarLayoutIcon,
   CycleGroupIcon,
@@ -22,7 +22,7 @@ import {
   DueDatePropertyIcon,
   UserCirclePropertyIcon,
   PriorityPropertyIcon,
-} from "@plane/propel/icons";
+} from "@qlcv/propel/icons";
 import type {
   ICycle,
   IState,
@@ -32,8 +32,8 @@ import type {
   IModule,
   IProject,
   TWorkItemFilterProperty,
-} from "@plane/types";
-import { Avatar } from "@plane/ui";
+} from "@qlcv/types";
+import { Avatar } from "@qlcv/ui";
 import {
   getAssigneeFilterConfig,
   getCreatedAtFilterConfig,
@@ -52,7 +52,7 @@ import {
   getTargetDateFilterConfig,
   getUpdatedAtFilterConfig,
   isLoaderReady,
-} from "@plane/utils";
+} from "@qlcv/utils";
 // store hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useLabel } from "@/hooks/store/use-label";
@@ -61,7 +61,7 @@ import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
 // plane web imports
-import { useFiltersOperatorConfigs } from "@/plane-web/hooks/rich-filters/use-filters-operator-configs";
+import { useFiltersOperatorConfigs } from "@/qlcv-web/hooks/rich-filters/use-filters-operator-configs";
 
 export type TWorkItemFiltersEntityProps = {
   workspaceSlug: string;

@@ -146,37 +146,40 @@ importers:
       '@bprogress/core':
         specifier: 'catalog:'
         version: 1.3.4
-      '@fontsource-variable/inter':
-        specifier: 5.2.8
-        version: 5.2.8
       '@fontsource/ibm-plex-mono':
         specifier: 5.2.7
         version: 5.2.7
       '@fontsource/material-symbols-rounded':
         specifier: 5.2.30
         version: 5.2.30
+      '@fontsource/roboto':
+        specifier: 5.2.8
+        version: 5.2.8
       '@headlessui/react':
         specifier: ^1.7.19
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../../packages/constants
-      '@plane/hooks':
+      '@qlcv/hooks':
         specifier: workspace:*
         version: link:../../packages/hooks
-      '@plane/propel':
+      '@qlcv/i18n':
+        specifier: workspace:*
+        version: link:../../packages/i18n
+      '@qlcv/propel':
         specifier: workspace:*
         version: link:../../packages/propel
-      '@plane/services':
+      '@qlcv/services':
         specifier: workspace:*
         version: link:../../packages/services
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@plane/ui':
+      '@qlcv/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@plane/utils':
+      '@qlcv/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@react-router/node':
@@ -231,10 +234,10 @@ importers:
         specifier: 'catalog:'
         version: 13.0.0
     devDependencies:
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -273,7 +276,7 @@ importers:
       '@effect/platform-node':
         specifier: ^0.104.0
         version: 0.104.0(@effect/cluster@0.56.1(@effect/platform@0.94.1(effect@3.20.0))(@effect/rpc@0.73.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0)(ioredis@5.7.0))(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0)(ioredis@5.7.0))(@effect/platform@0.94.1(effect@3.20.0))(@effect/rpc@0.73.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0))(effect@3.20.0))(effect@3.20.0))(@effect/platform@0.94.1(effect@3.20.0))(@effect/rpc@0.73.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0)(ioredis@5.7.0))(@effect/platform@0.94.1(effect@3.20.0))(effect@3.20.0))(effect@3.20.0)
-      '@fontsource/inter':
+      '@fontsource/roboto':
         specifier: 5.2.8
         version: 5.2.8
       '@hocuspocus/extension-database':
@@ -291,16 +294,16 @@ importers:
       '@hocuspocus/transformer':
         specifier: 2.15.2
         version: 2.15.2(@tiptap/core@2.26.3(@tiptap/pm@3.6.6))(@tiptap/pm@3.6.6)(y-prosemirror@1.3.7(prosemirror-model@1.25.3)(prosemirror-state@1.4.3)(prosemirror-view@1.40.0)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(yjs@13.6.27)
-      '@plane/decorators':
+      '@qlcv/decorators':
         specifier: workspace:*
         version: link:../../packages/decorators
-      '@plane/editor':
+      '@qlcv/editor':
         specifier: workspace:*
         version: link:../../packages/editor
-      '@plane/logger':
+      '@qlcv/logger':
         specifier: workspace:*
         version: link:../../packages/logger
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../../packages/types
       '@react-pdf/renderer':
@@ -367,7 +370,7 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/compression':
@@ -415,45 +418,45 @@ importers:
       '@bprogress/core':
         specifier: 'catalog:'
         version: 1.3.4
-      '@fontsource-variable/inter':
-        specifier: 5.2.8
-        version: 5.2.8
       '@fontsource/ibm-plex-mono':
         specifier: 5.2.7
         version: 5.2.7
       '@fontsource/material-symbols-rounded':
         specifier: 5.2.30
         version: 5.2.30
+      '@fontsource/roboto':
+        specifier: 5.2.8
+        version: 5.2.8
       '@headlessui/react':
         specifier: ^1.7.19
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
-        specifier: workspace:*
-        version: link:../../packages/constants
-      '@plane/editor':
-        specifier: workspace:*
-        version: link:../../packages/editor
-      '@plane/i18n':
-        specifier: workspace:*
-        version: link:../../packages/i18n
-      '@plane/propel':
-        specifier: workspace:*
-        version: link:../../packages/propel
-      '@plane/services':
-        specifier: workspace:*
-        version: link:../../packages/services
-      '@plane/types':
-        specifier: workspace:*
-        version: link:../../packages/types
-      '@plane/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@plane/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       '@popperjs/core':
         specifier: ^2.11.8
         version: 2.11.8
+      '@qlcv/constants':
+        specifier: workspace:*
+        version: link:../../packages/constants
+      '@qlcv/editor':
+        specifier: workspace:*
+        version: link:../../packages/editor
+      '@qlcv/i18n':
+        specifier: workspace:*
+        version: link:../../packages/i18n
+      '@qlcv/propel':
+        specifier: workspace:*
+        version: link:../../packages/propel
+      '@qlcv/services':
+        specifier: workspace:*
+        version: link:../../packages/services
+      '@qlcv/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@qlcv/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@qlcv/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@react-router/node':
         specifier: 'catalog:'
         version: 7.13.1(react-router@7.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.8.3)
@@ -515,10 +518,10 @@ importers:
         specifier: 'catalog:'
         version: 13.0.0
     devDependencies:
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -566,51 +569,51 @@ importers:
       '@bprogress/core':
         specifier: 'catalog:'
         version: 1.3.4
-      '@fontsource-variable/inter':
-        specifier: 5.2.8
-        version: 5.2.8
       '@fontsource/ibm-plex-mono':
         specifier: 5.2.7
         version: 5.2.7
       '@fontsource/material-symbols-rounded':
         specifier: 5.2.30
         version: 5.2.30
+      '@fontsource/roboto':
+        specifier: 5.2.8
+        version: 5.2.8
       '@headlessui/react':
         specifier: ^1.7.19
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
-        specifier: workspace:*
-        version: link:../../packages/constants
-      '@plane/editor':
-        specifier: workspace:*
-        version: link:../../packages/editor
-      '@plane/hooks':
-        specifier: workspace:*
-        version: link:../../packages/hooks
-      '@plane/i18n':
-        specifier: workspace:*
-        version: link:../../packages/i18n
-      '@plane/propel':
-        specifier: workspace:*
-        version: link:../../packages/propel
-      '@plane/services':
-        specifier: workspace:*
-        version: link:../../packages/services
-      '@plane/shared-state':
-        specifier: workspace:*
-        version: link:../../packages/shared-state
-      '@plane/types':
-        specifier: workspace:*
-        version: link:../../packages/types
-      '@plane/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@plane/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       '@popperjs/core':
         specifier: ^2.11.8
         version: 2.11.8
+      '@qlcv/constants':
+        specifier: workspace:*
+        version: link:../../packages/constants
+      '@qlcv/editor':
+        specifier: workspace:*
+        version: link:../../packages/editor
+      '@qlcv/hooks':
+        specifier: workspace:*
+        version: link:../../packages/hooks
+      '@qlcv/i18n':
+        specifier: workspace:*
+        version: link:../../packages/i18n
+      '@qlcv/propel':
+        specifier: workspace:*
+        version: link:../../packages/propel
+      '@qlcv/services':
+        specifier: workspace:*
+        version: link:../../packages/services
+      '@qlcv/shared-state':
+        specifier: workspace:*
+        version: link:../../packages/shared-state
+      '@qlcv/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@qlcv/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@qlcv/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@react-pdf/renderer':
         specifier: ^3.4.5
         version: 3.4.5(react@18.3.1)
@@ -717,10 +720,10 @@ importers:
         specifier: 'catalog:'
         version: 13.0.0
     devDependencies:
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -777,11 +780,11 @@ importers:
 
   packages/constants:
     dependencies:
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -799,7 +802,7 @@ importers:
 
   packages/decorators:
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/express':
@@ -835,22 +838,22 @@ importers:
       '@hocuspocus/provider':
         specifier: 2.15.2
         version: 2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/hooks':
+      '@qlcv/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@plane/propel':
+      '@qlcv/propel':
         specifier: workspace:*
         version: link:../propel
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/ui':
+      '@qlcv/ui':
         specifier: workspace:*
         version: link:../ui
-      '@plane/utils':
+      '@qlcv/utils':
         specifier: workspace:*
         version: link:../utils
       '@tiptap/core':
@@ -977,10 +980,10 @@ importers:
         specifier: ^13.6.20
         version: 13.6.27
     devDependencies:
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1011,7 +1014,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -1029,7 +1032,7 @@ importers:
 
   packages/i18n:
     dependencies:
-      '@plane/utils':
+      '@qlcv/utils':
         specifier: workspace:*
         version: link:../utils
       intl-messageformat:
@@ -1048,7 +1051,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1076,7 +1079,7 @@ importers:
         specifier: ^3.17.0
         version: 3.17.0
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/express':
@@ -1097,16 +1100,16 @@ importers:
       '@base-ui-components/react':
         specifier: 1.0.0-beta.3
         version: 1.0.0-beta.3(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/hooks':
+      '@qlcv/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/utils':
+      '@qlcv/utils':
         specifier: workspace:*
         version: link:../utils
       '@tanstack/react-table':
@@ -1149,10 +1152,10 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(react@18.3.1)
     devDependencies:
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@storybook/addon-designs':
@@ -1182,10 +1185,10 @@ importers:
 
   packages/services:
     dependencies:
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
       axios:
@@ -1195,7 +1198,7 @@ importers:
         specifier: ^21.3.1
         version: 21.3.3
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       tsdown:
@@ -1207,13 +1210,13 @@ importers:
 
   packages/shared-state:
     dependencies:
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/utils':
+      '@qlcv/utils':
         specifier: workspace:*
         version: link:../utils
       lodash-es:
@@ -1232,7 +1235,7 @@ importers:
         specifier: ^3.22.2
         version: 3.25.76
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1270,7 +1273,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -1308,24 +1311,24 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.3
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
-        specifier: workspace:*
-        version: link:../constants
-      '@plane/hooks':
-        specifier: workspace:*
-        version: link:../hooks
-      '@plane/propel':
-        specifier: workspace:*
-        version: link:../propel
-      '@plane/types':
-        specifier: workspace:*
-        version: link:../types
-      '@plane/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@popperjs/core':
         specifier: ^2.11.8
         version: 2.11.8
+      '@qlcv/constants':
+        specifier: workspace:*
+        version: link:../constants
+      '@qlcv/hooks':
+        specifier: workspace:*
+        version: link:../hooks
+      '@qlcv/propel':
+        specifier: workspace:*
+        version: link:../propel
+      '@qlcv/types':
+        specifier: workspace:*
+        version: link:../types
+      '@qlcv/utils':
+        specifier: workspace:*
+        version: link:../utils
       '@radix-ui/react-scroll-area':
         specifier: ^1.2.3
         version: 1.2.10(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1363,10 +1366,10 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^1.4.0
         version: 1.9.0(react@18.3.1)
-      '@plane/tailwind-config':
+      '@qlcv/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@storybook/addon-essentials':
@@ -1435,10 +1438,10 @@ importers:
 
   packages/utils:
     dependencies:
-      '@plane/constants':
+      '@qlcv/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@qlcv/types':
         specifier: workspace:*
         version: link:../types
       chroma-js:
@@ -1493,7 +1496,7 @@ importers:
         specifier: 'catalog:'
         version: 13.0.0
     devDependencies:
-      '@plane/typescript-config':
+      '@qlcv/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/chroma-js':
@@ -2088,17 +2091,14 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
-  '@fontsource-variable/inter@5.2.8':
-    resolution: {integrity: sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ==}
-
   '@fontsource/ibm-plex-mono@5.2.7':
     resolution: {integrity: sha512-MKAb8qV+CaiMQn2B0dIi1OV3565NYzp3WN5b4oT6LTkk+F0jR6j0ZN+5BKJiIhffDC3rtBULsYZE65+0018z9w==}
 
-  '@fontsource/inter@5.2.8':
-    resolution: {integrity: sha512-P6r5WnJoKiNVV+zvW2xM13gNdFhAEpQ9dQJHt3naLvfg+LkF2ldgSLiF4T41lf1SQCM9QmkqPTn4TH568IRagg==}
-
   '@fontsource/material-symbols-rounded@5.2.30':
     resolution: {integrity: sha512-svIEPUzsJGdBMr0PwLH3wKndh7ZNB8IVlyKZPKvbGEX0f36gpGPzE2EZiXppb4UJgDUnyjphWzjJ28StuK6NCg==}
+
+  '@fontsource/roboto@5.2.8':
+    resolution: {integrity: sha512-oh9g4Cg3loVMz9MWeKWfDI+ooxxG1aRVetkiKIb2ESS2rrryGecQ/y4pAj4z5A5ebyw450dYRi/c4k/I3UBhHA==}
 
   '@formatjs/ecma402-abstract@2.3.4':
     resolution: {integrity: sha512-qrycXDeaORzIqNhBOx0btnhpD1c+/qFIHAN9znofuMJX6QBwtbrmlpWfD4oiUUD2vJUOIYFA/gYtg2KAMGG7sA==}
@@ -9388,13 +9388,11 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@fontsource-variable/inter@5.2.8': {}
-
   '@fontsource/ibm-plex-mono@5.2.7': {}
 
-  '@fontsource/inter@5.2.8': {}
-
   '@fontsource/material-symbols-rounded@5.2.30': {}
+
+  '@fontsource/roboto@5.2.8': {}
 
   '@formatjs/ecma402-abstract@2.3.4':
     dependencies:

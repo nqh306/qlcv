@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,10 +7,10 @@
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { stringToEmoji } from "@plane/propel/emoji-icon-picker";
-import { EmojiReactionGroup, EmojiReactionPicker } from "@plane/propel/emoji-reaction";
-import type { EmojiReactionType } from "@plane/propel/emoji-reaction";
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
+import { stringToEmoji } from "@qlcv/propel/emoji-icon-picker";
+import { EmojiReactionGroup, EmojiReactionPicker } from "@qlcv/propel/emoji-reaction";
+import type { EmojiReactionType } from "@qlcv/propel/emoji-reaction";
+import type { TCommentsOperations, TIssueComment } from "@qlcv/types";
 // helpers
 // local imports
 

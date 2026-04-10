@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
 // Plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IModule } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IModule } from "@qlcv/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 // components
 import { ModuleForm } from "@/components/modules";
 // hooks

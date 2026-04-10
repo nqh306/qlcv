@@ -1,13 +1,13 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import type { IFavorite } from "@plane/types";
+import type { IFavorite } from "@qlcv/types";
 // components
-import { getPageName } from "@plane/utils";
+import { getPageName } from "@qlcv/utils";
 import {
   generateFavoriteItemLink,
   getFavoriteItemIcon,
@@ -19,8 +19,8 @@ import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectView } from "@/hooks/store/use-project-view";
 // plane web hooks
-import { EPageStoreType, usePage } from "@/plane-web/hooks/store";
-import { useAdditionalFavoriteItemDetails } from "@/plane-web/hooks/use-additional-favorite-item-details";
+import { EPageStoreType, usePage } from "@/qlcv-web/hooks/store";
+import { useAdditionalFavoriteItemDetails } from "@/qlcv-web/hooks/use-additional-favorite-item-details";
 
 export const useFavoriteItemDetails = (workspaceSlug: string, favorite: IFavorite) => {
   const {

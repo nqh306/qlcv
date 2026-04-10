@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
 // plane imports
-import { ISSUE_PRIORITIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ISSUE_PRIORITIES } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { PriorityIcon } from "@qlcv/propel/icons";
+import type { TIssuePriorities } from "@qlcv/types";
+import { cn } from "@qlcv/utils";
 
 export type TReadonlyPriorityProps = {
   className?: string;

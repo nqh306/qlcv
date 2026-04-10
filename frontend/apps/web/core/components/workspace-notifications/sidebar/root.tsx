@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,18 +8,18 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import type { TNotificationTab } from "@plane/constants";
-import { NOTIFICATION_TABS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@plane/ui";
-import { cn, getNumberCount } from "@plane/utils";
+import type { TNotificationTab } from "@qlcv/constants";
+import { NOTIFICATION_TABS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@qlcv/ui";
+import { cn, getNumberCount } from "@qlcv/utils";
 // components
 import { CountChip } from "@/components/common/count-chip";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 // plane web components
-import { NotificationListRoot } from "@/plane-web/components/workspace-notifications/list-root";
+import { NotificationListRoot } from "@/qlcv-web/components/workspace-notifications/list-root";
 // local imports
 import { NotificationEmptyState } from "./empty-state";
 import { AppliedFilters } from "./filters/applied-filter";

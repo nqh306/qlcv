@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -12,22 +12,25 @@ import { CirclePlus, LogOut, Mails } from "lucide-react";
 // ui
 import { Menu, Transition } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { orderWorkspacesList, cn } from "@plane/utils";
+import { useTranslation } from "@qlcv/i18n";
+import { ChevronDownIcon } from "@qlcv/propel/icons";
+import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
+import type { IWorkspace } from "@qlcv/types";
+import { Loader } from "@qlcv/ui";
+import { orderWorkspacesList, cn } from "@qlcv/utils";
 // helpers
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser, useUserProfile } from "@/hooks/store/user";
-import { useInstance } from "@/hooks/store/use-instance";
+// services
+import { UserService } from "@/services/user.service";
 // components
 import { WorkspaceLogo } from "../logo";
 import SidebarDropdownItem from "./dropdown-item";
+
+const userService = new UserService();
 
 type WorkspaceMenuRootProps = {
   variant: "sidebar" | "top-navigation";
@@ -37,17 +40,22 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
   const { variant } = props;
   // store hooks
   const { toggleSidebar, toggleAnySidebarDropdown } = useAppTheme();
-  const { config } = useInstance();
   const { data: currentUser } = useUser();
   const { signOut } = useUser();
   const { updateUserProfile } = useUserProfile();
   const { currentWorkspace: activeWorkspace, workspaces } = useWorkspace();
-  // derived values
-  const isWorkspaceCreationDisabled = config?.is_workspace_creation_disabled ?? false;
   // translation
   const { t } = useTranslation();
   // local state
   const [isWorkspaceMenuOpen, setIsWorkspaceMenuOpen] = useState(false);
+  const [isSuperAdmin, setIsSuperAdmin] = useState(false);
+
+  useEffect(() => {
+    userService
+      .currentUserInstanceAdminStatus()
+      .then((res) => setIsSuperAdmin(res.is_super_admin ?? false))
+      .catch(() => setIsSuperAdmin(false));
+  }, []);
 
   const handleWorkspaceNavigation = (workspace: IWorkspace) => updateUserProfile({ last_workspace_id: workspace?.id });
 
@@ -77,9 +85,9 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
   return (
     <Menu
       as="div"
-      className={cn("relative flex h-full w-fit max-w-48 truncate whitespace-nowrap", {
-        "w-full justify-center text-center": variant === "sidebar",
-        "flex-grow justify-stretch truncate text-left": variant === "top-navigation",
+      className={cn("relative flex h-full truncate whitespace-nowrap", {
+        "w-fit max-w-48 w-full justify-center text-center": variant === "sidebar",
+        "w-full justify-stretch truncate text-left": variant === "top-navigation",
       })}
     >
       {({ open, close }: { open: boolean; close: () => void }) => {
@@ -187,7 +195,7 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
                     )}
                   </div>
                   <div className="flex w-full flex-col items-start justify-start gap-2 px-4 py-2 text-13">
-                    {!isWorkspaceCreationDisabled && (
+                    {isSuperAdmin && (
                       <Link href="/create-workspace" className="w-full">
                         <Menu.Item
                           as="div"

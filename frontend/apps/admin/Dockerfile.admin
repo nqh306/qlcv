@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.7
 FROM node:22-alpine AS base
 
 WORKDIR /app
@@ -13,7 +14,7 @@ RUN corepack enable pnpm
 
 FROM base AS builder
 
-RUN pnpm add -g turbo@2.9.4
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store pnpm add -g turbo@2.9.4
 
 COPY . .
 
@@ -53,9 +54,9 @@ ENV VITE_WEB_BASE_URL=$VITE_WEB_BASE_URL
 ARG VITE_WEB_BASE_PATH=""
 ENV VITE_WEB_BASE_PATH=$VITE_WEB_BASE_PATH
 
-ARG VITE_WEBSITE_URL="https://plane.so"
+ARG VITE_WEBSITE_URL="https://ems.evngenco1.vn/qlcv"
 ENV VITE_WEBSITE_URL=$VITE_WEBSITE_URL
-ARG VITE_SUPPORT_EMAIL="support@plane.so"
+ARG VITE_SUPPORT_EMAIL="qlcv@evngenco1.vn"
 ENV VITE_SUPPORT_EMAIL=$VITE_SUPPORT_EMAIL
 
 COPY .gitignore .gitignore
@@ -83,6 +84,6 @@ COPY --from=installer /app/apps/admin/build/client /usr/share/nginx/html/god-mod
 EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:3000/ >/dev/null || exit 1
+  CMD wget -qO- http://127.0.0.1:3000/ >/dev/null || exit 1
 
 CMD ["nginx", "-g", "daemon off;"]

@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@plane/types";
+import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@qlcv/types";
 
 /**
  * Abstract base class for converting between external filter formats and internal filter expressions.

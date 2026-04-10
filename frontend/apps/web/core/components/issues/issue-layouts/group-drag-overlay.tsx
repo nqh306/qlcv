@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,13 +7,13 @@
 import { useRef } from "react";
 import { AlertCircle } from "lucide-react";
 // plane imports
-import { ISSUE_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueOrderByOptions } from "@plane/types";
+import { ISSUE_ORDER_BY_OPTIONS } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import type { TIssueOrderByOptions } from "@qlcv/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@qlcv/utils";
 // plane web imports
-import { WorkFlowDisabledOverlay } from "@/plane-web/components/workflow";
+import { WorkFlowDisabledOverlay } from "@/qlcv-web/components/workflow";
 
 type Props = {
   dragColumnOrientation: "justify-start" | "justify-center" | "justify-end";

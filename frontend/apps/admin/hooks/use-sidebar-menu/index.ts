@@ -1,22 +1,26 @@
+import { useTranslation } from "@qlcv/i18n";
 import { useUser } from "@/hooks/store";
-import { coreSidebarMenuLinks } from "./core";
+import { getCoreSidebarMenuLinks } from "./core";
 import type { TSidebarMenuItem } from "./types";
 
 export function useSidebarMenu(): TSidebarMenuItem[] {
   const { isSuperAdmin } = useUser();
+  const { t } = useTranslation();
+
+  const links = getCoreSidebarMenuLinks(t);
 
   if (isSuperAdmin) {
     return [
-      coreSidebarMenuLinks.general,
-      coreSidebarMenuLinks.email,
-      coreSidebarMenuLinks.authentication,
-      coreSidebarMenuLinks.workspace,
-      coreSidebarMenuLinks.users,
-      coreSidebarMenuLinks.ai,
-      coreSidebarMenuLinks.image,
+      links.general,
+      links.email,
+      links.authentication,
+      links.organizations,
+      links.users,
+      links.ai,
+      links.image,
     ];
   }
 
   // Workspace Admin: only Users page
-  return [coreSidebarMenuLinks.users];
+  return [links.users];
 }

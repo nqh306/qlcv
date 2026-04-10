@@ -1,15 +1,15 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 // plane imports
-import { STATE_GROUPS } from "@plane/constants";
+import { STATE_GROUPS } from "@qlcv/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import type { IUserStateDistribution } from "@plane/types";
-import { Card, ECardDirection, ECardSpacing } from "@plane/ui";
+import { useTranslation } from "@qlcv/i18n";
+import type { IUserStateDistribution } from "@qlcv/types";
+import { Card, ECardDirection, ECardSpacing } from "@qlcv/ui";
 // constants
 
 type Props = {

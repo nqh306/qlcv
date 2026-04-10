@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,15 +9,15 @@ import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRightCircle } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Tabs } from "@plane/propel/tabs";
-import { Tooltip } from "@plane/propel/tooltip";
+import { useTranslation } from "@qlcv/i18n";
+import { Tabs } from "@qlcv/propel/tabs";
+import { Tooltip } from "@qlcv/propel/tooltip";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
 // plane web components
-import type { TPageNavigationPaneTab } from "@/plane-web/components/pages/navigation-pane";
+import type { TPageNavigationPaneTab } from "@/qlcv-web/components/pages/navigation-pane";
 // store
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports
 import type { TPageRootHandlers } from "../editor/page-root";

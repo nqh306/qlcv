@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -129,6 +129,11 @@ export const AuthenticationWrapper = observer(function AuthenticationWrapper(pro
 
   if (pageType === EPageTypes.AUTHENTICATED) {
     if (currentUser?.id) {
+      // Force password change if password was auto-set by admin
+      if (currentUser?.is_password_autoset) {
+        router.push("/accounts/set-password");
+        return <></>;
+      }
       if (currentUserProfile && currentUserProfile?.id && isUserOnboard) return <>{children}</>;
       else {
         router.push(`/onboarding`);

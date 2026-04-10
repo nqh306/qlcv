@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
+import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
 // plane imports
-import type { TCycleFilters, TCycleGroups } from "@plane/types";
+import type { TCycleFilters, TCycleGroups } from "@qlcv/types";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports

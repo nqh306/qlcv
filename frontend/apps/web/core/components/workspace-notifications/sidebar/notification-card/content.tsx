@@ -1,18 +1,18 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import type { ReactNode } from "react";
 // plane imports
-import type { TNotification } from "@plane/types";
+import type { TNotification } from "@qlcv/types";
 import {
   convertMinutesToHoursMinutesString,
   renderFormattedDate,
   sanitizeCommentForNotification,
   stripAndTruncateHTML,
-} from "@plane/utils";
+} from "@qlcv/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 import {
@@ -20,7 +20,7 @@ import {
   renderAdditionalAction,
   renderAdditionalValue,
   shouldShowConnector,
-} from "@/plane-web/components/workspace-notifications/notification-card/content";
+} from "@/qlcv-web/components/workspace-notifications/notification-card/content";
 
 // Types
 export type TNotificationFieldData = {

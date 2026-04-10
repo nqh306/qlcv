@@ -1,16 +1,16 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@qlcv/i18n";
+import { CloseIcon } from "@qlcv/propel/icons";
 // plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { EHeaderVariant, Header, Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { Tooltip } from "@qlcv/propel/tooltip";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@qlcv/types";
+import { EHeaderVariant, Header, Tag } from "@qlcv/ui";
+import { replaceUnderscoreIfSnakeCase } from "@qlcv/utils";
 // local imports
 import { AppliedAccessFilters } from "./access";
 import { AppliedDateFilters } from "./date";

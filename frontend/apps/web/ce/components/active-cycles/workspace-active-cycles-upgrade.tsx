@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present EVNGENCO1 and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { AlertOctagon, BarChart4, CircleDashed, Folder, Microscope } from "lucide-react";
 // plane imports
-import { MARKETING_PRICING_PAGE_LINK } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { SearchIcon } from "@plane/propel/icons";
-import { ContentWrapper } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { MARKETING_PRICING_PAGE_LINK } from "@qlcv/constants";
+import { useTranslation } from "@qlcv/i18n";
+import { getButtonStyling } from "@qlcv/propel/button";
+import { SearchIcon } from "@qlcv/propel/icons";
+import { ContentWrapper } from "@qlcv/ui";
+import { cn } from "@qlcv/utils";
 // assets
 import ctaL1Dark from "@/app/assets/workspace-active-cycles/cta-l-1-dark.webp?url";
 import ctaL1Light from "@/app/assets/workspace-active-cycles/cta-l-1-light.webp?url";
