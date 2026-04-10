@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TFilterProperty } from "@qlcv/types";
 // local imports
 import type { TCreateFilterConfig, TCreateDateFilterParams } from "../../../rich-filters";

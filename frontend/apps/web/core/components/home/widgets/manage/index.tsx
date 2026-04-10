@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane types
-// plane ui
+// qlcv types
+// qlcv ui
 import { useTranslation } from "@qlcv/i18n";
 import { EModalWidth, ModalCore } from "@qlcv/ui";
 import { WidgetList } from "./widget-list";

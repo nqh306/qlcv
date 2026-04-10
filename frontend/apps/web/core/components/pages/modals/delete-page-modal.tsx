@@ -12,7 +12,7 @@ import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { AlertModalCore } from "@qlcv/ui";
 import { getPageName } from "@qlcv/utils";
 // constants
-// plane web hooks
+// qlcv web hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePageStore } from "@/qlcv-web/hooks/store";

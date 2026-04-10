@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import type { ChartYAxisMetric, IState } from "@qlcv/types";
 import { ChartXAxisProperty } from "@qlcv/types";
 

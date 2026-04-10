@@ -8,7 +8,7 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { MoveDiagonal, MoveRight } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CenterPanelIcon, CopyLinkIcon, FullScreenPanelIcon, SidePanelIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

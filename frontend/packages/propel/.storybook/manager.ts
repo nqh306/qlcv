@@ -7,14 +7,14 @@
 import { addons } from "storybook/manager-api";
 import { create } from "storybook/theming";
 
-const planeTheme = create({
+const qlcvTheme = create({
   base: "dark",
   brandTitle: "QLCV UI",
   brandUrl: "https://ems.evngenco1.vn/qlcv",
-  brandImage: "plane-lockup-light.svg",
+  brandImage: "qlcv-lockup-light.svg",
   brandTarget: "_self",
 });
 
 addons.setConfig({
-  theme: planeTheme,
+  theme: qlcvTheme,
 });

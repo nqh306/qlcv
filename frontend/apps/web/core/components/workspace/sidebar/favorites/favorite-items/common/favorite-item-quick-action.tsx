@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { MoreHorizontal, Star } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { IFavorite } from "@qlcv/types";
 import { CustomMenu } from "@qlcv/ui";

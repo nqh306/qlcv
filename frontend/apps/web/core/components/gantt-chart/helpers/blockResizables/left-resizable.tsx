@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane utils
+// qlcv utils
 import { cn, renderFormattedDate } from "@qlcv/utils";
 //helpers
 //

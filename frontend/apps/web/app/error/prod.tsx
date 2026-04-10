@@ -5,7 +5,7 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
@@ -27,7 +27,7 @@ const linkMap = [
   {
     key: "twitter_handle",
     label: "",
-    value: "https://x.com/planepowers",
+    value: "https://x.com/",
   },
 ];
 

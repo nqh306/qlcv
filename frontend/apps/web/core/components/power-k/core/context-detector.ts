@@ -5,7 +5,7 @@
  */
 
 import type { Params } from "react-router";
-// plane web imports
+// qlcv web imports
 import { detectExtendedContextFromURL } from "@/qlcv-web/components/command-palette/power-k/context-detector";
 // local imports
 import type { TPowerKContextType } from "./types";

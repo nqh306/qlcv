@@ -5,7 +5,7 @@
  */
 
 import { useEffect } from "react";
-// plane helpers
+// qlcv helpers
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // hooks
 import { useDropdownKeyDown } from "@/hooks/use-dropdown-key-down";

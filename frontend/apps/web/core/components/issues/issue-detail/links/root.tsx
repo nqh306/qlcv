@@ -7,7 +7,7 @@
 import { useCallback, useMemo, useState } from "react";
 
 import { PlusIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TIssueLink } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";

@@ -7,7 +7,7 @@
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

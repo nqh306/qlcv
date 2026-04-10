@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { USE_CASES } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { CheckIcon } from "@qlcv/propel/icons";

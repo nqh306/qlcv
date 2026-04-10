@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import type { TModuleStatus } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { CloseIcon, SearchIcon } from "@qlcv/propel/icons";
 import type { TModuleDisplayFilters, TModuleFilters } from "@qlcv/types";
 // components

@@ -7,7 +7,7 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IUserEmailNotificationSettings } from "@qlcv/types";

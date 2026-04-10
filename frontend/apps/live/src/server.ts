@@ -12,7 +12,7 @@ import type { Express, Request, Response, Router } from "express";
 import express from "express";
 import expressWs from "express-ws";
 import helmet from "helmet";
-// plane imports
+// qlcv imports
 import { registerController } from "@qlcv/decorators";
 import { logger, loggerMiddleware } from "@qlcv/logger";
 // controllers

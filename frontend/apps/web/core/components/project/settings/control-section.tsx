@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "react-router";
-// plane imports
+// qlcv imports
 import { PROJECT_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

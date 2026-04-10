@@ -10,14 +10,14 @@ import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { ETabIndices } from "@qlcv/constants";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 // types
 import type { ISearchIssueResponse, TIssue } from "@qlcv/types";
 // helpers
 import { getTabIndex } from "@qlcv/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentTagProps = {

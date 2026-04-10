@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";

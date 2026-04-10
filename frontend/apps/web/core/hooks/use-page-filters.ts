@@ -5,7 +5,7 @@
  */
 
 import { useCallback, useMemo } from "react";
-// plane editor
+// qlcv editor
 import type { TEditorFontSize, TEditorFontStyle } from "@qlcv/editor";
 // hooks
 import useLocalStorage from "@/hooks/use-local-storage";

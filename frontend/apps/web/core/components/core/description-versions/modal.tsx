@@ -6,7 +6,7 @@
 
 import { useCallback, useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

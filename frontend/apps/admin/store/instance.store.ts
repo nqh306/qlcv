@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { observable, action, computed, makeObservable, runInAction } from "mobx";
-// plane internal packages
+// qlcv internal packages
 import type { TInstanceStatus } from "@qlcv/constants";
 import { EInstanceStatus } from "@qlcv/constants";
 import { InstanceService } from "@qlcv/services";

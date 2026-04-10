@@ -5,9 +5,9 @@
  */
 
 import React, { useState } from "react";
-// plane constants
+// qlcv constants
 import type { EIssueCommentAccessSpecifier } from "@qlcv/constants";
-// plane editor
+// qlcv editor
 import { LiteTextEditorWithRef } from "@qlcv/editor";
 import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@qlcv/editor";
 // components
@@ -17,7 +17,7 @@ import { cn } from "@qlcv/utils";
 // hooks
 import { useEditorConfig } from "@/hooks/editor";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
+// qlcv web hooks
 import { useEditorFlagging } from "@/qlcv-web/hooks/use-editor-flagging";
 import { StickyEditorToolbar } from "./toolbar";
 

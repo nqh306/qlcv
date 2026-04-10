@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Outlet } from "react-router";
-// plane web imports
+// qlcv web imports
 import { AutomationsListWrapper } from "@/qlcv-web/components/automations/list/wrapper";
 import type { Route } from "./+types/layout";
 

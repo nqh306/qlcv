@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 
 import type { ENotificationFilterType } from "@qlcv/constants";
 import { CheckIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 // helpers
 import { cn } from "@qlcv/utils";
 // hooks

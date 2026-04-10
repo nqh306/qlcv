@@ -13,7 +13,7 @@ import type {
   IEstimatePoint as IEstimatePointType,
   TEstimateSystemKeys,
 } from "@qlcv/types";
-// plane web services
+// qlcv web services
 import estimateService from "@/services/estimate.service";
 // store
 import type { IEstimatePoint } from "@/store/estimates/estimate-point";

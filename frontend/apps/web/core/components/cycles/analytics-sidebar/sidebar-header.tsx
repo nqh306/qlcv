@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { ArrowRight } from "lucide-react";
-// Plane Imports
+// qlcv imports
 import { CYCLE_STATUS, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { ChevronRightIcon } from "@qlcv/propel/icons";

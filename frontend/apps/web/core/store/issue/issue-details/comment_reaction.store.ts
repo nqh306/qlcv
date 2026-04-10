@@ -6,7 +6,7 @@
 
 import { pull, find, concat, update, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
-// Plane Imports
+// qlcv imports
 import type { TIssueCommentReaction, TIssueCommentReactionIdMap, TIssueCommentReactionMap } from "@qlcv/types";
 import { groupReactions } from "@qlcv/utils";
 // services

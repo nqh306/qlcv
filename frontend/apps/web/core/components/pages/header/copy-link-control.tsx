@@ -8,7 +8,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { observer } from "mobx-react";
 
 import { LinkIcon, CheckIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { IconButton } from "@qlcv/propel/icon-button";
 import { cn } from "@qlcv/utils";

@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ETabIndices, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -29,7 +29,7 @@ import { WorkItemFiltersRow } from "@/components/work-item-filters/filters-row";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { AccessController } from "@/qlcv-web/components/views/access-controller";
 // local imports
 import { LayoutDropDown } from "../dropdowns/layout";

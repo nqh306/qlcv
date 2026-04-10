@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TEditorAsset } from "@qlcv/editor";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";

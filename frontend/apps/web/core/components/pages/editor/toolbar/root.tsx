@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { PanelRight } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";
@@ -14,7 +14,7 @@ import { cn } from "@qlcv/utils";
 import { PageToolbar } from "@/components/pages/editor/toolbar";
 // hooks
 import { usePageFilters } from "@/hooks/use-page-filters";
-// plane web components
+// qlcv web components
 import { PageCollaboratorsList } from "@/qlcv-web/components/pages/header/collaborators-list";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";

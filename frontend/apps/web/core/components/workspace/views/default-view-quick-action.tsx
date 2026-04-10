@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { LinkIcon, NewTabIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 // ui

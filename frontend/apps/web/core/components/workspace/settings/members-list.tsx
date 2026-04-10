@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { Disclosure } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { Collapsible } from "@qlcv/ui";

@@ -33,7 +33,7 @@ import {
   TableRow,
   UtilityExtension,
 } from "@/extensions";
-// plane editor extensions
+// qlcv editor extensions
 import { CoreEditorAdditionalExtensions } from "@/qlcv-editor/extensions";
 // types
 import type { IEditorProps } from "@/types";

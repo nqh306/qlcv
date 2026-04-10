@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IWorkItemFilterInstance } from "@qlcv/shared-state";
 import type { TWorkItemFilterExpression, TWorkItemFilterProperty } from "@qlcv/types";
 // components

@@ -5,7 +5,7 @@
  */
 
 import { Info } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CloseIcon } from "@qlcv/propel/icons";
 // helpers

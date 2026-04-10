@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";
@@ -19,7 +19,7 @@ export type TCheckoutParams = {
 };
 
 type Props = {
-  planeName: string;
+  planName: string;
   planVariant: EProductSubscriptionEnum;
   isLoading?: boolean;
   product: IPaymentProduct | undefined;
@@ -34,7 +34,7 @@ type Props = {
 
 export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Props) {
   const {
-    planeName,
+    planName,
     planVariant,
     isLoading,
     product,
@@ -88,7 +88,7 @@ export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Pr
             }}
             disabled={!!upgradeLoaderType}
           >
-            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${planeName}`)}
+            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${planName}`)}
           </Button>
           {isTrialAllowed && !isSelfHosted && (
             <div className="mt-1 h-3">

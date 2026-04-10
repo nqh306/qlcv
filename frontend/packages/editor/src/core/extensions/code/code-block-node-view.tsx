@@ -13,7 +13,7 @@ import { useState } from "react";
 import { CopyIcon } from "@qlcv/propel/icons";
 // ui
 import { Tooltip } from "@qlcv/propel/tooltip";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // types
 import type { TCodeBlockAttributes } from "./types";

@@ -7,7 +7,7 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel, SIDEBAR_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { AddWorkItemIcon } from "@qlcv/propel/icons";

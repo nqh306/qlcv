@@ -12,7 +12,7 @@ import { LinkIcon, NewTabIcon, EditIcon, TrashIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TContextMenuItem } from "@qlcv/ui";
 import { LinkItemBlock } from "@qlcv/ui";
-// plane utils
+// qlcv utils
 import { copyTextToClipboard } from "@qlcv/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";

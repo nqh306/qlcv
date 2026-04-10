@@ -7,7 +7,7 @@
 import React from "react";
 // components
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
-// plane imports
+// qlcv imports
 import type { TPartialProject } from "@/qlcv-web/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";

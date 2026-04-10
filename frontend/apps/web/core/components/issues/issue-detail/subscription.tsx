@@ -8,7 +8,7 @@ import { useState } from "react";
 import { isNil } from "lodash-es";
 import { observer } from "mobx-react";
 import { Bell, BellOff } from "lucide-react";
-// plane-i18n
+// qlcv-i18n
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // UI

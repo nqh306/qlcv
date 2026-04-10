@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // ui
@@ -21,7 +21,7 @@ import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 
 export const ModulesListHeader = observer(function ModulesListHeader() {

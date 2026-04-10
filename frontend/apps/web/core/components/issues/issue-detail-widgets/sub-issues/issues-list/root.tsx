@@ -6,7 +6,7 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ListFilter } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

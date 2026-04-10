@@ -5,7 +5,7 @@
  */
 
 import type { TNetworkChoiceIconKey } from "@qlcv/constants";
-// plane imports
+// qlcv imports
 import { GlobeIcon, LockIcon } from "@qlcv/propel/icons";
 import { cn } from "@qlcv/utils";
 

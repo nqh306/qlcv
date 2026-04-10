@@ -5,7 +5,7 @@
  */
 
 import type { TPartialProject } from "@/qlcv-web/types";
-// plane propel imports
+// qlcv propel imports
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";

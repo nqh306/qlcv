@@ -7,7 +7,7 @@
 import React, { useEffect, useState } from "react";
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { THEME_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // local imports

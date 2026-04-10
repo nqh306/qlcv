@@ -7,7 +7,7 @@
 import { API_BASE_URL } from "@qlcv/constants";
 import type { TIssueRelation, TIssue } from "@qlcv/types";
 // helpers
-// Plane-web
+// QLCV-web
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 // services
 import { APIService } from "@/services/api.service";

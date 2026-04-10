@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import React from "react";
 import type { IAnalyticsResponseFields } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";

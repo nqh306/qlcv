@@ -11,7 +11,7 @@ import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // ui
 import type { DateRange, Matcher } from "@qlcv/propel/calendar";

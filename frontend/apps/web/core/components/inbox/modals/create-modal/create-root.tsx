@@ -7,7 +7,7 @@
 import type { FormEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import type { EditorRefApi } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";
@@ -23,7 +23,7 @@ import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useAppRouter } from "@/hooks/use-app-router";
 import useKeypress from "@/hooks/use-keypress";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { DeDupeButtonRoot } from "@/qlcv-web/components/de-dupe/de-dupe-button";
 import { DuplicateModalRoot } from "@/qlcv-web/components/de-dupe/duplicate-modal";
 import { useDebouncedDuplicateIssues } from "@/qlcv-web/hooks/use-debounced-duplicate-issues";

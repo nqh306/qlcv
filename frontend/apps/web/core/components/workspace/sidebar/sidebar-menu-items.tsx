@@ -8,7 +8,7 @@ import React, { useMemo } from "react";
 import { observer } from "mobx-react";
 import { Ellipsis } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import {
   WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS,
   WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS,
@@ -27,7 +27,7 @@ import {
   usePersonalNavigationPreferences,
   useWorkspaceNavigationPreferences,
 } from "@/hooks/use-navigation-preferences";
-// plane-web imports
+// qlcv-web imports
 import { SidebarItem } from "@/qlcv-web/components/workspace/sidebar/sidebar-item";
 
 export const SidebarMenuItems = observer(function SidebarMenuItems() {

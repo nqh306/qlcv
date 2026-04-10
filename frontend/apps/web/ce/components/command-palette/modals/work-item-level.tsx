@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { TIssue } from "@qlcv/types";
 import { EIssueServiceType, EIssuesStoreType } from "@qlcv/types";
 // components

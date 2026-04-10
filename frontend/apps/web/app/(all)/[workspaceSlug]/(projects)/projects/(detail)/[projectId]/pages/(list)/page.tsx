@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { TPageNavigationTabs } from "@qlcv/types";
@@ -24,7 +24,7 @@ import { PagesListView } from "@/components/pages/pages-list-view";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web hooks
+// qlcv web hooks
 import { EPageStoreType } from "@/qlcv-web/hooks/store";
 import type { Route } from "./+types/page";
 
@@ -42,7 +42,7 @@ function ProjectPagesPage({ params }: Route.ComponentProps) {
   const { workspaceSlug, projectId } = params;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { getProjectById, currentProjectDetails } = useProject();

@@ -8,16 +8,16 @@ import type { ChangeEvent } from "react";
 import type { UseFormSetValue } from "react-hook-form";
 import { Controller, useFormContext } from "react-hook-form";
 import { InfoIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // ui
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { Input, TextArea } from "@qlcv/ui";
 import { cn, projectIdentifierSanitizer, getTabIndex } from "@qlcv/utils";
-// plane utils
+// qlcv utils
 // helpers
-// plane-web types
+// qlcv-web types
 import type { TProject } from "@/qlcv-web/types/projects";
 
 type Props = {

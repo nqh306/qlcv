@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { SmilePlus } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EmojiPicker, EmojiIconPickerTypes } from "@qlcv/propel/emoji-icon-picker";
 import { cn } from "@qlcv/utils";
 // store

@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 // icons
 import { DATE_BEFORE_FILTER_OPTIONS } from "@qlcv/constants";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane constants
+// qlcv constants
 import { renderFormattedDate, capitalizeFirstLetter } from "@qlcv/utils";
 // helpers
 type Props = {

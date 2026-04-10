@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 import type { IUser } from "@qlcv/types";
-// plane ui
+// qlcv ui
 // hooks
 import { useCurrentTime } from "@/hooks/use-current-time";
 

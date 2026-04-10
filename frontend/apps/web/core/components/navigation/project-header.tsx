@@ -6,7 +6,7 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ProjectIcon } from "@qlcv/propel/icons";
 import type { ICustomSearchSelectOption } from "@qlcv/types";
 import { CustomSearchSelect } from "@qlcv/ui";
@@ -14,7 +14,7 @@ import { CustomSearchSelect } from "@qlcv/ui";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { useNavigationItems } from "@/qlcv-web/components/navigations";
 // local imports
 import { SwitcherLabel } from "../common/switcher-label";

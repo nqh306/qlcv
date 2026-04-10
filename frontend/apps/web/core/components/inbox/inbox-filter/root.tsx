@@ -6,7 +6,7 @@
 
 import { ListFilter } from "lucide-react";
 import { getButtonStyling } from "@qlcv/propel/button";
-// plane imports
+// qlcv imports
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { cn } from "@qlcv/utils";
 // components

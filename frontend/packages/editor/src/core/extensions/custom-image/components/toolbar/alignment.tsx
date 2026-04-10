@@ -5,7 +5,7 @@
  */
 
 import { useEffect, useRef, useState } from "react";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";

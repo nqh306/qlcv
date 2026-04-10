@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { IWorkspaceBulkInviteFormData } from "@qlcv/types";
 import { EModalWidth, EModalPosition, ModalCore } from "@qlcv/ui";

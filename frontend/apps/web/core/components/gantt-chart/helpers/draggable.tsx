@@ -11,7 +11,7 @@ import { observer } from "mobx-react";
 import type { IGanttBlock } from "@qlcv/types";
 // helpers
 import { cn } from "@qlcv/utils";
-//  Plane-web
+// QLCV-web
 import { LeftDependencyDraggable, RightDependencyDraggable } from "@/qlcv-web/components/gantt-chart";
 //
 import { LeftResizable } from "./blockResizables/left-resizable";

@@ -6,7 +6,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import type { TNameDescriptionLoader } from "@qlcv/types";
 import { EFileAssetType, EIssueServiceType } from "@qlcv/types";
@@ -21,7 +21,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 import useSize from "@/hooks/use-window-size";
-// plane web components
+// qlcv web components
 import { DeDupeIssuePopoverRoot } from "@/qlcv-web/components/de-dupe/duplicate-popover";
 import { IssueTypeSwitcher } from "@/qlcv-web/components/issues/issue-details/issue-type-switcher";
 import { useDebouncedDuplicateIssues } from "@/qlcv-web/hooks/use-debounced-duplicate-issues";

@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { AnalyticsIcon, CycleIcon, ProjectIcon, ViewsIcon } from "@qlcv/propel/icons";
 import { EUserWorkspaceRoles } from "@qlcv/types";
 // hooks

@@ -6,9 +6,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { EditorRefApi, CollaborationState } from "@qlcv/editor";
-// plane editor
+// qlcv editor
 import { convertBinaryDataToBase64String, getBinaryDataFromDocumentEditorHTMLString } from "@qlcv/editor";
-// plane types
+// qlcv types
 import type { TDocumentPayload } from "@qlcv/types";
 // hooks
 import useAutoSave from "@/hooks/use-auto-save";

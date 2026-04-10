@@ -11,7 +11,7 @@ import { CycleIcon } from "@qlcv/propel/icons";
 import { Breadcrumbs, Header } from "@qlcv/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
-// plane web components
+// qlcv web components
 import { UpgradeBadge } from "@/qlcv-web/components/workspace/upgrade-badge";
 
 export const WorkspaceActiveCycleHeader = observer(function WorkspaceActiveCycleHeader() {

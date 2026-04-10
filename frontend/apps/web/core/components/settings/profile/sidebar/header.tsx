@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Avatar } from "@qlcv/ui";
 // hooks
 import { useUser } from "@/hooks/store/user";

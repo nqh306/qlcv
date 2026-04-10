@@ -1,4 +1,3 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -34,7 +33,7 @@ class TestWorkspaceAPI:
         workspace_data = {
             "name": "QLCV EVNGENCO1",
             "slug": "pla-ne-test",
-            "company_name": "Plane Inc.",
+            "company_name": "QLCV Inc.",
         }
 
         # Make the request

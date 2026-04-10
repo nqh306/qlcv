@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Link } from "react-router";
-// plane imports
+// qlcv imports
 import { ROLE } from "@qlcv/constants";
 import { Popover } from "@qlcv/propel/popover";
 import { Avatar } from "@qlcv/ui";

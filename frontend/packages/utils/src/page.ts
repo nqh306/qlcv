@@ -5,7 +5,7 @@
  */
 
 import { sortBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type {
   TPage,
   TPageFilterProps,

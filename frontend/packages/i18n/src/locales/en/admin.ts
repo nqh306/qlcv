@@ -128,8 +128,8 @@ export default {
         gitea: "Gitea",
         google_desc: "Allow members to log in or sign up to QLCV with their Google accounts.",
         github_desc: "Allow members to log in or sign up to QLCV with their GitHub accounts.",
-        gitlab_desc: "Allow members to log in or sign up to plane with their GitLab accounts.",
-        gitea_desc: "Allow members to log in or sign up to plane with their Gitea accounts.",
+        gitlab_desc: "Allow members to log in or sign up to QLCV with their GitLab accounts.",
+        gitea_desc: "Allow members to log in or sign up to QLCV with their Gitea accounts.",
         configure: "Configure",
       },
 

@@ -7,7 +7,7 @@
 import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { MoreHorizontal } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EIssueCommentAccessSpecifier } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { IconButton } from "@qlcv/propel/icon-button";

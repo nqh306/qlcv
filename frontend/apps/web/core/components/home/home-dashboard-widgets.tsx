@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { THomeWidgetKeys, THomeWidgetProps } from "@qlcv/types";
 // assets
@@ -18,7 +18,7 @@ import { SimpleEmptyState } from "@/components/empty-state/simple-empty-state-ro
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// qlcv web components
 import { HomePageHeader } from "@/qlcv-web/components/home/header";
 // local imports
 import { StickiesWidget } from "../stickies/widget";
@@ -48,10 +48,10 @@ export const HOME_WIDGETS_LIST: {
     fullWidth: false,
     title: "stickies.title",
   },
-  new_at_plane: {
+  new_at_qlcv: {
     component: null,
     fullWidth: false,
-    title: "home.new_at_plane.title",
+    title: "home.new_at_qlcv.title",
   },
   quick_tutorial: {
     component: null,
@@ -69,7 +69,7 @@ export const DashboardWidgets = observer(function DashboardWidgets() {
   const { toggleWidgetSettings, widgetsMap, showWidgetSettings, orderedWidgets, isAnyWidgetEnabled, loading } =
     useHome();
   const { loader } = useProject();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // derived values
   const noWidgetsResolvedPath = resolvedTheme === "light" ? lightWidgetsAsset : darkWidgetsAsset;

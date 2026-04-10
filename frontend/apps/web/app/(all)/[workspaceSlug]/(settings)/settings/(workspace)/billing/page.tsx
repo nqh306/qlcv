@@ -13,7 +13,7 @@ import { SettingsContentWrapper } from "@/components/settings/content-wrapper";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
+// qlcv web components
 import { BillingRoot } from "@/qlcv-web/components/workspace/billing";
 // local imports
 import { BillingWorkspaceSettingsHeader } from "./header";

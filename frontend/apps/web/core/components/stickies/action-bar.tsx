@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { StickyNote as StickyIcon } from "lucide-react";
-// plane hooks
+// qlcv hooks
 import { useOutsideClickDetector } from "@qlcv/hooks";
-// plane ui
+// qlcv ui
 import { RecentStickyIcon, StickyNoteIcon, PlusIcon, CloseIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";

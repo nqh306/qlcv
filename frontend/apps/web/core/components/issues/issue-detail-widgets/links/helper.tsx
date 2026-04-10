@@ -5,7 +5,7 @@
  */
 
 import { useMemo } from "react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TIssueLink, TIssueServiceType } from "@qlcv/types";

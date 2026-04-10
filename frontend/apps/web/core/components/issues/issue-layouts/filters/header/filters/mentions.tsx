@@ -7,7 +7,7 @@
 import { useMemo, useState } from "react";
 import { sortBy } from "lodash-es";
 import { observer } from "mobx-react";
-// plane ui
+// qlcv ui
 import { Loader, Avatar } from "@qlcv/ui";
 // components
 import { getFileURL } from "@qlcv/utils";

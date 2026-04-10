@@ -6,7 +6,7 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { ISearchIssueResponse, TIssue } from "@qlcv/types";
 // components
 import { IssueModalContext } from "@/components/issues/issue-modal/context";

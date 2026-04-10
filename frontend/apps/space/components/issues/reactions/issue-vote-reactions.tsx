@@ -8,7 +8,7 @@ import { useState } from "react";
 import { ArrowDown, ArrowUp } from "lucide-react";
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";
 // helpers

@@ -9,7 +9,7 @@ import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 // icons
 import { Eye, EyeOff } from "lucide-react";
-// plane internal packages
+// qlcv internal packages
 import { Input } from "@qlcv/ui";
 import { cn } from "@qlcv/utils";
 

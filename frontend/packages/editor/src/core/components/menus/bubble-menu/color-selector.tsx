@@ -7,7 +7,7 @@
 import type { Editor } from "@tiptap/react";
 import { ALargeSmall, Ban } from "lucide-react";
 import { useMemo } from "react";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // constants
 import { COLORS_LIST } from "@/constants/common";

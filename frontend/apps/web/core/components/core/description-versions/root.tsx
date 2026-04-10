@@ -7,7 +7,7 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import type { TDescriptionVersionDetails, TDescriptionVersionsListResponse } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
 // local imports

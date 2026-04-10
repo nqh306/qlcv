@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { useTheme } from "next-themes";
 import { Calendar, Earth, Languages, Palette } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import type { EStartOfTheWeek, TUserProfile } from "@qlcv/types";

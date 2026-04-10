@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane types
+// qlcv types
 import type { TSearchEntities } from "@qlcv/types";
 
 export enum EMentionComponentAttributeNames {

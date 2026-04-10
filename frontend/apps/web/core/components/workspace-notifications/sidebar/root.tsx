@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { TNotificationTab } from "@qlcv/constants";
 import { NOTIFICATION_TABS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
@@ -18,7 +18,7 @@ import { CountChip } from "@/components/common/count-chip";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
-// plane web components
+// qlcv web components
 import { NotificationListRoot } from "@/qlcv-web/components/workspace-notifications/list-root";
 // local imports
 import { NotificationEmptyState } from "./empty-state";

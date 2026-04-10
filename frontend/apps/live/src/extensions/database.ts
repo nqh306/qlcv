@@ -5,7 +5,7 @@
  */
 
 import { Database as HocuspocusDatabase } from "@hocuspocus/extension-database";
-// plane imports
+// qlcv imports
 import {
   getAllDocumentFormatsFromDocumentEditorBinaryData,
   getBinaryDataFromDocumentEditorHTMLString,

@@ -5,7 +5,7 @@
  */
 
 import { Download } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 
 type Props = {

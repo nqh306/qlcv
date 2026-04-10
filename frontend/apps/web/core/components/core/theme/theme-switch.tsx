@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { I_THEME_OPTION } from "@qlcv/constants";
 import { THEME_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";

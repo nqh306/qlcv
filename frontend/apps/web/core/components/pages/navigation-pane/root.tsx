@@ -8,13 +8,13 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRightCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Tabs } from "@qlcv/propel/tabs";
 import { Tooltip } from "@qlcv/propel/tooltip";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web components
+// qlcv web components
 import type { TPageNavigationPaneTab } from "@/qlcv-web/components/pages/navigation-pane";
 // store
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";

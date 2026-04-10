@@ -6,7 +6,7 @@
 
 import type { RefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import type { EditorRefApi } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";

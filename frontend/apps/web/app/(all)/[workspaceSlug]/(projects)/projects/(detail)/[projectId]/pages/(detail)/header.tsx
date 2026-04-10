@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { PageIcon } from "@qlcv/propel/icons";
 import type { ICustomSearchSelectOption } from "@qlcv/types";
 import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@qlcv/ui";
@@ -20,7 +20,7 @@ import { PageSyncingBadge } from "@/components/pages/header/syncing-badge";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 import { PageDetailsHeaderExtraActions } from "@/qlcv-web/components/pages";
 import { EPageStoreType, usePage, usePageStore } from "@/qlcv-web/hooks/store";

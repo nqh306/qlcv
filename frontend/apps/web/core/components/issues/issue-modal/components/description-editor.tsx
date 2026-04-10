@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { Sparkle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import type { EditorRefApi } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";
@@ -28,7 +28,7 @@ import { useInstance } from "@/hooks/store/use-instance";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import useKeypress from "@/hooks/use-keypress";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web services
+// qlcv web services
 import { WorkspaceService } from "@/services/workspace.service";
 // services
 import { AIService } from "@/services/ai.service";

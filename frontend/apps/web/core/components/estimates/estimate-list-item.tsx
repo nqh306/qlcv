@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EEstimateSystem } from "@qlcv/constants";
 import { convertMinutesToHoursMinutesString } from "@qlcv/utils";
 // components
@@ -13,7 +13,7 @@ import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-it
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";
-// plane web imports
+// qlcv web imports
 import { EstimateListItemButtons } from "@/qlcv-web/components/estimates";
 
 type TEstimateListItem = {

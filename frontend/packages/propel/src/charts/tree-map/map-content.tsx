@@ -5,7 +5,7 @@
  */
 
 import React, { useMemo } from "react";
-// plane imports
+// qlcv imports
 import type { TBottomSectionConfig, TContentVisibility, TTopSectionConfig } from "@qlcv/types";
 import { cn } from "../../utils/classname";
 

@@ -6,10 +6,10 @@
 
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { PageIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { IFavorite, TLogoProps } from "@qlcv/types";
 // components
-// plane web constants
+// qlcv web constants
 import { FAVORITE_ITEM_ICONS, FAVORITE_ITEM_LINKS } from "@/constants/sidebar-favorites";
 
 export const getFavoriteItemIcon = (type: string, logo?: TLogoProps) => {

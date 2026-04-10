@@ -5,7 +5,7 @@
  */
 
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { GROUP_CHOICES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { IUserStateDistribution, TStateGroups } from "@qlcv/types";

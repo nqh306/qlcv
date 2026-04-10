@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@qlcv/types";
 import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@qlcv/types";
 // local imports

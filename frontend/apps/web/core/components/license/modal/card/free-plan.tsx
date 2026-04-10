@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { CircleX } from "lucide-react";
-// plane constants
+// qlcv constants
 import { FREE_PLAN_UPGRADE_FEATURES } from "@qlcv/constants";
 // helpers
 import { cn } from "@qlcv/utils";

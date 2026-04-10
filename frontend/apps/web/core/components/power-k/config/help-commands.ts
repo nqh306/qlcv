@@ -33,10 +33,10 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       closeOnSelect: true,
     },
     {
-      id: "open_plane_documentation",
+      id: "open_qlcv_documentation",
       type: "action",
       group: "help",
-      i18n_title: "power_k.help_actions.open_plane_documentation",
+      i18n_title: "power_k.help_actions.open_qlcv_documentation",
       icon: FileText,
       action: () => {
         window.open("https://ems.evngenco1.vn/qlcv", "_blank", "noopener,noreferrer");

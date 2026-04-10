@@ -14,7 +14,7 @@ import { APIService } from "../api.service";
  * Service class for handling authentication-related operations cho QLCV space application
  * Provides methods for user authentication, password management, and session handling
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for QLCV sites
  */
 export class SitesAuthService extends APIService {
   /**

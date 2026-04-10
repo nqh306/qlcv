@@ -5,7 +5,7 @@
  */
 
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { NETWORK_CHOICES, ETabIndices } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { IProject } from "@qlcv/types";

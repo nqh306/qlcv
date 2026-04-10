@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect } from "react";
-// plane imports
+// qlcv imports
 // import { useTranslation } from "@qlcv/i18n";
 import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@qlcv/types";
 // import { generateWorkItemLink } from "@qlcv/utils";
@@ -16,7 +16,7 @@ import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from
 // import { useCommandPalette } from "@/hooks/store/use-command-palette";
 // import { usePowerK } from "@/hooks/store/use-power-k";
 // import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 // import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 import { WorkspaceService } from "@/services/workspace.service";
 
@@ -37,7 +37,7 @@ export function WorkItemSelectionPage(props: Props) {
   const { workspaceSlug, projectId, debouncedSearchTerm, isWorkspaceLevel = false } = props;
   // router
   // const router = useAppRouter();
-  // plane hooks
+  // qlcv hooks
   // const { t } = useTranslation();
   // store hooks
   // const { togglePowerKModal } = usePowerK();

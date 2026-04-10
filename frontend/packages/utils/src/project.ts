@@ -5,7 +5,7 @@
  */
 
 import { sortBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type { TProject, TProjectDisplayFilters, TProjectFilters, TProjectOrderByOptions } from "@qlcv/types";
 // local imports
 import { getDate } from "./datetime";

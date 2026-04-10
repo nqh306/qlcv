@@ -7,7 +7,7 @@
 import { useState, useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import { LockKeyhole, LockKeyholeOpen } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 // hooks
 import { usePageOperations } from "@/hooks/use-page-operations";

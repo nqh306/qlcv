@@ -1,4 +1,3 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -14,7 +13,7 @@ SPECTACULAR_SETTINGS = {
     # ========================================================================
     "TITLE": "QLCV REST API",
     "DESCRIPTION": (
-        "The Plane REST API\n\n"
+        "The QLCV REST API\n\n"
         "Visit our quick start guide and full API documentation at "
         "[ems.evngenco1.vn/qlcv](https://ems.evngenco1.vn/qlcv/api-reference/introduction)."
     ),

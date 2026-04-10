@@ -6,7 +6,7 @@
 
 import { ArrowLeft } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ROLE_DETAILS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";

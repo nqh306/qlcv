@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import type { TSticky } from "@qlcv/types";
 import { cn, isCommentEmpty } from "@qlcv/utils";

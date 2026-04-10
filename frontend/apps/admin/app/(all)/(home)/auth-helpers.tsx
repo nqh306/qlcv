@@ -5,7 +5,7 @@
  */
 
 import Link from "next/link";
-// plane packages
+// qlcv packages
 import type { TAdminAuthErrorInfo } from "@qlcv/constants";
 import { SUPPORT_EMAIL, EAdminAuthErrorCodes } from "@qlcv/constants";
 

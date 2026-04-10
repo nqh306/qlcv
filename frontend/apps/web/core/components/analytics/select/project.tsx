@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane package imports
+// qlcv package imports
 import { getButtonStyling } from "@qlcv/propel/button";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { ChevronDownIcon, ProjectIcon } from "@qlcv/propel/icons";

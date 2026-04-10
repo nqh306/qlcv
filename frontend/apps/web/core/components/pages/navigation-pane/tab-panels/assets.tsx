@@ -8,12 +8,12 @@ import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Download } from "lucide-react";
-// plane imports
+// qlcv imports
 import { CORE_EXTENSIONS } from "@qlcv/editor";
 import type { TEditorAsset } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";
 import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { AdditionalPageNavigationPaneAssetItem } from "@/qlcv-web/components/pages/navigation-pane/tab-panels/assets";
 import { PageNavigationPaneAssetsTabEmptyState } from "@/qlcv-web/components/pages/navigation-pane/tab-panels/empty-states/assets";
 // store

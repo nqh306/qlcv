@@ -7,11 +7,11 @@
 import { uniq, get, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TIssueRelationIdMap, TIssueRelationMap, TIssueRelation, TIssue } from "@qlcv/types";
 // components
 import type { TRelationObject } from "@/components/issues/issue-detail-widgets/relations";
-// Plane-web
+// QLCV-web
 import { REVERSE_RELATIONS } from "@/constants/gantt-chart";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 // services

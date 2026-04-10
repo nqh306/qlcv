@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Clock, FileStack, MoreHorizontal, MoveRight } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

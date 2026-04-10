@@ -8,7 +8,7 @@
 // should be after the imported here rather than some below helper functions as it is in the original file
 
 import useFontFaceObserver from "use-font-face-observer";
-// plane imports
+// qlcv imports
 import type { TLogoProps } from "@qlcv/types";
 // local imports
 import { getEmojiSize, stringToEmoji } from "./helper";

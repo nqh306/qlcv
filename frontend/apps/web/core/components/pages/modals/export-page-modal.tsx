@@ -9,9 +9,9 @@ import type { PageProps } from "@react-pdf/renderer";
 import { pdf } from "@react-pdf/renderer";
 import { Controller, useForm } from "react-hook-form";
 import { useParams } from "react-router";
-// plane editor
+// qlcv editor
 import type { EditorRefApi } from "@qlcv/editor";
-// plane ui
+// qlcv ui
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { CustomSelect, EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";

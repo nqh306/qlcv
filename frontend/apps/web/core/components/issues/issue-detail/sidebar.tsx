@@ -35,7 +35,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web components
+// qlcv web components
 // components
 import { WorkItemAdditionalSidebarProperties } from "@/qlcv-web/components/issues/issue-details/additional-properties";
 import { IssueParentSelectRoot } from "@/qlcv-web/components/issues/issue-details/parent-select-root";

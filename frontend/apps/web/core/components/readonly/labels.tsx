@@ -6,7 +6,7 @@
 
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";
 // hooks

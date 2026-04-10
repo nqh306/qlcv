@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane constants
+// qlcv constants
 import { ISSUE_DISPLAY_FILTERS_BY_PAGE, PROJECT_VIEW_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { EIssueLayoutTypes, EIssuesStoreType } from "@qlcv/types";
 import { Spinner } from "@qlcv/ui";

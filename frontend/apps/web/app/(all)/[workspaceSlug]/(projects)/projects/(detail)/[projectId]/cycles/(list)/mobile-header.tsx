@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 // ui
 import type { ISvgIcons } from "@qlcv/propel/icons";
 import { TimelineLayoutIcon, GridLayoutIcon, ListLayoutIcon } from "@qlcv/propel/icons";
-// plane package imports
+// qlcv package imports
 import type { TCycleLayoutOptions } from "@qlcv/types";
 import { CustomMenu } from "@qlcv/ui";
 // hooks

@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Loader } from "@qlcv/ui";
 // types
 import type { IIssue } from "@/types/issue";

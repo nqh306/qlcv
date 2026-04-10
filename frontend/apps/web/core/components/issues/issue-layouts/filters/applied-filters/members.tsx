@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane ui
+// qlcv ui
 import { Avatar } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";

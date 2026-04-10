@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ENotificationTab } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
@@ -17,7 +17,7 @@ type TNotificationEmptyStateProps = {
 export const NotificationEmptyState = observer(function NotificationEmptyState({
   currentNotificationTab,
 }: TNotificationEmptyStateProps) {
-  // plane imports
+  // qlcv imports
   const { t } = useTranslation();
 
   return (

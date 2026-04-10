@@ -6,7 +6,7 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { DATE_BEFORE_FILTER_OPTIONS } from "@qlcv/constants";
 import { isInDateFormat } from "@qlcv/utils";
 // components

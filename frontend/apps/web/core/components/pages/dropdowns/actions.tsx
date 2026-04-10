@@ -10,9 +10,9 @@ import { useParams } from "next/navigation";
 import { ArchiveRestoreIcon, FileOutput, LockKeyhole, LockKeyholeOpen } from "lucide-react";
 // constants
 import { EPageAccess } from "@qlcv/constants";
-// plane editor
+// qlcv editor
 import { LinkIcon, CopyIcon, LockIcon, NewTabIcon, ArchiveIcon, TrashIcon, GlobeIcon } from "@qlcv/propel/icons";
-// plane ui
+// qlcv ui
 import type { TContextMenuItem } from "@qlcv/ui";
 import { ContextMenu, CustomMenu } from "@qlcv/ui";
 // components
@@ -20,9 +20,9 @@ import { cn } from "@qlcv/utils";
 import { DeletePageModal } from "@/components/pages/modals/delete-page-modal";
 // hooks
 import { usePageOperations } from "@/hooks/use-page-operations";
-// plane web components
+// qlcv web components
 import { MovePageModal } from "@/qlcv-web/components/pages";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePageFlag } from "@/qlcv-web/hooks/use-page-flag";
 // store types

@@ -8,9 +8,9 @@ import { observer } from "mobx-react";
 // icons
 import type { LucideIcon } from "lucide-react";
 import { MembersPropertyIcon } from "@qlcv/propel/icons";
-// plane ui
+// qlcv ui
 import { Avatar, AvatarGroup } from "@qlcv/ui";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";

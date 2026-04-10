@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TExtendedFileHandler } from "@/qlcv-editor/types/config";
 
 export type TFileHandler = {

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TProfileSettingsTabs } from "@qlcv/types";
 
 export enum PROFILE_SETTINGS_CATEGORY {

@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import React from "react";
 import { TrendingDown, TrendingUp } from "lucide-react";
 import { cn } from "@qlcv/utils";
-// plane web components
+// qlcv web components
 
 type Props = {
   percentage: number;

@@ -5,7 +5,7 @@
  */
 
 import { redirect } from "react-router";
-// plane imports
+// qlcv imports
 import { SitesProjectPublishService } from "@qlcv/services";
 import type { TProjectPublishSettings } from "@qlcv/types";
 // components

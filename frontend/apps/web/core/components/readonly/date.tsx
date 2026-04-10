@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CalendarLayoutIcon } from "@qlcv/propel/icons";
 import { cn, renderFormattedDate, getDate } from "@qlcv/utils";

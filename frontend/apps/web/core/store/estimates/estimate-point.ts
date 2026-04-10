@@ -10,7 +10,7 @@ import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 // types
 import type { IEstimate, IEstimatePoint as IEstimatePointType } from "@qlcv/types";
-// plane web services
+// qlcv web services
 import estimateService from "@/services/estimate.service";
 // store
 import type { CoreRootStore } from "@/store/root.store";

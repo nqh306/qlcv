@@ -6,7 +6,7 @@
 
 // components
 import type { TPowerKCommandConfig, TPowerKContextType, TPowerKPageType } from "@/components/power-k/core/types";
-// plane web imports
+// qlcv web imports
 import {
   PowerKContextBasedActionsExtended,
   usePowerKContextBasedExtendedActions,

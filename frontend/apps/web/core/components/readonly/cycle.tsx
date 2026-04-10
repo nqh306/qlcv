@@ -6,7 +6,7 @@
 
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CycleIcon } from "@qlcv/propel/icons";
 import { cn } from "@qlcv/utils";

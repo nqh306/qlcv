@@ -11,7 +11,7 @@ import { Controller, useForm } from "react-hook-form"; // services
 import { usePopper } from "react-popper";
 import { AlertCircle } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

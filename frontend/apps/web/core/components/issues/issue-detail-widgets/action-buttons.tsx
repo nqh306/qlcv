@@ -8,9 +8,9 @@ import React from "react";
 import { Paperclip } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon, ViewsIcon, RelationPropertyIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType, TWorkItemWidgets } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import { WorkItemAdditionalWidgetActionButtons } from "@/qlcv-web/components/issues/issue-detail-widgets/action-buttons";
 // local imports
 import { IssueAttachmentActionButton } from "./attachments";

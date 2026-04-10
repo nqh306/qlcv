@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { CirclePlus, Mails } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // components
 import { SettingsSidebarItem } from "@/components/settings/sidebar/item";

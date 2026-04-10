@@ -9,7 +9,7 @@ import { merge } from "lodash-es";
 import type { TIssueMap } from "@qlcv/types";
 import { EIssuesStoreType } from "@qlcv/types";
 import { StoreContext } from "@/lib/store-context";
-// plane web types
+// qlcv web types
 import type { IProjectEpics, IProjectEpicsFilter } from "@/qlcv-web/store/issue/epic";
 // types
 import type { ITeamIssues, ITeamIssuesFilter } from "@/qlcv-web/store/issue/team";

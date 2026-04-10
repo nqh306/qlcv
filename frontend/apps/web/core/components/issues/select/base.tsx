@@ -11,7 +11,7 @@ import { usePopper } from "react-popper";
 import { Component, Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
 import { getRandomLabelColor } from "@qlcv/constants";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";
 import { CheckIcon, SearchIcon, LabelPropertyIcon } from "@qlcv/propel/icons";
@@ -64,7 +64,7 @@ export const WorkItemLabelSelectBase = observer(function WorkItemLabelSelectBase
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [submitting, setSubmitting] = useState<boolean>(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { isMobile } = usePlatformOS();

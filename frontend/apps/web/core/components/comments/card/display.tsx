@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import { useHashScroll } from "@qlcv/hooks";
 import { GlobeIcon, LockIcon } from "@qlcv/propel/icons";

@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { XCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { PROFILE_SETTINGS_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { IApiToken } from "@qlcv/types";

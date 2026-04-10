@@ -6,7 +6,7 @@
 
 import React from "react";
 import { Treemap, ResponsiveContainer, Tooltip } from "recharts";
-// plane imports
+// qlcv imports
 import type { TreeMapChartProps } from "@qlcv/types";
 // local imports
 import { cn } from "../../utils/classname";

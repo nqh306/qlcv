@@ -6,7 +6,7 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { NETWORK_CHOICES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // components

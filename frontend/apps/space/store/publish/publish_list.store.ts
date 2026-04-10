@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { makeObservable, observable, runInAction, action } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesProjectPublishService } from "@qlcv/services";
 import type { TProjectPublishSettings } from "@qlcv/types";
 // store

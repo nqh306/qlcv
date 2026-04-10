@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 
 import { useTranslation } from "@qlcv/i18n";
 import { PlusIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType } from "@qlcv/types";
 import { CustomMenu } from "@qlcv/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// QLCV-web
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 

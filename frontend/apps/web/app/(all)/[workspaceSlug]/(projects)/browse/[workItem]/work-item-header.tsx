@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane ui
+// qlcv ui
 import { WorkItemsIcon } from "@qlcv/propel/icons";
 import { Breadcrumbs, Header } from "@qlcv/ui";
 // components
@@ -17,7 +17,7 @@ import { IssueDetailQuickActions } from "@/components/issues/issue-detail/issue-
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 
 export const WorkItemDetailsHeader = observer(function WorkItemDetailsHeader() {

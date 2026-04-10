@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import type { ReactNode } from "react";
 import React from "react";
 import { Calendar } from "lucide-react";
-// plane package imports
+// qlcv package imports
 import { ANALYTICS_DURATION_FILTER_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CustomSearchSelect } from "@qlcv/ui";

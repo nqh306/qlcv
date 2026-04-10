@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { AlertOctagon, BarChart4, CircleDashed, Folder, Microscope } from "lucide-react";
-// plane imports
+// qlcv imports
 import { MARKETING_PRICING_PAGE_LINK } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { getButtonStyling } from "@qlcv/propel/button";

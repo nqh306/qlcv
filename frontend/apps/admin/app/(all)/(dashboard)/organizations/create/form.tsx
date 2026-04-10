@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { WEB_BASE_URL, ORGANIZATION_SIZE, RESTRICTED_URLS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button, getButtonStyling } from "@qlcv/propel/button";

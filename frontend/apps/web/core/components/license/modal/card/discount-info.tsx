@@ -5,7 +5,7 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import type { TBillingFrequency } from "@qlcv/types";
 import { EProductSubscriptionEnum } from "@qlcv/types";
 import { cn } from "@qlcv/utils";

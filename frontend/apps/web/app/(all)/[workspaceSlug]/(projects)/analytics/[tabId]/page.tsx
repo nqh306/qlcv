@@ -7,7 +7,7 @@
 import { useState, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useRouter } from "next/navigation";
-// plane package imports
+// qlcv package imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -30,7 +30,7 @@ function AnalyticsPage({ params }: Route.ComponentProps) {
   // hooks
   const router = useRouter();
 
-  // plane imports
+  // qlcv imports
   const { t } = useTranslation();
 
   // store hooks

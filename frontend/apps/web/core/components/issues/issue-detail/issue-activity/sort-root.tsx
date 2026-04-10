@@ -6,7 +6,7 @@
 
 import { memo } from "react";
 import { ArrowUpWideNarrow, ArrowDownWideNarrow } from "lucide-react";
-// plane package imports
+// qlcv package imports
 import { E_SORT_ORDER } from "@qlcv/constants";
 import { IconButton } from "@qlcv/propel/icon-button";
 

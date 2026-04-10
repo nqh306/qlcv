@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import type { IWorkspace } from "@qlcv/types";
 // components
 import { WorkspaceLogo } from "@/components/workspace/logo";

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane internal packages
+// qlcv internal packages
 import { setPromiseToast } from "@qlcv/propel/toast";
 import { Loader, ToggleSwitch } from "@qlcv/ui";
 import { resolveGeneralTheme } from "@qlcv/utils";
@@ -77,7 +77,7 @@ const InstanceGithubAuthenticationPage = observer(function InstanceGithubAuthent
       customHeader={
         <AuthenticationMethodCard
           name="GitHub"
-          description="Allow members to login or sign up to plane with their GitHub accounts."
+          description="Allow members to login or sign up to QLCV with their GitHub accounts."
           icon={
             <img
               src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}

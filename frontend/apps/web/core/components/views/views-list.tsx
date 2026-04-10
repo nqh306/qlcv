@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -23,7 +23,7 @@ import { ProjectViewListItem } from "./view-list-item";
 
 export const ProjectViewsList = observer(function ProjectViewsList() {
   const { projectId } = useParams();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { toggleCreateViewModal } = useCommandPalette();

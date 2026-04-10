@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useTranslation } from "@qlcv/i18n";
 import { AnalyticsIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Breadcrumbs, Header } from "@qlcv/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";

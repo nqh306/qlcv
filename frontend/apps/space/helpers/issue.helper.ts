@@ -5,7 +5,7 @@
  */
 
 import { differenceInCalendarDays } from "date-fns/differenceInCalendarDays";
-// plane internal
+// qlcv internal
 import { STATE_GROUPS } from "@qlcv/constants";
 import type { TStateGroups } from "@qlcv/types";
 // helpers

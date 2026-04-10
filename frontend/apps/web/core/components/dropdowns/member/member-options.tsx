@@ -11,7 +11,7 @@ import { useParams } from "next/navigation";
 import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CheckIcon, SearchIcon, SuspendedUserIcon } from "@qlcv/propel/icons";
 import { EPillSize, EPillVariant, Pill } from "@qlcv/propel/pill";
@@ -53,7 +53,7 @@ export const MemberOptions = observer(function MemberOptions(props: Props) {
   // states
   const [query, setQuery] = useState("");
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { data: currentUser } = useUser();

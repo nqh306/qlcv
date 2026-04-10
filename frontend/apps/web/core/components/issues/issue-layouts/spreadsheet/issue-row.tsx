@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { MoreHorizontal } from "lucide-react";
 import { SPREADSHEET_SELECT_GROUP } from "@qlcv/constants";
-// plane helpers
+// qlcv helpers
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { ChevronRightIcon } from "@qlcv/propel/icons";
 // types
@@ -31,7 +31,7 @@ import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local components
 import type { TRenderQuickActions } from "../list/list-view-types";

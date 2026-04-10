@@ -7,7 +7,7 @@
 import type { Editor } from "@tiptap/react";
 
 import { CheckIcon, ChevronDownIcon } from "@qlcv/propel/icons";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // components
 import type { EditorMenuItem } from "@/components/menus";

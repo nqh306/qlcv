@@ -9,7 +9,7 @@ import { autorun, makeObservable, observable } from "mobx";
 // types
 import type { ICycle, IIssueLabel, IModule, IProject, IState, IUserLite, TIssueServiceType } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
-// plane web store
+// qlcv web store
 import type { IProjectEpics, IProjectEpicsFilter } from "@/qlcv-web/store/issue/epic";
 import { ProjectEpics, ProjectEpicsFilter } from "@/qlcv-web/store/issue/epic";
 import type { IIssueDetail } from "@/qlcv-web/store/issue/issue-details/root.store";

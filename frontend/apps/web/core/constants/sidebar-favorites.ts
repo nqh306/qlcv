@@ -5,7 +5,7 @@
  */
 
 import type { LucideIcon } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { ISvgIcons } from "@qlcv/propel/icons";
 import { CycleIcon, FavoriteFolderIcon, ModuleIcon, PageIcon, ProjectIcon, ViewsIcon } from "@qlcv/propel/icons";
 import type { IFavorite } from "@qlcv/types";

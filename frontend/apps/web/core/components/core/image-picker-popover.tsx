@@ -12,7 +12,7 @@ import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import useSWR from "swr";
 import { Popover } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { ACCEPTED_COVER_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@qlcv/constants";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { Tabs } from "@qlcv/propel/tabs";

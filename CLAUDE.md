@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-QLCV EVNGENCO1 — a customized deployment of [Plane](https://github.com/makeplane/plane) (v1.3.0), an open-source project management platform. The GENCO1 customization patches the upstream Plane backend via `Dockerfile.custom`, overlaying changes to licensing, authentication, project models, and workspace views.
+QLCV EVNGENCO1 — hệ thống quản lý công việc nội bộ của EVNGENCO1. Backend Django + DRF, frontend React monorepo. Custom runtime image được build từ `backend/Dockerfile.custom` overlay lên một base image (set bằng build arg `BASE_IMAGE`).
 
 ## Architecture
 
 **Monorepo** with two main parts:
 
-- **`/backend` — Django 4.2 + DRF REST API (Python). Runs as Gunicorn/Uvicorn ASGI. Celery workers for async tasks. PostgreSQL, Redis (Valkey), RabbitMQ, MinIO (S3).
+- **`/backend`** — Django 4.2 + DRF REST API (Python). Runs as Gunicorn/Uvicorn ASGI. Celery workers for async tasks. PostgreSQL, Redis (Valkey), RabbitMQ, MinIO (S3).
 - **`/frontend`** — pnpm workspace + Turborepo. React 18 + React Router 7 + Vite. MobX for state management.
 
 ### Frontend Structure
@@ -21,11 +21,11 @@ QLCV EVNGENCO1 — a customized deployment of [Plane](https://github.com/makepla
 - `space` (port 3002) — Public project space
 - `live` (port 3100) — Real-time collaboration server (Node.js/Express + HocusPocus/Y.js, NOT React)
 
-**Shared packages** (`frontend/packages/`): `@plane/ui`, `@plane/services`, `@plane/hooks`, `@plane/i18n`, `@plane/types`, `@plane/utils`, `@plane/constants`, `@plane/editor` (Tiptap-based), `@plane/propel`, `@plane/shared-state`, `@plane/decorators`, `@plane/logger`, `@plane/tailwind-config`, `@plane/typescript-config`, `@plane/codemods`
+**Shared packages** (`frontend/packages/`): `@qlcv/ui`, `@qlcv/services`, `@qlcv/hooks`, `@qlcv/i18n`, `@qlcv/types`, `@qlcv/utils`, `@qlcv/constants`, `@qlcv/editor` (Tiptap-based), `@qlcv/propel`, `@qlcv/shared-state`, `@qlcv/decorators`, `@qlcv/logger`, `@qlcv/tailwind-config`, `@qlcv/typescript-config`, `@qlcv/codemods`
 
 ### GENCO1 Customization Layer
 
-`backend/Dockerfile.custom` builds on `makeplane/plane-backend:stable` and overlays:
+`backend/Dockerfile.custom` overlays the following custom files on top of the base image:
 - `qlcv/license/` — Custom licensing (models, API, urls, utils, migrations)
 - `qlcv/authentication/views/` — Patched email/check views for app and space
 - `qlcv/db/models/project.py` — Modified project model
@@ -99,7 +99,7 @@ Tất cả text hiển thị cho user (labels, placeholders, messages, toasts, e
 - **Tiếng Anh (en)**: fallback
 
 Áp dụng cho:
-- Frontend: dùng hệ thống i18n có sẵn (`@plane/i18n`, `useTranslation()`)
+- Frontend: dùng hệ thống i18n có sẵn (`@qlcv/i18n`, `useTranslation()`)
 - Backend: error messages trả về qua API nên dùng error codes, frontend map sang ngôn ngữ phù hợp
 - God Mode admin app: hiện tại hardcode tiếng Anh — khi sửa/thêm text mới, phải chuyển sang dùng i18n
 

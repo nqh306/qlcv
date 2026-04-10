@@ -25,10 +25,10 @@ import {
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane package imports
+// qlcv package imports
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@qlcv/propel/table";
 import { cn } from "@qlcv/utils";
-// plane web components
+// qlcv web components
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

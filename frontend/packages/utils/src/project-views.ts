@@ -5,7 +5,7 @@
  */
 
 import { isNil, orderBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@qlcv/constants";
 import type { IProjectView, TViewFilterProps, TViewFiltersSortBy, TViewFiltersSortKey } from "@qlcv/types";
 // local imports

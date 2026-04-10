@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";

@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import type { LucideIcon } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { IUserLite } from "@qlcv/types";
 import { ComboDropDown } from "@qlcv/ui";
 // helpers

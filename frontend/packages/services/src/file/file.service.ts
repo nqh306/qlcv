@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 // api service
 import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@qlcv/types";
@@ -13,7 +13,7 @@ import { APIService } from "../api.service";
 import { getAssetIdFromUrl } from "./helper";
 
 /**
- * Service class for managing file operations within plane applications.
+ * Service class for managing file operations within qlcv applications.
  * Extends APIService to handle HTTP requests to the file-related endpoints.
  * @extends {APIService}
  */

@@ -6,7 +6,7 @@
 
 // components
 import type { TPageRootHandlers } from "@/components/pages/editor/page-root";
-// plane web imports
+// qlcv web imports
 import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/qlcv-web/components/pages/navigation-pane";
 import { PageNavigationPaneAdditionalTabPanelsRoot } from "@/qlcv-web/components/pages/navigation-pane/tab-panels/root";
 // store

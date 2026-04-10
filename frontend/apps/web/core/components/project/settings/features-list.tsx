@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { setPromiseToast } from "@qlcv/propel/toast";
 import { Tooltip } from "@qlcv/propel/tooltip";
@@ -16,7 +16,7 @@ import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-it
 import { SettingsHeading } from "@/components/settings/heading";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
+// qlcv web imports
 import { UpgradeBadge } from "@/qlcv-web/components/workspace/upgrade-badge";
 // local imports
 import { ProjectFeatureToggle } from "./helper";

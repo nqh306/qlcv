@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TWorkItemFilterCondition } from "@qlcv/shared-state";
 import type { TCycleDistribution, TCycleEstimateDistribution, TCyclePlotType } from "@qlcv/types";
@@ -52,7 +52,7 @@ export const CycleProgressStats = observer(function CycleProgressStats(props: TC
     size = "sm",
     totalIssuesCount,
   } = props;
-  // plane imports
+  // qlcv imports
   const { t } = useTranslation();
   // store imports
   const { storedValue: currentTab, setValue: setCycleTab } = useLocalStorage(

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-// plane imports
+// qlcv imports
 import { E_PASSWORD_STRENGTH } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

@@ -17,7 +17,7 @@ import { IssueDetailQuickActions } from "@/components/issues/issue-detail/issue-
 import { ISSUE_DETAILS } from "@/constants/fetch-keys";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web
+// qlcv web
 import { ProjectBreadcrumb } from "@/qlcv-web/components/breadcrumbs/project";
 // services
 import { IssueService } from "@/services/issue";

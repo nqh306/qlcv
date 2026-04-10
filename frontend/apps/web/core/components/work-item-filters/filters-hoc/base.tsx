@@ -7,13 +7,13 @@
 import { useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
+// qlcv imports
 import type { TSaveViewOptions, TUpdateViewOptions } from "@qlcv/constants";
 import type { IWorkItemFilterInstance } from "@qlcv/shared-state";
 import type { IIssueFilters, TWorkItemFilterExpression } from "@qlcv/types";
 // store hooks
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";
-// plane web imports
+// qlcv web imports
 import type { TWorkItemFiltersEntityProps } from "@/qlcv-web/hooks/work-item-filters/use-work-item-filters-config";
 import { useWorkItemFiltersConfig } from "@/qlcv-web/hooks/work-item-filters/use-work-item-filters-config";
 // local imports

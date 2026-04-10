@@ -37,12 +37,12 @@ const integrationDetails: { [key: string]: any } = {
   github: {
     logo: GithubLogo,
     installed: "Activate GitHub on individual projects to sync with specific repositories.",
-    notInstalled: "Connect with GitHub with your Plane workspace to sync project tasks.",
+    notInstalled: "Connect with GitHub with your QLCV workspace to sync project tasks.",
   },
   slack: {
     logo: SlackLogo,
     installed: "Activate Slack on individual projects to sync with specific channels.",
-    notInstalled: "Connect with Slack with your Plane workspace to sync project tasks.",
+    notInstalled: "Connect with Slack with your QLCV workspace to sync project tasks.",
   },
 };
 

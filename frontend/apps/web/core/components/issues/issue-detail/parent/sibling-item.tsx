@@ -12,7 +12,7 @@ import { generateWorkItemLink } from "@qlcv/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentSiblingItem = {

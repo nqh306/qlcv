@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TFilterExpression, TFilterGroupNode, TFilterProperty } from "@qlcv/types";
 // local imports
 import { isConditionNode, isGroupNode } from "../../types/core";

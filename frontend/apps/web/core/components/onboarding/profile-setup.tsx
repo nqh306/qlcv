@@ -86,7 +86,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
     password: false,
     retypePassword: false,
   });
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { updateCurrentUser } = useUser();

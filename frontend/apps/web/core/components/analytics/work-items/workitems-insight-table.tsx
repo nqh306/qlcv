@@ -13,16 +13,16 @@ import { UserRound } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { ProjectIcon } from "@qlcv/propel/icons";
-// plane package imports
+// qlcv package imports
 import type { AnalyticsTableDataMap, WorkItemInsightColumns } from "@qlcv/types";
-// plane web components
+// qlcv web components
 import { Avatar } from "@qlcv/ui";
 import { getFileURL } from "@qlcv/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// qlcv web components
 import { exportCSV } from "../export";
 import { InsightTable } from "../insight-table";
 

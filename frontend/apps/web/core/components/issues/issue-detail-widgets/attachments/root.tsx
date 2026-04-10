@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType } from "@qlcv/types";
 import { Collapsible } from "@qlcv/ui";
 // hooks

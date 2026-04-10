@@ -7,7 +7,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { isEqual, cloneDeep } from "lodash-es";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissionsLevel } from "@qlcv/constants";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import type { IWorkspaceView, TWorkItemFilterExpression } from "@qlcv/types";

@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane types
+// qlcv types
 import type { IIssueLabel, TIssue } from "@qlcv/types";
 import { Spinner } from "@qlcv/ui";
 // components

@@ -5,7 +5,7 @@
  */
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow } from "lucide-react";
-// plane imports
+// qlcv imports
 import { VIEW_SORT_BY_OPTIONS, VIEW_SORTING_KEY_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { getButtonStyling } from "@qlcv/propel/button";

@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { observable, action, makeObservable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { InstanceService } from "@qlcv/services";
 import type { IInstance, IInstanceConfig } from "@qlcv/types";
 // store

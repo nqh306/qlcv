@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // assets
 import emptyModule from "@/app/assets/empty-state/module.svg?url";

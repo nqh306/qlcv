@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TEstimateSystems } from "@qlcv/types";
 
 export const MAX_ESTIMATE_POINT_INPUT_LENGTH = 20;

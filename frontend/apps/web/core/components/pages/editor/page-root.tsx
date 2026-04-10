@@ -6,12 +6,12 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { CollaborationState, EditorRefApi } from "@qlcv/editor";
 import type { TDocumentPayload, TPage, TPageVersion, TWebhookConnectionQueryParams } from "@qlcv/types";
 // hooks
 import { usePageFallback } from "@/hooks/use-page-fallback";
-// plane web import
+// qlcv web import
 import type { PageUpdateHandler, TCustomEventHandlers } from "@/hooks/use-realtime-page-events";
 import { PageModals } from "@/qlcv-web/components/pages";
 import { usePagesPaneExtensions, useExtendedEditorProps } from "@/qlcv-web/hooks/pages";

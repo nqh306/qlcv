@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useParams, useRouter } from "next/navigation";
 import { EUserPermissionsLevel, EPageAccess } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
@@ -18,7 +18,7 @@ import { EUserProjectRoles } from "@qlcv/types";
 import { PageLoader } from "@/components/pages/loaders/page-loader";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web hooks
+// qlcv web hooks
 import { EPageStoreType, usePageStore } from "@/qlcv-web/hooks/store";
 
 type Props = {
@@ -29,7 +29,7 @@ type Props = {
 
 export const PagesListMainContent = observer(function PagesListMainContent(props: Props) {
   const { children, pageType, storeType } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectDetails } = useProject();

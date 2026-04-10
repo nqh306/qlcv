@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType, TWorkItemWidgets } from "@qlcv/types";
 // local imports
 import { IssueDetailWidgetActionButtons } from "./action-buttons";

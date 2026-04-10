@@ -17,7 +17,7 @@ import { setCustomNativeDragPreview } from "@atlaskit/pragmatic-drag-and-drop/el
 import { attachInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { observer } from "mobx-react";
 import { createRoot } from "react-dom/client";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import type { IFavorite, InstructionType } from "@qlcv/types";
 import { DropIndicator } from "@qlcv/ui";

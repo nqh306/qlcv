@@ -6,7 +6,7 @@
 
 import { Ban } from "lucide-react";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // constants
 import { COLORS_LIST } from "@/constants/common";

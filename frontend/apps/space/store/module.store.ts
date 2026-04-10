@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesModuleService } from "@qlcv/services";
 // types
 import type { TPublicModule } from "@/types/modules";

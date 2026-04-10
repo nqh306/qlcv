@@ -8,7 +8,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 // assets
@@ -30,7 +30,7 @@ export const ActivityProfileSettings = observer(function ActivityProfileSettings
   const [isEmpty, setIsEmpty] = useState(false);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // derived values
   const resolvedPath = resolvedTheme === "light" ? lightActivityAsset : darkActivityAsset;

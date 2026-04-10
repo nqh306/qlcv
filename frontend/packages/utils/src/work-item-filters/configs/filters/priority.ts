@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TIssuePriorities } from "@qlcv/constants";
 import { ISSUE_PRIORITIES } from "@qlcv/constants";
 import type { TFilterProperty, TSupportedOperators } from "@qlcv/types";

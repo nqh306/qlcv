@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useDropzone } from "react-dropzone";
-// plane imports
+// qlcv imports
 import { ACCEPTED_AVATAR_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { UserCirclePropertyIcon } from "@qlcv/propel/icons";

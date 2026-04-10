@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { WorkItemsIcon } from "@qlcv/propel/icons";
 import { EInboxIssueSource } from "@qlcv/types";
 // hooks

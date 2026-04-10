@@ -7,7 +7,7 @@
 import React from "react";
 import { Link } from "react-router";
 import { MoreHorizontal, Pin } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { SetAsDefaultIcon } from "@qlcv/propel/icons";
 import { Menu } from "@qlcv/propel/menu";

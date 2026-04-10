@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { OctagonAlert } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { IWorkspaceMemberInvitation, TOnboardingSteps } from "@qlcv/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";

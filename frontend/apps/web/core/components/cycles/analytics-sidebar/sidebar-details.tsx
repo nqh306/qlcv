@@ -8,19 +8,19 @@ import React from "react";
 import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { SquareUser } from "lucide-react";
-// plane types
+// qlcv types
 import { EEstimateSystem } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { MembersPropertyIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import type { ICycle } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar, AvatarGroup, TextArea } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useMember } from "@/hooks/store/use-member";
-// plane web constants
+// qlcv web constants
 
 type Props = {
   projectId: string;

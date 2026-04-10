@@ -8,7 +8,7 @@ import { useCallback } from "react";
 import { PanelLeft } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon, SearchIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import { copyTextToClipboard } from "@qlcv/utils";
 // components

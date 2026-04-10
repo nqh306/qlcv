@@ -9,7 +9,7 @@ import { Outlet } from "react-router";
 import useSWR from "swr";
 import { AppHeader } from "@/components/core/app-header";
 import { ContentWrapper } from "@/components/core/content-wrapper";
-// plane web hooks
+// qlcv web hooks
 import { EPageStoreType, usePageStore } from "@/qlcv-web/hooks/store";
 // local components
 import type { Route } from "./+types/layout";

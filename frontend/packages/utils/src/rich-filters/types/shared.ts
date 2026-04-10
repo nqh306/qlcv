@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TFilterAndGroupNode, TFilterExpression, TFilterGroupNode, TFilterProperty } from "@qlcv/types";
 // local imports
 import { getAndGroupChildren, isAndGroupNode } from "./core";

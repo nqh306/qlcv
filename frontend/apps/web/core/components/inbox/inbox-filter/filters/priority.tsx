@@ -10,7 +10,7 @@ import { ISSUE_PRIORITIES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { PriorityIcon } from "@qlcv/propel/icons";
 import type { TIssuePriorities } from "@qlcv/types";
-// plane constants
+// qlcv constants
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

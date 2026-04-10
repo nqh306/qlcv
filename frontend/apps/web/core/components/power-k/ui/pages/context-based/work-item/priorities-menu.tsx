@@ -6,7 +6,7 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ISSUE_PRIORITIES } from "@qlcv/constants";
 import { PriorityIcon } from "@qlcv/propel/icons";
 import type { TIssue, TIssuePriorities } from "@qlcv/types";

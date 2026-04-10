@@ -7,7 +7,7 @@
 import { orderBy, isEmpty, update, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TNotificationTab } from "@qlcv/constants";
 import { ENotificationTab, ENotificationLoader, ENotificationQueryParamType } from "@qlcv/constants";
 import type {

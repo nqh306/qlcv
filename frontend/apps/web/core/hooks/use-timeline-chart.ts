@@ -9,7 +9,7 @@ import { useContext } from "react";
 import type { TTimelineType } from "@qlcv/types";
 // lib
 import { StoreContext } from "@/lib/store-context";
-// Plane-web
+// QLCV-web
 import { getTimelineStore } from "@/qlcv-web/hooks/use-timeline-chart";
 import type { IBaseTimelineStore } from "@/qlcv-web/store/timeline/base-timeline.store";
 import { useTimeLineType } from "../components/gantt-chart/contexts";

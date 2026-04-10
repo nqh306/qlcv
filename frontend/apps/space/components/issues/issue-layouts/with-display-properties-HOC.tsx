@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IIssueDisplayProperties } from "@qlcv/types";
 
 interface IWithDisplayPropertiesHOC {

@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { action, observable, runInAction, makeObservable, computed } from "mobx";
-// plane imports
+// qlcv imports
 import { InstanceWorkspaceService } from "@qlcv/services";
 import type { IWorkspace, TLoader, TPaginationInfo } from "@qlcv/types";
 // root store

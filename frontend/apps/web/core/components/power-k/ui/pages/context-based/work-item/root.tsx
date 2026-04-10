@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EIssueServiceType } from "@qlcv/types";
 // components
 import type { TPowerKPageType } from "@/components/power-k/core/types";

@@ -24,7 +24,7 @@ import { IssueSearchModalEmptyState } from "@/components/core/modals/issue-searc
 // hooks
 import useDebounce from "@/hooks/use-debounce";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // services
 import { ProjectService } from "@/services/project";

@@ -5,14 +5,14 @@
  */
 
 import { useCallback } from "react";
-// plane types
+// qlcv types
 import type { TSearchEntities } from "@qlcv/types";
 // helpers
 import { getBase64Image, getEditorAssetSrc } from "@qlcv/utils";
 import type { TCustomComponentsMetaData } from "@qlcv/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
-// plane web hooks
+// qlcv web hooks
 import { useAdditionalEditorMention } from "@/qlcv-web/hooks/use-additional-editor-mention";
 
 type TArgs = {

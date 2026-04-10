@@ -8,7 +8,7 @@ import React, { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { ListFilterPlus } from "lucide-react";
 import { Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import type { IFilterInstance } from "@qlcv/shared-state";
 import type { TExternalFilter, TFilterProperty } from "@qlcv/types";

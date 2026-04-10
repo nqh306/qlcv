@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { CircleAlert } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { TExternalFilter, TFilterProperty } from "@qlcv/types";
 // local imports
 import { FilterItemCloseButton } from "./close-button";

@@ -5,7 +5,7 @@
  */
 
 import { autorun } from "mobx";
-// Plane-web
+// QLCV-web
 import type { RootStore } from "@/qlcv-web/store/root.store";
 import type { IBaseTimelineStore } from "@/qlcv-web/store/timeline/base-timeline.store";
 import { BaseTimeLineStore } from "@/qlcv-web/store/timeline/base-timeline.store";

@@ -18,7 +18,7 @@ import { attachInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { createRoot } from "react-dom/client";
-// plane types
+// qlcv types
 import type { InstructionType } from "@qlcv/types";
 // components
 import { StickyNote } from "../sticky";

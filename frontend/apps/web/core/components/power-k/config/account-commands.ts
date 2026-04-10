@@ -6,7 +6,7 @@
 
 import { useCallback } from "react";
 import { LogOut, Mails } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 // components

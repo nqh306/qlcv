@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Earth, Info, Minus } from "lucide-react";
-// plane imports
+// qlcv imports
 import { LockIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { Avatar, FavoriteStar } from "@qlcv/ui";
@@ -14,7 +14,7 @@ import { renderFormattedDate, getFileURL } from "@qlcv/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { usePageOperations } from "@/hooks/use-page-operations";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";

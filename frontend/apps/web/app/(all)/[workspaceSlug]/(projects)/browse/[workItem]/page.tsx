@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TIssue } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
@@ -26,7 +26,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
 // layouts
 import { ProjectAuthWrapper } from "@/layouts/auth-layout/project-wrapper";
-// plane web imports
+// qlcv web imports
 import { useWorkItemProperties } from "@/qlcv-web/hooks/use-issue-properties";
 import { WorkItemDetailRoot } from "@/qlcv-web/components/browse/workItem-detail";
 

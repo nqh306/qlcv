@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { EAuthModes } from "@qlcv/constants";
 // components
 import { ResetPasswordForm } from "@/components/account/auth-forms/reset-password";

@@ -6,7 +6,7 @@
 
 import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
-// plane helpers
+// qlcv helpers
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // components
@@ -18,7 +18,7 @@ import { SidebarMenuItems } from "@/components/workspace/sidebar/sidebar-menu-it
 // hooks
 import { useFavorite } from "@/hooks/store/use-favorite";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
+// qlcv web components
 import { SidebarTeamsList } from "@/qlcv-web/components/workspace/sidebar/teams-sidebar-list";
 
 export const AppSidebar = observer(function AppSidebar() {

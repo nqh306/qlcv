@@ -6,7 +6,7 @@
 
 import type { ReactNode } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Row } from "@qlcv/ui";
 // components
 import { cn } from "@qlcv/utils";

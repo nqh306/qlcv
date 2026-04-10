@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // icons
-// plane imports
+// qlcv imports
 import { EIconSize } from "@qlcv/constants";
 import { CloseIcon, StateGroupIcon } from "@qlcv/propel/icons";
 import type { IState } from "@qlcv/types";

@@ -6,14 +6,14 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { WORKSPACE_DEFAULT_SEARCH_RESULT } from "@qlcv/constants";
 import type { IWorkspaceSearchResults } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
 // hooks
 import { usePowerK } from "@/hooks/store/use-power-k";
 import useDebounce from "@/hooks/use-debounce";
-// plane web imports
+// qlcv web imports
 import { PowerKModalNoSearchResultsCommand } from "@/qlcv-web/components/command-palette/power-k/search/no-results-command";
 import { WorkspaceService } from "@/services/workspace.service";
 // local imports

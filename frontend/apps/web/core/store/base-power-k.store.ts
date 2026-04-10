@@ -5,7 +5,7 @@
  */
 
 import { observable, action, makeObservable } from "mobx";
-// plane imports
+// qlcv imports
 import type { EIssuesStoreType } from "@qlcv/types";
 // components
 import type { IPowerKCommandRegistry } from "@/components/power-k/core/registry";

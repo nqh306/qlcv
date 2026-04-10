@@ -6,13 +6,13 @@
 
 import { Mail, MessageCircle, MessageSquare } from "lucide-react";
 import { EProductSubscriptionEnum } from "@qlcv/types";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 
 export type TPlanFeatureData = React.ReactNode | boolean | null;
 
 // TODO: we should change this type and use TProductSubscriptionType instead. Need changes in common constants.
-export type TPlanePlans = "free" | "one" | "pro" | "business" | "enterprise";
+export type TQlcvPlans = "free" | "one" | "pro" | "business" | "enterprise";
 
 export type TPlanDetail = {
   id: EProductSubscriptionEnum;
@@ -31,8 +31,8 @@ type TPlanFeatureDetails = {
   selfHostedDescription?: React.ReactNode;
   comingSoon?: boolean;
   selfHostedOnly?: boolean;
-  cloud: Record<TPlanePlans, TPlanFeatureData>;
-  "self-hosted"?: Record<TPlanePlans, TPlanFeatureData>;
+  cloud: Record<TQlcvPlans, TPlanFeatureData>;
+  "self-hosted"?: Record<TQlcvPlans, TPlanFeatureData>;
 };
 
 type TPlansComparisonDetails = {
@@ -44,9 +44,9 @@ type TPlansComparisonDetails = {
   features: TPlanFeatureDetails[];
 };
 
-type PlanePlans = {
-  planDetails: Record<TPlanePlans, TPlanDetail>;
-  planHighlights: Record<TPlanePlans, string[]>;
+type QlcvPlans = {
+  planDetails: Record<TQlcvPlans, TPlanDetail>;
+  planHighlights: Record<TQlcvPlans, string[]>;
   planComparison: TPlansComparisonDetails[];
 };
 
@@ -67,7 +67,7 @@ export function ComingSoonBadge({ className }: { className?: string }) {
   );
 }
 
-export const PLANS_LIST: TPlanePlans[] = ["free", "one", "pro", "business", "enterprise"];
+export const PLANS_LIST: TQlcvPlans[] = ["free", "one", "pro", "business", "enterprise"];
 
 export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   {
@@ -1254,7 +1254,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
 ];
 
-export const PLANE_PLANS: PlanePlans = {
+export const QLCV_PLANS: QlcvPlans = {
   planDetails: {
     free: {
       id: EProductSubscriptionEnum.FREE,

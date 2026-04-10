@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { autoScrollForElements } from "@atlaskit/pragmatic-drag-and-drop-auto-scroll/element";
 import { observer } from "mobx-react";
-// plane constants
+// qlcv constants
 import { ALL_ISSUES } from "@qlcv/constants";
 // types
 import type {
@@ -26,9 +26,9 @@ import type {
 import { MultipleSelectGroup } from "@/components/core/multiple-select";
 // hooks
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-// plane web components
+// qlcv web components
 import { IssueBulkOperationsRoot } from "@/qlcv-web/components/issues/bulk-operations";
-// plane web hooks
+// qlcv web hooks
 import { useBulkOperationStatus } from "@/qlcv-web/hooks/use-bulk-operation-status";
 // utils
 import type { GroupDropLocation } from "../utils";
@@ -82,7 +82,7 @@ export const List = observer(function List(props: IList) {
   } = props;
 
   const storeType = useIssueStoreType();
-  // plane web hooks
+  // qlcv web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
 
   const containerRef = useRef<HTMLDivElement | null>(null);

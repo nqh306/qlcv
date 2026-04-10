@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
 import type { TCycleFilters } from "@qlcv/types";
@@ -25,7 +25,7 @@ import { ArchivedCyclesView } from "./view";
 export const ArchivedCycleLayoutRoot = observer(function ArchivedCycleLayoutRoot() {
   // router
   const { workspaceSlug, projectId } = useParams();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { fetchArchivedCycles, currentProjectArchivedCycleIds, loader } = useCycle();

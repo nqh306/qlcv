@@ -6,11 +6,11 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { EUserProjectRoles, EUserWorkspaceRoles } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { CustomMenu } from "@qlcv/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";

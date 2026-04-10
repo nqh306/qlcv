@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@qlcv/types";

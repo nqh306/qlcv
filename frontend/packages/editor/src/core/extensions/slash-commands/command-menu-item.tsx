@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // types
 import type { ISlashCommandItem } from "@/types";

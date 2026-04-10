@@ -5,7 +5,7 @@
  */
 
 import { CalendarDays } from "lucide-react";
-// plane imports
+// qlcv imports
 import { DueDatePropertyIcon, StartDatePropertyIcon } from "@qlcv/propel/icons";
 import type { TStateGroups } from "@qlcv/types";
 import { cn, renderFormattedDate, shouldHighlightIssueDueDate } from "@qlcv/utils";

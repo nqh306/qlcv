@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { ImageIcon } from "lucide-react";
-// plane imports
+// qlcv imports
 import { E_PASSWORD_STRENGTH } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

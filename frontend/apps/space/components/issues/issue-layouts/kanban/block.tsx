@@ -8,11 +8,11 @@ import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
 import { Link } from "react-router";
 import { useParams, useSearchParams } from "next/navigation";
-// plane types
+// qlcv types
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { IIssueDisplayProperties } from "@qlcv/types";
-// plane ui
-// plane utils
+// qlcv ui
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // components
 import { WithDisplayPropertiesHOC } from "@/components/issues/issue-layouts/with-display-properties-HOC";

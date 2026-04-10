@@ -7,7 +7,7 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { Triangle } from "lucide-react";
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 import { EEstimateSystem } from "@qlcv/types";
 import type { TIssue } from "@qlcv/types";

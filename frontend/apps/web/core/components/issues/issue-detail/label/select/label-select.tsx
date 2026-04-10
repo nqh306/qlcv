@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, getRandomLabelColor } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

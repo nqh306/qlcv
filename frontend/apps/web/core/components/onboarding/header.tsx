@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { QlcvLockup, ChevronLeftIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TOnboardingStep } from "@qlcv/types";

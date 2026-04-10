@@ -6,7 +6,7 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { MODULE_STATUS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { ModuleStatusIcon } from "@qlcv/propel/icons";

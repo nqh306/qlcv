@@ -6,10 +6,10 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TIssue, TIssueServiceType } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
-// Plane-web imports
+// QLCV-web imports
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 // local imports
 import { RelationIssueListItem } from "./issue-list-item";

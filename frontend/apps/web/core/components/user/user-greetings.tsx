@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 // hooks
 import type { IUser } from "@qlcv/types";

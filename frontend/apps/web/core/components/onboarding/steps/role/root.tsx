@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, PenTool, Rocket, Monitor, RefreshCw } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { CheckIcon, ViewsIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -92,7 +92,7 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="What's your role?" description="Let's set up Plane for how you work." />
+      <CommonOnboardingHeader title="What's your role?" description="Let's set upQLCV for how you work." />
       {/* Role Selection */}
       <div className="flex flex-col gap-3">
         <p className="text-body-sm-semibold text-placeholder">Select one</p>

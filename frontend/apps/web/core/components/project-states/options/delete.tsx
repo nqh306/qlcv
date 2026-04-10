@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Loader } from "lucide-react";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { IState, TStateOperationsCallbacks } from "@qlcv/types";

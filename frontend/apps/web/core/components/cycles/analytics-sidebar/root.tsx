@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Loader } from "@qlcv/ui";
 // local imports
 import useCyclesDetails from "../active-cycle/use-cycles-details";

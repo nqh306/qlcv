@@ -5,13 +5,13 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { PriorityIcon, StateGroupIcon } from "@qlcv/propel/icons";
 import type { TIssue, TStateGroups } from "@qlcv/types";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web imports
+// qlcv web imports
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { WorkItemPreviewCardDate } from "./date";

@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane helpers
+// qlcv helpers
 // helpers
 import { cn } from "@qlcv/utils";
 // hooks

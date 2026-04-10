@@ -9,7 +9,7 @@ import { computedFn } from "mobx-utils";
 // constants
 import { EPageAccess, EUserPermissions } from "@qlcv/constants";
 import type { TPage } from "@qlcv/types";
-// plane web store
+// qlcv web store
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";

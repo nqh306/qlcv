@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -16,7 +16,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 
 export const GlobalViewEmptyState = observer(function GlobalViewEmptyState() {
-  // plane imports
+  // qlcv imports
   const { t } = useTranslation();
   // store hooks
   const { workspaceProjectIds } = useProject();

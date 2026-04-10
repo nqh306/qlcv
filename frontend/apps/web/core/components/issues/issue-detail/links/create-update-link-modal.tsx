@@ -8,10 +8,10 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { useTranslation } from "@qlcv/i18n";
-// plane types
+// qlcv types
 import { Button } from "@qlcv/propel/button";
 import type { TIssueLinkEditableFields, TIssueServiceType } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Input, ModalCore } from "@qlcv/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

@@ -7,7 +7,7 @@
 import { FloatingOverlay } from "@floating-ui/react";
 import type { SuggestionKeyDownProps, SuggestionProps } from "@tiptap/suggestion";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { cn } from "@qlcv/utils";
 

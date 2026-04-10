@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { PlusIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import type { TIssue, TIssueServiceType } from "@qlcv/types";

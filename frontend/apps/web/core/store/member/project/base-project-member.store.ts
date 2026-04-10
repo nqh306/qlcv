@@ -7,7 +7,7 @@
 import { uniq, unset, set, update, sortBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import { EUserPermissions } from "@qlcv/constants";
 import type {
   EUserProjectRoles,
@@ -16,7 +16,7 @@ import type {
   IUserLite,
   TProjectMembership,
 } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // services
 import { ProjectMemberService, ProjectService } from "@/services/project";

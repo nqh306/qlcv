@@ -6,7 +6,7 @@
 
 import { Link } from "react-router";
 import { PinOff } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { ContextMenu } from "@qlcv/propel/context-menu";
 import { SetAsDefaultIcon } from "@qlcv/propel/icons";

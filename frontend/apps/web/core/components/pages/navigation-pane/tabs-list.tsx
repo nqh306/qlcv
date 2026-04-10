@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Tabs } from "@qlcv/propel/tabs";
-// plane web components
+// qlcv web components
 import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/qlcv-web/components/pages/navigation-pane";
 
 export function PageNavigationPaneTabsList() {

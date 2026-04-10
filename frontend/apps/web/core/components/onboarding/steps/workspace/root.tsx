@@ -6,7 +6,7 @@
 
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IWorkspaceMemberInvitation } from "@qlcv/types";
 import { ECreateOrJoinWorkspaceViews, EOnboardingSteps } from "@qlcv/types";
 // hooks

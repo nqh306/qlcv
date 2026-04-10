@@ -9,7 +9,7 @@ import type { SuggestionProps } from "@tiptap/suggestion";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { debounce } from "lodash-es";
-// plane utils
+// qlcv utils
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { cn } from "@qlcv/utils";
 // helpers

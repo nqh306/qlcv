@@ -60,7 +60,7 @@ export const ResetPasswordForm = observer(function ResetPasswordForm() {
   const [isPasswordInputFocused, setIsPasswordInputFocused] = useState(false);
   const [isRetryPasswordInputFocused, setIsRetryPasswordInputFocused] = useState(false);
   const [errorInfo, setErrorInfo] = useState<TAuthErrorInfo | undefined>(undefined);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
 
   const handleShowPassword = (key: keyof typeof showPassword) =>

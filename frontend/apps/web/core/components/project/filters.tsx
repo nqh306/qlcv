@@ -8,7 +8,7 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ListFilter } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TProjectFilters } from "@qlcv/types";
 import { cn, calculateTotalFilters } from "@qlcv/utils";

@@ -10,14 +10,14 @@ import Link from "next/link";
 
 import { useTranslation } from "@qlcv/i18n";
 import { EditIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { ParentIssuesListModal } from "../parent-issues-list-modal";

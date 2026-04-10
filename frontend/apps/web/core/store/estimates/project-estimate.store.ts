@@ -9,9 +9,9 @@ import { action, computed, makeObservable, observable, runInAction } from "mobx"
 import { computedFn } from "mobx-utils";
 // types
 import type { IEstimate as IEstimateType, IEstimateFormData, TEstimateSystemKeys } from "@qlcv/types";
-// plane web services
+// qlcv web services
 import estimateService from "@/services/estimate.service";
-// plane web store
+// qlcv web store
 import type { IEstimate } from "@/qlcv-web/store/estimates/estimate";
 import { Estimate } from "@/qlcv-web/store/estimates/estimate";
 // store

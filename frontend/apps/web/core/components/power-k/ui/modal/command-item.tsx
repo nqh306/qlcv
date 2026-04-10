@@ -8,7 +8,7 @@ import React from "react";
 import { Command } from "cmdk";
 
 import { CheckIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // local imports
 import { KeySequenceBadge, ShortcutBadge } from "./command-item-shortcut-badge";

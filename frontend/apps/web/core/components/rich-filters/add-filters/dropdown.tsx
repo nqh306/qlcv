@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import type { IFilterInstance } from "@qlcv/shared-state";
 import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@qlcv/types";

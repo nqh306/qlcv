@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { Popover } from "@qlcv/propel/popover";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { ControlLink } from "@qlcv/ui";
@@ -21,7 +21,7 @@ import { useProjectState } from "@/hooks/store/use-project-state";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 import { IssueStats } from "@/qlcv-web/components/issues/issue-layouts/issue-stats";
 // local imports

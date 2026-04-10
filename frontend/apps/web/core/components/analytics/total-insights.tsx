@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";

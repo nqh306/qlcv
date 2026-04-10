@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web constants
+// qlcv web constants
 import { EEstimateSystem } from "@qlcv/constants";
 
 export const isEstimatePointValuesRepeated = (

@@ -4,17 +4,17 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 import type { TPublicMember } from "@qlcv/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing members operations within plane sites application.
+ * Service class for managing members operations within qlcv sites application.
  * Extends APIService to handle HTTP requests to the member-related endpoints.
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for QLCV sites
  */
 export class SitesMemberService extends APIService {
   constructor(BASE_URL?: string) {

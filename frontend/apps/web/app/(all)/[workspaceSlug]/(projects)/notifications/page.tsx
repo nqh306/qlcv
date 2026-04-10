@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // components
 import { PageHead } from "@/components/core/page-title";
@@ -16,7 +16,7 @@ import type { Route } from "./+types/page";
 
 function WorkspaceDashboardPage({ params }: Route.ComponentProps) {
   const { workspaceSlug } = params;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { currentWorkspace } = useWorkspace();

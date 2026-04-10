@@ -1,6 +1,6 @@
-# Plane Tests
+# QLCV Tests
 
-This directory contains tests for the Plane application. The tests are organized using pytest.
+This directory contains tests for the QLCV application. The tests are organized using pytest.
 
 ## Test Structure
 
@@ -14,16 +14,16 @@ Tests are organized into the following categories:
 
 ## API vs App Endpoints
 
-Plane has two types of API endpoints:
+QLCV has two types of API endpoints:
 
-1. **External API** (`plane.api`):
+1. **External API** (`qlcv.api`):
    - Available at `/api/v1/` endpoint
    - Uses API key authentication (X-Api-Key header)
    - Designed for external API contracts and third-party access
    - Tests use the `api_key_client` fixture for authentication
    - Test files are in `contract/api/`
 
-2. **Web App API** (`plane.app`):
+2. **Web App API** (`qlcv.app`):
    - Available at `/api/` endpoint
    - Uses session-based authentication (CSRF disabled)
    - Designed for the web application frontend
@@ -42,16 +42,16 @@ To run specific test categories:
 
 ```bash
 # Run unit tests
-python -m pytest plane/tests/unit/
+python -m pytest qlcv/tests/unit/
 
 # Run API contract tests
-python -m pytest plane/tests/contract/api/
+python -m pytest qlcv/tests/contract/api/
 
 # Run App contract tests
-python -m pytest plane/tests/contract/app/
+python -m pytest qlcv/tests/contract/app/
 
 # Run smoke tests
-python -m pytest plane/tests/smoke/
+python -m pytest qlcv/tests/smoke/
 ```
 
 For convenience, we also provide a helper script:
@@ -79,7 +79,7 @@ The following fixtures are available for testing:
 - `api_token`: API token for the test user
 - `api_key_client`: API client with API key authentication (for external API tests)
 - `session_client`: API client with session authentication (for app API tests)
-- `plane_server`: Live Django test server for HTTP-based smoke tests
+- `qlcv_server`: Live Django test server for HTTP-based smoke tests
 
 ## Writing Tests
 
@@ -89,7 +89,7 @@ When writing tests, follow these guidelines:
 2. Use the correct client fixture based on the API being tested:
    - For external API (`/api/v1/`), use `api_key_client`
    - For web app API (`/api/`), use `session_client`
-   - For smoke tests with real HTTP, use `plane_server`
+   - For smoke tests with real HTTP, use `qlcv_server`
 3. Use the correct URL namespace when reverse-resolving URLs:
    - For external API, use `reverse("api:endpoint_name")`  
    - For web app API, use `reverse("endpoint_name")`
@@ -133,7 +133,7 @@ Tests for components that interact with external services should:
 Generate a coverage report with:
 
 ```bash
-python -m pytest --cov=plane --cov-report=term --cov-report=html
+python -m pytest --cov=qlcv --cov-report=term --cov-report=html
 ```
 
 This creates an HTML report in the `htmlcov/` directory.

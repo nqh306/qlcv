@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { StateGroupIcon } from "@qlcv/propel/icons";
 import type { TStateGroups } from "@qlcv/types";
 // components

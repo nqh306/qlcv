@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Clock } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Avatar, Row } from "@qlcv/ui";
 import { cn, calculateTimeAgo, renderFormattedDate, renderFormattedTime, getFileURL } from "@qlcv/utils";
 // hooks

@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { OAuthOptions } from "@qlcv/ui";
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";

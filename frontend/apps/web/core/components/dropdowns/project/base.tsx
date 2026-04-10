@@ -9,7 +9,7 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { CheckIcon, SearchIcon, ProjectIcon, ChevronDownIcon } from "@qlcv/propel/icons";
@@ -18,7 +18,7 @@ import { cn, sortBySelectedFirst } from "@qlcv/utils";
 // components
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
-// plane web imports
+// qlcv web imports
 import type { TProject } from "@/qlcv-web/types";
 // local imports
 import { DropdownButton } from "../buttons";
@@ -82,7 +82,7 @@ export const ProjectDropdownBase = observer(function ProjectDropdownBase(props: 
   // states
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // popper-js init
   const { styles, attributes } = usePopper(referenceElement, popperElement, {

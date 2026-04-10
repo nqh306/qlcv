@@ -12,7 +12,7 @@ import type { ISearchIssueResponse, TIssue, TIssueServiceType, TWorkItemWidgets 
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web imports
+// qlcv web imports
 import { WorkItemAdditionalWidgetModals } from "@/qlcv-web/components/issues/issue-detail-widgets/modals";
 // local imports
 import { IssueLinkCreateUpdateModal } from "../issue-detail/links/create-update-link-modal";

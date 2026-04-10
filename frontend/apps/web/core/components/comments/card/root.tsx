@@ -6,10 +6,10 @@
 
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import type { TIssueComment, TCommentsOperations } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import { CommentBlock, CommentCardDisplay } from "@/qlcv-web/components/comments";
 // local imports
 import { CommentQuickActions } from "../quick-actions";

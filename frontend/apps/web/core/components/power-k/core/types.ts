@@ -5,7 +5,7 @@
  */
 
 import type { useRouter } from "next/navigation";
-// plane web imports
+// qlcv web imports
 import type {
   TPowerKContextTypeExtended,
   TPowerKPageTypeExtended,

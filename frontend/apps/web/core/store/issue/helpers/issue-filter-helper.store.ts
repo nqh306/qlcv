@@ -5,7 +5,7 @@
  */
 
 import { isEmpty } from "lodash-es";
-// plane constants
+// qlcv constants
 import type { EIssueFilterType } from "@qlcv/constants";
 import {
   EIssueGroupByToServerOptions,

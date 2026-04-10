@@ -8,7 +8,7 @@ import { useState } from "react";
 import { omit } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { ARCHIVABLE_STATE_GROUPS } from "@qlcv/constants";
 import type { TIssue } from "@qlcv/types";
 import { EIssuesStoreType } from "@qlcv/types";
@@ -17,7 +17,7 @@ import { cn } from "@qlcv/utils";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane-web components
+// qlcv-web components
 import { DuplicateWorkItemModal } from "@/qlcv-web/components/issues/issue-layouts/quick-action-dropdowns";
 // helper
 import { ArchiveIssueModal } from "../../archive-issue-modal";

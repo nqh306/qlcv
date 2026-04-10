@@ -41,7 +41,7 @@ import {
   setText,
   openEmojiPicker,
 } from "@/helpers/editor-commands";
-// plane editor extensions
+// qlcv editor extensions
 import { coreEditorAdditionalSlashCommandOptions } from "@/qlcv-editor/extensions";
 // types
 import type { CommandProps, ISlashCommandItem, TSlashCommandSectionKeys } from "@/types";

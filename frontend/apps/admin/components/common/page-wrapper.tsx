@@ -5,7 +5,7 @@
  */
 
 import type { ReactNode } from "react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 
 type TPageWrapperProps = {

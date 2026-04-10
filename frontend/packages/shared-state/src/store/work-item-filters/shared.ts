@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@qlcv/types";
 // local imports
 import type { IFilterInstance } from "../rich-filters";

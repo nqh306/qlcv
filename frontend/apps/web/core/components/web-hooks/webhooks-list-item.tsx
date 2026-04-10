@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-// Plane imports
+// qlcv imports
 import type { IWebhook } from "@qlcv/types";
 import { ToggleSwitch } from "@qlcv/ui";
 // hooks

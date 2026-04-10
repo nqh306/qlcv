@@ -6,7 +6,7 @@
 
 import type { LucideIcon } from "lucide-react";
 import { ArrowUpToLine, Building, CreditCard, Users, Webhook } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { ISvgIcons } from "@qlcv/propel/icons";
 import type { TWorkspaceSettingsTabs } from "@qlcv/types";
 

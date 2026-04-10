@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // types
-// plane imports
+// qlcv imports
 import { getButtonStyling } from "@qlcv/propel/button";
 import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";

@@ -5,9 +5,9 @@
  */
 
 import { useCallback, useMemo } from "react";
-// plane editor
+// qlcv editor
 import type { TMentionSection } from "@qlcv/editor";
-// plane types
+// qlcv types
 import type { TSearchEntities, TSearchResponse } from "@qlcv/types";
 
 export type TUseAdditionalEditorMentionArgs = {

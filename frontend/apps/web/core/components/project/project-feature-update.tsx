@@ -14,7 +14,7 @@ import { Row } from "@qlcv/ui";
 // components
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
+// qlcv web imports
 import { ProjectFeaturesList } from "@/qlcv-web/components/projects/settings/features-list";
 
 type Props = {

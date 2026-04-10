@@ -10,7 +10,7 @@ import { useSearchParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 // icons
 import { CircleCheck } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button, getButtonStyling } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -39,7 +39,7 @@ export const ForgotPasswordForm = observer(function ForgotPasswordForm() {
   // search params
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // timer
   const { timer: resendTimerCode, setTimer: setResendCodeTimer } = useTimer(0);

@@ -7,7 +7,7 @@
 import { get, set, concat, uniq, update } from "lodash-es";
 import { action, observable, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import { ALL_ISSUES } from "@qlcv/constants";
 import type {
   TIssue,

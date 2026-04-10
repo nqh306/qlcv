@@ -5,7 +5,7 @@
  */
 
 import { LayoutGrid } from "lucide-react";
-// plane imports
+// qlcv imports
 import { CycleIcon, ModuleIcon, PageIcon, ProjectIcon, ViewsIcon } from "@qlcv/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
@@ -15,7 +15,7 @@ import type {
   IWorkspaceSearchResult,
 } from "@qlcv/types";
 import { generateWorkItemLink } from "@qlcv/utils";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 export type TCommandGroups = {

@@ -7,7 +7,7 @@
 import { differenceInCalendarDays } from "date-fns/differenceInCalendarDays";
 import { isEmpty } from "lodash-es";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
+// qlcv imports
 import type { TIssueFilterPriorityObject, TIssuePriorities } from "@qlcv/constants";
 import { ISSUE_DISPLAY_FILTERS_BY_PAGE, ISSUE_PRIORITY_FILTERS, STATE_GROUPS } from "@qlcv/constants";
 import type {

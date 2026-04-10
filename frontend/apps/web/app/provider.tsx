@@ -7,7 +7,7 @@
 import { lazy, Suspense } from "react";
 import { useTheme } from "next-themes";
 import { SWRConfig } from "swr";
-// Plane Imports
+// qlcv imports
 import { WEB_SWR_CONFIG } from "@qlcv/constants";
 import { TranslationProvider } from "@qlcv/i18n";
 import { Toast } from "@qlcv/propel/toast";

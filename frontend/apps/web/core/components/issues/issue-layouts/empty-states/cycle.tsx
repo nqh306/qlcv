@@ -8,7 +8,7 @@ import { useState } from "react";
 import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, WORK_ITEM_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -31,7 +31,7 @@ export const CycleEmptyState = observer(function CycleEmptyState() {
   const cycleId = routerCycleId ? routerCycleId.toString() : undefined;
   // states
   const [cycleIssuesListModal, setCycleIssuesListModal] = useState(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { getCycleById } = useCycle();

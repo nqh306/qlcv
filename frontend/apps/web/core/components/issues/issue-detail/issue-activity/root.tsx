@@ -7,7 +7,7 @@
 import { useMemo } from "react";
 import uniq from "lodash-es/uniq";
 import { observer } from "mobx-react";
-// plane package imports
+// qlcv package imports
 import type { TActivityFilters } from "@qlcv/constants";
 import { E_SORT_ORDER, defaultActivityFilters, EUserPermissions } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";
@@ -21,7 +21,7 @@ import { CommentCreate } from "@/components/comments/comment-create";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-// plane web components
+// qlcv web components
 import { ActivityFilterRoot } from "@/qlcv-web/components/issues/worklog/activity/filter-root";
 import { IssueActivityWorklogCreateButton } from "@/qlcv-web/components/issues/worklog/activity/worklog-create-button";
 import { IssueActivityCommentRoot } from "./activity-comment-root";

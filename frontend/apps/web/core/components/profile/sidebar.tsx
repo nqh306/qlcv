@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";

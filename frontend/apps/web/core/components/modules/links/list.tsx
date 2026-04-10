@@ -6,7 +6,7 @@
 
 import { useCallback } from "react";
 import { observer } from "mobx-react";
-// plane types
+// qlcv types
 import type { ILinkDetails } from "@qlcv/types";
 // components
 import { ModulesLinksListItem } from "@/components/modules";

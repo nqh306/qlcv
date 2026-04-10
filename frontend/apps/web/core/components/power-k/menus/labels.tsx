@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IIssueLabel } from "@qlcv/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";

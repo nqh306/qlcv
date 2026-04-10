@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import type { Control, FieldArrayWithId, FormState } from "react-hook-form";
 import { Controller } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ROLE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CloseIcon } from "@qlcv/propel/icons";
@@ -35,7 +35,7 @@ export const InvitationFields = observer(function InvitationFields(props: TInvit
     remove,
     className,
   } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { workspaceInfoBySlug } = useUserPermissions();

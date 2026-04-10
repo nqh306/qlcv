@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// QLCV-web
 import { getRelationActivityContent, useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 //

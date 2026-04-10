@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EditIcon, TrashIcon } from "@qlcv/propel/icons";
 import { CustomMenu } from "@qlcv/ui";
 import { truncateText } from "@qlcv/utils";

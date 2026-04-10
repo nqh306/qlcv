@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import type { LucideIcon } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { cn } from "@qlcv/utils";
 // components

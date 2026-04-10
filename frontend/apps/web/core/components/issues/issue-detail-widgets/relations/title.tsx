@@ -12,7 +12,7 @@ import { EIssueServiceType } from "@qlcv/types";
 import { CollapsibleButton } from "@qlcv/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// QLCV-web
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 // local imports
 import { RelationActionButton } from "./quick-action-button";

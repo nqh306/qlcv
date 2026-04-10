@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ArchiveIcon } from "@qlcv/propel/icons";
 import { renderFormattedDate } from "@qlcv/utils";
 // store

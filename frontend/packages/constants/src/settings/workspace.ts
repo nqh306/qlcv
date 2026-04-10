@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TWorkspaceSettingsItem, TWorkspaceSettingsTabs } from "@qlcv/types";
 import { EUserWorkspaceRoles } from "@qlcv/types";
 

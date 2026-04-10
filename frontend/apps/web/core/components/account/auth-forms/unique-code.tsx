@@ -51,7 +51,7 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   // timer
   const { timer: resendTimerCode, setTimer: setResendCodeTimer } = useTimer(0);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
 
   const handleFormChange = (key: keyof TUniqueCodeFormValues, value: string) =>

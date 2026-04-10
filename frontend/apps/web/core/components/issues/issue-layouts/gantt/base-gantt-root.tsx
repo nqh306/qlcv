@@ -7,7 +7,7 @@
 import React, { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { ALL_ISSUES, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -24,7 +24,7 @@ import { useUserPermissions } from "@/hooks/store/user";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { useIssuesActions } from "@/hooks/use-issues-actions";
 import { useTimeLineChart } from "@/hooks/use-timeline-chart";
-// plane web hooks
+// qlcv web hooks
 import { useBulkOperationStatus } from "@/qlcv-web/hooks/use-bulk-operation-status";
 
 import { IssueLayoutHOC } from "../issue-layout-HOC";
@@ -58,7 +58,7 @@ export const BaseGanttRoot = observer(function BaseGanttRoot(props: IBaseGanttRo
   const { allowPermissions } = useUserPermissions();
 
   const appliedDisplayFilters = issuesFilter.issueFilters?.displayFilters;
-  // plane web hooks
+  // qlcv web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
   // derived values
   const targetDate = new Date();

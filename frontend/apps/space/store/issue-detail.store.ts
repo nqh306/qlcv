@@ -8,7 +8,7 @@ import { isEmpty, set } from "lodash-es";
 import { makeObservable, observable, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
+// qlcv imports
 import { SitesFileService, SitesIssueService } from "@qlcv/services";
 import type { TFileSignedURLResponse, TIssuePublicComment } from "@qlcv/types";
 import { EFileAssetType } from "@qlcv/types";

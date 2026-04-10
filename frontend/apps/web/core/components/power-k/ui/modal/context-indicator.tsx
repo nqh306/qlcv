@@ -5,7 +5,7 @@
  */
 
 import { X } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // local imports
 import type { TPowerKContextType } from "../../core/types";

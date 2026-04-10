@@ -6,7 +6,7 @@
 
 import { startOfToday, format } from "date-fns";
 import { isEmpty, orderBy, sortBy, uniqBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type { ICycle, TCycleFilters, TProgressSnapshot } from "@qlcv/types";
 // local imports
 import { findTotalDaysInRange, generateDateArray, getDate } from "./datetime";

@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { RecentStickyIcon } from "@qlcv/propel/icons";
 import { Breadcrumbs, Header } from "@qlcv/ui";

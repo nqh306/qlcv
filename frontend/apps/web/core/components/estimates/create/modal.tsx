@@ -6,7 +6,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

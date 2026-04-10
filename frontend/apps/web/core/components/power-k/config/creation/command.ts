@@ -5,7 +5,7 @@
  */
 
 import { FileText, FolderPlus, Layers, SquarePlus } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { ContrastIcon, DiceIcon, LayersIcon } from "@qlcv/propel/icons";
 // components

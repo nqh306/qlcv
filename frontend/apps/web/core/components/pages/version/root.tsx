@@ -7,12 +7,12 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { TPageVersion } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web imports
+// qlcv web imports
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 // local imports
 import { PAGE_NAVIGATION_PANE_VERSION_QUERY_PARAM, PAGE_NAVIGATION_PANE_WIDTH } from "../navigation-pane";

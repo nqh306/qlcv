@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TBuildFilterExpressionParams, TExternalFilter, TFilterProperty, TFilterValue } from "@qlcv/types";
 import { LOGICAL_OPERATOR } from "@qlcv/types";
 import { getOperatorForPayload } from "@qlcv/utils";

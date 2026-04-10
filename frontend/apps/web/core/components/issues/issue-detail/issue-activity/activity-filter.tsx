@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { TActivityFilters, TActivityFilterOption } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { IconButton } from "@qlcv/propel/icon-button";

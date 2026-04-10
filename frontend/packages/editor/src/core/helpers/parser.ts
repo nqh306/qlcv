@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TDocumentPayload, TDuplicateAssetData, TDuplicateAssetResponse, TEditorAssetType } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import {
   extractAdditionalAssetsFromHTMLContent,
   replaceAdditionalAssetsInHTMLContent,

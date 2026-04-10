@@ -16,7 +16,7 @@ import {
   Legend,
   CartesianGrid,
 } from "recharts";
-// plane imports
+// qlcv imports
 import { AXIS_LABEL_CLASSNAME } from "@qlcv/constants";
 import type { TBarChartProps } from "@qlcv/types";
 // local components

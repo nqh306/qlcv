@@ -6,9 +6,9 @@
 
 import { forwardRef } from "react";
 import { range } from "lodash-es";
-// plane ui
+// qlcv ui
 import { ContentWrapper } from "@qlcv/ui";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 
 export const KanbanIssueBlockLoader = forwardRef(function KanbanIssueBlockLoader(

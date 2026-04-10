@@ -7,7 +7,7 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { createPortal } from "react-dom";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import type { TNameDescriptionLoader } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";

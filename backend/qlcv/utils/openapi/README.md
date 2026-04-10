@@ -5,7 +5,7 @@ This module provides a well-organized structure for OpenAPI/drf-spectacular util
 ## Structure
 
 ```
-plane/utils/openapi/
+qlcv/utils/openapi/
 ├── __init__.py          # Main module that re-exports everything
 ├── auth.py              # Authentication extensions
 ├── parameters.py        # Common OpenAPI parameters
@@ -19,7 +19,7 @@ plane/utils/openapi/
 
 ### Import Everything (Recommended for backwards compatibility)
 ```python
-from plane.utils.openapi import (
+from qlcv.utils.openapi import (
     asset_docs,
     ASSET_ID_PARAMETER,
     UNAUTHORIZED_RESPONSE,
@@ -29,9 +29,9 @@ from plane.utils.openapi import (
 
 ### Import from Specific Modules (Recommended for new code)
 ```python
-from plane.utils.openapi.decorators import asset_docs
-from plane.utils.openapi.parameters import ASSET_ID_PARAMETER
-from plane.utils.openapi.responses import UNAUTHORIZED_RESPONSE
+from qlcv.utils.openapi.decorators import asset_docs
+from qlcv.utils.openapi.parameters import ASSET_ID_PARAMETER
+from qlcv.utils.openapi.responses import UNAUTHORIZED_RESPONSE
 ```
 
 ## Module Contents
@@ -79,17 +79,17 @@ from plane.utils.openapi.responses import UNAUTHORIZED_RESPONSE
 - ✅ Legacy file completely removed
 
 ### Files updated:
-- `plane/api/views/asset.py` - All methods use new `@asset_docs` helpers
-- `plane/api/views/project.py` - Import updated
-- `plane/api/views/user.py` - Import updated  
-- `plane/api/views/state.py` - Import updated
-- `plane/api/views/intake.py` - Import updated
-- `plane/api/views/member.py` - Import updated
-- `plane/api/views/module.py` - Import updated
-- `plane/api/views/cycle.py` - Import updated
-- `plane/api/views/issue.py` - Import updated
-- `plane/settings/common.py` - Hook paths updated
-- `plane/api/apps.py` - Auth extension import updated
+- `qlcv/api/views/asset.py` - All methods use new `@asset_docs` helpers
+- `qlcv/api/views/project.py` - Import updated
+- `qlcv/api/views/user.py` - Import updated  
+- `qlcv/api/views/state.py` - Import updated
+- `qlcv/api/views/intake.py` - Import updated
+- `qlcv/api/views/member.py` - Import updated
+- `qlcv/api/views/module.py` - Import updated
+- `qlcv/api/views/cycle.py` - Import updated
+- `qlcv/api/views/issue.py` - Import updated
+- `qlcv/settings/common.py` - Hook paths updated
+- `qlcv/api/apps.py` - Auth extension import updated
 
 ## Benefits
 

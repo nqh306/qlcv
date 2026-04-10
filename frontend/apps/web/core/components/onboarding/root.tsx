@@ -6,7 +6,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@qlcv/types";
 import { EOnboardingSteps } from "@qlcv/types";

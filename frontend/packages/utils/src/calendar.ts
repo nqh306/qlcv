@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { ICalendarDate, ICalendarPayload } from "@qlcv/types";
 import { EStartOfTheWeek } from "@qlcv/types";
 // local imports

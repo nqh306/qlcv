@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { EUserProjectRoles } from "@qlcv/types";
 import type { TProjectSettingsItem, TProjectSettingsTabs } from "@qlcv/types";
 

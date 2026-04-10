@@ -8,7 +8,7 @@ import { lazy, Suspense } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
+// qlcv package imports
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import type { TChartData } from "@qlcv/types";
@@ -16,7 +16,7 @@ import type { TChartData } from "@qlcv/types";
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// qlcv web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { ProjectInsightsLoader } from "../loaders";
 

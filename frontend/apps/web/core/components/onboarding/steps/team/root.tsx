@@ -18,7 +18,7 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import type { EUserPermissions } from "@qlcv/constants";
 import { ROLE, ROLE_DETAILS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
@@ -343,7 +343,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
     >
       <CommonOnboardingHeader
         title="Invite your teammates"
-        description="Work in plane happens best with your team. Invite them now to use Plane to its potential."
+        description="Work in QLCV happens best with your team. Invite them now to useQLCV to its potential."
       />
       <div className="w-full py-4 text-13">
         <div className="group relative mx-8 grid grid-cols-10 gap-4 py-2">

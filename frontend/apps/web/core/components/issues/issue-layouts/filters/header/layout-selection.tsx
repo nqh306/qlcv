@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { ISSUE_LAYOUTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Tooltip } from "@qlcv/propel/tooltip";

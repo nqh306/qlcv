@@ -15,7 +15,7 @@ import type { TIssueServiceType } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web hooks
+// qlcv web hooks
 import { useFileSize } from "@/qlcv-web/hooks/use-file-size";
 // types
 import type { TAttachmentHelpers } from "../issue-detail-widgets/attachments/helper";

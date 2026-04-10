@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane ui
+// qlcv ui
 import { StateGroupIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TStateGroups } from "@qlcv/types";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 //hooks
 import { useStates } from "@/hooks/store/use-state";

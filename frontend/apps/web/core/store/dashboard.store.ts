@@ -18,7 +18,7 @@ import type {
 } from "@qlcv/types";
 // services
 import { DashboardService } from "@/services/dashboard.service";
-// plane web store
+// qlcv web store
 import type { CoreRootStore } from "./root.store";
 
 export interface IDashboardStore {

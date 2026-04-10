@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import type { Control, FormState } from "react-hook-form";
 import { Controller } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 // types
 import { useTranslation } from "@qlcv/i18n";

@@ -15,7 +15,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-// plane imports
+// qlcv imports
 import { AXIS_LABEL_CLASSNAME } from "@qlcv/constants";
 import type { TScatterChartProps } from "@qlcv/types";
 // local components

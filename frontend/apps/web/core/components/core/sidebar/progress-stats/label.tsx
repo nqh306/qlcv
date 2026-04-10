@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // assets
 import emptyLabel from "@/app/assets/empty-state/empty_label.svg?url";

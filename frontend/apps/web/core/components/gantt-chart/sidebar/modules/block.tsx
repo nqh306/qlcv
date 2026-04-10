@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// Plane
+// qlcv
 import { Row } from "@qlcv/ui";
 // components
 import { cn } from "@qlcv/utils";

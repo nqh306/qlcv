@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web components
+// qlcv web components
 import { EIssuesStoreType } from "@qlcv/types";
 import { TeamEmptyState } from "@/qlcv-web/components/issues/issue-layouts/empty-states/team-issues";
 import { TeamProjectWorkItemEmptyState } from "@/qlcv-web/components/issues/issue-layouts/empty-states/team-project";

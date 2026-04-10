@@ -5,7 +5,7 @@
  */
 
 import type { Control } from "react-hook-form";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 // types
 import type { TBulkIssueProperties, TIssue } from "@qlcv/types";

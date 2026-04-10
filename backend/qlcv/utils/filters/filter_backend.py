@@ -1,4 +1,3 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -22,7 +21,7 @@ class ComplexFilterBackend(filters.BaseFilterBackend):
     Filter backend that supports complex JSON filtering.
 
     For full, up-to-date examples and usage, see the package README
-    at `plane/utils/filters/README.md`.
+    at `qlcv/utils/filters/README.md`.
     """
 
     filter_param = "filters"

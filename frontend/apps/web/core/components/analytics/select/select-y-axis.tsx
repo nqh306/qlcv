@@ -9,11 +9,11 @@ import { useParams } from "next/navigation";
 import { EEstimateSystem } from "@qlcv/constants";
 import { ProjectIcon } from "@qlcv/propel/icons";
 import type { ChartYAxisMetric } from "@qlcv/types";
-// plane package imports
+// qlcv package imports
 import { CustomSelect } from "@qlcv/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
-// plane web constants
+// qlcv web constants
 type Props = {
   value: ChartYAxisMetric;
   onChange: (val: ChartYAxisMetric | null) => void;

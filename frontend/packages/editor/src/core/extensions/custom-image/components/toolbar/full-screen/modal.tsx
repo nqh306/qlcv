@@ -8,7 +8,7 @@ import { Download, Minus } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { NewTabIcon, PlusIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 
 const MIN_ZOOM = 0.5;

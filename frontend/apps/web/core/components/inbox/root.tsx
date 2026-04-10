@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { PanelLeft } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import { IntakeIcon } from "@qlcv/propel/icons";
@@ -32,7 +32,7 @@ export const InboxIssueRoot = observer(function InboxIssueRoot(props: TInboxIssu
   const { workspaceSlug, projectId, inboxIssueId, inboxAccessible, navigationTab } = props;
   // states
   const [isMobileSidebar, setIsMobileSidebar] = useState(true);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { loader, error, currentTab, currentInboxProjectId, handleCurrentTab, fetchInboxIssues } = useProjectInbox();

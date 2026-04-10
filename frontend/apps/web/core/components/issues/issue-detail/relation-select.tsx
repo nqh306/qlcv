@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 
 import { EditIcon, CloseIcon } from "@qlcv/propel/icons";
-// Plane
+// qlcv
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { ISearchIssueResponse } from "@qlcv/types";
@@ -21,7 +21,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
 import { useProject } from "@/hooks/store/use-project";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// Plane web imports
+// qlcv web imports
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 import type { TRelationObject } from "../issue-detail-widgets/relations";

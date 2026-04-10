@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { TButtonSize, TButtonVariant } from "@qlcv/propel/button";
 import { getButtonStyling } from "@qlcv/propel/button";
 import type { IFilterInstance } from "@qlcv/shared-state";

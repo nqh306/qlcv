@@ -5,14 +5,14 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { Table } from "@qlcv/ui";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { useProjectColumns } from "@/qlcv-web/components/projects/settings/useProjectColumns";
 // store
 import type { IProjectMemberDetails } from "@/store/member/project/base-project-member.store";

@@ -8,7 +8,7 @@ import React, { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
 import type { TModuleFilters } from "@qlcv/types";
@@ -24,7 +24,7 @@ import { useModuleFilter } from "@/hooks/store/use-module-filter";
 export const ArchivedModuleLayoutRoot = observer(function ArchivedModuleLayoutRoot() {
   // router
   const { workspaceSlug, projectId } = useParams();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { fetchArchivedModules, projectArchivedModuleIds, loader } = useModule();

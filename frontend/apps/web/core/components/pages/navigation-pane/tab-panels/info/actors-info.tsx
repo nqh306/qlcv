@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Avatar } from "@qlcv/ui";
 import { calculateTimeAgoShort, getFileURL, renderFormattedDate } from "@qlcv/utils";

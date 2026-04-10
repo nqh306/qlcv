@@ -8,7 +8,7 @@ import type { Editor } from "@tiptap/core";
 
 import { useCallback, useRef, useState } from "react";
 import { LinkIcon, TrashIcon, CheckIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // constants
 import { CORE_EXTENSIONS } from "@/constants/extension";

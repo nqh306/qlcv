@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { EUserWorkspaceRoles } from "@qlcv/types";
@@ -17,7 +17,7 @@ import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
+// qlcv web imports
 import { UpgradeBadge } from "@/qlcv-web/components/workspace/upgrade-badge";
 
 export type SidebarWorkspaceMenuItemProps = {

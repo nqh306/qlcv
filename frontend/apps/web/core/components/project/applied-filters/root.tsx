@@ -6,7 +6,7 @@
 
 import { useTranslation } from "@qlcv/i18n";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@qlcv/types";
 import { EHeaderVariant, Header, Tag } from "@qlcv/ui";

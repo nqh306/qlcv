@@ -11,7 +11,7 @@ import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { CheckIcon, ChevronDownIcon } from "@qlcv/propel/icons";
-// plane helpers
+// qlcv helpers
 // hooks
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";
 // helpers

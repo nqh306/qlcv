@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { ProjectIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";
-// plane web hooks
+// qlcv web hooks
 import { useProject } from "@/hooks/store/use-project";
 
 type Props = {

@@ -5,7 +5,7 @@
  */
 
 import { Image, BrainCog, Cog, Mail, Users } from "lucide-react";
-// plane imports
+// qlcv imports
 import { LockIcon, WorkspaceIcon } from "@qlcv/propel/icons";
 // types
 import type { TSidebarMenuItem } from "./types";

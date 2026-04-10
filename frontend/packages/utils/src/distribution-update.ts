@@ -6,7 +6,7 @@
 
 import { format } from "date-fns";
 import { get, set } from "lodash-es";
-// plane imports
+// qlcv imports
 import { COMPLETED_STATE_GROUPS, STATE_DISTRIBUTION } from "@qlcv/constants";
 import type { ICycle, IEstimatePoint, IModule, IState, TIssue } from "@qlcv/types";
 // helper

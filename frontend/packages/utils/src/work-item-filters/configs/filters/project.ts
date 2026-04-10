@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TFilterProperty } from "@qlcv/types";
 import { EQUALITY_OPERATOR, COLLECTION_OPERATOR } from "@qlcv/types";
 // local imports

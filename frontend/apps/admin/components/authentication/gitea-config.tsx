@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 // icons
 import { Settings2 } from "lucide-react";
-// plane internal packages
+// qlcv internal packages
 import { useTranslation } from "@qlcv/i18n";
 import { getButtonStyling } from "@qlcv/propel/button";
 import type { TInstanceAuthenticationMethodKeys } from "@qlcv/types";

@@ -5,7 +5,7 @@
  */
 
 import { useTheme } from "next-themes";
-// plane package imports
+// qlcv package imports
 import { cn } from "@qlcv/utils";
 // assets
 import darkBackgroundAsset from "@/app/assets/empty-state/analytics/empty-grid-background-dark.webp?url";

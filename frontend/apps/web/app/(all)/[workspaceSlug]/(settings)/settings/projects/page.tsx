@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { PROJECT_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { Button, getButtonStyling } from "@qlcv/propel/button";
 import { cn } from "@qlcv/utils";

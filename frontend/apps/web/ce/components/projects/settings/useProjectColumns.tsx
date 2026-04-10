@@ -5,7 +5,7 @@
  */
 
 import { useState } from "react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import type { IWorkspaceMember, TProjectMembership } from "@qlcv/types";
 import { renderFormattedDate } from "@qlcv/utils";

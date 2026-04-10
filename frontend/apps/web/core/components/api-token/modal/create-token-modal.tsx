@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { mutate } from "swr";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { APITokenService } from "@qlcv/services";
 import type { IApiToken } from "@qlcv/types";

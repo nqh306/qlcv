@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -18,7 +18,7 @@ import { SettingsHeading } from "@/components/settings/heading";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
+// qlcv web imports
 import { CustomAutomationsRoot } from "@/qlcv-web/components/automations/root";
 // local imports
 import type { Route } from "./+types/page";

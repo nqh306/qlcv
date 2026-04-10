@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { WORKSPACE_SETTINGS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Breadcrumbs } from "@qlcv/ui";
@@ -15,7 +15,7 @@ import { SettingsPageHeader } from "@/components/settings/page-header";
 import { WORKSPACE_SETTINGS_ICONS } from "@/components/settings/workspace/sidebar/item-icon";
 
 export const MembersWorkspaceSettingsHeader = observer(function MembersWorkspaceSettingsHeader() {
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // derived values
   const settingsDetails = WORKSPACE_SETTINGS.members;

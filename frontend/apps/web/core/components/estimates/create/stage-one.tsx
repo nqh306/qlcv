@@ -5,14 +5,14 @@
  */
 
 import { Info } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TEstimateSystemKeys } from "@qlcv/types";
 // components
 import { convertMinutesToHoursMinutesString } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { isEstimateSystemEnabled } from "@/qlcv-web/components/estimates/helper";
 import { UpgradeBadge } from "@/qlcv-web/components/workspace/upgrade-badge";
 import { RadioInput } from "../radio-select";

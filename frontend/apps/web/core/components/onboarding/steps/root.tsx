@@ -5,7 +5,7 @@
  */
 
 import { useEffect, useRef } from "react";
-// plane imports
+// qlcv imports
 import type { IWorkspaceMemberInvitation } from "@qlcv/types";
 import { EOnboardingSteps } from "@qlcv/types";
 // local components

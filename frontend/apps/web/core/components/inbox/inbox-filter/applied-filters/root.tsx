@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Header, EHeaderVariant } from "@qlcv/ui";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

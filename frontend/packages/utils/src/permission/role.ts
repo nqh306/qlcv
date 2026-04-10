@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { EUserPermissions } from "@qlcv/constants";
 import type { EUserProjectRoles, EUserWorkspaceRoles } from "@qlcv/types";
 

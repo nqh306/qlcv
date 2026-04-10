@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { CloseIcon } from "@qlcv/propel/icons";
 import type { IFilterInstance } from "@qlcv/shared-state";
 import type { TExternalFilter, TFilterProperty } from "@qlcv/types";

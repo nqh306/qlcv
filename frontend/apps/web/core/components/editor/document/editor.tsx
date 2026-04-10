@@ -5,7 +5,7 @@
  */
 
 import { forwardRef } from "react";
-// plane imports
+// qlcv imports
 import { DocumentEditorWithRef } from "@qlcv/editor";
 import type { IEditorPropsExtended, EditorRefApi, IDocumentEditorProps, TFileHandler } from "@qlcv/editor";
 import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@qlcv/types";
@@ -14,7 +14,7 @@ import { cn } from "@qlcv/utils";
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
+// qlcv web hooks
 import { useEditorFlagging } from "@/qlcv-web/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "../embeds/mentions";

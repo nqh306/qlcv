@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { PlusIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType } from "@qlcv/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

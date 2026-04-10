@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EIssuesStoreType } from "@qlcv/types";
 // components
 import { FiltersToggle } from "@/components/rich-filters/filters-toggle";

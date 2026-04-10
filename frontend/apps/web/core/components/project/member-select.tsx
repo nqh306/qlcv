@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Ban } from "lucide-react";
 import { EUserProjectRoles } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar, CustomSearchSelect } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";

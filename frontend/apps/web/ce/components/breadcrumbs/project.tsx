@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { ProjectIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { ICustomSearchSelectOption } from "@qlcv/types";
 import { BreadcrumbNavigationSearchDropdown, Breadcrumbs } from "@qlcv/ui";
 import { SwitcherLabel } from "@/components/common/switcher-label";

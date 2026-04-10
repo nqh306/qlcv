@@ -6,7 +6,7 @@
 
 import { Maximize } from "lucide-react";
 import { useEffect, useState } from "react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 // local imports
 import { ImageFullScreenModal } from "./modal";

@@ -7,7 +7,7 @@
 import { Fragment, useState } from "react";
 import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { CloseIcon } from "@qlcv/propel/icons";
 
@@ -27,7 +27,7 @@ export function ForgotPasswordPopover() {
       },
     ],
   });
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
 
   return (

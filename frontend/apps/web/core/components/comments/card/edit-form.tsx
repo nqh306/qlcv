@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
 import type { EditorRefApi } from "@qlcv/editor";
 import { CheckIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TCommentsOperations, TIssueComment } from "@qlcv/types";
 import { cn, isCommentEmpty } from "@qlcv/utils";
 // components

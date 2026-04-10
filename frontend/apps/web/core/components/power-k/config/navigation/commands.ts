@@ -5,7 +5,7 @@
  */
 
 import { BarChart2, Briefcase, FileText, Home, Inbox, Layers, PenSquare, Settings } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { ArchiveIcon, UserActivityIcon, LayersIcon, ContrastIcon, DiceIcon, Intake } from "@qlcv/propel/icons";
 import type { ICycle, IModule, IPartialProject, IProjectView, IWorkspace } from "@qlcv/types";

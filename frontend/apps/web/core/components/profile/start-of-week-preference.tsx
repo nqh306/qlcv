@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { START_OF_THE_WEEK_OPTIONS } from "@qlcv/constants";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { EStartOfTheWeek } from "@qlcv/types";

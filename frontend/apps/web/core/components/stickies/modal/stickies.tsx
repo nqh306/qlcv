@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
-// plane ui
+// qlcv ui
 import { RecentStickyIcon, PlusIcon, CloseIcon } from "@qlcv/propel/icons";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";

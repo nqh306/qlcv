@@ -9,7 +9,7 @@ import { useMemo, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // icons
 import { CircleAlert, XCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import type { IEmailCheckData } from "@qlcv/types";
@@ -26,7 +26,7 @@ export const AuthEmailForm = observer(function AuthEmailForm(props: TAuthEmailFo
   // states
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [email, setEmail] = useState(defaultEmail);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   const emailError = useMemo(
     () => {

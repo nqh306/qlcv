@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { useParams } from "next/navigation";
 import { Star, StarOff } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon } from "@qlcv/propel/icons";

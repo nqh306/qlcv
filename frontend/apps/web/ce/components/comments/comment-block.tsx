@@ -7,7 +7,7 @@
 import type { ReactNode } from "react";
 import { useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { CommentReplyIcon } from "@qlcv/propel/icons";
 import type { TIssueComment } from "@qlcv/types";
 import { cn } from "@qlcv/utils";

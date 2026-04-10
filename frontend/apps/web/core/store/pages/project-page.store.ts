@@ -13,8 +13,8 @@ import type { TPage, TPageFilters, TPageNavigationTabs } from "@qlcv/types";
 import { EUserProjectRoles } from "@qlcv/types";
 // helpers
 import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@qlcv/utils";
-// plane web constants
-// plane web store
+// qlcv web constants
+// qlcv web store
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";

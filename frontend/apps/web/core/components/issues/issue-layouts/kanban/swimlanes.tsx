@@ -6,7 +6,7 @@
 
 import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -22,7 +22,7 @@ import type {
 import { Row } from "@qlcv/ui";
 // hooks
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-// plane web imports
+// qlcv web imports
 import { useWorkFlowFDragNDrop } from "@/qlcv-web/components/workflow";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";

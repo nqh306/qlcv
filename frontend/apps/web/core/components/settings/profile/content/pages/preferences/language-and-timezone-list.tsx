@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { SUPPORTED_LANGUAGES, useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { CustomSelect } from "@qlcv/ui";

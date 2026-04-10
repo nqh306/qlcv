@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TGroupedIssues, TIssue, TIssueMap, TPaginationData, ICalendarDate, ICalendarWeek } from "@qlcv/types";
 import { cn, getOrderedDays, renderFormattedPayloadDate } from "@qlcv/utils";
 // hooks

@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 
-// plane internal packages
+// qlcv internal packages
 import { WEB_BASE_URL } from "@qlcv/constants";
 import { NewTabIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";

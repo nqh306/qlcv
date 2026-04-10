@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { PlusIcon } from "@qlcv/propel/icons";
 // hooks

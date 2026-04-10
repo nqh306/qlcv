@@ -19,7 +19,7 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import type { EUserPermissions } from "@qlcv/constants";
 import { ROLE, ROLE_DETAILS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
@@ -340,7 +340,7 @@ export function InviteMembers(props: Props) {
           <div className="mx-auto w-4/5 space-y-1 py-4 text-center">
             <h3 className="text-24 font-bold text-primary">Invite your teammates</h3>
             <p className="font-medium text-placeholder">
-              Work in plane happens best with your team. Invite them now to use Plane to its potential.
+              Work in QLCV happens best with your team. Invite them now to useQLCV to its potential.
             </p>
           </div>
           <form

@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { CustomSearchSelect } from "@qlcv/ui";
 import { cn } from "@qlcv/utils";
 // hooks

@@ -11,7 +11,7 @@ import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { Ellipsis } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { PlusIcon, ChevronRightIcon } from "@qlcv/propel/icons";
@@ -29,7 +29,7 @@ import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useProjectNavigationPreferences } from "@/hooks/use-navigation-preferences";
-// plane web imports
+// qlcv web imports
 import type { TProject } from "@/qlcv-web/types";
 // local imports
 import { SidebarProjectsListItem } from "./projects-list-item";

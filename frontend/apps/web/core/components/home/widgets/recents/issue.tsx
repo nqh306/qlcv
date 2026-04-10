@@ -5,12 +5,12 @@
  */
 
 import { observer } from "mobx-react";
-// plane types
+// qlcv types
 import { PriorityIcon, StateGroupIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TActivityEntityData, TIssueEntityData } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { calculateTimeAgo, generateWorkItemLink } from "@qlcv/utils";
 // components
 import { ListItem } from "@/components/core/list";
@@ -20,7 +20,7 @@ import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 type BlockProps = {

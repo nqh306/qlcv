@@ -5,7 +5,7 @@
  */
 
 import { createContext } from "react";
-// plane admin store
+// qlcv admin store
 import { RootStore } from "../store/root.store";
 
 let rootStore = new RootStore();

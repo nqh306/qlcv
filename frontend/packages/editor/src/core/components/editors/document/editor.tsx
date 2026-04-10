@@ -7,7 +7,7 @@
 import type { Extensions } from "@tiptap/core";
 import type { MutableRefObject } from "react";
 import { forwardRef, useMemo } from "react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // components
 import { PageRenderer } from "@/components/editors";
@@ -19,7 +19,7 @@ import { HeadingListExtension, SideMenuExtension } from "@/extensions";
 import { getEditorClassNames } from "@/helpers/common";
 // hooks
 import { useEditor } from "@/hooks/use-editor";
-// plane editor extensions
+// qlcv editor extensions
 import { DocumentEditorAdditionalExtensions } from "@/qlcv-editor/extensions";
 // types
 import type { EditorRefApi, IDocumentEditorProps } from "@/types";

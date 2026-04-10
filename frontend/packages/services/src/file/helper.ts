@@ -6,7 +6,7 @@
 
 // external imports
 import { fileTypeFromBuffer } from "file-type";
-// plane imports
+// qlcv imports
 import type { TFileMetaDataLite, TFileSignedURLResponse } from "@qlcv/types";
 import { DANGEROUS_EXTENSIONS } from "@qlcv/constants";
 

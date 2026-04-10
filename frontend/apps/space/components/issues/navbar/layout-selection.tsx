@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
 // ui
 import { SITES_ISSUE_LAYOUTS } from "@qlcv/constants";
-// plane i18n
+// qlcv i18n
 import { useTranslation } from "@qlcv/i18n";
 import { Tooltip } from "@qlcv/propel/tooltip";
 // helpers

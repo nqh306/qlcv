@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { GANTT_TIMELINE_TYPE } from "@qlcv/types";
 // components

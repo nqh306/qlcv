@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect, useCallback } from "react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi, IMarking } from "@qlcv/editor";
 import { cn } from "@qlcv/utils";
 // components

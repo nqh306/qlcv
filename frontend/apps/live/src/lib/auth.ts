@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IncomingHttpHeaders } from "http";
 import type { TUserDetails } from "@qlcv/editor";
 import { logger } from "@qlcv/logger";

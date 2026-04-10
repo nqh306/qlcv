@@ -5,7 +5,7 @@
  */
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow } from "lucide-react";
-// plane imports
+// qlcv imports
 import { getButtonStyling } from "@qlcv/propel/button";
 // types
 import { CheckIcon } from "@qlcv/propel/icons";

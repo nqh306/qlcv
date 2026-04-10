@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane web components
+// qlcv web components
 import { PageLockControl } from "@/qlcv-web/components/pages/header/lock-control";
 import { PageMoveControl } from "@/qlcv-web/components/pages/header/move-control";
 import { PageShareControl } from "@/qlcv-web/components/pages/header/share-control";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";

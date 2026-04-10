@@ -7,7 +7,7 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router";
 import { LogOut, MoreHorizontal, Settings, Share2, ArchiveIcon } from "lucide-react";
-// plane imports
+// qlcv imports
 import { MEMBER_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon } from "@qlcv/propel/icons";

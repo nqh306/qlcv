@@ -7,7 +7,7 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { ChartNoAxesColumn, SlidersHorizontal } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EIssueFilterType, ISSUE_STORE_TO_FILTERS_MAP } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -15,7 +15,7 @@ import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@qlcv/
 import { EIssueLayoutTypes, EIssuesStoreType } from "@qlcv/types";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";
-// plane web imports
+// qlcv web imports
 import type { TProject } from "@/qlcv-web/types";
 // local imports
 import { WorkItemsModal } from "../analytics/work-items/modal";

@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IState, TStateGroups, TStateOperationsCallbacks } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
 // components

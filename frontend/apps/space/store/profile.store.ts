@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { UserService } from "@qlcv/services";
 import type { TUserProfile } from "@qlcv/types";
 import { EStartOfTheWeek } from "@qlcv/types";

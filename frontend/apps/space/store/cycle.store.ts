@@ -5,7 +5,7 @@
  */
 
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesCycleService } from "@qlcv/services";
 import type { TPublicCycle } from "@/types/cycle";
 // store

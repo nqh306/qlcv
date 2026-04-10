@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IFilterInstance } from "@qlcv/shared-state";
 import type {
   SingleOrArray,

@@ -7,7 +7,7 @@
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import { EMPTY_OPERATOR_LABEL } from "@qlcv/constants";
 import type {
   TSupportedOperators,

@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { PageHead } from "@/components/core/page-title";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
-// plane web components
+// qlcv web components
 import { WorkspaceActiveCyclesRoot } from "@/qlcv-web/components/active-cycles";
 
 function WorkspaceActiveCyclesPage() {

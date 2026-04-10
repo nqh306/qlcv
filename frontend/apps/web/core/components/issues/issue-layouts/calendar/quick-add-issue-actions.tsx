@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { PlusIcon } from "@qlcv/propel/icons";
 import { setPromiseToast } from "@qlcv/propel/toast";
 import type { ISearchIssueResponse, TIssue } from "@qlcv/types";

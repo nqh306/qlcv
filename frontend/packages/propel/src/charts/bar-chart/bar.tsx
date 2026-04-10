@@ -6,7 +6,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-// plane imports
+// qlcv imports
 import type { TBarChartShapeVariant, TBarItem, TChartData } from "@qlcv/types";
 import { cn } from "../../utils/classname";
 

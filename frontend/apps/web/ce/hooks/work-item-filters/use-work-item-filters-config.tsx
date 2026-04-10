@@ -6,7 +6,7 @@
 
 import { useCallback, useMemo } from "react";
 import { AtSign, Briefcase } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import {
   CalendarLayoutIcon,
@@ -60,7 +60,7 @@ import { useMember } from "@/hooks/store/use-member";
 import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web imports
+// qlcv web imports
 import { useFiltersOperatorConfigs } from "@/qlcv-web/hooks/rich-filters/use-filters-operator-configs";
 
 export type TWorkItemFiltersEntityProps = {

@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EIssueLayoutTypes } from "@qlcv/types";
 // components
 import { CalendarLayoutLoader } from "@/components/ui/loader/layouts/calendar-layout-loader";

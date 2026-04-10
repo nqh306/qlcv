@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { isRouteErrorResponse } from "react-router";
 import { Banner } from "@qlcv/propel/banner";
 import { Button } from "@qlcv/propel/button";

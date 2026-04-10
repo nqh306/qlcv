@@ -9,7 +9,7 @@ import { Controller, useForm } from "react-hook-form";
 import { Info } from "lucide-react";
 import { NETWORK_CHOICES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@qlcv/propel/emoji-icon-picker";
 import { LockIcon } from "@qlcv/propel/icons";

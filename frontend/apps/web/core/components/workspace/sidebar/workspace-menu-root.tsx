@@ -11,7 +11,7 @@ import Link from "next/link";
 import { CirclePlus, LogOut, Mails } from "lucide-react";
 // ui
 import { Menu, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { ChevronDownIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

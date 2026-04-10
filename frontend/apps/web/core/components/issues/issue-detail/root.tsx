@@ -6,7 +6,7 @@
 
 import { useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setPromiseToast, setToast } from "@qlcv/propel/toast";

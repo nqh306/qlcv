@@ -8,13 +8,13 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 import { useTranslation } from "@qlcv/i18n";
-// plane types
+// qlcv types
 import { PageIcon, ProjectIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import type { TActivityEntityData, THomeWidgetProps, TRecentActivityFilterKeys } from "@qlcv/types";
-// plane ui
+// qlcv ui
 // components
 import { ContentOverflowWrapper } from "@/components/core/content-overflow-HOC";
-// plane web services
+// qlcv web services
 import { WorkspaceService } from "@/services/workspace.service";
 import { RecentsEmptyState } from "../empty-states";
 import { EWidgetKeys, WidgetLoader } from "../loaders";

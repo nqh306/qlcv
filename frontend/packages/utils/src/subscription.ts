@@ -5,7 +5,7 @@
  */
 
 import { orderBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type { IPaymentProduct, TProductSubscriptionType, TSubscriptionPrice } from "@qlcv/types";
 import { EProductSubscriptionEnum } from "@qlcv/types";
 

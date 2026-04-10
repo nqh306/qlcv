@@ -7,7 +7,7 @@
 import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { E_SORT_ORDER } from "@qlcv/constants";
 import type { TCommentsOperations, TIssueComment } from "@qlcv/types";
 // local components

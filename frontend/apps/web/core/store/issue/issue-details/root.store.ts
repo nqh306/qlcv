@@ -16,7 +16,7 @@ import type {
   TIssueServiceType,
   TWorkItemWidgets,
 } from "@qlcv/types";
-// plane web store
+// qlcv web store
 import { IssueActivityStore } from "@/qlcv-web/store/issue/issue-details/activity.store";
 import type {
   IIssueActivityStore,

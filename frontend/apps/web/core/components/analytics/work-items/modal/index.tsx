@@ -6,11 +6,11 @@
 
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane package imports
+// qlcv package imports
 import { ModalPortal, EPortalWidth, EPortalPosition } from "@qlcv/propel/portal";
 import type { ICycle, IModule, IProject } from "@qlcv/types";
 import { useAnalytics } from "@/hooks/store/use-analytics";
-// plane web components
+// qlcv web components
 import { WorkItemsModalMainContent } from "./content";
 import { WorkItemsModalHeader } from "./header";
 

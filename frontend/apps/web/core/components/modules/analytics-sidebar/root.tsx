@@ -11,7 +11,7 @@ import { Controller, useForm } from "react-hook-form";
 import { Info, SquareUser } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, EEstimateSystem } from "@qlcv/constants";
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 import {
   PlusIcon,
@@ -24,7 +24,7 @@ import {
 } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { ILinkDetails, IModule, ModuleLink } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Loader, CustomSelect, TextArea } from "@qlcv/ui";
 // components
 // helpers
@@ -36,7 +36,7 @@ import { CreateUpdateModuleLinkModal, ModuleAnalyticsProgress, ModuleLinksList }
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useModule } from "@/hooks/store/use-module";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web constants
+// qlcv web constants
 const defaultValues: Partial<IModule> = {
   lead_id: "",
   member_ids: [],

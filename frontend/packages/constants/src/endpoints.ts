@@ -23,11 +23,11 @@ export const LIVE_URL = encodeURI(`${LIVE_BASE_URL}${LIVE_BASE_PATH}`);
 export const WEB_BASE_URL = process.env.VITE_WEB_BASE_URL || "";
 export const WEB_BASE_PATH = process.env.VITE_WEB_BASE_PATH || "";
 export const WEB_URL = encodeURI(`${WEB_BASE_URL}${WEB_BASE_PATH}`);
-// plane website url
+// qlcv website url
 export const WEBSITE_URL = process.env.VITE_WEBSITE_URL || "https://ems.evngenco1.vn/qlcv";
 // support email
 export const SUPPORT_EMAIL = process.env.VITE_SUPPORT_EMAIL || "qlcv@evngenco1.vn";
 // marketing links
 export const MARKETING_PRICING_PAGE_LINK = "https://ems.evngenco1.vn/qlcv/pricing";
 export const MARKETING_CONTACT_US_PAGE_LINK = "https://ems.evngenco1.vn/qlcv/contact";
-export const MARKETING_PLANE_ONE_PAGE_LINK = "https://ems.evngenco1.vn/qlcv/one";
+export const MARKETING_QLCV_ONE_PAGE_LINK = "https://ems.evngenco1.vn/qlcv/one";

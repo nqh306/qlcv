@@ -7,7 +7,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useEffect, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TIssue, TNameDescriptionLoader } from "@qlcv/types";

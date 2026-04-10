@@ -7,7 +7,7 @@
 import type { MutableRefObject } from "react";
 import { useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
-// plane helpers
+// qlcv helpers
 import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import type { ISvgIcons } from "@qlcv/propel/icons";

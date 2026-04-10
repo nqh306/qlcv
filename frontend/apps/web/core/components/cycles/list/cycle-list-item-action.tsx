@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Eye, ArrowRight, CalendarDays } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";
@@ -31,7 +31,7 @@ import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { useTimeZoneConverter } from "@/hooks/use-timezone-converter";
-// plane web components
+// qlcv web components
 import { CycleAdditionalActions } from "@/qlcv-web/components/cycles";
 // local imports
 import { CycleQuickActions } from "../quick-actions";

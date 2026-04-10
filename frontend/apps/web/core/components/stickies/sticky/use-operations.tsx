@@ -5,11 +5,11 @@
  */
 
 import { useMemo } from "react";
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { InstructionType, TSticky } from "@qlcv/types";
-// plane utils
+// qlcv utils
 import { isCommentEmpty } from "@qlcv/utils";
 // components
 import { STICKY_COLORS_LIST } from "@/components/editor/sticky-editor/color-palette";

@@ -7,7 +7,7 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { ENotificationLoader, ENotificationQueryParamType } from "@qlcv/constants";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import { cn } from "@qlcv/utils";
@@ -18,7 +18,7 @@ import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useWorkspaceIssueProperties } from "@/hooks/use-workspace-issue-properties";
-// plane web imports
+// qlcv web imports
 import { useNotificationPreview } from "@/qlcv-web/hooks/use-notification-preview";
 // local imports
 import { InboxContentRoot } from "../inbox/content";

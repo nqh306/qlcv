@@ -10,7 +10,7 @@ import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
 import type { TInboxIssueCurrentTab } from "@qlcv/types";
 import { EInboxIssueCurrentTab } from "@qlcv/types";
-// plane imports
+// qlcv imports
 import { Header, Loader, EHeaderVariant } from "@qlcv/ui";
 import { cn } from "@qlcv/utils";
 // components
@@ -50,7 +50,7 @@ export const InboxSidebar = observer(function InboxSidebar(props: IInboxSidebarP
   // ref
   const containerRef = useRef<HTMLDivElement>(null);
   const [elementRef, setElementRef] = useState<HTMLDivElement | null>(null);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store
   const { currentProjectDetails } = useProject();

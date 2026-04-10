@@ -9,7 +9,7 @@ import { xor } from "lodash-es";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import { Combobox } from "@headlessui/react";
-// plane ui
+// qlcv ui
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
@@ -42,7 +42,7 @@ export const ProjectMultiSelectModal = observer(function ProjectMultiSelectModal
   const moveButtonRef = useRef<HTMLButtonElement>(null);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { getProjectById } = useProject();

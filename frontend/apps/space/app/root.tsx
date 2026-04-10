@@ -31,7 +31,7 @@ import robotoVietnameseWoff2 from "@fontsource/roboto/files/roboto-vietnamese-40
 import "@fontsource/material-symbols-rounded";
 import "@fontsource/ibm-plex-mono";
 
-const APP_TITLE = "QLCV | Make your Plane boards public with one-click";
+const APP_TITLE = "QLCV | Make yourQLCV boards public with one-click";
 const APP_DESCRIPTION = "QLCV is a customer feedback management tool built on top of evngenco1.vn";
 
 export const links: Route.LinksFunction = () => [

@@ -8,7 +8,7 @@ import { useCallback, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane internal packages
+// qlcv internal packages
 import { useTranslation } from "@qlcv/i18n";
 import { setPromiseToast, setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import type { TInstanceConfigurationKeys, TInstanceAuthenticationModes } from "@qlcv/types";
@@ -170,6 +170,6 @@ const InstanceAuthenticationPage = observer(function InstanceAuthenticationPage(
   );
 });
 
-export const meta: Route.MetaFunction = () => [{ title: "Authentication Settings - Plane Web" }];
+export const meta: Route.MetaFunction = () => [{ title: "Authentication Settings -QLCV Web" }];
 
 export default InstanceAuthenticationPage;

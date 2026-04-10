@@ -12,7 +12,7 @@ import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
 
 // TODO: If projectViewId changes, everything breaks. Figure out a better way to handle this.
 export const ProfileViewEmptyState = observer(function ProfileViewEmptyState() {
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { profileViewId } = useParams();

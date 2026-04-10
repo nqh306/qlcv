@@ -6,7 +6,7 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ISSUE_LAYOUT_MAP } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CheckIcon } from "@qlcv/propel/icons";
@@ -25,7 +25,7 @@ type TLayoutDropDown = {
 
 export const LayoutDropDown = observer(function LayoutDropDown(props: TLayoutDropDown) {
   const { onChange, value = EIssueLayoutTypes.LIST, disabledLayouts = [] } = props;
-  // plane i18n
+  // qlcv i18n
   const { t } = useTranslation();
   // derived values
   const availableLayouts = useMemo(

@@ -6,7 +6,7 @@
 
 import { cloneDeep } from "lodash-es";
 import { action, makeObservable, observable, toJS } from "mobx";
-// plane imports
+// qlcv imports
 import type { TAutoVisibilityOptions, TExpressionOptions } from "@qlcv/constants";
 import { DEFAULT_FILTER_EXPRESSION_OPTIONS } from "@qlcv/constants";
 import type {

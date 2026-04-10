@@ -6,7 +6,7 @@
 
 import React from "react";
 import { Command } from "cmdk";
-// plane imports
+// qlcv imports
 import { START_OF_THE_WEEK_OPTIONS } from "@qlcv/constants";
 import type { EStartOfTheWeek } from "@qlcv/types";
 // local imports

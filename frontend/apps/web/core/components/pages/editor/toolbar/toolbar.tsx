@@ -6,7 +6,7 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 import type { EditorRefApi } from "@qlcv/editor";
-// plane imports
+// qlcv imports
 import { CheckIcon, ChevronDownIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { CustomMenu } from "@qlcv/ui";

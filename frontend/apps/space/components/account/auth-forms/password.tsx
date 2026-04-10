@@ -7,7 +7,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { Eye, EyeOff, XCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { AuthService } from "@qlcv/services";

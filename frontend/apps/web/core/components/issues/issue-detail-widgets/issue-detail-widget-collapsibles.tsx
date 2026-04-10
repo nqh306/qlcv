@@ -6,11 +6,11 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType, TWorkItemWidgets } from "@qlcv/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// QLCV-web
 import { WorkItemAdditionalWidgetCollapsibles } from "@/qlcv-web/components/issues/issue-detail-widgets/collapsibles";
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 // local imports

@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { PROFILE_SETTINGS_TABS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { TProfileSettingsTabs } from "@qlcv/types";

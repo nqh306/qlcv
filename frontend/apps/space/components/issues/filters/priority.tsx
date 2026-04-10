@@ -6,7 +6,7 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ISSUE_PRIORITY_FILTERS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { PriorityIcon } from "@qlcv/propel/icons";

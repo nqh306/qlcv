@@ -5,7 +5,7 @@
  */
 
 import { subDays } from "date-fns";
-// plane imports
+// qlcv imports
 import { EPastDurationFilters } from "@qlcv/constants";
 // local imports
 import { renderFormattedPayloadDate } from "./datetime";

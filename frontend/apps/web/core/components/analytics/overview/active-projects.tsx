@@ -8,13 +8,13 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
+// qlcv package imports
 import { useTranslation } from "@qlcv/i18n";
 import { Loader } from "@qlcv/ui";
-// plane web hooks
+// qlcv web hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// qlcv web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import ActiveProjectItem from "./active-project-item";
 

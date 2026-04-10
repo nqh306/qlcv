@@ -6,11 +6,11 @@
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, reaction, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { EPageAccess } from "@qlcv/constants";
 import type { TChangeHandlerProps } from "@qlcv/propel/emoji-icon-picker";
 import type { TDocumentPayload, TLogoProps, TNameDescriptionLoader, TPage } from "@qlcv/types";
-// plane web store
+// qlcv web store
 import { ExtendedBasePage } from "@/qlcv-web/store/pages/extended-base-page";
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // local imports

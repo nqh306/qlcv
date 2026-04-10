@@ -8,7 +8,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ListFilter } from "lucide-react";
-// plane helpers
+// qlcv helpers
 import { MODULE_VIEW_LAYOUTS } from "@qlcv/constants";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // types
@@ -18,7 +18,7 @@ import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TModuleFilters } from "@qlcv/types";
 // ui
 import { cn, calculateTotalFilters } from "@qlcv/utils";
-// plane utils
+// qlcv utils
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { ModuleFiltersSelection, ModuleOrderByDropdown } from "@/components/modules/dropdowns";

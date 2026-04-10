@@ -6,12 +6,12 @@
 
 import type { ReactNode } from "react";
 import { Network } from "lucide-react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { renderFormattedTime, renderFormattedDate, calculateTimeAgo } from "@qlcv/utils";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { IssueCreatorDisplay } from "@/qlcv-web/components/issues/issue-details/issue-creator";
 // local imports
 import { IssueUser } from "../";

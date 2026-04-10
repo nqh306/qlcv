@@ -11,7 +11,7 @@ import { useTheme } from "next-themes";
 import { CalendarCheck } from "lucide-react";
 // headless ui
 import { Tab } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { PriorityIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
@@ -38,7 +38,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import useLocalStorage from "@/hooks/use-local-storage";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // store
 import type { ActiveCycleIssueDetails } from "@/store/issue/cycle";
@@ -62,7 +62,7 @@ export const ActiveCycleStats = observer(function ActiveCycleStats(props: Active
   const [issuesLoaderElement, setIssueLoaderElement] = useState<HTMLDivElement | null>(null);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // derived values
   const priorityResolvedPath = resolvedTheme === "light" ? lightPriorityAsset : darkPriorityAsset;

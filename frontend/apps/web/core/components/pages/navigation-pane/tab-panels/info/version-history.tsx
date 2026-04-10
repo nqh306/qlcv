@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TPageVersion } from "@qlcv/types";
 import { Avatar } from "@qlcv/ui";

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { ETabIndices } from "@qlcv/constants";
 import { TAB_INDEX_MAP } from "@qlcv/constants";
 

@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import type { TWorkItemFilterCondition } from "@qlcv/shared-state";
 import { EIssuesStoreType } from "@qlcv/types";
 // constants

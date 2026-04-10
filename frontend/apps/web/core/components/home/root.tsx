@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { ContentWrapper } from "@qlcv/ui";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 import { useUser } from "@/hooks/store/user";
-// plane web imports
+// qlcv web imports
 import { HomePeekOverviewsRoot } from "@/qlcv-web/components/home";
 // local imports
 import { DashboardWidgets } from "./home-dashboard-widgets";

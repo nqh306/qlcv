@@ -35,7 +35,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web components
+// qlcv web components
 import { WorkItemAdditionalSidebarProperties } from "@/qlcv-web/components/issues/issue-details/additional-properties";
 import { IssueParentSelectRoot } from "@/qlcv-web/components/issues/issue-details/parent-select-root";
 import { DateAlert } from "@/qlcv-web/components/issues/issue-details/sidebar/date-alert";
@@ -138,7 +138,7 @@ export const PeekOverviewProperties = observer(function PeekOverviewProperties(p
               userIds={createdByDetails?.display_name.includes("-intake") ? null : createdByDetails?.id}
             />
             <span className="grow truncate text-body-xs-medium leading-5 text-secondary">
-              {createdByDetails?.display_name.includes("-intake") ? "Plane" : createdByDetails?.display_name}
+              {createdByDetails?.display_name.includes("-intake") ? "QLCV" : createdByDetails?.display_name}
             </span>
           </SidebarPropertyListItem>
         )}

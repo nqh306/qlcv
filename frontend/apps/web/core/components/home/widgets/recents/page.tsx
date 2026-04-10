@@ -7,7 +7,7 @@
 import { useRouter } from "next/navigation";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { PageIcon } from "@qlcv/propel/icons";
-// plane import
+// qlcv import
 import type { TActivityEntityData, TPageEntityData } from "@qlcv/types";
 import { Avatar } from "@qlcv/ui";
 import { calculateTimeAgo, getFileURL, getPageName } from "@qlcv/utils";

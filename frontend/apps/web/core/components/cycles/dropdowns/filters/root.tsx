@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TCycleFilters, TCycleGroups } from "@qlcv/types";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";

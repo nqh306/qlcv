@@ -5,7 +5,7 @@
  */
 
 import { set } from "lodash-es";
-// plane imports
+// qlcv imports
 import { DEFAULT_WORK_ITEM_FORM_VALUES } from "@qlcv/constants";
 import type { IPartialProject, ISearchIssueResponse, IState, TIssue } from "@qlcv/types";
 

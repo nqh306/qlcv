@@ -6,7 +6,7 @@
 
 import { CheckCircle2, Minus, MinusCircle } from "lucide-react";
 import type { EProductSubscriptionEnum } from "@qlcv/types";
-// plane imports
+// qlcv imports
 // constants
 import type { TPlanFeatureData } from "@/constants/plans";
 

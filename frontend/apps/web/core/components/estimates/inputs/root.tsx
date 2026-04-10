@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TEstimateSystemKeys } from "@qlcv/types";
 import { EEstimateSystem } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import { EstimateTimeInput } from "@/qlcv-web/components/estimates/inputs";
 // local imports
 import { EstimateNumberInput } from "./number-input";

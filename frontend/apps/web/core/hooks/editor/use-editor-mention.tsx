@@ -5,15 +5,15 @@
  */
 
 import { useCallback } from "react";
-// plane editor
+// qlcv editor
 import type { TMentionSection, TMentionSuggestion } from "@qlcv/editor";
-// plane types
+// qlcv types
 import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";
-// plane web hooks
+// qlcv web hooks
 import { useAdditionalEditorMention } from "@/qlcv-web/hooks/use-additional-editor-mention";
 
 type TArgs = {

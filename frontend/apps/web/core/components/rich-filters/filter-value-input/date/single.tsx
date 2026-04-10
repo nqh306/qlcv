@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TDateFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@qlcv/types";
 import { cn, renderFormattedPayloadDate } from "@qlcv/utils";
 import { DateDropdown } from "@/components/dropdowns/date";

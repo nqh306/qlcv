@@ -6,7 +6,7 @@
 
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

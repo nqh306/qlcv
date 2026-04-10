@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 import type { FileRejection } from "react-dropzone";
 import { useDropzone } from "react-dropzone";
 import { PlusIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TIssueServiceType } from "@qlcv/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web hooks
+// qlcv web hooks
 import { useFileSize } from "@/qlcv-web/hooks/use-file-size";
 // local imports
 import { useAttachmentOperations } from "./helper";

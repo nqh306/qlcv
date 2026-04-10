@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { getValidKeysFromObject } from "@qlcv/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
+// qlcv web components
 import { IssueTypeActivity, AdditionalActivityRoot } from "@/qlcv-web/components/issues/issue-details";
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 // local components

@@ -6,7 +6,7 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { Avatar } from "@qlcv/ui";
 import { getFileURL } from "@qlcv/utils";
 // hooks

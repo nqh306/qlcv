@@ -6,7 +6,7 @@
 
 import { Suspense } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ScrollArea } from "@qlcv/propel/scrollarea";
 import type { TProfileSettingsTabs } from "@qlcv/types";
 import { cn } from "@qlcv/utils";

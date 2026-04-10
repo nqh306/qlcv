@@ -5,7 +5,7 @@
  */
 
 import { useMemo } from "react";
-// plane imports
+// qlcv imports
 import { IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { EPageAccess } from "@qlcv/types";

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { joinUrlPath } from "@qlcv/utils";
 // local imports
 import type { TPowerKContext } from "../core/types";

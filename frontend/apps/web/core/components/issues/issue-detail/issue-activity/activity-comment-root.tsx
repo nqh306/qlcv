@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { E_SORT_ORDER, TActivityFilters, EActivityFilterType } from "@qlcv/constants";
 import { BASE_ACTIVITY_FILTER_TYPES, filterActivityOnSelectedFilters } from "@qlcv/constants";
 import type { TCommentsOperations } from "@qlcv/types";
@@ -13,7 +13,7 @@ import type { TCommentsOperations } from "@qlcv/types";
 import { CommentCard } from "@/components/comments/card/root";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
+// qlcv web components
 import { IssueAdditionalPropertiesActivity } from "@/qlcv-web/components/issues/issue-details/issue-properties-activity";
 import { IssueActivityWorklog } from "@/qlcv-web/components/issues/worklog/activity/root";
 // local imports

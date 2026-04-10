@@ -5,12 +5,12 @@
  */
 
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
-// plane imports
+// qlcv imports
 import type { ADDITIONAL_EXTENSIONS } from "@qlcv/utils";
 import { CORE_EXTENSIONS } from "@qlcv/utils";
 // extensions
 import { getImageBlockId } from "@/extensions/custom-image/utils";
-// plane editor imports
+// qlcv editor imports
 import { ADDITIONAL_ASSETS_META_DATA_RECORD } from "@/qlcv-editor/constants/assets";
 // types
 import type { TEditorAsset } from "@/types";

@@ -8,7 +8,7 @@ import { Fragment } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { ICycle, TCycleEstimateType } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";
@@ -32,7 +32,7 @@ export const ActiveCycleProductivity = observer(function ActiveCycleProductivity
   const { workspaceSlug, projectId, cycle } = props;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { getEstimateTypeByCycleId, setEstimateType } = useCycle();

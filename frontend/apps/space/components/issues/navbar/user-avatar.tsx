@@ -11,7 +11,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { LogOut } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { AuthService } from "@qlcv/services";

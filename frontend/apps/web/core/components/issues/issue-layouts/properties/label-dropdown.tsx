@@ -10,7 +10,7 @@ import { useParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, getRandomLabelColor } from "@qlcv/constants";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";

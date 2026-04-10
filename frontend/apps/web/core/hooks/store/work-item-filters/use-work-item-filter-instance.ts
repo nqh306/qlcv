@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IWorkItemFilterInstance } from "@qlcv/shared-state";
 import type { EIssuesStoreType } from "@qlcv/types";
 // local imports

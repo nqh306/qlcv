@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web constants
+// qlcv web constants
 import type { AI_EDITOR_TASKS } from "@qlcv/constants";
 import { API_BASE_URL } from "@qlcv/constants";
 // services

@@ -5,7 +5,7 @@
  */
 
 import { action, computed, observable, runInAction, makeObservable } from "mobx";
-// plane internal packages
+// qlcv internal packages
 import type { TUserStatus } from "@qlcv/constants";
 import { EUserStatus } from "@qlcv/constants";
 import { AuthService, UserService } from "@qlcv/services";

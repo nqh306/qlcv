@@ -9,13 +9,13 @@ import { observer } from "mobx-react";
 import type { Control, UseFormSetValue } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { SlidersHorizontal } from "lucide-react";
-// plane package imports
+// qlcv package imports
 import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES } from "@qlcv/constants";
 import { CalendarLayoutIcon } from "@qlcv/propel/icons";
 import type { IAnalyticsParams } from "@qlcv/types";
 import { ChartYAxisMetric } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
-// plane web components
+// qlcv web components
 import { SelectXAxis } from "./select-x-axis";
 import { SelectYAxis } from "./select-y-axis";
 

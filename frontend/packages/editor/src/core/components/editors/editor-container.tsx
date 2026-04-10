@@ -8,7 +8,7 @@ import type { HocuspocusProvider } from "@hocuspocus/provider";
 import type { Editor } from "@tiptap/react";
 import type { ReactNode } from "react";
 import { useCallback, useEffect, useRef } from "react";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // constants
 import { DEFAULT_DISPLAY_CONFIG } from "@/constants/config";

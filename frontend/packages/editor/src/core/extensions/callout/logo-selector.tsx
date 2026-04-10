@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@qlcv/propel/emoji-icon-picker";
 import type { TLogoProps } from "@qlcv/types";
 import { cn } from "@qlcv/utils";

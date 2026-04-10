@@ -5,7 +5,7 @@
  */
 
 import { useMemo, useCallback } from "react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import type { EUserProjectRoles, IPartialProject } from "@qlcv/types";

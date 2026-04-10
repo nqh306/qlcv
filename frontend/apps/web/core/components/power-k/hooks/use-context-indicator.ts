@@ -5,12 +5,12 @@
  */
 
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { getPageName } from "@qlcv/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useModule } from "@/hooks/store/use-module";
-// plane web imports
+// qlcv web imports
 import { useExtendedContextIndicator } from "@/qlcv-web/components/command-palette/power-k/hooks/use-extended-context-indicator";
 import { EPageStoreType, usePageStore } from "@/qlcv-web/hooks/store";
 // local imports

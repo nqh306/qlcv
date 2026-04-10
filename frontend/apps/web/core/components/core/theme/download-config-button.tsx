@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import type { UseFormGetValues } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
@@ -36,7 +36,7 @@ export const CustomThemeDownloadConfigButton = observer(function CustomThemeDown
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = `plane-theme-${Date.now()}.json`;
+      link.download = `qlcv-theme-${Date.now()}.json`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

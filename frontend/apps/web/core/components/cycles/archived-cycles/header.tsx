@@ -11,7 +11,7 @@ import { useParams } from "next/navigation";
 import { ListFilter } from "lucide-react";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane helpers
+// qlcv helpers
 // types
 import type { TCycleFilters } from "@qlcv/types";
 import { cn, calculateTotalFilters } from "@qlcv/utils";

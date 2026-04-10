@@ -7,7 +7,7 @@
 import { Disclosure } from "@headlessui/react";
 import type { Editor } from "@tiptap/core";
 import { Ban, Palette } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ChevronRightIcon } from "@qlcv/propel/icons";
 import { cn } from "@qlcv/utils";
 // constants

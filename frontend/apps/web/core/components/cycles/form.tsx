@@ -6,7 +6,7 @@
 
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 // types
 import { useTranslation } from "@qlcv/i18n";
@@ -40,7 +40,7 @@ const defaultValues: Partial<ICycle> = {
 
 export function CycleForm(props: Props) {
   const { handleFormSubmit, handleClose, status, projectId, setActiveProject, data, isMobile = false } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { projectsWithCreatePermissions } = useUser();

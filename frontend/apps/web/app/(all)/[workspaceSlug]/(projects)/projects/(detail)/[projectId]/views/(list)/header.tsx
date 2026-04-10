@@ -17,7 +17,7 @@ import { ViewListHeader } from "@/components/views/view-list-header";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 
 export const ProjectViewsHeader = observer(function ProjectViewsHeader() {

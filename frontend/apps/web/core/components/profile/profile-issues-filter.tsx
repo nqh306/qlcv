@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
+// qlcv constants
 import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 // i18n
 import { useTranslation } from "@qlcv/i18n";

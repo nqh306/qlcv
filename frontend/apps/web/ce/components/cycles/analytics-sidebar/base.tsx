@@ -6,7 +6,7 @@
 
 import { Fragment } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TCycleEstimateType } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";

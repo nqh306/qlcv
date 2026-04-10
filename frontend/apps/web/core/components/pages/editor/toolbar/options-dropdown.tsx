@@ -7,14 +7,14 @@
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { ArrowUpToLine, Clipboard, History } from "lucide-react";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { ToggleSwitch } from "@qlcv/ui";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePageFilters } from "@/hooks/use-page-filters";
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web imports
+// qlcv web imports
 import type { TPageNavigationPaneTab } from "@/qlcv-web/components/pages/navigation-pane";
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 // store

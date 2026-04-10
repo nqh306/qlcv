@@ -19,7 +19,7 @@ import {
 import type { Editor } from "@tiptap/core";
 import { Ellipsis } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // constants
 import { CORE_EXTENSIONS } from "@/constants/extension";

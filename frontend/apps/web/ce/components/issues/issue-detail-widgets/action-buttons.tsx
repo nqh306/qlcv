@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane types
+// qlcv types
 import type { TIssueServiceType, TWorkItemWidgets } from "@qlcv/types";
 
 export type TWorkItemAdditionalWidgetActionButtonsProps = {

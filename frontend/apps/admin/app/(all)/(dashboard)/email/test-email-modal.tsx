@@ -6,7 +6,7 @@
 
 import { useEffect, useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { InstanceService } from "@qlcv/services";
 // ui

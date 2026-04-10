@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TDraggableData } from "@qlcv/constants";
 import { STATE_GROUPS } from "@qlcv/constants";
 import type { IState, IStateResponse } from "@qlcv/types";

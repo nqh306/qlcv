@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -30,7 +30,7 @@ export const ModuleEmptyState = observer(function ModuleEmptyState() {
   const moduleId = routerModuleId ? routerModuleId.toString() : undefined;
   // states
   const [moduleIssuesListModal, setModuleIssuesListModal] = useState(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { issues } = useIssues(EIssuesStoreType.MODULE);

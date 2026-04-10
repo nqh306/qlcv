@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IWorkspace } from "@qlcv/types";
 
 export const orderWorkspacesList = (workspaces: IWorkspace[]): IWorkspace[] =>

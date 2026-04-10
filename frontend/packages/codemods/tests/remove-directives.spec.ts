@@ -194,7 +194,7 @@ describe("remove-directives", () => {
       'use-client';
       import type { FC } from "react";
       import { useState } from "react";
-      // plane imports
+      // qlcv imports
       import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 
       export function MyComponent() {
@@ -207,7 +207,7 @@ describe("remove-directives", () => {
     expect(result).toMatchInlineSnapshot(`
       "import type { FC } from "react";
             import { useState } from "react";
-            // plane imports
+            // qlcv imports
             import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 
             export function MyComponent() {
@@ -247,7 +247,7 @@ describe("remove-directives", () => {
 
       import type { FC } from "react";
       import { useState } from "react";
-      // plane imports
+      // qlcv imports
       import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
       // hooks
       import useKeypress from "@/hooks/use-keypress";
@@ -272,7 +272,7 @@ describe("remove-directives", () => {
     expect(result).toMatchInlineSnapshot(`
       "import type { FC } from "react";
             import { useState } from "react";
-            // plane imports
+            // qlcv imports
             import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
             // hooks
             import useKeypress from "@/hooks/use-keypress";

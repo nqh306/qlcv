@@ -8,7 +8,7 @@ import { useState } from "react";
 import { isEmpty } from "lodash-es";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-// plane internal packages
+// qlcv internal packages
 import { API_BASE_URL } from "@qlcv/constants";
 import { Button, getButtonStyling } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -216,7 +216,7 @@ export function InstanceGitlabConfigForm(props: Props) {
           </div>
           <div className="col-span-2 md:col-span-1">
             <div className="flex flex-col gap-y-4 rounded-lg bg-layer-3 px-6 pt-1.5 pb-4">
-              <div className="pt-2 text-18 font-medium">Plane-provided details for GitLab</div>
+              <div className="pt-2 text-18 font-medium">QLCV-provided details for GitLab</div>
               {GITLAB_SERVICE_FIELD.map((field) => (
                 <CopyField key={field.key} label={field.label} url={field.url} description={field.description} />
               ))}

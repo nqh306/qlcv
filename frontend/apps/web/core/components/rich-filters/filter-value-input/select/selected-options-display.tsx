@@ -6,7 +6,7 @@
 
 import React from "react";
 import { Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import type { SingleOrArray, IFilterOption, TFilterValue } from "@qlcv/types";
 import { cn, toFilterArray } from "@qlcv/utils";
 import { EMPTY_FILTER_PLACEHOLDER_TEXT } from "../../shared";

@@ -7,7 +7,7 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import type { I_THEME_OPTION } from "@qlcv/constants";
 import { THEME_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";

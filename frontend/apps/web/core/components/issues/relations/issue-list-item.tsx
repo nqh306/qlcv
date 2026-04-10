@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon, EditIcon, TrashIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TIssue, TIssueServiceType } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
@@ -19,7 +19,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
 // local imports

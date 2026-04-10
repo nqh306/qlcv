@@ -7,7 +7,7 @@
 import { Fragment } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, EDraftIssuePaginationType } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
@@ -31,7 +31,7 @@ type TWorkspaceDraftIssuesRoot = {
 
 export const WorkspaceDraftIssuesRoot = observer(function WorkspaceDraftIssuesRoot(props: TWorkspaceDraftIssuesRoot) {
   const { workspaceSlug } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { loader, paginationInfo, fetchIssues, issueIds } = useWorkspaceDraftIssues();

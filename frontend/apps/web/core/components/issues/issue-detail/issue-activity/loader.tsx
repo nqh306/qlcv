@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { Loader } from "@qlcv/ui";
 
 export function IssueActivityLoader() {

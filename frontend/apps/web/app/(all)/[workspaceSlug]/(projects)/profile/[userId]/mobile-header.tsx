@@ -7,9 +7,9 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
+// qlcv constants
 import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
-// plane i18n
+// qlcv i18n
 import { useTranslation } from "@qlcv/i18n";
 // icons
 import { ChevronDownIcon } from "@qlcv/propel/icons";
@@ -30,7 +30,7 @@ import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";
 import { useIssues } from "@/hooks/store/use-issues";
 
 export const ProfileIssuesMobileHeader = observer(function ProfileIssuesMobileHeader() {
-  // plane i18n
+  // qlcv i18n
   const { t } = useTranslation();
   // router
   const { workspaceSlug, userId } = useParams();

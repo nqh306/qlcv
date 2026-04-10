@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { DEFAULT_PRODUCT_BILLING_FREQUENCY, SUBSCRIPTION_WITH_BILLING_FREQUENCY } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { TBillingFrequency, TProductBillingFrequency } from "@qlcv/types";

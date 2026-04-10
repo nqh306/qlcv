@@ -1,7 +1,7 @@
 {
-  "name": "Plane Space",
-  "short_name": "Plane Space",
-  "description": "Plane helps you plan your work items, cycles, and product modules.",
+  "name": "QLCV Space",
+  "short_name": "QLCV Space",
+  "description": "QLCV EVNGENCO1 — không gian dự án công khai.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f9fafb",

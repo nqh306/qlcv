@@ -8,7 +8,7 @@ import type { CSSProperties } from "react";
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { clone, isNil, pull, uniq, concat } from "lodash-es";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
-// plane types
+// qlcv types
 import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@qlcv/constants";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import type { ISvgIcons } from "@qlcv/propel/icons";
@@ -28,13 +28,13 @@ import type {
   TGetColumns,
 } from "@qlcv/types";
 import { EIssuesStoreType } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar } from "@qlcv/ui";
 import { renderFormattedDate, getFileURL } from "@qlcv/utils";
 // helpers
 // store
 import { store } from "@/lib/store-context";
-// plane web store
+// qlcv web store
 import {
   getScopeMemberIds,
   getTeamProjectColumns,

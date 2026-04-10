@@ -7,7 +7,7 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { EIconSize } from "@qlcv/constants";
-// plane imports
+// qlcv imports
 import { CheckIcon, StateGroupIcon } from "@qlcv/propel/icons";
 import { Spinner } from "@qlcv/ui";
 // store hooks

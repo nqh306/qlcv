@@ -8,7 +8,7 @@ import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
+// qlcv package imports
 import { useTranslation } from "@qlcv/i18n";
 import { AreaChart } from "@qlcv/propel/charts/area-chart";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
@@ -18,7 +18,7 @@ import { renderFormattedDate } from "@qlcv/utils";
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// qlcv web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { ChartLoader } from "../loaders";
 

@@ -12,7 +12,7 @@ import { EUserPermissionsLevel, EUserPermissions } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@qlcv/propel/icons";
 import type { EUserProjectRoles } from "@qlcv/types";
-// plane ui
+// qlcv ui
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks

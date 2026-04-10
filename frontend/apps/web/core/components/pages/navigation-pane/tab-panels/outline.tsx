@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { ScrollArea } from "@qlcv/propel/scrollarea";
-// plane web imports
+// qlcv web imports
 import { PageNavigationPaneOutlineTabEmptyState } from "@/qlcv-web/components/pages/navigation-pane/tab-panels/empty-states/outline";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";

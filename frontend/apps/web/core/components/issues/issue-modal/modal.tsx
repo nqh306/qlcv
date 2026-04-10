@@ -7,9 +7,9 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { EIssuesStoreType, TIssue } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import { IssueModalProvider } from "@/qlcv-web/components/issues/issue-modal/provider";
 import { CreateUpdateIssueModalBase } from "./base";
 

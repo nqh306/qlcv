@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web imports
+// qlcv web imports
 import { POWER_K_MODAL_PAGE_DETAILS_EXTENDED } from "@/qlcv-web/components/command-palette/power-k/constants";
 // local imports
 import type { TPowerKPageType } from "../../core/types";

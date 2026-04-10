@@ -9,7 +9,7 @@ import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { ChevronUpIcon, ChevronDownIcon } from "@qlcv/propel/icons";
 import type { ICycle, TCyclePlotType, TProgressSnapshot } from "@qlcv/types";
@@ -17,7 +17,7 @@ import { EIssuesStoreType } from "@qlcv/types";
 import { getDate } from "@qlcv/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
-// plane web components
+// qlcv web components
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";
 import { SidebarChartRoot } from "@/qlcv-web/components/cycles";
 // local imports
@@ -63,7 +63,7 @@ export const CycleAnalyticsProgress = observer(function CycleAnalyticsProgress(p
   // router
   const searchParams = useSearchParams();
   const peekCycle = searchParams.get("peekCycle") || undefined;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { getPlotTypeByCycleId, getEstimateTypeByCycleId, getCycleById } = useCycle();

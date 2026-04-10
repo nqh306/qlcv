@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { IGanttBlock } from "@qlcv/types";
 import { Row } from "@qlcv/ui";
 import { cn } from "@qlcv/utils";

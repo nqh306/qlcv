@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { TALK_TO_SALES_URL } from "@qlcv/constants";
 import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@qlcv/types";
 import { calculateYearlyDiscount, getSubscriptionName, getSubscriptionPriceDetails } from "@qlcv/utils";
@@ -46,7 +46,7 @@ export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgr
     isTrialAllowed,
   } = props;
   // price details
-  const planeName = getSubscriptionName(planVariant);
+  const planName = getSubscriptionName(planVariant);
   const { monthlyPriceDetails, yearlyPriceDetails } = getSubscriptionPriceDetails(product);
   const yearlyDiscount = calculateYearlyDiscount(monthlyPriceDetails.price, yearlyPriceDetails.price);
   const prices = [monthlyPriceDetails, yearlyPriceDetails];
@@ -97,7 +97,7 @@ export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgr
       renderPriceContent={renderPriceContent}
       renderActionButton={(price) => (
         <PlanCheckoutButton
-          planeName={planeName}
+          planName={planName}
           planVariant={planVariant}
           isLoading={isLoading}
           product={product}

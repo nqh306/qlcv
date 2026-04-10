@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { MAX_FILE_SIZE } from "@qlcv/constants";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";

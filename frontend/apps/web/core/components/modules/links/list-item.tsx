@@ -8,11 +8,11 @@ import { observer } from "mobx-react";
 
 import { MODULE_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { CopyIcon, EditIcon, TrashIcon } from "@qlcv/propel/icons";
-// plane types
+// qlcv types
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { ILinkDetails } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@qlcv/utils";
 // helpers
 //

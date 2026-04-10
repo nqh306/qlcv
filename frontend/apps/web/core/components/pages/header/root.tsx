@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TPageFilterProps, TPageNavigationTabs } from "@qlcv/types";
 import { Header, EHeaderVariant } from "@qlcv/ui";
@@ -16,7 +16,7 @@ import { calculateTotalFilters } from "@qlcv/utils";
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePageStore } from "@/qlcv-web/hooks/store";
 // local imports

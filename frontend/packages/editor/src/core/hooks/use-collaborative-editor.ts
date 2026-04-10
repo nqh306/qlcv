@@ -14,7 +14,7 @@ import { useEffect, useMemo } from "react";
 import { HeadingListExtension, SideMenuExtension } from "@/extensions";
 // hooks
 import { useEditor } from "@/hooks/use-editor";
-// plane editor extensions
+// qlcv editor extensions
 import { DocumentEditorAdditionalExtensions } from "@/qlcv-editor/extensions";
 // types
 import type {

@@ -6,8 +6,8 @@
 
 import { computedFn } from "mobx-utils";
 import type { EUserProjectRoles } from "@qlcv/types";
-// plane imports
-// plane web imports
+// qlcv imports
+// qlcv web imports
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // store
 import type { IMemberRootStore } from "@/store/member";

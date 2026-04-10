@@ -6,7 +6,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TDocumentInfo } from "@qlcv/editor";
 import { useTranslation } from "@qlcv/i18n";
 import { getReadTimeFromWordsCount } from "@qlcv/utils";

@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import { Card, ECardSpacing } from "../../card";
 
 interface TreeMapTooltipProps {

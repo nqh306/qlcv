@@ -5,7 +5,7 @@
  */
 
 import { forwardRef } from "react";
-// plane imports
+// qlcv imports
 import { RichTextEditorWithRef } from "@qlcv/editor";
 import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@qlcv/editor";
 import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@qlcv/types";
@@ -16,7 +16,7 @@ import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
+// qlcv web hooks
 import { useEditorFlagging } from "@/qlcv-web/hooks/use-editor-flagging";
 
 type RichTextEditorWrapperProps = MakeOptional<

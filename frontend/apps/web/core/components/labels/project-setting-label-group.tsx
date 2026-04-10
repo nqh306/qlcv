@@ -8,7 +8,7 @@ import type { Dispatch, SetStateAction } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EditIcon, TrashIcon, ChevronDownIcon } from "@qlcv/propel/icons";
 import type { IIssueLabel } from "@qlcv/types";
 // components

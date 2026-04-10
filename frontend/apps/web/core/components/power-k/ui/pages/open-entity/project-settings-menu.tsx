@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, PROJECT_SETTINGS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // components
@@ -22,7 +22,7 @@ type Props = {
 
 export const PowerKOpenProjectSettingsMenu = observer(function PowerKOpenProjectSettingsMenu(props: Props) {
   const { context, handleSelect } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

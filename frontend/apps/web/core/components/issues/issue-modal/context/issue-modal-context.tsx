@@ -7,10 +7,10 @@
 import { createContext } from "react";
 // ce imports
 import type { UseFormReset, UseFormWatch } from "react-hook-form";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import type { ISearchIssueResponse, TIssue } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import type { TIssuePropertyValues, TIssuePropertyValueErrors } from "@/qlcv-web/types/issue-types";
 import type { TIssueFields } from "@/qlcv-web/components/issues/issue-modal";
 

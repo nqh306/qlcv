@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { MessageSquare } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 // store

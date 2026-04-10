@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from "react";
-// plane imports
+// qlcv imports
 import { Loader } from "@qlcv/ui";
 // types
 import type { IIssueLabel } from "@/types/issue";

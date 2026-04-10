@@ -8,7 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleUserRound } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setPromiseToast, setToast } from "@qlcv/propel/toast";

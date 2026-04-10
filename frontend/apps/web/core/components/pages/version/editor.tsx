@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { TDisplayConfig } from "@qlcv/editor";
 import type { JSONContent, TPageVersion } from "@qlcv/types";
 import { Loader } from "@qlcv/ui";
@@ -16,7 +16,7 @@ import { DocumentEditor } from "@/components/editor/document/editor";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { usePageFilters } from "@/hooks/use-page-filters";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 
 export type TVersionEditorProps = {

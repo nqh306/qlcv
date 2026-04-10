@@ -5,7 +5,7 @@
  */
 
 import { compact, isEqual, sortBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type {
   TFilterConditionNode,
   TFilterExpression,

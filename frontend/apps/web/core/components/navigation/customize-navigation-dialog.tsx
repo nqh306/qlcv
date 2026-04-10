@@ -8,7 +8,7 @@ import { useCallback, useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { GripVertical, X } from "lucide-react";
-// plane imports
+// qlcv imports
 import { WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Checkbox, EModalPosition, EModalWidth, ModalCore, Sortable } from "@qlcv/ui";

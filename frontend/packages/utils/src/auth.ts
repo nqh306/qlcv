@@ -5,7 +5,7 @@
  */
 
 import type { ReactNode } from "react";
-// plane imports
+// qlcv imports
 import type { TAuthErrorInfo } from "@qlcv/constants";
 import { E_PASSWORD_STRENGTH, EErrorAlertType, EAuthErrorCodes } from "@qlcv/constants";
 

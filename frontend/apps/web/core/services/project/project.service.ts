@@ -14,7 +14,7 @@ import type {
   TProjectIssuesSearchParams,
 } from "@qlcv/types";
 // helpers
-// plane web types
+// qlcv web types
 import type { TProject, TPartialProject } from "@/qlcv-web/types";
 // services
 import { APIService } from "@/services/api.service";

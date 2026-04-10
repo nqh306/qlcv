@@ -7,7 +7,7 @@
 import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { AlertTriangle } from "lucide-react";
-// Plane imports
+// qlcv imports
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IProject } from "@qlcv/types";

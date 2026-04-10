@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ENotificationLoader, ENotificationQueryParamType } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // components

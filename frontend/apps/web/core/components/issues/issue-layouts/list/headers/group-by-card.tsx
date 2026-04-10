@@ -22,9 +22,9 @@ import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // constants
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
-// plane-web
+// qlcv-web
 import { CreateUpdateEpicModal } from "@/qlcv-web/components/epics/epic-modal";
-// Plane-web
+// QLCV-web
 import { WorkFlowGroupTree } from "@/qlcv-web/components/workflow";
 
 interface IHeaderGroupByCard {

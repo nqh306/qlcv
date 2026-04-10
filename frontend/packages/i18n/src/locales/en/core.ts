@@ -90,7 +90,7 @@ export default {
       already_have_an_account: "Already have an account?",
       login: "Log in",
       create_account: "Create an account",
-      new_to_plane: "New đến QLCV?",
+      new_to_qlcv: "New đến QLCV?",
       back_to_sign_in: "Back to sign in",
       resend_in: "Resend in {seconds} seconds",
       sign_in_with_unique_code: "Sign in with unique code",

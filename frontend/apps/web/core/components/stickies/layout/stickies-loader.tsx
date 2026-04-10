@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane ui
+// qlcv ui
 import { Loader } from "@qlcv/ui";
 
 export function StickiesLoader() {

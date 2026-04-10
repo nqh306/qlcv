@@ -6,7 +6,7 @@
 
 import type { Editor } from "@tiptap/core";
 import { Plugin, PluginKey } from "@tiptap/pm/state";
-// plane imports
+// qlcv imports
 import { convertHTMLToMarkdown } from "@qlcv/utils";
 import type { TCustomComponentsMetaData } from "@qlcv/utils";
 
@@ -38,7 +38,7 @@ export const MarkdownClipboardPlugin = (args: TArgs): Plugin => {
             });
             event.clipboardData?.setData("text/plain", markdown);
             event.clipboardData?.setData("text/html", clipboardHTML);
-            event.clipboardData?.setData("text/plane-editor-html", clipboardHTML);
+            event.clipboardData?.setData("text/qlcv-editor-html", clipboardHTML);
             return true;
           } catch (error) {
             console.error("Failed to copy markdown content to clipboard:", error);

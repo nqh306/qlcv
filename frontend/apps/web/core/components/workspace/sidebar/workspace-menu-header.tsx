@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useParams, useRouter } from "next/navigation";
 import { MoreHorizontal, ArchiveIcon, Settings } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";

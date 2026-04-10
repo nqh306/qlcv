@@ -7,7 +7,7 @@
 import { isEqual, concat, get, indexOf, isEmpty, orderBy, pull, set, uniq, update, clone } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane constants
+// qlcv constants
 import { ALL_ISSUES, ISSUE_PRIORITIES } from "@qlcv/constants";
 // types
 import type {
@@ -29,7 +29,7 @@ import type {
 import { EIssueServiceType, EIssueLayoutTypes } from "@qlcv/types";
 // helpers
 import { convertToISODateString } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { workItemSortWithOrderByExtended } from "@/qlcv-web/store/issue/helpers/base-issue.store";
 // services
 import { CycleService } from "@/services/cycle.service";

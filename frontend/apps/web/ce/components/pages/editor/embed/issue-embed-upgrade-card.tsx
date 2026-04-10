@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { getButtonStyling } from "@qlcv/propel/button";
 import { cn } from "@qlcv/utils";
 // components

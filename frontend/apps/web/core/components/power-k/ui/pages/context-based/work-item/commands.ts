@@ -18,7 +18,7 @@ import {
   UserPlus2,
   Users,
 } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon, TrashIcon, ContrastIcon, DiceIcon, DoubleCircleIcon } from "@qlcv/propel/icons";

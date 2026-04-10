@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 import { EIssueServiceType } from "@qlcv/types";
 import type { TDescriptionVersionsListResponse, TDescriptionVersionDetails, TIssueServiceType } from "@qlcv/types";

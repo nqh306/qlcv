@@ -6,7 +6,7 @@
 
 import { useParams } from "next/navigation";
 import { useForm, Controller } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { allTimeIn30MinutesInterval12HoursFormat } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { CloseIcon } from "@qlcv/propel/icons";

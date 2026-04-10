@@ -5,7 +5,7 @@
  */
 
 import { Info } from "lucide-react";
-// plane constants
+// qlcv constants
 import type { TAdminAuthErrorInfo } from "@qlcv/constants";
 // icons
 import { CloseIcon } from "@qlcv/propel/icons";

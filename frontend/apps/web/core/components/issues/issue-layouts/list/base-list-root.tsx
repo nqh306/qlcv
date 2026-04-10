@@ -8,7 +8,7 @@ import type { FC } from "react";
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
+// qlcv constants
 import { EIssueFilterType, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 // types
 import type { EIssuesStoreType, GroupByColumnTypes, TGroupedIssues, TIssueKanbanFilters } from "@qlcv/types";

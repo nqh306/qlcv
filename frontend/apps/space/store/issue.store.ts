@@ -5,7 +5,7 @@
  */
 
 import { action, makeObservable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesIssueService } from "@qlcv/services";
 import type { IssuePaginationOptions, TLoader } from "@qlcv/types";
 // store

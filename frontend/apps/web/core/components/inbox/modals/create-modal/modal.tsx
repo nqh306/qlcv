@@ -5,7 +5,7 @@
  */
 
 import { useState } from "react";
-// plane imports
+// qlcv imports
 import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 // hooks
 import useKeypress from "@/hooks/use-keypress";

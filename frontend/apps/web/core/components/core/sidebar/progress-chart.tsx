@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import { AreaChart } from "@qlcv/propel/charts/area-chart";
 import type { TChartData, TModuleCompletionChartDistribution } from "@qlcv/types";
 import { renderFormattedDateWithoutYear } from "@qlcv/utils";

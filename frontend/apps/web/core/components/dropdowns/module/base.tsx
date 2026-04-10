@@ -7,7 +7,7 @@
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { IModule } from "@qlcv/types";
 import { ComboDropDown } from "@qlcv/ui";

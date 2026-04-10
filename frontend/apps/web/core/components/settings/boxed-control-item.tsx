@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 
 type Props = {

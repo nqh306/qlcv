@@ -7,7 +7,7 @@
 import { useRef } from "react";
 import { observer } from "mobx-react";
 import type { UseFormSetValue } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";

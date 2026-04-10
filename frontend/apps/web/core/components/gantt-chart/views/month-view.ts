@@ -5,7 +5,7 @@
  */
 
 import { cloneDeep, uniqBy } from "lodash-es";
-// plane imports
+// qlcv imports
 import type { ChartDataType } from "@qlcv/types";
 // local imports
 import { months } from "../data";

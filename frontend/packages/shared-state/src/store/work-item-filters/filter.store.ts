@@ -6,7 +6,7 @@
 
 import { action, makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TExpressionOptions } from "@qlcv/constants";
 import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@qlcv/types";
 import { LOGICAL_OPERATOR } from "@qlcv/types";

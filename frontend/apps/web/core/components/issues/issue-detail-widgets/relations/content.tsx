@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TIssue, TIssueServiceType } from "@qlcv/types";
 import { EIssueServiceType } from "@qlcv/types";
@@ -15,7 +15,7 @@ import { Collapsible } from "@qlcv/ui";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// QLCV-web
 import { CreateUpdateEpicModal } from "@/qlcv-web/components/epics/epic-modal";
 import { useTimeLineRelationOptions } from "@/qlcv-web/components/relations";
 import type { TIssueRelationTypes } from "@/qlcv-web/types";
@@ -43,7 +43,7 @@ export type TRelationObject = {
 
 export const RelationsCollapsibleContent = observer(function RelationsCollapsibleContent(props: Props) {
   const { workspaceSlug, issueId, disabled = false, issueServiceType = EIssueServiceType.ISSUES } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // state
   const [issueCrudState, setIssueCrudState] = useState<{

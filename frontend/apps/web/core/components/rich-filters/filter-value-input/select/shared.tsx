@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TSupportedFilterFieldConfigs, IFilterOption, TFilterValue } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
 // local imports

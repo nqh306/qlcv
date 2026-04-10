@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import type { TPageNavigationTabs } from "@qlcv/types";
 // components
 import { ListLayout } from "@/components/core/list";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePageStore } from "@/qlcv-web/hooks/store";
 // local imports

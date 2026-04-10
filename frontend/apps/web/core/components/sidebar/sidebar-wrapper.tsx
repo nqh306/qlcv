@@ -6,7 +6,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane helpers
+// qlcv helpers
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { PreferencesIcon } from "@qlcv/propel/icons";
 import { ScrollArea } from "@qlcv/propel/scrollarea";

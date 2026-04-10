@@ -7,7 +7,7 @@
 import { unset, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TUserPermissions, TUserPermissionsLevel } from "@qlcv/constants";
 import {
   EUserPermissions,
@@ -16,7 +16,7 @@ import {
 } from "@qlcv/constants";
 import type { EUserProjectRoles, IUserProjectsRole, IWorkspaceMemberMe, TProjectMembership } from "@qlcv/types";
 import { EUserWorkspaceRoles } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import { WorkspaceService } from "@/services/workspace.service";
 import type { RootStore } from "@/qlcv-web/store/root.store";
 // services
@@ -26,7 +26,7 @@ import userService from "@/services/user.service";
 // derived services
 const workspaceService = new WorkspaceService();
 
-type ETempUserRole = TUserPermissions | EUserWorkspaceRoles | EUserProjectRoles; // TODO: Remove this once we have migrated user permissions to enums to plane constants package
+type ETempUserRole = TUserPermissions | EUserWorkspaceRoles | EUserProjectRoles; // TODO: Remove this once we have migrated user permissions to enums to qlcv constants package
 
 export interface IBaseUserPermissionStore {
   loader: boolean;

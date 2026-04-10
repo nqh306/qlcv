@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ContrastIcon } from "@qlcv/propel/icons";
 import type { ICycle } from "@qlcv/types";
 // local imports

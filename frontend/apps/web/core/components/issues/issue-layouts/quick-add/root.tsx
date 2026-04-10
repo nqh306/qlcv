@@ -10,13 +10,13 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import type { UseFormRegister } from "react-hook-form";
 import { useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { PlusIcon } from "@qlcv/propel/icons";
 import { setPromiseToast } from "@qlcv/propel/toast";
 import type { IProject, TIssue, EIssueLayoutTypes } from "@qlcv/types";
 import { cn, createIssuePayload } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { QuickAddIssueFormRoot } from "@/qlcv-web/components/issues/quick-add";
 // local imports
 import { CreateIssueToastActionItems } from "../../create-issue-toast-action-items";

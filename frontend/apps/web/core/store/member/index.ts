@@ -6,9 +6,9 @@
 
 import { makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { IUserLite } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import type { IProjectMemberStore } from "@/qlcv-web/store/member/project-member.store";
 import { ProjectMemberStore } from "@/qlcv-web/store/member/project-member.store";
 import type { RootStore } from "@/qlcv-web/store/root.store";

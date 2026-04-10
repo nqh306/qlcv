@@ -5,7 +5,7 @@
  */
 
 import { useCallback, useMemo } from "react";
-// plane imports
+// qlcv imports
 import type { EventToPayloadMap } from "@qlcv/editor";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 // types

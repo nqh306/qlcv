@@ -10,7 +10,7 @@ import { computedFn } from "mobx-utils";
 // types
 import type { EUserPermissions } from "@qlcv/constants";
 import type { IWorkspaceBulkInviteFormData, IWorkspaceMember, IWorkspaceMemberInvitation } from "@qlcv/types";
-// plane-web constants
+// qlcv-web constants
 // services
 import { WorkspaceService } from "@/services/workspace.service";
 // types

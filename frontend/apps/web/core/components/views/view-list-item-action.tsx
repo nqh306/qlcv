@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Earth } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";
 import { LockIcon } from "@qlcv/propel/icons";
@@ -21,7 +21,7 @@ import { getPublishViewLink } from "@qlcv/utils";
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectView } from "@/hooks/store/use-project-view";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
+// qlcv web imports
 import { PublishViewModal } from "@/qlcv-web/components/views/publish";
 // local imports
 import { ButtonAvatars } from "../dropdowns/member/avatar";

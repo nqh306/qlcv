@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -17,7 +17,7 @@ import { getComputedDisplayFilters, getComputedDisplayProperties } from "@qlcv/u
 // components
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { WorkspaceLevelWorkItemFiltersHOC } from "@/components/work-item-filters/filters-hoc/workspace-level";
-// plane web imports
+// qlcv web imports
 import { WorkItemFiltersRow } from "@/components/work-item-filters/filters-row";
 import { AccessController } from "@/qlcv-web/components/views/access-controller";
 

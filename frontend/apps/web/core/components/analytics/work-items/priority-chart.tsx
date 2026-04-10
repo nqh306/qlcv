@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane package imports
+// qlcv package imports
 import { Download } from "lucide-react";
 import type { ChartXAxisDateGrouping } from "@qlcv/constants";
 import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES, CHART_COLOR_PALETTES, EChartModels } from "@qlcv/constants";
@@ -19,7 +19,7 @@ import { Button } from "@qlcv/propel/button";
 import { BarChart } from "@qlcv/propel/charts/bar-chart";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import type { TBarItem, TChart, TChartDatum, ChartXAxisProperty, ChartYAxisMetric } from "@qlcv/types";
-// plane web components
+// qlcv web components
 import { generateExtendedColors, parseChartData } from "@/components/chart/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";

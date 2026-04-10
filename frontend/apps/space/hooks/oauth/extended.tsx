@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TOAuthConfigs } from "@qlcv/types";
 
 export const useExtendedOAuthConfig = (_oauthActionText: string): TOAuthConfigs => ({

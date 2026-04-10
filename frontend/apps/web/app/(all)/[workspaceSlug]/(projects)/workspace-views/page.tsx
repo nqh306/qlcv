@@ -6,7 +6,7 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { DEFAULT_GLOBAL_VIEWS_LIST } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { SearchIcon } from "@qlcv/propel/icons";

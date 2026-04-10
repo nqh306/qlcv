@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 import type { LucideIcon } from "lucide-react";
 import { MembersPropertyIcon } from "@qlcv/propel/icons";
-// plane ui
+// qlcv ui
 import { Avatar, AvatarGroup } from "@qlcv/ui";
 import { cn, getFileURL } from "@qlcv/utils";
-// plane utils
+// qlcv utils
 // helpers
 // hooks
 import { useMember } from "@/hooks/store/use-member";

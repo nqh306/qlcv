@@ -7,7 +7,7 @@
 import { isEmpty, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TSupportedFilterTypeForUpdate } from "@qlcv/constants";
 import { EIssueFilterType } from "@qlcv/constants";
 import type {

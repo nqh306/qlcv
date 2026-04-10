@@ -8,7 +8,7 @@ import type { SetStateAction } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
 import { EIconSize, STATE_TRACKER_ELEMENTS } from "@qlcv/constants";
-// plane imports
+// qlcv imports
 import { EditIcon, StateGroupIcon } from "@qlcv/propel/icons";
 import type { IState, TStateOperationsCallbacks } from "@qlcv/types";
 // local imports

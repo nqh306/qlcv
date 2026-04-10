@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TSaveViewOptions, TUpdateViewOptions } from "@qlcv/constants";
 import type { IWorkItemFilterInstance } from "@qlcv/shared-state";
 import type { EIssuesStoreType, IIssueFilters, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@qlcv/types";

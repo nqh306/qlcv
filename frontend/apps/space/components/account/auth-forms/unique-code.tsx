@@ -6,7 +6,7 @@
 
 import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";
 import { AuthService } from "@qlcv/services";

@@ -6,7 +6,7 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
-// plane imports
+// qlcv imports
 import { SUPPORT_EMAIL } from "@qlcv/constants";
 
 export enum EPageTypes {

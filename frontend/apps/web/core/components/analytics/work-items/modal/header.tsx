@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane package imports
+// qlcv package imports
 import { Expand, Shrink } from "lucide-react";
 import { CloseIcon } from "@qlcv/propel/icons";
 import type { ICycle, IModule } from "@qlcv/types";

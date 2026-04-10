@@ -7,7 +7,7 @@
 import { useContext } from "react";
 // mobx store
 import { StoreContext } from "@/lib/store-context";
-// Plane-web
+// QLCV-web
 import type { IStateStore } from "@/qlcv-web/store/state.store";
 
 export const useProjectState = (): IStateStore => {

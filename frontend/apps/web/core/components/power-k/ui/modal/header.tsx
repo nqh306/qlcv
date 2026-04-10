@@ -8,7 +8,7 @@ import React from "react";
 import { Command } from "cmdk";
 import { X } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { SearchIcon } from "@qlcv/propel/icons";
 // local imports
 import type { TPowerKContext, TPowerKPageType } from "../../core/types";

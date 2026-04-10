@@ -6,7 +6,7 @@
 
 import { ArrowLeft } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { ROLE_DETAILS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { IconButton } from "@qlcv/propel/icon-button";
@@ -16,7 +16,7 @@ import { WorkspaceLogo } from "@/components/workspace/logo";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { useWorkspace } from "@/hooks/store/use-workspace";
-// plane web imports
+// qlcv web imports
 import { SubscriptionPill } from "@/qlcv-web/components/common/subscription/subscription-pill";
 
 export const WorkspaceSettingsSidebarHeader = observer(function WorkspaceSettingsSidebarHeader() {

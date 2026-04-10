@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import { PlusIcon } from "@qlcv/propel/icons";

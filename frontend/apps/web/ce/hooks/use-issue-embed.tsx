@@ -6,9 +6,9 @@
 
 // editor
 import type { TEmbedConfig } from "@qlcv/editor";
-// plane types
+// qlcv types
 import type { TSearchEntityRequestPayload, TSearchResponse } from "@qlcv/types";
-// plane web components
+// qlcv web components
 import { IssueEmbedUpgradeCard } from "@/qlcv-web/components/pages";
 
 export type TIssueEmbedHookProps = {

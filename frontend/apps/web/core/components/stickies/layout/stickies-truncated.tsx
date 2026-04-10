@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane utils
+// qlcv utils
 import { useTranslation } from "@qlcv/i18n";
 import { cn } from "@qlcv/utils";
 // hooks

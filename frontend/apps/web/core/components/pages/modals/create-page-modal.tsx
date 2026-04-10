@@ -12,7 +12,7 @@ import type { TPage } from "@qlcv/types";
 import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePageStore } from "@/qlcv-web/hooks/store";
 // local imports

@@ -6,7 +6,7 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TDateRangeFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@qlcv/types";
 import { cn, isValidDate, renderFormattedPayloadDate, toFilterArray } from "@qlcv/utils";
 // components

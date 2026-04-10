@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { BarChart } from "@qlcv/propel/charts/bar-chart";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";

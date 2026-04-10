@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 
-// plane types
+// qlcv types
 import { CloseIcon } from "@qlcv/propel/icons";
 import type { TInboxIssueFilterMemberKeys } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar, Tag } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";

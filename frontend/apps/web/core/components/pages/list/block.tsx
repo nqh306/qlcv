@@ -8,14 +8,14 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import { PageIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { getPageName } from "@qlcv/utils";
 // components
 import { ListItem } from "@/components/core/list";
 import { BlockItemAction } from "@/components/pages/list/block-item-action";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web hooks
+// qlcv web hooks
 import type { EPageStoreType } from "@/qlcv-web/hooks/store";
 import { usePage } from "@/qlcv-web/hooks/store";
 

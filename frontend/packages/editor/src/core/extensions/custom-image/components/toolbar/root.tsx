@@ -6,7 +6,7 @@
 
 import type { Editor } from "@tiptap/core";
 import { useState } from "react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // local imports
 import type { TCustomImageAlignment } from "../../types";

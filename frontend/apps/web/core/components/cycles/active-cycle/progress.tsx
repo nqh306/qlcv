@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { PROGRESS_STATE_GROUPS_DETAILS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { TWorkItemFilterCondition } from "@qlcv/shared-state";
@@ -29,7 +29,7 @@ export const ActiveCycleProgress = observer(function ActiveCycleProgress(props: 
   const { handleFiltersUpdate, cycle } = props;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // derived values
   const progressIndicatorData = PROGRESS_STATE_GROUPS_DETAILS.map((group, index) => ({

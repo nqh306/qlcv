@@ -5,7 +5,7 @@
  */
 
 import { useRef, useState } from "react";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { IconButton } from "@qlcv/propel/icon-button";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";

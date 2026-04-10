@@ -10,7 +10,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { autoScrollForElements } from "@atlaskit/pragmatic-drag-and-drop-auto-scroll/element";
 import { observer } from "mobx-react";
-// plane constants
+// qlcv constants
 import { DRAG_ALLOWED_GROUPS } from "@qlcv/constants";
 // i18n
 import { useTranslation } from "@qlcv/i18n";
@@ -39,7 +39,7 @@ import { KanbanIssueBlockLoader } from "@/components/ui/loader/layouts/kanban-la
 import { useProjectState } from "@/hooks/store/use-project-state";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useIssuesStore } from "@/hooks/use-issue-layout-store";
-// Plane-web
+// QLCV-web
 import { useWorkFlowFDragNDrop } from "@/qlcv-web/components/workflow";
 //
 import { GroupDragOverlay } from "../group-drag-overlay";

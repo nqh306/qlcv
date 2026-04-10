@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { Paperclip } from "lucide-react";
 import { LinkIcon, ViewsIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { IIssueDisplayProperties } from "@qlcv/types";
 import { cn } from "@qlcv/utils";

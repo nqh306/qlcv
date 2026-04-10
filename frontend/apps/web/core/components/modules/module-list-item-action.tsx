@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { SquareUser } from "lucide-react";
-// Plane imports
+// qlcv imports
 import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";

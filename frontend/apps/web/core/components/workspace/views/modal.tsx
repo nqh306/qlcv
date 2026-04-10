@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IWorkspaceView } from "@qlcv/types";
 import { EIssuesStoreType } from "@qlcv/types";

@@ -6,7 +6,7 @@
 
 import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TIssue, IIssueDisplayProperties, IIssueMap } from "@qlcv/types";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";

@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// Plane Imports
+// qlcv imports
 import { ORGANIZATION_SIZE, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -22,7 +22,7 @@ import { TimezoneSelect } from "@/components/global/timezone-select";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
+// qlcv web components
 import { DeleteWorkspaceSection } from "@/qlcv-web/components/workspace/delete-workspace-section";
 
 const defaultValues: Partial<IWorkspace> = {

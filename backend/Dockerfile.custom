@@ -1,4 +1,5 @@
-FROM makeplane/plane-backend:stable
+ARG BASE_IMAGE=qlcv/backend-base:stable
+FROM ${BASE_IMAGE}
 
 # Copy custom code over the base image
 COPY qlcv/license/models/ /code/qlcv/license/models/

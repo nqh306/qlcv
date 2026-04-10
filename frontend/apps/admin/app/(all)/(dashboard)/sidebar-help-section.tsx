@@ -10,7 +10,7 @@ import Link from "next/link";
 import { HelpCircle, MessageSquare, MoveLeft } from "lucide-react";
 import { Transition } from "@headlessui/react";
 import { WEB_BASE_URL } from "@qlcv/constants";
-// plane internal packages
+// qlcv internal packages
 import { GithubIcon, NewTabIcon, PageIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/utils";

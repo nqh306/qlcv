@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import { Link as Loader } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
 import { LinkIcon, EditIcon, TrashIcon, CloseIcon, ChevronRightIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TIssue, TIssueServiceType, TSubIssueOperations } from "@qlcv/types";
 import { EIssueServiceType, EIssuesStoreType } from "@qlcv/types";
@@ -22,7 +22,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local components
 import { SubIssuesListItemProperties } from "./properties";

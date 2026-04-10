@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Button, getButtonStyling } from "@qlcv/propel/button";
 import { QlcvLogo } from "@qlcv/propel/icons";

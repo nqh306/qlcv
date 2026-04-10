@@ -6,7 +6,7 @@
 
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { CloseIcon, SearchIcon } from "@qlcv/propel/icons";
 import { Input } from "@qlcv/ui";
 // hooks

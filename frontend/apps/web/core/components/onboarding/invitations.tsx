@@ -5,7 +5,7 @@
  */
 
 import { useState } from "react";
-// plane imports
+// qlcv imports
 import { ROLE } from "@qlcv/constants";
 // types
 import { Button } from "@qlcv/propel/button";

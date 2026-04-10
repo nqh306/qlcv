@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleCheck } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -46,7 +46,7 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
   const [isSuperAdmin, setIsSuperAdmin] = useState<boolean | null>(null);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { updateUserProfile } = useUserProfile();

@@ -5,7 +5,7 @@
  */
 
 import type { EditorProps } from "@tiptap/pm/view";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // helpers
 import { processAssetDuplication } from "@/helpers/paste-asset";
@@ -38,7 +38,7 @@ export const CoreEditorProps = (props: TArgs): EditorProps => {
     handlePaste: (view, event) => {
       if (!event.clipboardData) return false;
 
-      const htmlContent = event.clipboardData.getData("text/plane-editor-html");
+      const htmlContent = event.clipboardData.getData("text/qlcv-editor-html");
       if (!htmlContent) return false;
 
       const { processedHtml } = processAssetDuplication(htmlContent);

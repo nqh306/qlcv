@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import { LiteTextEditorWithRef } from "@qlcv/editor";
 import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@qlcv/editor";
 import type { MakeOptional } from "@qlcv/types";
@@ -14,7 +14,7 @@ import { cn, isCommentEmpty } from "@qlcv/utils";
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web imports
+// qlcv web imports
 import { useEditorFlagging } from "@/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "./embeds/mentions";

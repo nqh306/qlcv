@@ -17,7 +17,7 @@ import { FilterOption } from "@/components/issues/issue-layouts/filters";
 // constants
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
+// qlcv web components
 import { FilterByAccess } from "@/qlcv-web/components/views/filters/access-filter";
 
 type Props = {

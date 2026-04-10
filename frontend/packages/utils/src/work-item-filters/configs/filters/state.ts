@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { STATE_GROUPS } from "@qlcv/constants";
 import type { IState, TFilterProperty, TStateGroups, TSupportedOperators } from "@qlcv/types";
 import { COLLECTION_OPERATOR, EQUALITY_OPERATOR } from "@qlcv/types";

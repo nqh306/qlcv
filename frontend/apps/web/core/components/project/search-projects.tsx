@@ -6,7 +6,7 @@
 
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane hooks
+// qlcv hooks
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // i18n
 import { useTranslation } from "@qlcv/i18n";

@@ -8,14 +8,14 @@ import { useCallback } from "react";
 import { useParams } from "next/navigation";
 import { ArchiveIcon, ArchiveRestoreIcon, LockKeyhole, LockKeyholeOpen, Star, StarOff } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { LinkIcon, GlobeIcon, LockIcon } from "@qlcv/propel/icons";
 import { setToast, TOAST_TYPE } from "@qlcv/propel/toast";
 import { EPageAccess } from "@qlcv/types";
 import { copyTextToClipboard } from "@qlcv/utils";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
-// plane web imports
+// qlcv web imports
 import { EPageStoreType, usePageStore } from "@/qlcv-web/hooks/store";
 
 export const usePowerKPageContextBasedActions = (): TPowerKCommandConfig[] => {

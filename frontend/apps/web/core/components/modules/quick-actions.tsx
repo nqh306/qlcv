@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { MoreHorizontal } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { IconButton } from "@qlcv/propel/icon-button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -82,7 +82,7 @@ export const ModuleQuickActions = observer(function ModuleQuickActions(props: Pr
     }
   };
 
-  // Use unified menu hook from plane-web (resolves to CE or EE)
+  // Use unified menu hook from qlcv-web (resolves to CE or EE)
   const menuResult = useModuleMenuItems({
     moduleDetails: moduleDetails ?? undefined,
     workspaceSlug,

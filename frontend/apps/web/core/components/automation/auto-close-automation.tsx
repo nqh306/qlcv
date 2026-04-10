@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ArchiveX } from "lucide-react";
-// plane imports
+// qlcv imports
 import { PROJECT_AUTOMATION_MONTHS, EUserPermissions, EUserPermissionsLevel, EIconSize } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { StateGroupIcon, StatePropertyIcon } from "@qlcv/propel/icons";

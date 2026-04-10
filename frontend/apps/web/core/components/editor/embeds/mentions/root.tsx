@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web imports
+// qlcv web imports
 import type { TEditorMentionComponentProps } from "@/qlcv-web/components/editor/embeds/mentions";
 import { EditorAdditionalMentionsRoot } from "@/qlcv-web/components/editor/embeds/mentions";
 // local imports

@@ -6,7 +6,7 @@
 
 import type { ReactNode } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { EProjectFeatureKey } from "@qlcv/constants";
 import { Breadcrumbs } from "@qlcv/ui";
 // components

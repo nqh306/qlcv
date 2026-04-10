@@ -8,7 +8,7 @@ import React, { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { GLOBAL_VIEW_TRACKER_ELEMENTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
 import type { EIssueLayoutTypes } from "@qlcv/types";

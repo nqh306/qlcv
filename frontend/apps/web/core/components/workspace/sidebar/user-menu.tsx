@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { DraftIcon, HomeIcon, PiChatLogo, YourWorkIcon, DashboardIcon } from "@qlcv/propel/icons";
 import { EUserWorkspaceRoles } from "@qlcv/types";
 // hooks

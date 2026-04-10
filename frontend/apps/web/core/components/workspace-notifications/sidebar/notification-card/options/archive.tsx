@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { ArchiveRestore } from "lucide-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { ArchiveIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

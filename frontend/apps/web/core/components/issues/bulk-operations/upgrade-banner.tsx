@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import { MARKETING_PLANE_ONE_PAGE_LINK } from "@qlcv/constants";
+import { MARKETING_QLCV_ONE_PAGE_LINK } from "@qlcv/constants";
 import { getButtonStyling } from "@qlcv/propel/button";
 import { cn } from "@qlcv/utils";
 
@@ -23,7 +23,7 @@ export function BulkOperationsUpgradeBanner(props: Props) {
           operation.
         </p>
         <a
-          href={MARKETING_PLANE_ONE_PAGE_LINK}
+          href={MARKETING_QLCV_ONE_PAGE_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(getButtonStyling("primary", "base"), "flex-shrink-0")}

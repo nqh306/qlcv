@@ -7,7 +7,7 @@
 // types
 import type { TTimelineTypeCore } from "@qlcv/types";
 import { GANTT_TIMELINE_TYPE } from "@qlcv/types";
-// Plane-web
+// QLCV-web
 
 import type { IBaseTimelineStore } from "@/qlcv-web/store/timeline/base-timeline.store";
 import type { ITimelineStore } from "../store/timeline";

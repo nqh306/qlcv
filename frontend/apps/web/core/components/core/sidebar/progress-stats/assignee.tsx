@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { Avatar } from "@qlcv/ui";
 import { getFileURL } from "@qlcv/utils";

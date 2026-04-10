@@ -10,7 +10,7 @@ import Link from "next/link";
 
 import useSWR, { mutate } from "swr";
 import { CheckCircle2 } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ROLE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 // types
@@ -31,7 +31,7 @@ import { useUser, useUserProfile } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-// plane web services
+// qlcv web services
 import { WorkspaceService } from "@/services/workspace.service";
 
 const workspaceService = new WorkspaceService();

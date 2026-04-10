@@ -6,19 +6,19 @@
 
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
+// qlcv imports
 import { ETabIndices } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@qlcv/propel/emoji-icon-picker";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane types
+// qlcv types
 import type { IProject } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { getTabIndex } from "@qlcv/utils";
 // components
 import { CoverImage } from "@/components/common/cover-image";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
-// plane web imports
+// qlcv web imports
 import { ProjectTemplateSelect } from "@/qlcv-web/components/projects/create/template-select";
 
 type Props = {

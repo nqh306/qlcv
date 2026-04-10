@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // assets
 import emptyCycle from "@/app/assets/empty-state/cycle.svg?url";

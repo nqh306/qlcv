@@ -8,7 +8,7 @@ import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { EIssuesStoreType } from "@qlcv/types";
 // components

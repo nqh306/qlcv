@@ -9,13 +9,13 @@ import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 
 import { Disclosure } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { ROLE, EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { TrashIcon, SuspendedUserIcon } from "@qlcv/propel/icons";
 import { Pill, EPillVariant, EPillSize } from "@qlcv/propel/pill";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IUser, IWorkspaceMember } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { CustomSelect, PopoverMenu } from "@qlcv/ui";
 // helpers
 import { getFileURL } from "@qlcv/utils";

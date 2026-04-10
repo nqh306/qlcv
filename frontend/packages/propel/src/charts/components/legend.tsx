@@ -6,7 +6,7 @@
 
 import React from "react";
 import type { LegendProps } from "recharts";
-// plane imports
+// qlcv imports
 import type { TChartLegend } from "@qlcv/types";
 import { cn } from "../../utils/classname";
 

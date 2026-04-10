@@ -30,7 +30,7 @@ import {
   TextQuote,
   Underline,
 } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@qlcv/editor";
 import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@qlcv/propel/icons";
 import { convertRemToPixel } from "@qlcv/utils";

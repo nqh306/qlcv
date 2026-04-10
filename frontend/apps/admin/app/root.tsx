@@ -28,7 +28,7 @@ import robotoVietnameseWoff2 from "@fontsource/roboto/files/roboto-vietnamese-40
 import "@fontsource/material-symbols-rounded";
 import "@fontsource/ibm-plex-mono";
 
-const APP_TITLE = "Plane | Simple, extensible, open-source project management tool.";
+const APP_TITLE = "QLCV | Simple, extensible, open-source project management tool.";
 const APP_DESCRIPTION =
   "Open-source project management tool to manage tasks, sprints, and product roadmaps with peace of mind.";
 

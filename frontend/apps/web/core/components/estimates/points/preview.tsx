@@ -7,13 +7,13 @@
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
-// plane imports
+// qlcv imports
 import { EEstimateSystem, estimateCount } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EditIcon, TrashIcon } from "@qlcv/propel/icons";
 import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@qlcv/types";
 import { convertMinutesToHoursMinutesString } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { EstimatePointDelete } from "@/qlcv-web/components/estimates";
 // local imports
 import { EstimatePointUpdate } from "./update";

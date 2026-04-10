@@ -5,7 +5,7 @@
  */
 
 import { useEffect, useRef } from "react";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 import { cn } from "@qlcv/propel/utils";
 import type { SingleOrArray, TFilterValue } from "@qlcv/types";

@@ -5,7 +5,7 @@
  */
 
 import type { AxiosRequestConfig } from "axios";
-// plane types
+// qlcv types
 import { API_BASE_URL } from "@qlcv/constants";
 import { getFileMetaDataForUpload, generateFileUploadPayload } from "@qlcv/services";
 import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@qlcv/types";

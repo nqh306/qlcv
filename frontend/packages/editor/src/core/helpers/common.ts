@@ -6,7 +6,7 @@
 
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
 import type { EditorState, Selection } from "@tiptap/pm/state";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // constants
 import { CORE_EXTENSIONS } from "@/constants/extension";

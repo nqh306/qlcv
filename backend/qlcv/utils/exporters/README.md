@@ -17,7 +17,7 @@ The exporters module provides a schema-based approach to exporting data with sup
 ### Basic Usage
 
 ```python
-from plane.utils.exporters import Exporter, ExportSchema, StringField, NumberField
+from qlcv.utils.exporters import Exporter, ExportSchema, StringField, NumberField
 
 # Define a schema
 class UserExportSchema(ExportSchema):
@@ -37,7 +37,7 @@ filename, content = exporter.export("users_export", users)
 ### Exporting Issues
 
 ```python
-from plane.utils.exporters import Exporter, IssueExportSchema
+from qlcv.utils.exporters import Exporter, IssueExportSchema
 
 # Get issues with prefetched relations
 issues = Issue.objects.filter(project_id=project_id).prefetch_related(
@@ -253,7 +253,7 @@ filename, content = exporter.export("data", queryset)
 Add support for new export formats:
 
 ```python
-from plane.utils.exporters import Exporter, BaseFormatter
+from qlcv.utils.exporters import Exporter, BaseFormatter
 
 class XMLFormatter(BaseFormatter):
     def format(self, filename, records, schema_class, options=None):
@@ -329,7 +329,7 @@ obj_data = schema.serialize(obj)
 The `IssueExportSchema` demonstrates a complete implementation:
 
 ```python
-from plane.utils.exporters import Exporter, IssueExportSchema
+from qlcv.utils.exporters import Exporter, IssueExportSchema
 
 # Simple export - just pass the queryset!
 issues = Issue.objects.filter(project_id=project_id)

@@ -8,7 +8,7 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
 
-// plane imports
+// qlcv imports
 import { ETabIndices, EPageAccess } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

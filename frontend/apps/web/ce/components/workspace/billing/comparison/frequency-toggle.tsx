@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { observer } from "mobx-react";
 import type { EProductSubscriptionEnum, TBillingFrequency } from "@qlcv/types";
 import { calculateYearlyDiscount, cn } from "@qlcv/utils";

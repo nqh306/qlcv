@@ -5,7 +5,7 @@
  */
 
 import { useRef, useState } from "react";
-// Plane
+// qlcv
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IBlockUpdateDependencyData, IGanttBlock } from "@qlcv/types";
 // hooks

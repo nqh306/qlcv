@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // components
 import { IssueEmojiReactions } from "@/components/issues/reactions/issue-emoji-reactions";

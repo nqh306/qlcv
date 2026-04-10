@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 import { observer } from "mobx-react";
 import { CheckCircle, Clock, MoreVertical } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
-// plane imports
+// qlcv imports
 import { ArchiveIcon, CheckIcon } from "@qlcv/propel/icons";
 import type { TNotificationFilter } from "@qlcv/types";
 import { PopoverMenu } from "@qlcv/ui";

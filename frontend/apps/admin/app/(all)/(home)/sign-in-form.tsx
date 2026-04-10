@@ -7,7 +7,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Eye, EyeOff } from "lucide-react";
-// plane internal packages
+// qlcv internal packages
 import type { EAdminAuthErrorCodes, TAdminAuthErrorInfo } from "@qlcv/constants";
 import { API_BASE_URL } from "@qlcv/constants";
 import { Button } from "@qlcv/propel/button";

@@ -21,7 +21,7 @@ import { useParams } from "next/navigation";
 import { createRoot } from "react-dom/client";
 import { Star, MoreHorizontal, GripVertical } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";
 import { DraftIcon, FavoriteFolderIcon, ChevronRightIcon } from "@qlcv/propel/icons";

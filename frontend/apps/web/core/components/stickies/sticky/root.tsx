@@ -8,9 +8,9 @@ import { useCallback, useState } from "react";
 import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { Minimize2 } from "lucide-react";
-// plane types
+// qlcv types
 import type { TSticky } from "@qlcv/types";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";

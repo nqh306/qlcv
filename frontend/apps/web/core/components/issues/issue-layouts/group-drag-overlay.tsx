@@ -6,13 +6,13 @@
 
 import { useRef } from "react";
 import { AlertCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ISSUE_ORDER_BY_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { TIssueOrderByOptions } from "@qlcv/types";
 // helpers
 import { cn } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { WorkFlowDisabledOverlay } from "@/qlcv-web/components/workflow";
 
 type Props = {

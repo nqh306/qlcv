@@ -7,10 +7,10 @@
 import { Command } from "cmdk";
 import { useTranslation } from "@qlcv/i18n";
 import { SearchIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 // components
 import type { TPowerKContext } from "@/components/power-k/core/types";
-// plane web imports
+// qlcv web imports
 import { PowerKModalCommandItem } from "@/components/power-k/ui/modal/command-item";
 
 export type TPowerKModalNoSearchResultsCommandProps = {

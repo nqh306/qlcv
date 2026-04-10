@@ -9,13 +9,13 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Settings, UserPlus } from "lucide-react";
 import { Menu } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { EUserPermissions } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CheckIcon } from "@qlcv/propel/icons";
 import type { IWorkspace } from "@qlcv/types";
 import { cn, getFileURL, getUserRole } from "@qlcv/utils";
-// plane web imports
+// qlcv web imports
 import { SubscriptionPill } from "@/qlcv-web/components/common/subscription/subscription-pill";
 
 type TProps = {

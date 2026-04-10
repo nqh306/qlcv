@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { substringMatch } from "@qlcv/utils";
 // components

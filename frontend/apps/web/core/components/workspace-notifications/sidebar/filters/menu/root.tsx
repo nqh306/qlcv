@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { ENotificationFilterType } from "@qlcv/constants";
 import { FILTER_TYPE_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";

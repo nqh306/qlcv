@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { WORKSPACE_SETTINGS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Breadcrumbs } from "@qlcv/ui";

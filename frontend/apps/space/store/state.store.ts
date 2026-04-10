@@ -6,7 +6,7 @@
 
 import { clone } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesStateService } from "@qlcv/services";
 import type { IState } from "@qlcv/types";
 // helpers

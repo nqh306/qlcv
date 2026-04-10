@@ -8,7 +8,7 @@ import type { FC } from "react";
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EIssueGroupByToServerOptions, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TGroupedIssues } from "@qlcv/types";

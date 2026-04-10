@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane web imports
+// qlcv web imports
 import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/qlcv-web/components/pages/navigation-pane";
 
 export * from "./root";

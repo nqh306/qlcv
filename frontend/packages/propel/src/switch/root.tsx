@@ -60,6 +60,6 @@ function Switch({ value, onChange, label, size = "sm", disabled, className }: IT
   );
 }
 
-Switch.displayName = "plane-ui-switch";
+Switch.displayName = "qlcv-ui-switch";
 
 export { Switch };

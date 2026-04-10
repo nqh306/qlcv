@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// qlcv package imports
 import type { ChartXAxisProperty } from "@qlcv/types";
 import { CustomSelect } from "@qlcv/ui";
 

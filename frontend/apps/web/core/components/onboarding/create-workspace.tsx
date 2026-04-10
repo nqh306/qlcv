@@ -38,7 +38,7 @@ export const CreateWorkspace = observer(function CreateWorkspace(props: Props) {
   // states
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { updateUserProfile } = useUserProfile();

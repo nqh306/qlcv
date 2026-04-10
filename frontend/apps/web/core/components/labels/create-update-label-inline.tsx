@@ -10,7 +10,7 @@ import { TwitterPicker } from "react-color";
 import type { SubmitHandler } from "react-hook-form";
 import { Controller, useForm } from "react-hook-form";
 import { Popover, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { getRandomLabelColor, LABEL_COLOR_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";

@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -32,7 +32,7 @@ function WebhooksListPage({ params }: Route.ComponentProps) {
   const [showCreateWebhookModal, setShowCreateWebhookModal] = useState(false);
   // router
   const { workspaceSlug } = params;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // mobx store
   const { workspaceUserInfo, allowPermissions } = useUserPermissions();

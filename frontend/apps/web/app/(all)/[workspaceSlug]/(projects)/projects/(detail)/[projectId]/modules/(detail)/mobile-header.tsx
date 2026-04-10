@@ -7,7 +7,7 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { CalendarLayoutIcon, BoardLayoutIcon, ListLayoutIcon, ChevronDownIcon } from "@qlcv/propel/icons";
@@ -34,7 +34,7 @@ export const ModuleIssuesMobileHeader = observer(function ModuleIssuesMobileHead
   const { workspaceSlug, projectId, moduleId } = useParams();
   // states
   const [analyticsModal, setAnalyticsModal] = useState(false);
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectDetails } = useProject();

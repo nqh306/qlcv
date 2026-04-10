@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
-// plane imports
+// qlcv imports
 import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { PlusIcon } from "@qlcv/propel/icons";
 import type { TStaticViewTypes } from "@qlcv/types";

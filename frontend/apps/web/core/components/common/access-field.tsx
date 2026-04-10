@@ -5,11 +5,11 @@
  */
 
 import type { LucideIcon } from "lucide-react";
-// plane ui
+// qlcv ui
 import { useTranslation } from "@qlcv/i18n";
 import type { ISvgIcons } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 
 type Props = {

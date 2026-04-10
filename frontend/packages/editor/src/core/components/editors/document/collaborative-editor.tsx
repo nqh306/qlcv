@@ -5,7 +5,7 @@
  */
 
 import React, { useMemo } from "react";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 // components
 import { PageRenderer } from "@/components/editors";

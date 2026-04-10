@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { setPromiseToast } from "@qlcv/propel/toast";
 import type { IProject } from "@qlcv/types";
 import { ToggleSwitch } from "@qlcv/ui";

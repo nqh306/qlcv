@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
+// qlcv imports
 import { EIssuesStoreType } from "@qlcv/types";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";

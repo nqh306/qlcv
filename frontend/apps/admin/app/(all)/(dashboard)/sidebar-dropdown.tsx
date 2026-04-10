@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useTheme as useNextTheme } from "next-themes";
 import { LogOut, UserCog2, Palette } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
-// plane internal packages
+// qlcv internal packages
 import { API_BASE_URL } from "@qlcv/constants";
 import { AuthService } from "@qlcv/services";
 import { Avatar } from "@qlcv/ui";

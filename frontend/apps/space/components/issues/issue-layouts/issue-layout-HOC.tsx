@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TLoader } from "@qlcv/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";

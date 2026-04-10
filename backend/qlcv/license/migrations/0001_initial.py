@@ -72,7 +72,7 @@ class Migration(migrations.Migration):
                 (
                     "edition",
                     models.CharField(
-                        default="PLANE_COMMUNITY", max_length=255
+                        default="QLCV_COMMUNITY", max_length=255
                     ),
                 ),
                 (

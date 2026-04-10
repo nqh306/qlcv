@@ -7,7 +7,7 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@qlcv/types";
 import { calculateTotalFilters } from "@qlcv/utils";

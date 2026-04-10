@@ -21,7 +21,7 @@ import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { CreateUpdateEpicModal } from "@/qlcv-web/components/epics/epic-modal";
 // types
-// Plane-web
+// QLCV-web
 import { WorkFlowGroupTree } from "@/qlcv-web/components/workflow";
 
 interface IHeaderGroupByCard {

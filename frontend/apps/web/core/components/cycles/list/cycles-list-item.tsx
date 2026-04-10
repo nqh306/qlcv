@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { CheckIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TCycleGroups } from "@qlcv/types";
 import { CircularProgressIndicator } from "@qlcv/ui";
 // components

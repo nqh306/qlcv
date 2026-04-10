@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane-i18n
+// qlcv-i18n
 import { useTranslation } from "@qlcv/i18n";
 // types
 import type { TIssueServiceType } from "@qlcv/types";

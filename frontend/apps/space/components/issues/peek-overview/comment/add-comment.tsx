@@ -7,7 +7,7 @@
 import React, { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm, Controller } from "react-hook-form";
-// plane imports
+// qlcv imports
 import type { EditorRefApi } from "@qlcv/editor";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { SitesFileService } from "@qlcv/services";

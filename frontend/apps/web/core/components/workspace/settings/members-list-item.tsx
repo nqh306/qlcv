@@ -6,7 +6,7 @@
 
 import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { IWorkspaceMember } from "@qlcv/types";
@@ -20,7 +20,7 @@ import { useMember } from "@/hooks/store/use-member";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser, useUserPermissions, useUserSettings } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { useMemberColumns } from "@/qlcv-web/components/workspace/settings/useMemberColumns";
 
 type Props = {

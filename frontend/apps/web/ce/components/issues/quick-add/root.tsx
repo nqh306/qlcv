@@ -8,8 +8,8 @@ import type { FC } from "react";
 import { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import type { UseFormRegister, UseFormSetFocus } from "react-hook-form";
-// plane constants
-// plane helpers
+// qlcv constants
+// qlcv helpers
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // types
 import type { TIssue } from "@qlcv/types";

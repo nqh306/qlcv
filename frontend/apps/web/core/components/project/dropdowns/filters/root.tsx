@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { SearchIcon, CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TProjectDisplayFilters, TProjectFilters } from "@qlcv/types";
 // components
 import { FilterOption } from "@/components/issues/issue-layouts/filters";

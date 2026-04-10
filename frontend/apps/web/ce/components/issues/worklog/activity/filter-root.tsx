@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TActivityFilters, TActivityFilterOption } from "@qlcv/constants";
 import { ACTIVITY_FILTER_TYPE_OPTIONS } from "@qlcv/constants";
 // components

@@ -6,7 +6,7 @@
 
 import React, { useRef } from "react";
 import { observer } from "mobx-react";
-// plane constants
+// qlcv constants
 import { SPREADSHEET_SELECT_GROUP, SPREADSHEET_PROPERTY_LIST } from "@qlcv/constants";
 // types
 import type { TIssue, IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@qlcv/types";
@@ -15,9 +15,9 @@ import { EIssueLayoutTypes } from "@qlcv/types";
 import { MultipleSelectGroup } from "@/components/core/multiple-select";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// qlcv web components
 import { IssueBulkOperationsRoot } from "@/qlcv-web/components/issues/bulk-operations";
-// plane web hooks
+// qlcv web hooks
 import { useBulkOperationStatus } from "@/qlcv-web/hooks/use-bulk-operation-status";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";
@@ -64,7 +64,7 @@ export const SpreadsheetView = observer(function SpreadsheetView(props: Props) {
   const portalRef = useRef<HTMLDivElement | null>(null);
   // store hooks
   const { currentProjectDetails } = useProject();
-  // plane web hooks
+  // qlcv web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
 
   const isEstimateEnabled: boolean = currentProjectDetails?.estimate !== null;

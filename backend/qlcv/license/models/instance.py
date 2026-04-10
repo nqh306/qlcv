@@ -1,4 +1,3 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -18,7 +17,7 @@ ROLE_CHOICES = (
 
 
 class InstanceEdition(Enum):
-    PLANE_COMMUNITY = "PLANE_COMMUNITY"
+    QLCV_COMMUNITY = "QLCV_COMMUNITY"
 
 
 class Instance(BaseModel):
@@ -28,7 +27,7 @@ class Instance(BaseModel):
     instance_id = models.CharField(max_length=255, unique=True)
     current_version = models.CharField(max_length=255)
     latest_version = models.CharField(max_length=255, null=True, blank=True)
-    edition = models.CharField(max_length=255, default=InstanceEdition.PLANE_COMMUNITY.value)
+    edition = models.CharField(max_length=255, default=InstanceEdition.QLCV_COMMUNITY.value)
     domain = models.TextField(blank=True)
     # Instance specifics
     last_checked_at = models.DateTimeField()

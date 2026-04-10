@@ -6,7 +6,7 @@
 
 import { useTranslation } from "@qlcv/i18n";
 import { CloseIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import type { TPageFilterProps } from "@qlcv/types";
 import { Tag } from "@qlcv/ui";
 import { replaceUnderscoreIfSnakeCase } from "@qlcv/utils";

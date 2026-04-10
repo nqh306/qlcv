@@ -16,7 +16,7 @@ import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
-// plane web imports
+// qlcv web imports
 import { DesktopSidebarWorkspaceMenu } from "@/qlcv-web/components/desktop";
 // local imports
 import { AppSidebarItemsRoot } from "./items-root";

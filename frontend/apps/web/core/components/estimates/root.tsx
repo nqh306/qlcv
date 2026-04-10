@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
@@ -16,7 +16,7 @@ import { SettingsHeading } from "@/components/settings/heading";
 import { EmptyStateCompact } from "@qlcv/propel/empty-state";
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// qlcv web components
 import { UpdateEstimateModal } from "@/qlcv-web/components/estimates";
 // local imports
 import { CreateEstimateModal } from "./create/modal";

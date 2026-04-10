@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // icons
 import { Circle } from "lucide-react";
-// plane imports
+// qlcv imports
 import {
   EUserPermissions,
   EUserPermissionsLevel,
@@ -35,7 +35,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 
 export const IssuesHeader = observer(function IssuesHeader() {

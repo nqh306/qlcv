@@ -7,17 +7,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { CornerDownRight, RefreshCcw, Sparkles, TriangleAlert } from "lucide-react";
-// plane editor
+// qlcv editor
 import type { EditorRefApi } from "@qlcv/editor";
 import { ChevronRightIcon } from "@qlcv/propel/icons";
-// plane ui
+// qlcv ui
 import { Tooltip } from "@qlcv/propel/tooltip";
 // components
 import { cn } from "@qlcv/utils";
 import { RichTextEditor } from "@/components/editor/rich-text";
-// plane web constants
+// qlcv web constants
 import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/constants/ai";
-// plane web services
+// qlcv web services
 import type { TTaskPayload } from "@/services/ai.service";
 import { AIService } from "@/services/ai.service";
 import { AskPiMenu } from "./ask-pi-menu";

@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useForm } from "react-hook-form";
-// plane package imports
+// qlcv package imports
 import { useTranslation } from "@qlcv/i18n";
 import type { IAnalyticsParams } from "@qlcv/types";
 import { ChartXAxisProperty, ChartYAxisMetric } from "@qlcv/types";
 import { cn } from "@qlcv/utils";
-// plane web components
+// qlcv web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { AnalyticsSelectParams } from "../select/analytics-params";
 import PriorityChart from "./priority-chart";

@@ -6,7 +6,7 @@
 
 import { observable, action, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import type { TCreateModalStoreTypes, TCreatePageModal } from "@qlcv/constants";
 import { DEFAULT_CREATE_PAGE_MODAL_DATA, EPageAccess } from "@qlcv/constants";
 import type { TProfileSettingsTabs } from "@qlcv/types";

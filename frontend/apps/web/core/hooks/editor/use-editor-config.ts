@@ -5,12 +5,12 @@
  */
 
 import { useCallback } from "react";
-// plane imports
+// qlcv imports
 import type { TFileHandler } from "@qlcv/editor";
 import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@qlcv/utils";
 // hooks
 import { useEditorAsset } from "@/hooks/store/use-editor-asset";
-// plane web hooks
+// qlcv web hooks
 import { useExtendedEditorConfig } from "@/qlcv-web/hooks/editor/use-extended-editor-config";
 import { useFileSize } from "@/qlcv-web/hooks/use-file-size";
 // services

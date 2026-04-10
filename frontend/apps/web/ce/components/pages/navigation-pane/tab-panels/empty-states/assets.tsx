@@ -5,7 +5,7 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 // assets
 import darkAssetsAsset from "@/app/assets/empty-state/wiki/navigation-pane/assets-dark.webp?url";

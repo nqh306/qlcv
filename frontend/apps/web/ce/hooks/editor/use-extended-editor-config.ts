@@ -5,7 +5,7 @@
  */
 
 import { useCallback } from "react";
-// plane imports
+// qlcv imports
 import type { TExtendedFileHandler } from "@qlcv/editor";
 
 export type TExtendedEditorFileHandlersArgs = {

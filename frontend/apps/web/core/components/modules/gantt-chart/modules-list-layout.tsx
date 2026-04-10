@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// PLane
+// qlcv
 import { GANTT_TIMELINE_TYPE } from "@qlcv/types";
 import type { IBlockUpdateData, IBlockUpdateDependencyData, IModule } from "@qlcv/types";
 // components

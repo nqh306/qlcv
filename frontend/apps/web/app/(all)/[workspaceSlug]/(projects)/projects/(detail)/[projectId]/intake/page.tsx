@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { EUserProjectRoles, EInboxIssueCurrentTab } from "@qlcv/types";
@@ -33,7 +33,7 @@ function ProjectInboxPage({ params }: Route.ComponentProps) {
   const inboxIssueId = searchParams.get("inboxIssueId");
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // hooks
   const { currentProjectDetails } = useProject();
@@ -67,7 +67,7 @@ function ProjectInboxPage({ params }: Route.ComponentProps) {
         workspace: currentProjectDetails?.name,
       })
     : t("inbox_issue.page_label", {
-        workspace: "Plane",
+        workspace: "QLCV",
       });
 
   const currentNavigationTab = navigationTab

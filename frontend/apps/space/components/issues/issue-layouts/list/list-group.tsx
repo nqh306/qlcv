@@ -8,7 +8,7 @@ import type { MutableRefObject } from "react";
 import { Fragment, forwardRef, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useTranslation } from "@qlcv/i18n";
-// plane types
+// qlcv types
 import type {
   IGroupByColumn,
   TIssueGroupByOptions,
@@ -16,7 +16,7 @@ import type {
   TPaginationData,
   TLoader,
 } from "@qlcv/types";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";

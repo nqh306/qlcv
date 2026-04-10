@@ -6,10 +6,10 @@
 
 import { cloneDeep, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction, computed } from "mobx";
-// plane imports
+// qlcv imports
 import { EUserPermissions, API_BASE_URL } from "@qlcv/constants";
 import type { IUser, TUserPermissions } from "@qlcv/types";
-// plane web imports
+// qlcv web imports
 import type { RootStore } from "@/qlcv-web/store/root.store";
 import type { IUserPermissionStore } from "@/qlcv-web/store/user/permission.store";
 import { UserPermissionStore } from "@/qlcv-web/store/user/permission.store";

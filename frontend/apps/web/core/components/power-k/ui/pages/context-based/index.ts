@@ -8,7 +8,7 @@ export * from "./root";
 
 // components
 import type { TPowerKContextType } from "@/components/power-k/core/types";
-// plane web imports
+// qlcv web imports
 import { CONTEXT_ENTITY_MAP_EXTENDED } from "@/qlcv-web/components/command-palette/power-k/pages/context-based";
 
 export type TContextEntityMap = {

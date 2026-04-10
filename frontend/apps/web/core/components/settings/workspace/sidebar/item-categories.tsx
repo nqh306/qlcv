@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { useParams } from "react-router";
-// plane imports
+// qlcv imports
 import { EUserPermissionsLevel, GROUPED_WORKSPACE_SETTINGS, WORKSPACE_SETTINGS_CATEGORIES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { joinUrlPath } from "@qlcv/utils";

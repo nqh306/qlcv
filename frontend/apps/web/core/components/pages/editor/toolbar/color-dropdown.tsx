@@ -7,7 +7,7 @@
 import { memo } from "react";
 import { ALargeSmall, Ban } from "lucide-react";
 import { Popover } from "@headlessui/react";
-// plane editor
+// qlcv editor
 import { COLORS_LIST } from "@qlcv/editor";
 import type { TEditorCommands } from "@qlcv/editor";
 // helpers

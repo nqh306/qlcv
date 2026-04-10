@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 import { CircleMinus } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { ROLE, EUserPermissions, MEMBER_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { EUserProjectRoles, IUser, IWorkspaceMember, TProjectMembership } from "@qlcv/types";

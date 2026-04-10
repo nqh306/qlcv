@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { DEFAULT_GLOBAL_VIEWS_LIST } from "@qlcv/constants";
 // components
 import { PageHead } from "@/components/core/page-title";

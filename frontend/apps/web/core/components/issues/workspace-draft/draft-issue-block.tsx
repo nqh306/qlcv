@@ -9,7 +9,7 @@ import { omit } from "lodash-es";
 import { observer } from "mobx-react";
 import { SquareStackIcon } from "lucide-react";
 import { CopyIcon, EditIcon, TrashIcon } from "@qlcv/propel/icons";
-// plane utils
+// qlcv utils
 import { Tooltip } from "@qlcv/propel/tooltip";
 import type { TWorkspaceDraftIssue } from "@qlcv/types";
 import { EIssuesStoreType } from "@qlcv/types";
@@ -20,7 +20,7 @@ import { cn } from "@qlcv/utils";
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useProject } from "@/hooks/store/use-project";
 import { useWorkspaceDraftIssues } from "@/hooks/store/workspace-draft";
-// plane-web imports
+// qlcv-web imports
 import { IssueTypeIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { IdentifierText } from "../issue-detail/identifier-text";

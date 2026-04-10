@@ -1,6 +1,6 @@
-# Testing Guide for Plane
+# Testing Guide for QLCV
 
-This guide explains how to write tests for Plane using our pytest-based testing strategy.
+This guide explains how to write tests for QLCV using our pytest-based testing strategy.
 
 ## Test Categories
 
@@ -22,7 +22,7 @@ Unit tests should be placed in the appropriate directory under `tests/unit/` dep
 
 ```python
 import pytest
-from plane.api.serializers import MySerializer
+from qlcv.api.serializers import MySerializer
 
 @pytest.mark.unit
 class TestMySerializer:
@@ -69,7 +69,7 @@ class TestMyEndpoint:
 
 ## Writing Smoke Tests
 
-Smoke tests should be placed in `tests/smoke/` directory and use the `plane_server` fixture to test against a real HTTP server.
+Smoke tests should be placed in `tests/smoke/` directory and use the `qlcv_server` fixture to test against a real HTTP server.
 
 ### Example Smoke Test:
 
@@ -80,9 +80,9 @@ import requests
 @pytest.mark.smoke
 class TestCriticalFlow:
     @pytest.mark.django_db
-    def test_login_flow(self, plane_server, create_user, user_data):
+    def test_login_flow(self, qlcv_server, create_user, user_data):
         # Get login URL
-        url = f"{plane_server.url}/api/auth/signin/"
+        url = f"{qlcv_server.url}/api/auth/signin/"
         
         # Test login
         response = requests.post(
@@ -116,7 +116,7 @@ Our test setup provides several useful fixtures:
 For more complex test data setup, use the provided factories:
 
 ```python
-from plane.tests.factories import UserFactory, WorkspaceFactory
+from qlcv.tests.factories import UserFactory, WorkspaceFactory
 
 # Create a user
 user = UserFactory()
@@ -137,7 +137,7 @@ Use pytest to run tests:
 python -m pytest
 
 # Run only unit tests with coverage
-python -m pytest -m unit --cov=plane
+python -m pytest -m unit --cov=qlcv
 ```
 
 ## Best Practices

@@ -7,8 +7,8 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane types
-// plane ui
+// qlcv types
+// qlcv ui
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
 import type { TLinkEditableFields } from "@qlcv/types";

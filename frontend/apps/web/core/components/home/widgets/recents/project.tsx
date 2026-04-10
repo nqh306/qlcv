@@ -5,7 +5,7 @@
  */
 
 import { useRouter } from "next/navigation";
-// plane types
+// qlcv types
 import { Logo } from "@qlcv/propel/emoji-icon-picker";
 import type { TActivityEntityData, TProjectEntityData } from "@qlcv/types";
 import { calculateTimeAgo } from "@qlcv/utils";

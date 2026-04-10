@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { LabelPropertyIcon } from "@qlcv/propel/icons";
-// plane imports
+// qlcv imports
 import { Tooltip } from "@qlcv/propel/tooltip";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";

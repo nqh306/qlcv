@@ -6,11 +6,11 @@
 
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane types
+// qlcv types
 import { Button } from "@qlcv/propel/button";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { ILinkDetails, ModuleLink } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Input, ModalCore } from "@qlcv/ui";
 
 type Props = {

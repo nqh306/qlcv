@@ -6,7 +6,7 @@
 
 import { useRef, useEffect } from "react";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { UserService } from "@qlcv/services";
 import type { IUser } from "@qlcv/types";
 

@@ -6,7 +6,7 @@
 
 import React, { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EXTENDED_SIDEBAR_WIDTH, SIDEBAR_WIDTH } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";
 import { cn } from "@qlcv/utils";

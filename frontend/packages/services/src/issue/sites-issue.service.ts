@@ -4,17 +4,17 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { API_BASE_URL } from "@qlcv/constants";
 import type { IPublicIssue, TIssuePublicComment, TPublicIssuesResponse } from "@qlcv/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing issues within plane sites application
+ * Service class for managing issues within qlcv sites application
  * Extends the APIService class to handle HTTP requests to the issue-related endpoints
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for QLCV sites
  */
 export class SitesIssueService extends APIService {
   constructor(BASE_URL?: string) {

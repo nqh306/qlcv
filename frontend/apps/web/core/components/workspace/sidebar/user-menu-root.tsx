@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useRouter } from "next/navigation";
 import { LogOut, Settings, Settings2, Shield } from "lucide-react";
-// plane imports
+// qlcv imports
 import { GOD_MODE_URL } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

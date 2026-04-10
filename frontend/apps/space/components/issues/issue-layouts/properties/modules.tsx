@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane ui
+// qlcv ui
 import { ModuleIcon } from "@qlcv/propel/icons";
 import { Tooltip } from "@qlcv/propel/tooltip";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";

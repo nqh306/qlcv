@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
+// qlcv imports
 import { PROFILE_VIEWER_TAB, PROFILE_ADMINS_TAB } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Header, EHeaderVariant } from "@qlcv/ui";

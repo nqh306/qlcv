@@ -11,8 +11,8 @@ import type { SubmitHandler } from "react-hook-form";
 import { Controller, useForm } from "react-hook-form";
 import { useOutsideClickDetector } from "@qlcv/hooks";
 import { useTranslation } from "@qlcv/i18n";
-// plane helpers
-// plane ui
+// qlcv helpers
+// qlcv ui
 import { FavoriteFolderIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import { Input } from "@qlcv/ui";

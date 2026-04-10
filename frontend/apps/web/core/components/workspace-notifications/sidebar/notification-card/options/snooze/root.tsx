@@ -9,7 +9,7 @@ import { Fragment } from "react";
 import { observer } from "mobx-react";
 import { Clock } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-// plane imports
+// qlcv imports
 import { NOTIFICATION_SNOOZE_OPTIONS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";

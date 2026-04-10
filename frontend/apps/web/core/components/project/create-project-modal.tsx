@@ -7,13 +7,13 @@
 import { useEffect, useState } from "react";
 import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 import { getAssetIdFromUrl, checkURLValidity } from "@qlcv/utils";
-// plane ui
+// qlcv ui
 // helpers
 // hooks
 import useKeypress from "@/hooks/use-keypress";
-// plane web components
+// qlcv web components
 import { CreateProjectForm } from "@/qlcv-web/components/projects/create/root";
-// plane web types
+// qlcv web types
 import type { TProject } from "@/qlcv-web/types/projects";
 // services
 import { FileService } from "@/services/file.service";

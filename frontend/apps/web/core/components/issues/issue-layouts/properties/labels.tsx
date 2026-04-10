@@ -7,7 +7,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Placement } from "@popperjs/core";
 import { observer } from "mobx-react";
-// plane helpers
+// qlcv helpers
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // i18n
 import { useTranslation } from "@qlcv/i18n";

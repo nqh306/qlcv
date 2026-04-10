@@ -1,11 +1,10 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
 """
 Core utilities cho QLCV database routing and request scoping.
 This package contains essential components for managing read replica routing
-and request-scoped context in the Plane application.
+and request-scoped context in the QLCV application.
 """
 
 from .dbrouters import ReadReplicaRouter

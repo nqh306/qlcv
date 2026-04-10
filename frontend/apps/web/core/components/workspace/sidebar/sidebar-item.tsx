@@ -8,7 +8,7 @@ import type { ReactNode } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
+// qlcv imports
 import type { IWorkspaceSidebarNavigationItem } from "@qlcv/constants";
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
@@ -19,7 +19,7 @@ import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useWorkspaceNavigationPreferences } from "@/hooks/use-navigation-preferences";
-// plane web imports
+// qlcv web imports
 import { getSidebarNavigationItemIcon } from "@/qlcv-web/components/workspace/sidebar/helper";
 
 type Props = {

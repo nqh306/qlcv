@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import useSWR from "swr";
-// plane imports
+// qlcv imports
 import { EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
@@ -55,7 +55,7 @@ export const ProjectSettingsMemberDefaults = observer(function ProjectSettingsMe
   props: TProjectSettingsMemberDefaultsProps
 ) {
   const { workspaceSlug, projectId } = props;
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IMarking } from "@qlcv/editor";
 import { cn } from "@qlcv/utils";
 

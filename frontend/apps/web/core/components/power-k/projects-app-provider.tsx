@@ -12,7 +12,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { usePowerK } from "@/hooks/store/use-power-k";
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
+// qlcv web imports
 import { ProjectLevelModals } from "@/qlcv-web/components/command-palette/modals/project-level";
 import { WorkItemLevelModals } from "@/qlcv-web/components/command-palette/modals/work-item-level";
 import { WorkspaceLevelModals } from "@/qlcv-web/components/command-palette/modals/workspace-level";

@@ -6,7 +6,7 @@
 
 import React, { useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { TIssueServiceType } from "@qlcv/types";
 import { CollapsibleButton } from "@qlcv/ui";

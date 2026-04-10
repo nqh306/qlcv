@@ -9,7 +9,7 @@ import type { LucideIcon } from "lucide-react";
 import { Activity, Bell, CircleUser, KeyRound, LockIcon, Settings2 } from "lucide-react";
 import { observer } from "mobx-react";
 import { useParams } from "react-router";
-// plane imports
+// qlcv imports
 import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import type { ISvgIcons } from "@qlcv/propel/icons";

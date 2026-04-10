@@ -6,7 +6,7 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane types
+// qlcv types
 import { useParams } from "next/navigation";
 import type { TIssue } from "@qlcv/types";
 import { Spinner } from "@qlcv/ui";

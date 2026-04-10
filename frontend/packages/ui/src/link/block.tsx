@@ -7,7 +7,7 @@
 import React from "react";
 // qlcv utils
 import { calculateTimeAgo, cn, getIconForLink } from "@qlcv/utils";
-// plane ui
+// qlcv ui
 import type { TContextMenuItem } from "../dropdowns/context-menu/root";
 import { CustomMenu } from "../dropdowns/custom-menu";
 

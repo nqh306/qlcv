@@ -6,7 +6,7 @@
 
 import React, { useCallback } from "react";
 import { observer } from "mobx-react";
-// plane constants
+// qlcv constants
 import { ALL_ISSUES, EIssueFilterType, EUserPermissions, EUserPermissionsLevel } from "@qlcv/constants";
 import type { IIssueDisplayFilterOptions } from "@qlcv/types";
 import { EIssuesStoreType, EIssueLayoutTypes } from "@qlcv/types";

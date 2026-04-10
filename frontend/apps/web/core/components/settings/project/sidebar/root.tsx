@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { ScrollArea } from "@qlcv/propel/scrollarea";
 // local imports
 import { ProjectSettingsSidebarHeader } from "./header";

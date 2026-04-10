@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { useParams, usePathname } from "next/navigation";
 import { SIDEBAR_WIDTH } from "@qlcv/constants";
 import { useLocalStorage } from "@qlcv/hooks";

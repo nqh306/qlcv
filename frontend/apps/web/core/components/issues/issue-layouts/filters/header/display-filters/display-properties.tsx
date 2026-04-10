@@ -6,9 +6,9 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane constants
+// qlcv constants
 import { ISSUE_DISPLAY_PROPERTIES } from "@qlcv/constants";
-// plane i18n
+// qlcv i18n
 import { useTranslation } from "@qlcv/i18n";
 // types
 import type { IIssueDisplayProperties } from "@qlcv/types";

@@ -18,12 +18,12 @@ import { attachInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { createRoot } from "react-dom/client";
-// plane types
+// qlcv types
 import { useTranslation } from "@qlcv/i18n";
 import type { InstructionType } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { DropIndicator, ToggleSwitch } from "@qlcv/ui";
-// plane utils
+// qlcv utils
 import { cn } from "@qlcv/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";

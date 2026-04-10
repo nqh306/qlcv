@@ -5,11 +5,11 @@
  */
 
 import { enableStaticRendering } from "mobx-react";
-// plane imports
+// qlcv imports
 import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@qlcv/i18n";
 import type { IWorkItemFilterStore } from "@qlcv/shared-state";
 import { WorkItemFilterStore } from "@qlcv/shared-state";
-// plane web store
+// qlcv web store
 import type { IAnalyticsStore } from "@/qlcv-web/store/analytics.store";
 import { AnalyticsStore } from "@/qlcv-web/store/analytics.store";
 import type { ICommandPaletteStore } from "@/qlcv-web/store/command-palette.store";

@@ -7,9 +7,9 @@
 import { useMemo, useState } from "react";
 import { sortBy } from "lodash-es";
 import { observer } from "mobx-react";
-// plane types
+// qlcv types
 import type { TInboxIssueFilterMemberKeys } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Avatar, Loader } from "@qlcv/ui";
 // components
 import { getFileURL } from "@qlcv/utils";

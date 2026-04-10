@@ -6,7 +6,7 @@
 
 // constants
 import type { CORE_EXTENSIONS } from "@/constants/extension";
-// plane editor imports
+// qlcv editor imports
 import type { TAdditionalEditorAsset } from "@/qlcv-editor/types/asset";
 
 export type TEditorImageAsset = {

@@ -6,7 +6,7 @@
 
 import React, { useMemo, useState } from "react";
 import { Area, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, ComposedChart, CartesianGrid } from "recharts";
-// plane imports
+// qlcv imports
 import { AXIS_LABEL_CLASSNAME } from "@qlcv/constants";
 import type { TAreaChartProps } from "@qlcv/types";
 // local components

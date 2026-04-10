@@ -6,7 +6,7 @@
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import { SitesLabelService } from "@qlcv/services";
 import type { IIssueLabel } from "@qlcv/types";
 // store

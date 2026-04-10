@@ -5,7 +5,7 @@
  */
 
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import type { IUserSettings } from "@qlcv/types";
 // services
 import { UserService } from "@/services/user.service";

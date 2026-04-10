@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { Expand, Shrink } from "lucide-react";
 import { useTranslation } from "@qlcv/i18n";
-// plane
+// qlcv
 import type { TGanttViews } from "@qlcv/types";
 import { Row } from "@qlcv/ui";
 // components

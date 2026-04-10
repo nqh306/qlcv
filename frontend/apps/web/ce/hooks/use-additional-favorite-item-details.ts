@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IFavorite } from "@qlcv/types";
 // components
 import { getFavoriteItemIcon } from "@/components/workspace/sidebar/favorites/favorite-items/common";

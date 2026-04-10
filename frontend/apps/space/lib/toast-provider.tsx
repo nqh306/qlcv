@@ -5,7 +5,7 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
+// qlcv imports
 import { Toast } from "@qlcv/propel/toast";
 import { resolveGeneralTheme } from "@qlcv/utils";
 

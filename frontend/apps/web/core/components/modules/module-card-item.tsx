@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { Info, SquareUser } from "lucide-react";
-// plane package imports
+// qlcv package imports
 import {
   MODULE_STATUS,
   PROGRESS_STATE_GROUPS_DETAILS,

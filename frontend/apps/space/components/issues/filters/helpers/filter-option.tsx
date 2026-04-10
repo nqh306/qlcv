@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 import { CheckIcon } from "@qlcv/propel/icons";
 
 type Props = {

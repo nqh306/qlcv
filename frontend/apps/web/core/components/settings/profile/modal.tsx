@@ -7,7 +7,7 @@
 import { useCallback } from "react";
 import { X } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { IconButton } from "@qlcv/propel/icon-button";
 import { EModalPosition, EModalWidth, ModalCore } from "@qlcv/ui";
 // hooks

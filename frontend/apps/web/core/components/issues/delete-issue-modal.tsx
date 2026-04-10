@@ -19,7 +19,7 @@ import { AlertModalCore } from "@qlcv/ui";
 import { useIssues } from "@/hooks/store/use-issues";
 import { useProject } from "@/hooks/store/use-project";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-// plane-web
+// qlcv-web
 
 type Props = {
   isOpen: boolean;

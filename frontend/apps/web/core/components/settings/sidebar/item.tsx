@@ -6,7 +6,7 @@
 
 import React from "react";
 import Link from "next/link";
-// plane imports
+// qlcv imports
 import { cn } from "@qlcv/utils";
 import type { LucideIcon } from "lucide-react";
 import type { ISvgIcons } from "@qlcv/propel/icons";

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { RANDOM_EMOJI_CODES } from "@qlcv/constants";
 
 /**

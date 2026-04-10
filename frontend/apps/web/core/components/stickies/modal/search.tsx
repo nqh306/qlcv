@@ -8,7 +8,7 @@ import { useCallback, useRef, useState } from "react";
 import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane hooks
+// qlcv hooks
 import { useOutsideClickDetector } from "@qlcv/hooks";
 // helpers
 import { useTranslation } from "@qlcv/i18n";

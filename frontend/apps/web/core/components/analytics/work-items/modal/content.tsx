@@ -7,12 +7,12 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-// plane package imports
+// qlcv package imports
 import type { ICycle, IModule, IProject } from "@qlcv/types";
 import { Spinner } from "@qlcv/ui";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
-// plane web components
+// qlcv web components
 import TotalInsights from "../../total-insights";
 import CreatedVsResolved from "../created-vs-resolved";
 import CustomizedInsights from "../customized-insights";

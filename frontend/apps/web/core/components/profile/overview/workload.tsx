@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import { STATE_GROUPS } from "@qlcv/constants";
 // types
 import { useTranslation } from "@qlcv/i18n";

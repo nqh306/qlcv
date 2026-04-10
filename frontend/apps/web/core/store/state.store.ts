@@ -7,12 +7,12 @@
 import { set, groupBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
+// qlcv imports
 import { STATE_GROUPS } from "@qlcv/constants";
 import type { IIntakeState, IState } from "@qlcv/types";
 // helpers
 import { sortStates } from "@qlcv/utils";
-// plane web
+// qlcv web
 import { ProjectStateService } from "@/services/project/project-state.service";
 import type { RootStore } from "@/qlcv-web/store/root.store";
 

@@ -5,7 +5,7 @@
  */
 
 import React, { useEffect, useState, useCallback } from "react";
-// plane imports
+// qlcv imports
 import { TOOLBAR_ITEMS } from "@qlcv/editor";
 import type { ToolbarMenuItem, EditorRefApi } from "@qlcv/editor";
 import { Button } from "@qlcv/propel/button";

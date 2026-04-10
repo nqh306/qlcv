@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane imports
+// qlcv imports
 
 export type TWorkItemAdditionalSidebarProperties = {
   workItemId: string;

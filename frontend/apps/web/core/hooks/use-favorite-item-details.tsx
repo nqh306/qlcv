@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { IFavorite } from "@qlcv/types";
 // components
 import { getPageName } from "@qlcv/utils";
@@ -18,7 +18,7 @@ import { useCycle } from "@/hooks/store/use-cycle";
 import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectView } from "@/hooks/store/use-project-view";
-// plane web hooks
+// qlcv web hooks
 import { EPageStoreType, usePage } from "@/qlcv-web/hooks/store";
 import { useAdditionalFavoriteItemDetails } from "@/qlcv-web/hooks/use-additional-favorite-item-details";
 

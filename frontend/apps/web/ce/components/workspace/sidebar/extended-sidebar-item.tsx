@@ -12,7 +12,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { Pin, PinOff } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { IWorkspaceSidebarNavigationItem } from "@qlcv/constants";
 import { EUserPermissionsLevel } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";

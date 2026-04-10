@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import { Combobox } from "@headlessui/react";
 // hooks
 import type { ISearchIssueResponse } from "@qlcv/types";
-// plane web hooks
+// qlcv web hooks
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 
 interface Props {

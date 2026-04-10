@@ -5,7 +5,7 @@
  */
 
 import { Briefcase, FileText, Layers, LayoutGrid } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ContrastIcon, DiceIcon } from "@qlcv/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
@@ -17,7 +17,7 @@ import type {
 import { generateWorkItemLink } from "@qlcv/utils";
 // components
 import type { TPowerKSearchResultsKeys } from "@/components/power-k/core/types";
-// plane web imports
+// qlcv web imports
 import { SEARCH_RESULTS_GROUPS_MAP_EXTENDED } from "@/qlcv-web/components/command-palette/power-k/search/search-results-map";
 import { IssueIdentifier } from "@/qlcv-web/components/issues/issue-details/issue-identifier";
 

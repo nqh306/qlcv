@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import { Disclosure } from "@headlessui/react";
 import { EmptyStateDetailed } from "@qlcv/propel/empty-state";
-// plane imports
+// qlcv imports
 import { useTranslation } from "@qlcv/i18n";
 import type { ICycle } from "@qlcv/types";
 import { Row } from "@qlcv/ui";
@@ -101,7 +101,7 @@ export const ActiveCycleRoot = observer(function ActiveCycleRoot(props: IActiveC
   const { workspaceSlug, projectId, cycleId: propsCycleId, showHeader = true } = props;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // qlcv hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectActiveCycleId } = useCycle();

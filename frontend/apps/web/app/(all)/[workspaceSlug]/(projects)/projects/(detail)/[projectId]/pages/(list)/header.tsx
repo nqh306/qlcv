@@ -9,18 +9,18 @@ import { observer } from "mobx-react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 // constants
 import { EPageAccess } from "@qlcv/constants";
-// plane types
+// qlcv types
 import { Button } from "@qlcv/propel/button";
 import { PageIcon } from "@qlcv/propel/icons";
 import { TOAST_TYPE, setToast } from "@qlcv/propel/toast";
 import type { TPage } from "@qlcv/types";
-// plane ui
+// qlcv ui
 import { Breadcrumbs, Header } from "@qlcv/ui";
 // helpers
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
+// qlcv web imports
 import { CommonProjectBreadcrumbs } from "@/qlcv-web/components/breadcrumbs/common";
 import { EPageStoreType, usePageStore } from "@/qlcv-web/hooks/store";
 

@@ -45,7 +45,7 @@ export const NewUserPopup = observer(function NewUserPopup() {
             src={resolveGeneralTheme(resolvedTheme) === "dark" ? TakeoffIconDark : TakeoffIconLight}
             height={80}
             width={80}
-            alt="Plane icon"
+            alt="QLCV icon"
           />
         </div>
       </div>

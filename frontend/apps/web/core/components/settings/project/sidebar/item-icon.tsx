@@ -6,7 +6,7 @@
 
 import type { LucideIcon } from "lucide-react";
 import { Users, Zap } from "lucide-react";
-// plane imports
+// qlcv imports
 import type { ISvgIcons } from "@qlcv/propel/icons";
 import {
   CycleIcon,

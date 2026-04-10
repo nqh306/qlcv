@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-// plane package imports
+// qlcv package imports
 import { useTranslation } from "@qlcv/i18n";
 import { cn } from "@qlcv/utils";
 

@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 // icons
 import { Eye, EyeOff, Info, XCircle } from "lucide-react";
-// plane imports
+// qlcv imports
 import { API_BASE_URL, E_PASSWORD_STRENGTH, AUTH_TRACKER_ELEMENTS } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Button } from "@qlcv/propel/button";
@@ -48,7 +48,7 @@ const authService = new AuthService();
 
 export const AuthPasswordForm = observer(function AuthPasswordForm(props: Props) {
   const { email, isSMTPConfigured, handleAuthStep, handleEmailClear, mode, nextPath } = props;
-  // plane imports
+  // qlcv imports
   const { t } = useTranslation();
   // ref
   const formRef = useRef<HTMLFormElement>(null);

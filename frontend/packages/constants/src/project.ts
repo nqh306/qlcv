@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// qlcv imports
 import type { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@qlcv/types";
 // local imports
 

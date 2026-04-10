@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 import { CheckCheck, RefreshCw } from "lucide-react";
-// plane imports
+// qlcv imports
 import { ENotificationLoader, ENotificationQueryParamType } from "@qlcv/constants";
 import { useTranslation } from "@qlcv/i18n";
 import { Tooltip } from "@qlcv/propel/tooltip";

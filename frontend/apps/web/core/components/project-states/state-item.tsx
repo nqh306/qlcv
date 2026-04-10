@@ -9,7 +9,7 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { attachClosestEdge, extractClosestEdge } from "@atlaskit/pragmatic-drag-and-drop-hitbox/closest-edge";
 import { observer } from "mobx-react";
-// Plane
+// qlcv
 import type { TDraggableData } from "@qlcv/constants";
 import type { IState, TStateGroups, TStateOperationsCallbacks } from "@qlcv/types";
 import { DropIndicator } from "@qlcv/ui";

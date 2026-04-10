@@ -6,7 +6,7 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@qlcv/propel/emoji-icon-picker";
 import { cn } from "@qlcv/utils";
 // store

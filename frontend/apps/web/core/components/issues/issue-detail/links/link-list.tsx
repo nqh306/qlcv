@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// qlcv imports
 import type { TIssueServiceType } from "@qlcv/types";
 // computed
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

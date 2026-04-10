@@ -5,7 +5,7 @@
  */
 
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
+// qlcv imports
 import type { EditorRefApi, TEditorAsset } from "@qlcv/editor";
 
 export type TPageEditorInstance = {
